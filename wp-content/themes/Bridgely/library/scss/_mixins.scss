@@ -1,0 +1,90 @@
+/*********************
+CLEARFIX
+*********************/
+
+.clear {
+  clear: both;
+}
+
+/*********************
+TOOLS
+*********************/
+
+* { 
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box; 
+	box-sizing: border-box; 
+	-webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+}
+
+.center {
+	position: relative;
+	max-width: 1210px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+/*********************
+COLORS
+*********************/
+
+$white: #FFF;
+$black: #000;
+$darkgray: #141C29;
+$blue: #2A426B;
+$darkblue: #141C29;
+$orange: #D1A129;
+$orangehover: #E0B039;
+$tan: #FFF7DE;
+$tan2: #F5EFE7;
+
+/*********************
+TYPOGRAPHY
+*********************/
+
+.text-left   { text-align: left; }
+.text-center { text-align: center; }
+.text-right  { text-align: right; }
+
+@mixin po-300 {
+	font-family: 'Poppins', sans-serif;
+	font-style: normal;
+	font-weight: 300;
+}
+
+@mixin po-400 {
+	font-family: 'Poppins', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}
+
+@mixin po-500 {
+	font-family: 'Poppins', sans-serif;
+	font-style: normal;
+	font-weight: 500;
+}
+
+@mixin po-600 {
+	font-family: 'Poppins', sans-serif;
+	font-style: normal;
+	font-weight: 600;
+}
+
+@mixin po-700 {
+	font-family: 'Poppins', sans-serif;
+	font-style: normal;
+	font-weight: 700;
+}
+
+/*********************
+MIXINS
+*********************/
+
+@mixin thetransition {
+	-webkit-transition: all .15s ease-in-out;
+	-moz-transition: all .15s ease-in-out;
+	-ms-transition: all .15s ease-in-out;
+	-o-transition: all .15s ease-in-out;
+	transition: all .15s ease-in-out;
+}

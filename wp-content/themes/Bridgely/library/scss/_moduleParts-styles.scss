@@ -1,0 +1,421 @@
+/*CUSTOM MODULE BASED TEMPLATE*/
+body.page-template-template-modulebased_custom #main-content {
+  padding-bottom: 0;
+}
+
+.magneti-custom-template-wrapper [class*="column"] + [class*="column"]:last-child {
+  float: none;
+}
+
+.magneti-custom-template-wrapper {
+  position: relative;
+}
+
+.magneti-custom-template-wrapper .padding-control {
+  position: relative;
+  padding: 60px 0;
+}
+
+.magneti-custom-template-wrapper .no-padding-top {
+  padding-top: 1px !important;
+}
+
+.magneti-custom-template-wrapper .no-padding-bottom {
+  padding-bottom: 1px !important;
+}
+
+.magneti-custom-template-wrapper .center {
+  position: relative;
+  max-width: 1240px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.magneti-custom-template-wrapper .clear {
+  clear: both;
+}
+
+.magneti-custom-template-wrapper .template-part-hero {
+  position: relative;
+}
+
+.magneti-custom-template-wrapper .template-part-hero.short {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.magneti-custom-template-wrapper .template-part-hero.tall {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.magneti-custom-template-wrapper .template-part-hero.split {
+  padding: 80px 0;
+}
+
+.magneti-custom-template-wrapper .normal-hero-wrap {
+  max-width: 770px;
+  margin: 0 auto;
+}
+
+.magneti-custom-template-wrapper .template-part-hero h1,
+.magneti-custom-template-wrapper .template-part-hero h2,
+.magneti-custom-template-wrapper .template-part-hero h3,
+.magneti-custom-template-wrapper .template-part-hero h4 {
+  color: #002d62;
+}
+
+.magneti-custom-template-wrapper .normal-hero-wrap p {
+  font-size: 1.3rem;
+}
+
+.magneti-custom-template-wrapper .custom-template-module.dark-mode p,
+.magneti-custom-template-wrapper .custom-template-module.dark-mode p a,
+.magneti-custom-template-wrapper .custom-template-module.dark-mode ul li,
+.magneti-custom-template-wrapper .custom-template-module.dark-mode ol li,
+.magneti-custom-template-wrapper .custom-template-module.dark-mode h1,
+.magneti-custom-template-wrapper .custom-template-module.dark-mode h2,
+.magneti-custom-template-wrapper .custom-template-module.dark-mode h3,
+.magneti-custom-template-wrapper .custom-template-module.dark-mode h4,
+.magneti-custom-template-wrapper .custom-template-module.dark-mode h5 {
+  color: #FFF !important;
+}
+
+.magneti-custom-template-wrapper .custom-template-module ul li {
+  margin-bottom: 1.5rem;
+}
+
+.magneti-custom-template-wrapper .custom-template-module img {
+  position: relative;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.magneti-custom-template-wrapper .custom-template-module.center-content {
+  text-align: center;
+}
+
+.magneti-custom-template-wrapper .split-hero-wrap {
+  position: relative;
+  text-align: left;
+}
+
+.magneti-custom-template-wrapper .split-hero-wrap .a-columner {
+  position: relative;
+}
+
+.magneti-custom-template-wrapper .split-hero-wrap .col-left {
+  margin-bottom: 40px;
+}
+
+.magneti-custom-template-wrapper .template-part-standard-content {
+  position: relative;
+}
+
+.magneti-custom-template-wrapper .template-part-standard-content .inner-wrap {
+  position: relative;
+}
+
+.magneti-custom-template-wrapper .template-part-standard-content .inner-wrap p:last-child {
+  margin-bottom: 0;
+}
+
+.magneti-custom-template-wrapper .template-part-standard-content.narrow-inner .inner-wrap {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.magneti-custom-template-wrapper .template-part-5050-content {
+  position: relative;
+}
+
+.magneti-custom-template-wrapper .template-part-5050-content .template-split-5050-wrapper {
+  position: relative;
+}
+
+.magneti-custom-template-wrapper .template-part-5050-content .template-split-5050-wrapper .a-columner {
+  position: relative;
+}
+
+.magneti-custom-template-wrapper .template-part-5050-content .template-split-5050-wrapper .a-columner p:last-child {
+  margin-bottom: 0;
+}
+
+.magneti-custom-template-wrapper .template-part-5050-content .template-split-5050-wrapper .column1 {
+  margin-bottom: 40px;
+}
+
+.magneti-custom-template-wrapper .template-part-3366-content {
+  position: relative;
+}
+
+.magneti-custom-template-wrapper .template-part-3366-content .template-split-3366-wrapper {
+  position: relative;
+}
+
+.magneti-custom-template-wrapper .template-part-3366-content .template-split-3366-wrapper .a-columner {
+  position: relative;
+}
+
+.magneti-custom-template-wrapper .template-part-3366-content .template-split-3366-wrapper .a-columner p:last-child {
+  margin-bottom: 0;
+}
+
+.magneti-custom-template-wrapper .template-part-3366-content .template-split-3366-wrapper .column1 {
+  margin-bottom: 40px;
+}
+
+.magneti-custom-template-wrapper .template-divider-module {
+  position: relative;
+}
+
+.magneti-custom-template-wrapper .template-divider-module .divider-line {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #002d62;
+}
+
+.magneti-custom-template-wrapper .template-part-column-content {
+  position: relative;
+}
+
+.magneti-custom-template-wrapper .template-part-column-content .template-column-wrapper {
+  position: relative;
+}
+
+.magneti-custom-template-wrapper .template-part-column-content .template-column-wrapper .a-columner {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.magneti-custom-template-wrapper .template-part-column-content .template-column-wrapper .a-columner:last-child {
+  margin-bottom: 0;
+}
+
+.magneti-custom-template-wrapper .template-part-column-content .template-column-wrapper .a-columner .intro-image-wrap {
+  position: relative;
+  display: block;
+  width: 110px;
+  margin: 0 auto 20px;
+}
+
+.magneti-custom-template-wrapper .template-part-column-content.column4 .template-column-wrapper .a-columner .intro-image-wrap {
+  width: 100px;
+}
+
+.magneti-custom-template-wrapper .template-part-column-content.column5 .template-column-wrapper .a-columner .intro-image-wrap {
+  width: 90px;
+}
+
+.magneti-custom-template-wrapper .template-part-column-content .template-column-wrapper .a-columner .intro-image-wrap img {
+  margin: 0 auto;
+}
+
+.magneti-custom-template-wrapper .form-wrapper {
+  position: relative;
+  display: block;
+  padding: 30px;
+  background: #012d62;
+  border-radius: 4px;
+}
+
+.magneti-custom-template-wrapper .form-wrapper form label {
+  color: #FFF;
+}
+
+.magneti-custom-template-wrapper .form-wrapper .hs-error-msgs li {
+  margin-bottom: 0.9rem !important;
+}
+
+.magneti-custom-template-wrapper .form-wrapper .hs-error-msgs .hs-error-msg {
+  margin-bottom: 0;
+}
+
+.magneti-custom-template-wrapper .form-wrapper p,
+.magneti-custom-template-wrapper .form-wrapper p a,
+.magneti-custom-template-wrapper .form-wrapper h1,
+.magneti-custom-template-wrapper .form-wrapper h2,
+.magneti-custom-template-wrapper .form-wrapper h3,
+.magneti-custom-template-wrapper .form-wrapper h4,
+.magneti-custom-template-wrapper .form-wrapper h5 {
+  color: #FFF;
+  text-align: center;
+}
+
+.magneti-custom-template-wrapper .form-wrapper .hs-input {
+  width: 100% !important;
+}
+
+.magneti-custom-template-wrapper .form-wrapper .hs_submit {
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+.magneti-custom-template-wrapper .form-wrapper input[type=submit] {
+  background: #efb312;
+  border-color: #efb312;
+  color: #002d62;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 600px) {
+  .magneti-custom-template-wrapper .template-part-column-content .template-column-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-column-gap: 40px;
+    grid-row-gap: 50px;
+  }
+
+  .magneti-custom-template-wrapper .template-part-column-content .template-column-wrapper .a-columner {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .magneti-custom-template-wrapper .padding-control {
+    padding: 80px 0;
+  }
+
+  .magneti-custom-template-wrapper .padding-control:last-child {
+    padding: 80px 0 100px;
+  }
+
+  .magneti-custom-template-wrapper .form-wrapper {
+    padding: 40px 40px;
+  }
+
+  .magneti-custom-template-wrapper .template-part-hero.short {
+    padding: 90px 0;
+  }
+
+  .magneti-custom-template-wrapper .template-part-hero.tall {
+    padding: 150px 0;
+  }
+
+  .magneti-custom-template-wrapper .split-hero-wrap .a-columner {
+    width: 50%;
+    float: left;
+    padding-left: 30px;
+  }
+
+  .magneti-custom-template-wrapper .split-hero-wrap .col-left {
+    width: 50%;
+    float: left;
+    padding-right: 30px;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+
+  .magneti-custom-template-wrapper .template-part-5050-content .template-split-5050-wrapper .a-columner {
+    width: 50%;
+    float: left;
+    padding-left: 30px;
+  }
+
+  .magneti-custom-template-wrapper .template-part-5050-content .template-split-5050-wrapper .column1 {
+    width: 50%;
+    float: left;
+    padding-left: 0;
+    padding-right: 30px;
+    margin-bottom: 0;
+  }
+
+  .magneti-custom-template-wrapper .template-part-3366-content .template-split-3366-wrapper .column1 {
+    width: 34%;
+    float: left;
+    padding-right: 30px;
+    margin-bottom: 0;
+  }
+
+  .magneti-custom-template-wrapper .template-part-3366-content .template-split-3366-wrapper .column2 {
+    width: 66%;
+    float: left;
+    padding-left: 30px;
+  }
+
+  .magneti-custom-template-wrapper .template-part-3366-content.flip .template-split-3366-wrapper .column1 {
+    width: 34%;
+    float: right;
+    padding-right: 0;
+    padding-left: 30px;
+    margin-bottom: 0;
+  }
+
+  .magneti-custom-template-wrapper .template-part-3366-content.flip .template-split-3366-wrapper .column2 {
+    width: 66%;
+    float: right;
+    padding-right: 30px;
+    padding-left: 0;
+  }
+
+  .magneti-custom-template-wrapper .template-part-column-content.column3 .template-column-wrapper {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-column-gap: 40px;
+    grid-row-gap: 50px;
+  }
+
+  .magneti-custom-template-wrapper .template-part-column-content.column5 .template-column-wrapper {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-column-gap: 40px;
+    grid-row-gap: 50px;
+  }
+
+  .magneti-custom-template-wrapper .template-part-column-content.column4 .template-column-wrapper {
+    grid-column-gap: 50px;
+    grid-row-gap: 60px;
+  }
+
+  .magneti-custom-template-wrapper .template-part-column-content .template-column-wrapper .a-column .intro-image-wrap {
+    width: 150px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .magneti-custom-template-wrapper .padding-control:last-child {
+    padding: 80px 0 110px;
+  }
+
+  .magneti-custom-template-wrapper .template-part-hero.tall {
+    padding: 200px 0;
+  }
+
+  .magneti-custom-template-wrapper .split-hero-wrap .a-columner {
+    padding-right: 40px;
+  }
+
+  .magneti-custom-template-wrapper .split-hero-wrap .col-left {
+    padding-right: 40px;
+    padding-left: 0;
+  }
+
+  .magneti-custom-template-wrapper .template-part-5050-content .template-split-5050-wrapper .a-columner {
+    padding-left: 40px;
+  }
+
+  .magneti-custom-template-wrapper .template-part-5050-content .template-split-5050-wrapper .column1 {
+    padding-left: 0;
+    padding-right: 40px;
+  }
+
+  .magneti-custom-template-wrapper .template-part-column-content.column3 .template-column-wrapper {
+    grid-column-gap: 50px;
+    grid-row-gap: 60px;
+  }
+
+  .magneti-custom-template-wrapper .template-part-column-content.column4 .template-column-wrapper {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .magneti-custom-template-wrapper .template-part-column-content.column5 .template-column-wrapper {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .magneti-custom-template-wrapper .template-part-column-content.column5 .template-column-wrapper {
+    grid-column-gap: 40px;
+    grid-row-gap: 60px;
+  }
+}

@@ -1,0 +1,30 @@
+/* import mixins */
+@import "_mixins.scss";
+
+/* import base template module styles */
+@import "_moduleParts-styles.scss";
+
+/* styles in base.less */
+@import "_base.scss";
+
+/*
+TABLET & SMALLER LAPTOPS
+*/
+@media (min-width: 840px) {
+	@import "_840up.scss";
+}
+
+/*
+DESKTOP
+*/
+@media (min-width: 960px) {
+	@import "_960up.scss";
+}
+
+@media (min-width: 1200px) {
+	@import "_1200up.scss";
+}
+
+@media (min-width: 1400px) {
+	@import "_1400up.scss";
+}

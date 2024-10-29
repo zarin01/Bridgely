@@ -1,0 +1,576 @@
+.up-curve-contain {
+  width: 110%;
+  left: -5%;
+}
+
+.split-content-wrap-large-text {
+  .part-left {
+    width: 420px;
+    padding-right: 55px;
+  }
+
+  .part-right {
+    width: calc(100% - 420px);
+  }
+
+  .text-pullout {
+    font-size: calc(56px + 94 * ((100vw - 320px) / 1200));
+  }
+}
+
+.home-section-2 {
+  padding: 100px 0;
+  .part-right {
+    margin: 20px 0 auto 0;
+  }
+    .split-content-wrap-large-text {
+      .part-left {
+        width: 620px;
+        padding-right: 55px;
+      }
+      .part-right {
+        width: calc(100% - 820px);
+      } 
+  }
+}
+
+.home-section-3 {
+  padding: 20px 0;
+  p, h2 {
+    color: $tan;
+  }
+}
+
+
+.fifty-fifty-fancy-split {
+  display: flex;
+
+  h2 {
+    color: $tan;
+    text-align: left;
+  }
+
+  .part {
+    flex: 0 0 50%;
+  }
+
+  .part-left {
+    margin-bottom: 0;
+    padding-right: 9%;
+
+    &:after {
+      bottom: auto;
+      top: 50%;
+      margin-top: -6px;
+      left: auto;
+      right: 0;
+      margin-right: -20px;
+    }
+  }
+
+  .part-right {
+    padding-left: 9%;
+  }
+
+  h2 {
+    font-size: 36px;
+    max-width: 380px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+}
+
+.home-section-4 {
+  padding: 140px 0;
+
+  .section-4-intro {
+    margin-bottom: 86px;
+  }
+}
+
+.three-col-layout {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-column-gap: 45px;
+    grid-row-gap: 45px;
+
+  .col {
+    margin-bottom: 0;
+    max-width: none;
+  }
+}
+
+.home-section-5 {
+  padding: 130px 0 160px;
+}
+
+.split-content-with-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  .col1 {
+    max-width: none;
+    padding-right: 50px;
+    width: 50%;
+  }
+
+  .col2 {
+    display: block;
+    width: 50%;
+    margin-bottom: 0;
+  }
+
+  p {
+    font-size: 24px;
+    line-height: 150%;
+  }
+}
+
+.home-section-6 {
+  padding-top: 100px;
+  padding-bottom: 140px;
+}
+
+.tan-split-section {
+  .col-left {
+    padding-right: 40px;
+    width: 50%;
+  }
+
+  .col-right {
+    padding-left: 40px;
+    width: 50%;
+  }
+
+  &.swap {
+    .col-left {
+      padding-left: 40px;
+    }
+
+    .col-right {
+      padding-right: 40px;
+    }
+  }
+}
+
+.reach-out-main-top {
+  padding-bottom: 95px;
+}
+
+.text-h1-special {
+  font-size: 100px;
+
+  &.special {
+    font-size: 68px;
+  }
+}
+
+.reach-out-main-middle {
+  .contact-form-wrapper {
+    padding: 70px 70px 130px;
+
+    &.edit {
+      padding-bottom: 80px;
+    }
+  }
+}
+
+.about-section-vision {
+  padding: 120px 0;
+
+  .copy-wrap-part {
+    &:before {
+      left: -12px;
+    }
+  }
+}
+
+.about-section-why {
+  padding: 120px 0;
+}
+
+.team-member-outer-wrap {
+  margin-top: 80px;
+  grid-column-gap: 90px;
+  grid-row-gap: 70px;
+}
+
+.pillar-contain-wrap {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.partners-intro-content {
+  padding-bottom: 95px;
+
+  .split-inner {
+    grid-column-gap: 60px;
+  }
+}
+
+.partners-who-we-work-with {
+  padding: 120px 0 140px;
+  p {
+    color: $white;
+  }
+
+  .dotted_bridge {
+    background: url('https://bridgely.org/wp-content/uploads/2024/03/Dotted-Line-Bridge.png');
+    background-size: cover;
+    background-position: center top;
+    padding: 20%;
+    margin: -40px -60px;
+  }
+  
+}
+
+.why-join-bridgely-section {
+  padding: 50px 0 80px;
+
+  .text-h1 {
+    margin-bottom: 60px;
+  }
+
+  .additional-info-columns {
+    grid-column-gap: 100px;
+
+    .inner-block {
+      &.ib1,
+      &.ib2 {
+        &:before {
+          right: -50px;
+        }
+      }
+    }
+  }
+}
+
+.how-to-become-section {
+  padding: 20px 0;
+  .how-to-become-diagram-wrap {
+    margin: 70px auto 0;
+  }
+}
+
+.manifesto-content-section-5 {
+  .col1 {
+    padding-right: 40px;
+  }
+
+  .col2 {
+    padding-left: 60px;
+  }
+}
+
+.testimony {
+  height: 750px;
+}
+
+.testimonies {
+    .split-content-with-image {
+    p:before {
+      display: block;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+}
+
+
+.church-leaders-intro-content {
+  h3 {
+    font-size: 40px;
+    margin-top: 20px;
+  }
+    .church-leaders-3-mid-middle {
+      margin-top: 40px;
+      h2 {
+        color: $orange;
+        text-align: center;
+        font-size: 40px;
+        font-weight: 500;
+      }
+    .part-left {
+      background-color: $tan;
+      padding: 20px 50px 20px 50px;
+      margin: 20px;
+      &:after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 70px;
+        height: 19px;
+        background: url(../images/icon-bridge2.png) no-repeat center center;
+        background-size: 70px 19px;
+        margin-right: -53px;
+        z-index: 10;
+      }
+
+      .text-point {
+        position: relative;
+        padding-left: 48px;
+    
+        &:before {
+          content: "";
+          position: absolute;
+          display: block;
+          width: 34px;
+          height: 32px;
+          left: 0;
+          top: 2px;
+        }
+    
+        &.yes {
+          &:before {
+            background: url('../images/Icon_Bridgely-Checkmark.png') no-repeat center center;
+            background-size: 34px 32px;
+          }
+        }
+    
+        &.no {
+          margin-bottom: 24px;
+    
+          &:before {
+            background: url('../images/Icon_Bridgely-No.png') no-repeat center center;
+            background-size: 34px 32px;
+          }
+        }
+      }
+
+
+    }
+    .part-right {
+      background-color: $tan;
+      padding: 20px 50px 20px 50px !important;
+      margin: 20px;
+      &:before {
+        content: "";
+        display: block;
+        width: 55px;
+        height: 48px;
+        background: url('../images/Bridgley-icon.png') no-repeat center center;
+        background-size: 55px 48px;
+        z-index: 10;
+        margin: 0 auto;
+      }
+      .orange {
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
+
+
+
+.church-leaders-global-missions {
+  .church-missions-3-mid-middle {
+    margin-top: 40px;
+
+    h2 {
+      color: $orange;
+      text-align: center;
+      font-size: 40px;
+      font-weight: 500;
+    }
+
+    .fifty-fifty-fancy-split {
+      margin-bottom: 50px;
+
+      .part-left {
+        img {
+          width: 450px;
+          height: auto;
+        }
+        &:after {
+          display: none;
+        }
+
+      }
+
+      .part-right {
+        background-color: $tan;
+        margin-left: -120px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        z-index: -1;
+
+        p {
+          top: 20%;
+          left: 20px;
+        }
+
+        &:before {
+          display: none;
+        }
+
+        .orange {
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+}
+
+.three-column-icon-section {
+  position: relative;
+  z-index: 4;
+
+
+  h2 {
+    font-size: 68px
+  }
+  h3 {
+    font-size: 50px;
+  }
+  .section-4-intro {
+    position: relative;
+    text-align: center;
+    max-width: 1056px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 70px;
+  }
+
+  .committed-to-text {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 14px;
+    text-align: center;
+    height: 77px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    &:after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 1166px;
+      height: 60px;
+      top: 12px;
+      left: 50%;
+      margin-left: -593px;
+      background: url('../images/dot-curve.png') no-repeat center center;
+      background-size: 1166px 77px;
+    }
+  }
+
+p {
+  margin-bottom: 5px;
+}
+.three-col-layout {
+  .icon-wrap {
+    img {
+      width: 70px;
+      margin: 0 auto;
+    }
+  }
+  .col1 {
+    border-right: solid 1px $orange;
+    padding: 0 20px;
+  }
+  .col2 {
+    border-right: solid 1px $orange;
+    padding: 0 20px;
+  }
+}
+}
+
+
+// defualt-page-template styles
+.default-section-3070 {
+  margin-top: 20px;
+  padding: 20px 0;
+  height: fit-content;
+  .part {
+    h3 {
+      padding: 20px 0 20px 0;
+    }
+  }
+  .part-70 {
+    position: relative;
+    padding-left: 40px;
+    text-align: left;
+    height: fit-content;
+    width: calc(100% - 420px);
+  }
+
+  .part-30 {
+    position: relative;
+    height: fit-content;
+    width: 420px;
+  }
+}
+
+.statmenu {
+  background-color: #FFF7E4;
+  width: 100%;
+  box-sizing: border-box; /* Ensures padding and borders are included in the width */
+  padding: 50px;
+  margin: 50px auto;
+  h2 {
+    text-align: center;
+    color: #141C29;
+  }
+}
+
+
+.statmenu-contain-wrap {
+  position: relative;
+  margin-bottom: 50px;
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+
+  .a-statmenu {
+    position: relative;
+    text-decoration: none;
+
+    .inside {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2;
+      height: fit-content;
+      padding: 4%;
+      align-items: baseline;
+      p {
+        text-align: left;
+      }
+      
+    }
+
+    .label {
+      position: relative;
+      padding-bottom: 10px;
+      width: 100%;
+      @include po-700;
+      font-size: 30px;
+      color: $orange;
+      text-decoration: none;
+    }
+
+    .icon-wrap {
+      position: absolute;
+      display: block;
+      width: 20px;
+      bottom: 26px;
+      float: left;
+      text-decoration: none;
+
+      img {
+        position: relative;
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

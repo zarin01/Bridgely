@@ -1,0 +1,360 @@
+{
+    "key": "group_65f355327d8ae",
+    "title": "First 3 Column Icon Section",
+    "fields": [
+        {
+            "key": "field_65f4432426d8b",
+            "label": "Top Arc",
+            "name": "3_col_column_top_arc",
+            "aria-label": "",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Yes": "Yes",
+                "No": "No"
+            },
+            "default_value": "No",
+            "return_format": "value",
+            "allow_null": 0,
+            "other_choice": 0,
+            "layout": "vertical",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_65f44221619c6",
+            "label": "Backgound Color",
+            "name": "3_col_column_backgound_color",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "#FFF": "White",
+                "#FFF7DE": "Tan",
+                "#F5EFE7": "Tan 2"
+            },
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_65f3553281233",
+            "label": "Intro Text",
+            "name": "3_col_intro_text",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_65f99050d89cb",
+            "label": "Sub Title",
+            "name": "3_col_sub_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_65f3553281238",
+            "label": "Support Line",
+            "name": "3_col_support_line",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_65f355bc7044a",
+            "label": "Icon",
+            "name": "3_col_select_icon",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "\/library\/images\/Icon_Bridgely-Safety.png": "Safety",
+                "\/library\/images\/Icon_Bridgely-Search.png": "Search",
+                "\/library\/images\/Icon_Bridgely-Collaboration.png": "Collaboration",
+                "\/library\/images\/Icon_Bridgely-chat.png": "Chat",
+                "\/library\/images\/thin-handshake.png": "Thin Handshake",
+                "\/library\/images\/group.png": "Thin People",
+                "\/library\/images\/thin-lightbulb.png": "Thin Light Bulb",
+                "\/library\/images\/thin-checkbox.png": "Thin Checkmark",
+                "\/library\/images\/thin-handraise.png": "Thin Handraise",
+                "\/library\/images\/thin-connecting.png": "Thin Connection",
+                "\/library\/images\/thin-gears.png": "Thin Gears",
+                "\/library\/images\/thin-target.png": "Thin Target",
+                "\/library\/images\/thin-world.png": "Thin World",
+                "\/library\/images\/thin-pencils.png": "Thin Pencils"
+            },
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_65f3553281240",
+            "label": "Column 1 Copy",
+            "name": "3_col_column_1_copy",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_65f35bf6d01a8",
+            "label": "2nd Column Icon",
+            "name": "3_col_select_icon_2",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "\/library\/images\/Icon_Bridgely-Safety.png": "Safety",
+                "\/library\/images\/Icon_Bridgely-Search.png": "Search",
+                "\/library\/images\/Icon_Bridgely-Collaboration.png": "Collaboration",
+                "\/library\/images\/Icon_Bridgely-chat.png": "Chat",
+                "\/library\/images\/thin-handshake.png": "Thin Handshake",
+                "\/library\/images\/group.png": "People",
+                "\/library\/images\/thin-lightbulb.png": "Thin Light Bulb",
+                "\/library\/images\/thin-checkbox.png": "Thin Checkmark",
+                "\/library\/images\/thin-handraise.png": "Thin Handraise"
+            },
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_65f3553281247",
+            "label": "Column 2 Copy",
+            "name": "3_col_column_2_copy",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_65f35c260206a",
+            "label": "3rd Column Icon",
+            "name": "3_col_select_icon_3",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "\/library\/images\/Icon_Bridgely-Safety.png": "Safety",
+                "\/library\/images\/Icon_Bridgely-Search.png": "Search",
+                "\/library\/images\/Icon_Bridgely-Collaboration.png": "Collaboration",
+                "\/library\/images\/Icon_Bridgely-chat.png": "Chat",
+                "\/library\/images\/thin-handshake.png": "Thin Handshake",
+                "\/library\/images\/group.png": "People",
+                "\/library\/images\/thin-lightbulb.png": "Thin Light Bulb",
+                "\/library\/images\/thin-checkbox.png": "Thin Checkmark",
+                "\/library\/images\/thin-handraise.png": "Thin Handraise"
+            },
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_65f355328124e",
+            "label": "Column 3 Copy",
+            "name": "3_col_column_3_copy",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_65f4407ec3303",
+            "label": "Bottom Copy",
+            "name": "3_col_column_bottom_copy",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_65f4437326d8c",
+            "label": "Bottom Arc",
+            "name": "3_col_column_bottom_arc",
+            "aria-label": "",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Yes": "Yes",
+                "No": "No"
+            },
+            "default_value": "No",
+            "return_format": "value",
+            "allow_null": 0,
+            "other_choice": 0,
+            "layout": "vertical",
+            "save_other_choice": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "template-church.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "template-organizations.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "template-frontline.php"
+            }
+        ]
+    ],
+    "menu_order": 30,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1710854409
+}

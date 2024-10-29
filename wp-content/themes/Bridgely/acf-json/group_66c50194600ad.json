@@ -1,0 +1,462 @@
+{
+    "key": "group_66c50194600ad",
+    "title": "Default Template Fields",
+    "fields": [
+        {
+            "key": "field_66c50194aa897",
+            "label": "Template Modules",
+            "name": "template_modules",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "Add a New Template Section",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "row",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add Template Section",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_66c501dfaa898",
+                    "label": "Module Type",
+                    "name": "module_type",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "moduletypeFullWidthText": "Full Width Text",
+                        "moduletypeTwoColText": "Two Column Text",
+                        "moduletypTwoCol3070": "Two Column 30\/70 Text",
+                        "moduletypePovertyStat": "Poverty Stat",
+                        "moduletypePovertyMenu": "Poverty Menu"
+                    },
+                    "default_value": false,
+                    "return_format": "value",
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "placeholder": "",
+                    "parent_repeater": "field_66c50194aa897"
+                },
+                {
+                    "key": "field_66c506404ae67",
+                    "label": "Section Title",
+                    "name": "section_title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_66c501dfaa898",
+                                "operator": "==",
+                                "value": "moduletypeFullWidthText"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_66c501dfaa898",
+                                "operator": "==",
+                                "value": "moduletypeTwoColText"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_66c501dfaa898",
+                                "operator": "==",
+                                "value": "moduletypTwoCol3070"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_66c501dfaa898",
+                                "operator": "==",
+                                "value": "moduletypePovertyMenu"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_66c50194aa897"
+                },
+                {
+                    "key": "field_66c506dccaaa3",
+                    "label": "Content Blocks",
+                    "name": "content_blocks",
+                    "aria-label": "",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_66c501dfaa898",
+                                "operator": "==",
+                                "value": "moduletypeTwoColText"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_66c501dfaa898",
+                                "operator": "==",
+                                "value": "moduletypTwoCol3070"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "row",
+                    "min": 0,
+                    "max": 0,
+                    "collapsed": "",
+                    "button_label": "Add Row",
+                    "rows_per_page": 20,
+                    "sub_fields": [
+                        {
+                            "key": "field_66c507d8caaa4",
+                            "label": "Block Title",
+                            "name": "block_title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "parent_repeater": "field_66c506dccaaa3"
+                        },
+                        {
+                            "key": "field_66c507e4caaa5",
+                            "label": "Block Content",
+                            "name": "block_content",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0,
+                            "parent_repeater": "field_66c506dccaaa3"
+                        },
+                        {
+                            "key": "field_66c508ca88bf1",
+                            "label": "Col width 30 or 70?",
+                            "name": "right_or_left",
+                            "aria-label": "",
+                            "type": "button_group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_66c501dfaa898",
+                                        "operator": "==",
+                                        "value": "moduletypTwoCol3070"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "30": "30",
+                                "70": "70"
+                            },
+                            "default_value": "",
+                            "return_format": "value",
+                            "allow_null": 0,
+                            "layout": "horizontal",
+                            "parent_repeater": "field_66c506dccaaa3"
+                        }
+                    ],
+                    "parent_repeater": "field_66c50194aa897"
+                },
+                {
+                    "key": "field_66c5088c88bf0",
+                    "label": "Section Image",
+                    "name": "section_image",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_66c501dfaa898",
+                                "operator": "==",
+                                "value": "moduletypeFullWidthText"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_66c501dfaa898",
+                                "operator": "==",
+                                "value": "moduletypePovertyStat"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "preview_size": "medium",
+                    "parent_repeater": "field_66c50194aa897"
+                },
+                {
+                    "key": "field_66c6048b7e345",
+                    "label": "Section Content",
+                    "name": "section_content",
+                    "aria-label": "",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_66c501dfaa898",
+                                "operator": "==",
+                                "value": "moduletypeFullWidthText"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_66c501dfaa898",
+                                "operator": "==",
+                                "value": "moduletypePovertyMenu"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0,
+                    "parent_repeater": "field_66c50194aa897"
+                },
+                {
+                    "key": "field_66c60cc46043e",
+                    "label": "Poverty Stats",
+                    "name": "poverty_stats",
+                    "aria-label": "",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_66c501dfaa898",
+                                "operator": "==",
+                                "value": "moduletypePovertyStat"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "row",
+                    "min": 0,
+                    "max": 0,
+                    "collapsed": "",
+                    "button_label": "Add Row",
+                    "rows_per_page": 20,
+                    "sub_fields": [
+                        {
+                            "key": "field_66c60d726043f",
+                            "label": "Poverty Stat",
+                            "name": "poverty_stat",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "stat",
+                                "id": "stat"
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0,
+                            "parent_repeater": "field_66c60cc46043e"
+                        }
+                    ],
+                    "parent_repeater": "field_66c50194aa897"
+                },
+                {
+                    "key": "field_66c6c5174fc99",
+                    "label": "Poverty Stats Menu",
+                    "name": "poverty_stats_menu",
+                    "aria-label": "",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_66c501dfaa898",
+                                "operator": "==",
+                                "value": "moduletypePovertyMenu"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "table",
+                    "min": 0,
+                    "max": 0,
+                    "collapsed": "",
+                    "button_label": "Add Row",
+                    "rows_per_page": 20,
+                    "sub_fields": [
+                        {
+                            "key": "field_66c6c5314fc9a",
+                            "label": "Icons",
+                            "name": "icons",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "\/wp-content\/themes\/Bridgely\/library\/images\/disability.png": "Disability",
+                                "\/wp-content\/themes\/Bridgely\/library\/images\/education.png": "Eductaion",
+                                "\/wp-content\/themes\/Bridgely\/library\/images\/food.png": "Food",
+                                "\/wp-content\/themes\/Bridgely\/library\/images\/gender.png": "Gender",
+                                "\/wp-content\/themes\/Bridgely\/library\/images\/health.png": "Health",
+                                "\/wp-content\/themes\/Bridgely\/library\/images\/marker.png": "Marker",
+                                "\/wp-content\/themes\/Bridgely\/library\/images\/online.png": "Online",
+                                "\/wp-content\/themes\/Bridgely\/library\/images\/rights.png": "Rights",
+                                "\/wp-content\/themes\/Bridgely\/library\/images\/tree.png": "Tree",
+                                "\/wp-content\/themes\/Bridgely\/library\/images\/violence.png": "Violence",
+                                "\/wp-content\/themes\/Bridgely\/library\/images\/water.png": "Water",
+                                "\/wp-content\/themes\/Bridgely\/library\/images\/work.png": "Work"
+                            },
+                            "default_value": false,
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "parent_repeater": "field_66c6c5174fc99"
+                        },
+                        {
+                            "key": "field_66c6c5dd4fc9b",
+                            "label": "Menu Item",
+                            "name": "menu_item",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "parent_repeater": "field_66c6c5174fc99"
+                        }
+                    ],
+                    "parent_repeater": "field_66c50194aa897"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "default"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1724424711
+}
