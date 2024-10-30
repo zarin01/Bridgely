@@ -9,24 +9,26 @@
 	* 
 	* *************************/ ?>
 
-    <div class="home-section-1 page-animate-block bg-red-800" id="home-intro-hero"
+    <div 
+        class="relative overflow-hidden bg-[#ae926a] home-section-1 page-animate-block" 
+        id="home-intro-hero"
         <?php if(get_field('home_1_background_image')) { echo ' style="background:url('.get_field('home_1_background_image').') no-repeat center top; background-size:cover;padding-bottom: 250px;"'; } ?>>
-        <div class="center">
 
-            <div class="main-copy-wrap">
-                <div class="inner">
+        <div class="relative textWhite max-w-[1210px] px-5 mx-auto mt-0.5 text-shadow"> <!-- Centered parent container -->
+            <div class="relative textWhite py-[180px] pb-[120px]">
+                <div class="relative max-w-[610px] textshadow text-left" style="margin-left: 0;"> <!-- Aligns text left within parent -->
                     <?php if( get_field('home_1_main_title') ) { ?>
-                    <h1 class="tan animateRise"><?php echo get_field('home_1_main_title'); ?></h1>
+                        <h1 class="textWhite animateRise text-shadow-lg"><?php echo get_field('home_1_main_title'); ?></h1>
                     <?php } ?>
                     <?php if( get_field('home_1_support_title') ) { ?>
-                    <p class="tan animateRise"><?php echo get_field('home_1_support_title'); ?></p>
+                        <p class="textWhite text-shadow-sm max-w-[612px] text-lg font-medium animateRise">
+                            <?php echo get_field('home_1_support_title'); ?>
+                        </p>
                     <?php } ?>
                 </div>
             </div>
-
         </div>
-
-
+                    
         <div class="up-curve-contain">
             <svg viewBox="0 0 1658 59" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1680 53.115V58.1982H0V53.1003C550.124 -17.7001 1129.88 -17.7001 1680 53.1003V53.115Z"
@@ -35,186 +37,188 @@
         </div>
     </div>
 
+
+
+
+
     <?php /************************
-	*
-	*         Section 2
-	* 
-	* *************************/ ?>
-
-    <div class="a-home-section home-section-2 page-animate-block" id="changing">
+    *
+    *         Section 2
+    * 
+    * *************************/ ?>
+    
+    <div class="relative mt-[150px] h-[700px] a-home-section home-section-2 page-animate-block" id="changing">
         <div class="center">
-
-            <div class="split-content-wrap-large-text">
-
-                <div class="part part-left">
+                        
+            <div class="relative split-content-wrap-large-text">
+                        
+                <div class="absolute part part-left mb-10">
                     <?php if( get_field('home_2_paragraph_part') ) { ?>
-                    <p class="animateRise"><?php echo get_field('home_2_paragraph_part'); ?></p>
+                        <p class="animateRise"><?php echo get_field('home_2_paragraph_part'); ?></p>
                     <?php } ?>
                 </div>
-
-                <div class="part part-right">
+                    
+                <div class="absolute mt-[-170px] part part-right">
                     <?php if( get_field('home_2_title_line') ) { ?>
-                    <h2 class="animateRise"><?php echo get_field('home_2_title_line'); ?></h2>
+                        <h2 class="animateRise"><?php echo get_field('home_2_title_line'); ?></h2>
                     <?php } ?>
                     <?php if( get_field('home_2_button_text') ) { ?>
-                    <p><a href="<?php echo get_field('home_2_button_link'); ?>"
-                            class="btn animateRise"><?php echo get_field('home_2_button_text'); ?></a></p>
+                        <p><a href="<?php echo get_field('home_2_button_link'); ?>"
+                                class="btn animateRise"><?php echo get_field('home_2_button_text'); ?></a></p>
                     <?php } ?>
                 </div>
-
+                    
             </div>
-
+                    
         </div>
     </div>
+
 
 
     <?php /************************
-	*
-	*         Section 3
-	* 
-	* *************************/ ?>
-
-    <div class="a-home-section home-section-3 page-animate-block">
-
-        <div class="home-section-3-middle">
+    *
+    *         Section 3
+    * 
+    * *************************/ ?>
+    
+    <div class="bg-[#141C29] a-home-section home-section-3 page-animate-block">
+                        
+        <div class="home-section-3-middle py-0 pb-[50px]">
             <div class="center">
-                <div class="home-video">
-
+                <div class="home-video w-[80%] mx-auto">
+                        
                     <?php if (get_field('home_section_3_video_url')) { ?>
-
-                        <h3 class="tan-title"><?php echo get_field('home_section_3_video_title_2'); ?></h3>
-
-                    <div style="padding:56.25% 0 0 0;position:relative;"><iframe
-                            src="<?php echo get_field('home_section_3_video_url'); ?>"
-                            style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"
-                            allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
-                    <script src="https://player.vimeo.com/api/player.js"></script>
-
+                    
+                        <h3 class="tan-title text-[#FFF7DE] text-center text-[35px] font-bold py-[25px]">
+                            <?php echo get_field('home_section_3_video_title_2'); ?>
+                        </h3>
+                    
+                        <div class="relative" style="padding:56.25% 0 0 0;">
+                            <iframe src="<?php echo get_field('home_section_3_video_url'); ?>" 
+                                class="absolute top-0 left-0 w-full h-full"
+                                frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
+                            </iframe>
+                        </div>
+                        <script src="https://player.vimeo.com/api/player.js"></script>
+                    
                     <?php } ?>
-
-                </div>
-            </div>
-        </div>  
-        
-        <?php /************************
-        *
-        *         Choose Your Start
-        * 
-        * *************************/ ?>
-
-        <div class="partners-who-we-work-with partners-animate-section-2">
-            <div class="center">
-
-                <?php if( get_field('partners_page_2_title') ) { ?>
-                <h2 class="text-h1 white animateRise"><?php echo get_field('partners_page_2_title'); ?></h2>
-                <?php } ?>
-
-                <div class="icon-wrap-section">
-                    <div class="inner-block animateRise">
-                        <?php if( get_field('partners_page_2_column_1_title') ) { ?>
-                        <div class="text-wrap"><?php echo get_field('partners_page_2_column_1_title'); ?></div>
-                        <?php } ?>
-                    </div>
-
-                    <div class="inner-block animateRise dotted_bridge">
-                        <?php if( get_field('partners_page_2_column_2_title') ) { ?>
-                        <div class="text-wrap"><?php echo get_field('partners_page_2_column_2_title'); ?></div>
-                        <?php } ?>
-                    </div>
-
-                    <div class="inner-block animateRise">
-                        <?php if( get_field('partners_page_2_column_3_title') ) { ?>
-                        <div class="text-wrap"><?php echo get_field('partners_page_2_column_3_title'); ?></div>
-                        <?php } ?>
-                    </div>
-                </div>
-
-                <div>
-                    <?php if( get_field('partners_page_footer_section_text') ) { ?>
-                    <div class="text-wrap">
-                        <p class="white footer_section_text"><?php echo get_field('partners_page_footer_section_text'); ?></p>
-                    </div>
-                    <?php } ?>
-                </div>
-            </div>
-            <div style="position: absolute; display: block; overflow: hidden;width: 100%;bottom: -4px;left: 0;">
-            <svg viewBox="0 0 1658 59" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1680 53.115V58.1982H0V53.1003C550.124 -17.7001 1129.88 -17.7001 1680 53.1003V53.115Z"
-                    fill="#FFF7DE" />
-            </svg>
-        </div>
-        </div>
-
-        <div class="a-home-section home-section-3-mid-middle">
-            <div class="center">
-                <div class="fifty-fifty-fancy-split">
-
-                    <div class="part part-left">
-                        <?php if( get_field('home_3_left_title') ) { ?>
-                        <h2 class="darkblue animateRise"><?php echo get_field('home_3_left_title'); ?></h2>
-                        <?php } ?>
-                        <?php if( get_field('home_3_left_copy') ) { ?>
-                        <p class="darkblue animateRise"><?php echo get_field('home_3_left_copy'); ?></p>
-                        <?php } ?>
-                    </div>
-
-                    <div class="part part-right">
-                        <?php if( get_field('home_3_right_title') ) { ?>
-                        <h2 class="darkblue animateRise"><?php echo get_field('home_3_right_title'); ?></h2>
-                        <?php } ?>
-                        <?php if( get_field('home_3_right_copy') ) { ?>
-                        <p class="darkblue animateRise"><?php echo get_field('home_3_right_copy'); ?></p>
-                        <?php } ?>
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
-
-
-        <div class="a-home-section home-section-3-middle">
-            <div class="center">
-                <div class="home-video">
-
-                    <?php if (get_field('home_section_3_video_url_2')) { ?>
-
-                    <h3 class="tan-title"><?php echo get_field('home_section_3_video_title'); ?></h3>
-
-                    <div style="padding:56.25% 0 0 0;position:relative;"><iframe
-                            src="<?php echo get_field('home_section_3_video_url_2'); ?>"
-                            style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"
-                            allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
-
-                    <?php } ?>
-
+                    
                 </div>
             </div>
         </div>
-
-
     </div>
+                    
+    <?php /************************
+    *
+    *         Choose Your Start
+    * 
+    * *************************/ ?>
+    
+    <div class="partners-who-we-work-with partners-animate-section-2 relative py-[100px] text-center bg-cover bg-no-repeat" style="background-position: center top;">
+        <div class="center text-white mx-auto">
 
-
-
-    <div class="a-home-section home-section-3-bottom">
-        <div class="center">
-
-            <?php if( get_field('bottom_title') ) { ?>
-              <h2><?php echo get_field('bottom_title'); ?></h2>
+            <?php if( get_field('partners_page_2_title') ) { ?>
+            <h2 class="text-h1 text-white animateRise mb-[23px] pb-[40px]"><?php echo get_field('partners_page_2_title'); ?></h2>
             <?php } ?>
 
-            <div class="fifty-fifty-fancy-split">
+            <div class="icon-wrap-section grid grid-cols-1 gap-[45px] mt-[45px] mx-auto">
+                <div class="inner-block animateRise">
+                    <?php if( get_field('partners_page_2_column_1_title') ) { ?>
+                    <div class="text-wrap text-white text-[19px] leading-[24px] font-medium font-sans"><?php echo get_field('partners_page_2_column_1_title'); ?></div>
+                    <?php } ?>
+                </div>
+
+                <div class="inner-block animateRise dotted_bridge">
+                    <?php if( get_field('partners_page_2_column_2_title') ) { ?>
+                    <div class="text-wrap text-white text-[19px] leading-[24px] font-medium font-sans"><?php echo get_field('partners_page_2_column_2_title'); ?></div>
+                    <?php } ?>
+                </div>
+
+                <div class="inner-block animateRise">
+                    <?php if( get_field('partners_page_2_column_3_title') ) { ?>
+                    <div class="text-wrap text-white text-[19px] leading-[24px] font-medium font-sans"><?php echo get_field('partners_page_2_column_3_title'); ?></div>
+                    <?php } ?>
+                </div>
+            </div>
+
+            <div class="text-wrap mx-auto max-w-[840px]">
+                <?php if( get_field('partners_page_footer_section_text') ) { ?>
+                <p class="text-white footer_section_text"><?php echo get_field('partners_page_footer_section_text'); ?></p>
+                <?php } ?>
+            </div>
+        </div>
+
+        <div class="absolute w-full overflow-hidden bottom-[-4px] left-0">
+            <svg viewBox="0 0 1658 59" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1680 53.115V58.1982H0V53.1003C550.124 -17.7001 1129.88 -17.7001 1680 53.1003V53.115Z" fill="#FFF7DE" />
+            </svg>
+        </div>
+    </div>
+
+                
+    <div class="a-home-section home-section-3-mid-middle bg-[#FFF7DE] py-10">
+        <div class="center mx-auto">
+            <div class="fifty-fifty-fancy-split flex flex-col sm:flex-row gap-8">
+                
+                <div class="part part-left">
+                    <?php if( get_field('home_3_left_title') ) { ?>
+                    <h2 class="text-[#2A426B] animateRise"><?php echo get_field('home_3_left_title'); ?></h2>
+                    <?php } ?>
+                    <?php if( get_field('home_3_left_copy') ) { ?>
+                    <p class="text-[#2A426B] animateRise"><?php echo get_field('home_3_left_copy'); ?></p>
+                    <?php } ?>
+                </div>
+                    
+                <div class="part part-right">
+                    <?php if( get_field('home_3_right_title') ) { ?>
+                    <h2 class="text-[#2A426B] animateRise"><?php echo get_field('home_3_right_title'); ?></h2>
+                    <?php } ?>
+                    <?php if( get_field('home_3_right_copy') ) { ?>
+                    <p class="text-[#2A426B] animateRise"><?php echo get_field('home_3_right_copy'); ?></p>
+                    <?php } ?>
+                </div>
+                    
+            </div>
+        </div>
+    </div>
+                    
+    <div class="a-home-section home-section-3-middle bg-[#141C29] py-12">
+        <div class="center mx-auto">
+            <div class="home-video w-[80%] mx-auto">
+                    
+                <?php if (get_field('home_section_3_video_url_2')) { ?>
+                
+                <h3 class="tan-title text-[#FFF7DE] text-center text-[35px] font-bold py-[25px]"><?php echo get_field('home_section_3_video_title'); ?></h3>
+                
+                <div class="relative" style="padding:56.25% 0 0 0;">
+                    <iframe src="<?php echo get_field('home_section_3_video_url_2'); ?>" 
+                        class="absolute top-0 left-0 w-full h-full"
+                        frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
+                    </iframe>
+                </div>
+                
+                <?php } ?>
+                
+            </div>
+        </div>
+    </div>
+                
+    <div class="a-home-section home-section-3-bottom bg-[#FFF7DE] py-12">
+        <div class="center mx-auto">
+                
+            <?php if( get_field('bottom_title') ) { ?>
+              <h2 class="text-center"><?php echo get_field('bottom_title'); ?></h2>
+            <?php } ?>
+            
+            <div class="fifty-fifty-fancy-split mx-auto max-w-[840px]">
                 <?php if( get_field('bottom_copy') ) { ?>
                 <?php echo get_field('bottom_copy'); ?>
                 <?php } ?>
             </div>
-
-
-
-
+                
         </div>
     </div>
+                
 
 
 <?php /************************

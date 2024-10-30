@@ -23,6 +23,14 @@ register_nav_menus(array(
 //	post thumbnails
 add_theme_support( 'post-thumbnails' );
 
+
+function enqueue_tailwind(){
+	wp_enqueue_style('tailwind-css', get_template_directory_uri() . '/src/output.css');
+}
+
+add_action('wp_enqueue_scripts', 'enqueue_tailwind');
+
+
 /**
  *	Add Scripts
  *	Utilizes wp_enqueue_scripts to add
