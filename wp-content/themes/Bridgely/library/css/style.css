@@ -52,7 +52,7 @@ body.page-template-template-modulebased_custom #main-content {
   padding-bottom: 0;
 }
 
-.magneti-custom-template-wrapper [class*=column] + [class*=column]:last-child {
+.magneti-custom-template-wrapper [class*="column"] + [class*="column"]:last-child {
   float: none;
 }
 
@@ -470,54 +470,15 @@ body.page-template-template-modulebased_custom #main-content {
 /*****************
   RESET
 *****************/
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
+/***
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after, q:before, q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-html, body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  min-height: 100%;
-}
-
+html, body { margin:0; padding:0; width:100%; height:100%; min-height:100%; }**/
 /*****************
   STYLES
 *****************/
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 20px;
@@ -557,7 +518,7 @@ img.alignright {
 p {
   position: relative;
   margin-bottom: 35px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 20px;
@@ -628,7 +589,7 @@ blockquote:before {
 #content ol li,
 .fancybox-content ul li,
 .fancybox-content ol li {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 300;
   margin-bottom: 8px;
@@ -673,99 +634,6 @@ example
 320 is the min size to show this
 680 is the difference of the high end size where we want to show the large font, and the min size (1000-320=680)
 */
-h1, h2, h3, h4, h5,
-.text-xl, .text-h1,
-.text-l, .text-h2,
-.text-m, .text-h3,
-.text-s, .text-h4,
-.text-xxl {
-  position: relative;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  color: #141C29;
-}
-h1 a, h2 a, h3 a, h4 a, h5 a,
-.text-xl a, .text-h1 a,
-.text-l a, .text-h2 a,
-.text-m a, .text-h3 a,
-.text-s a, .text-h4 a,
-.text-xxl a {
-  color: #141C29;
-}
-h1.white, h2.white, h3.white, h4.white, h5.white,
-.text-xl.white, .text-h1.white,
-.text-l.white, .text-h2.white,
-.text-m.white, .text-h3.white,
-.text-s.white, .text-h4.white,
-.text-xxl.white {
-  color: #FFF;
-}
-h1.white a, h2.white a, h3.white a, h4.white a, h5.white a,
-.text-xl.white a, .text-h1.white a,
-.text-l.white a, .text-h2.white a,
-.text-m.white a, .text-h3.white a,
-.text-s.white a, .text-h4.white a,
-.text-xxl.white a {
-  color: #FFF;
-}
-h1.blue, h2.blue, h3.blue, h4.blue, h5.blue,
-.text-xl.blue, .text-h1.blue,
-.text-l.blue, .text-h2.blue,
-.text-m.blue, .text-h3.blue,
-.text-s.blue, .text-h4.blue,
-.text-xxl.blue {
-  color: #2A426B;
-}
-h1.blue a, h2.blue a, h3.blue a, h4.blue a, h5.blue a,
-.text-xl.blue a, .text-h1.blue a,
-.text-l.blue a, .text-h2.blue a,
-.text-m.blue a, .text-h3.blue a,
-.text-s.blue a, .text-h4.blue a,
-.text-xxl.blue a {
-  color: #2A426B;
-}
-h1.darkblue, h2.darkblue, h3.darkblue, h4.darkblue, h5.darkblue,
-.text-xl.darkblue, .text-h1.darkblue,
-.text-l.darkblue, .text-h2.darkblue,
-.text-m.darkblue, .text-h3.darkblue,
-.text-s.darkblue, .text-h4.darkblue,
-.text-xxl.darkblue {
-  color: #141C29;
-}
-h1.darkblue a, h2.darkblue a, h3.darkblue a, h4.darkblue a, h5.darkblue a,
-.text-xl.darkblue a, .text-h1.darkblue a,
-.text-l.darkblue a, .text-h2.darkblue a,
-.text-m.darkblue a, .text-h3.darkblue a,
-.text-s.darkblue a, .text-h4.darkblue a,
-.text-xxl.darkblue a {
-  color: #141C29;
-}
-h1.orange, h2.orange, h3.orange, h4.orange, h5.orange,
-.text-xl.orange, .text-h1.orange,
-.text-l.orange, .text-h2.orange,
-.text-m.orange, .text-h3.orange,
-.text-s.orange, .text-h4.orange,
-.text-xxl.orange {
-  color: #D1A129;
-}
-h1.orange a, h2.orange a, h3.orange a, h4.orange a, h5.orange a,
-.text-xl.orange a, .text-h1.orange a,
-.text-l.orange a, .text-h2.orange a,
-.text-m.orange a, .text-h3.orange a,
-.text-s.orange a, .text-h4.orange a,
-.text-xxl.orange a {
-  color: #D1A129;
-}
-h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child,
-.text-xl:last-child, .text-h1:last-child,
-.text-l:last-child, .text-h2:last-child,
-.text-m:last-child, .text-h3:last-child,
-.text-s:last-child, .text-h4:last-child,
-.text-xxl:last-child {
-  margin-bottom: 0;
-}
-
 h2, h3,
 .text-l, .text-h2,
 .text-m, .text-h3 {
@@ -799,7 +667,7 @@ h2 {
 }
 
 h3 {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   margin-bottom: 23px;
@@ -835,7 +703,7 @@ h4, h5 {
 
 .text-m,
 .text-h3 {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   margin-bottom: 23px;
@@ -865,7 +733,7 @@ h4, h5 {
   margin: 0 10px 0 0;
   text-align: center;
   padding: 13px 17px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 25px;
@@ -889,7 +757,7 @@ h4, h5 {
 .page-template-template-donate .button-container .button {
   display: flex;
   padding: 13px 17px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -909,7 +777,7 @@ h4, h5 {
   color: #2A426B;
 }
 .page-template-template-donate .button-container .button.active::before {
-  content: "▼";
+  content: "\25BC";
   /* Unicode for down-arrow ▼ */
   position: absolute;
   left: 50%;
@@ -929,7 +797,7 @@ h4, h5 {
   position: relative;
   display: inline-block;
   padding: 13px 17px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -1029,11 +897,11 @@ h4, h5 {
   height: 2px;
   background: #FFF;
   left: 9px;
-  -webkit-transition: all 0.15s ease-in-out;
-  -moz-transition: all 0.15s ease-in-out;
-  -ms-transition: all 0.15s ease-in-out;
-  -o-transition: all 0.15s ease-in-out;
-  transition: all 0.15s ease-in-out;
+  -webkit-transition: all .15s ease-in-out;
+  -moz-transition: all .15s ease-in-out;
+  -ms-transition: all .15s ease-in-out;
+  -o-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
 }
 #mobile-nav-trigger .line1 {
   top: 14px;
@@ -1084,7 +952,7 @@ h4, h5 {
   position: relative;
   display: block;
   padding: 11px 0;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -1141,7 +1009,7 @@ h4, h5 {
 }
 #footer .copy-row p {
   margin-bottom: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -1176,7 +1044,7 @@ h4, h5 {
   position: relative;
   display: block;
   padding: 13px 5px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -1275,7 +1143,7 @@ h4, h5 {
   display: inline-block;
   vertical-align: top;
   margin-bottom: 18px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
   text-transform: uppercase;
@@ -1344,7 +1212,7 @@ h4, h5 {
 .split-content-wrap-large-text .text-pullout {
   position: relative;
   display: block;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: calc(56px + 124 * ((100vw - 320px) / 1200));
@@ -1540,7 +1408,7 @@ h4, h5 {
   position: relative;
   display: block;
   margin-bottom: 32px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: calc(43px + 124 * ((100vw - 320px) / 1200));
@@ -1596,7 +1464,7 @@ h4, h5 {
 .section-7-intro-line {
   position: relative;
   margin-bottom: 40px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   text-align: center;
@@ -1677,7 +1545,7 @@ h4, h5 {
   text-align: center;
   display: block;
   margin-bottom: 32px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: calc(43px + 124 * ((100vw - 320px) / 1200));
@@ -1690,7 +1558,7 @@ h4, h5 {
   text-align: center;
   max-width: 618px;
   margin: 0 auto 60px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 21px;
@@ -1821,12 +1689,13 @@ h4, h5 {
   text-align: center;
   display: block;
   margin-bottom: 20px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: calc(43px + 57 * ((100vw - 320px) / 960));
   line-height: 106%;
 }
+
 .reach-out-main-middle {
   position: relative;
   padding-bottom: 1px;
@@ -1995,7 +1864,7 @@ h4, h5 {
 .team-member-outer-wrap .a-team-member .name {
   position: relative;
   margin-bottom: 7px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 26px;
@@ -2004,7 +1873,7 @@ h4, h5 {
 }
 .team-member-outer-wrap .a-team-member .position {
   position: relative;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -2091,7 +1960,7 @@ h4, h5 {
   position: relative;
   padding-bottom: 10px;
   width: 100%;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -2212,7 +2081,7 @@ h4, h5 {
 }
 .partners-who-we-work-with .icon-wrap-section .inner-block .text-wrap {
   position: relative;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 19px;
@@ -2276,7 +2145,7 @@ h4, h5 {
   position: relative;
   display: block;
   margin-bottom: 12px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 22px;
@@ -2461,7 +2330,7 @@ body.page-template-template-partners .diagram-fancy-content {
 .testimonies p:first-child:before {
   display: none;
   padding-left: 10px;
-  content: "“";
+  content: "\201C";
   font-size: 250px;
   position: absolute;
   left: -120px;
@@ -2524,7 +2393,7 @@ body.page-template-template-partners .diagram-fancy-content {
 .manifesto-content-section-1 .line1 {
   position: relative;
   margin-bottom: 24px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: calc(42px + 56 * ((100vw - 320px) / 840));
@@ -2535,7 +2404,7 @@ body.page-template-template-partners .diagram-fancy-content {
 .manifesto-content-section-1 .support-line {
   position: relative;
   margin-bottom: 50px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
   color: #D1A129;
@@ -2586,7 +2455,7 @@ body.page-template-template-partners .diagram-fancy-content {
 .manifesto-content-section-7 .special-orange {
   position: relative;
   margin-bottom: 25px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
   color: #D1A129;
@@ -2636,7 +2505,7 @@ body.page-template-template-partners .diagram-fancy-content {
 }
 .manifesto-content-section-9 .bold-line {
   position: relative;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: calc(42px + 40 * ((100vw - 320px) / 840));
@@ -2685,7 +2554,7 @@ body.page-template-template-partners .diagram-fancy-content {
   max-width: 560px;
   margin: 0 auto 10px;
   color: #FFF;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 28px;
@@ -2725,7 +2594,7 @@ body.page-template-template-partners .diagram-fancy-content {
 .manifesto-section-3 .support-cols .line1 {
   position: relative;
   margin-bottom: 15px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
   color: #D1A129;
@@ -2747,7 +2616,7 @@ body.page-template-template-partners .diagram-fancy-content {
   position: relative;
   max-width: 550px;
   margin: 0 auto 94px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
   color: #FFF;
@@ -2765,7 +2634,7 @@ body.page-template-template-partners .diagram-fancy-content {
   max-width: 360px;
   margin: 0 auto;
   padding-top: 46px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   color: #FFF;
@@ -2809,14 +2678,14 @@ body.page-template-template-partners .diagram-fancy-content {
 .manifesto-signature-wrap .col .line1 {
   position: relative;
   margin-bottom: 11px;
-  font-family: "Yellowtail", cursive;
+  font-family: 'Yellowtail', cursive;
   color: #FFF7E4;
   font-size: 40px;
   line-height: 40px;
 }
 .manifesto-signature-wrap .col .line2 {
   position: relative;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   color: #FFF;
@@ -3145,7 +3014,7 @@ body.page-template-template-partners .diagram-fancy-content {
   position: relative;
   display: block;
   margin-bottom: 32px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: calc(43px + 124 * ((100vw - 320px) / 1200));
@@ -3295,15 +3164,15 @@ TABLET & SMALLER LAPTOPS
   }
 
   .btn,
-.button {
-    -webkit-transition: all 0.15s ease-in-out;
-    -moz-transition: all 0.15s ease-in-out;
-    -ms-transition: all 0.15s ease-in-out;
-    -o-transition: all 0.15s ease-in-out;
-    transition: all 0.15s ease-in-out;
+  .button {
+    -webkit-transition: all .15s ease-in-out;
+    -moz-transition: all .15s ease-in-out;
+    -ms-transition: all .15s ease-in-out;
+    -o-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
   }
   .btn:hover,
-.button:hover {
+  .button:hover {
     background: #E0B039;
   }
 
@@ -3318,7 +3187,7 @@ TABLET & SMALLER LAPTOPS
     margin: 0 10px 0 0;
     text-align: center;
     padding: 13px 17px;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 25px;
@@ -3342,7 +3211,7 @@ TABLET & SMALLER LAPTOPS
   .page-template-template-donate .button-container .button {
     display: flex;
     padding: 13px 17px;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -3362,7 +3231,7 @@ TABLET & SMALLER LAPTOPS
     color: #2A426B;
   }
   .page-template-template-donate .button-container .button.active::before {
-    content: "▼";
+    content: "\25BC";
     /* Unicode for down-arrow ▼ */
     position: absolute;
     left: 50%;
@@ -3429,11 +3298,11 @@ TABLET & SMALLER LAPTOPS
     padding-top: 0;
   }
   #menu-main-navigation li.contact-us-button a {
-    -webkit-transition: all 0.15s ease-in-out;
-    -moz-transition: all 0.15s ease-in-out;
-    -ms-transition: all 0.15s ease-in-out;
-    -o-transition: all 0.15s ease-in-out;
-    transition: all 0.15s ease-in-out;
+    -webkit-transition: all .15s ease-in-out;
+    -moz-transition: all .15s ease-in-out;
+    -ms-transition: all .15s ease-in-out;
+    -o-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
   }
   #menu-main-navigation li.contact-us-button a:hover {
     background: #E0B039;
@@ -3463,21 +3332,21 @@ TABLET & SMALLER LAPTOPS
     padding-top: 0;
   }
   #footer #menu-footer-navigation li.contact-us-button a {
-    -webkit-transition: all 0.15s ease-in-out;
-    -moz-transition: all 0.15s ease-in-out;
-    -ms-transition: all 0.15s ease-in-out;
-    -o-transition: all 0.15s ease-in-out;
-    transition: all 0.15s ease-in-out;
+    -webkit-transition: all .15s ease-in-out;
+    -moz-transition: all .15s ease-in-out;
+    -ms-transition: all .15s ease-in-out;
+    -o-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
   }
   #footer #menu-footer-navigation li.contact-us-button a:hover {
     background: #E0B039;
   }
   #footer #menu-social-navigation li a {
-    -webkit-transition: all 0.15s ease-in-out;
-    -moz-transition: all 0.15s ease-in-out;
-    -ms-transition: all 0.15s ease-in-out;
-    -o-transition: all 0.15s ease-in-out;
-    transition: all 0.15s ease-in-out;
+    -webkit-transition: all .15s ease-in-out;
+    -moz-transition: all .15s ease-in-out;
+    -ms-transition: all .15s ease-in-out;
+    -o-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
   }
   #footer #menu-social-navigation li a:hover {
     transform: translateY(-2px);
@@ -3641,12 +3510,12 @@ TABLET & SMALLER LAPTOPS
     display: flex;
     align-items: center;
     justify-content: center;
-
+  
     .part {
       width: 50%;
       padding: 40px 0;
     }
-
+  
     .part-left {
       margin-bottom: 0;
       padding-bottom: 40px;
@@ -3654,23 +3523,23 @@ TABLET & SMALLER LAPTOPS
       border-bottom: none;
       padding-right: 84px;
     }
-
+  
     .part-right {
       padding-left: 94px;
     }
-
+  
     .line1 {
       position: relative;
       color: $tan;
     }
-
+  
     .additional {
       position: relative;
-
+  
       a {
         text-decoration: none;
         border: none;
-
+  
         &:hover {
           text-decoration: underline;
         }
@@ -3981,7 +3850,7 @@ TABLET & SMALLER LAPTOPS
   .testimonies p:first-child:before {
     display: none;
     padding-left: 10px;
-    content: "“";
+    content: "\201C";
     font-size: 250px;
     position: absolute;
     left: -120px;
@@ -4540,7 +4409,7 @@ DESKTOP
     position: relative;
     padding-bottom: 10px;
     width: 100%;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
@@ -4782,7 +4651,7 @@ DESKTOP
     position: relative;
     padding-bottom: 10px;
     width: 100%;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
@@ -4840,18 +4709,3 @@ DESKTOP
 }
 
 /*# sourceMappingURL=style.css.map */
-
-
-
-
-
-
-
-
-
-
-
-/* TailWind CSS Updates */
-.text-shadow{
-  text-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
-}

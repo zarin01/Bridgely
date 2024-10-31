@@ -10,24 +10,35 @@
 	* *************************/ ?>
 
     <div 
-        class="relative overflow-hidden bg-[#ae926a] home-section-1 page-animate-block" 
+        class="relative overflow-hidden bg-no-repeat bg-cover bg-top pb-[250px] home-section-1 page-animate-block" 
         id="home-intro-hero"
-        <?php if(get_field('home_1_background_image')) { echo ' style="background:url('.get_field('home_1_background_image').') no-repeat center top; background-size:cover;padding-bottom: 250px;"'; } ?>>
+        <?php if (get_field('home_1_background_image')) { 
+            echo 'style="background-image: url(' . get_field('home_1_background_image') . ');"'; 
+        } ?>>
 
-        <div class="relative textWhite max-w-[1210px] px-5 mx-auto mt-0.5 text-shadow"> <!-- Centered parent container -->
-            <div class="relative textWhite py-[180px] pb-[120px]">
-                <div class="relative max-w-[610px] textshadow text-left" style="margin-left: 0;"> <!-- Aligns text left within parent -->
+        <div class="relative text-secondary_white max-w-[1210px] px-5 mx-auto mt-0.5 text-shadow">
+            <div class="relative py-[180px] pb-[120px]">
+                <div class="relative secondary_white max-w-[610px] text-left ml-0">
                     <?php if( get_field('home_1_main_title') ) { ?>
-                        <h1 class="textWhite animateRise text-shadow-lg"><?php echo get_field('home_1_main_title'); ?></h1>
+                        <h1 class="animateRise secondary_white font-bold text-shadow-lg"><?php echo get_field('home_1_main_title'); ?></h1>
                     <?php } ?>
                     <?php if( get_field('home_1_support_title') ) { ?>
-                        <p class="textWhite text-shadow-sm max-w-[612px] text-lg font-medium animateRise">
+                        <p class="text-shadow-sm max-w-[612px] font-bold text-lg animateRise">
                             <?php echo get_field('home_1_support_title'); ?>
                         </p>
                     <?php } ?>
                 </div>
             </div>
         </div>
+
+        <div class="up-curve-contain">
+            <svg viewBox="0 0 1658 59" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1680 53.115V58.1982H0V53.1003C550.124 -17.7001 1129.88 -17.7001 1680 53.1003V53.115Z"
+                    fill="#FFF" />
+            </svg>
+        </div>
+    </div>
+
                     
         <div class="up-curve-contain">
             <svg viewBox="0 0 1658 59" xmlns="http://www.w3.org/2000/svg">
@@ -36,6 +47,7 @@
             </svg>
         </div>
     </div>
+
 
 
 
@@ -60,7 +72,7 @@
                     
                 <div class="absolute mt-[-170px] part part-right">
                     <?php if( get_field('home_2_title_line') ) { ?>
-                        <h2 class="animateRise"><?php echo get_field('home_2_title_line'); ?></h2>
+                        <h2 class="animateRise font-bold"><?php echo get_field('home_2_title_line'); ?></h2>
                     <?php } ?>
                     <?php if( get_field('home_2_button_text') ) { ?>
                         <p><a href="<?php echo get_field('home_2_button_link'); ?>"

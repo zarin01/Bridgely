@@ -588,6 +588,14 @@ video {
   }
 }
 
+.visible {
+  visibility: visible;
+}
+
+.collapse {
+  visibility: collapse;
+}
+
 .static {
   position: static;
 }
@@ -604,6 +612,10 @@ video {
   position: relative;
 }
 
+.bottom-\[-4px\] {
+  bottom: -4px;
+}
+
 .left-0 {
   left: 0px;
 }
@@ -612,8 +624,8 @@ video {
   top: 0px;
 }
 
-.bottom-\[-4px\] {
-  bottom: -4px;
+.m-0 {
+  margin: 0px;
 }
 
 .mx-auto {
@@ -621,12 +633,24 @@ video {
   margin-right: auto;
 }
 
-.mt-0\.5 {
-  margin-top: 0.125rem;
-}
-
 .mb-10 {
   margin-bottom: 2.5rem;
+}
+
+.mb-\[23px\] {
+  margin-bottom: 23px;
+}
+
+.ml-0 {
+  margin-left: 0px;
+}
+
+.mt-0 {
+  margin-top: 0px;
+}
+
+.mt-0\.5 {
+  margin-top: 0.125rem;
 }
 
 .mt-\[-170px\] {
@@ -635,10 +659,6 @@ video {
 
 .mt-\[150px\] {
   margin-top: 150px;
-}
-
-.mb-\[23px\] {
-  margin-bottom: 23px;
 }
 
 .mt-\[45px\] {
@@ -653,8 +673,16 @@ video {
   display: flex;
 }
 
+.table {
+  display: table;
+}
+
 .grid {
   display: grid;
+}
+
+.contents {
+  display: contents;
 }
 
 .hidden {
@@ -667,6 +695,10 @@ video {
 
 .h-full {
   height: 100%;
+}
+
+.min-h-full {
+  min-height: 100%;
 }
 
 .w-\[80\%\] {
@@ -693,12 +725,24 @@ video {
   max-width: 840px;
 }
 
+.border-collapse {
+  border-collapse: collapse;
+}
+
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.resize {
+  resize: both;
+}
+
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.flex-row {
+  flex-direction: row;
 }
 
 .flex-col {
@@ -725,11 +769,6 @@ video {
   border-width: 1px;
 }
 
-.bg-\[\#ae926a\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(174 146 106 / var(--tw-bg-opacity));
-}
-
 .bg-\[\#141C29\] {
   --tw-bg-opacity: 1;
   background-color: rgb(20 28 41 / var(--tw-bg-opacity));
@@ -740,12 +779,24 @@ video {
   background-color: rgb(255 247 222 / var(--tw-bg-opacity));
 }
 
+.bg-primary {
+  background-color: #E0B039 !important;
+}
+
 .bg-cover {
   background-size: cover;
 }
 
+.bg-top {
+  background-position: top;
+}
+
 .bg-no-repeat {
   background-repeat: no-repeat;
+}
+
+.p-0 {
+  padding: 0px;
 }
 
 .px-5 {
@@ -753,19 +804,9 @@ video {
   padding-right: 1.25rem;
 }
 
-.py-\[180px\] {
-  padding-top: 180px;
-  padding-bottom: 180px;
-}
-
 .py-0 {
   padding-top: 0px;
   padding-bottom: 0px;
-}
-
-.py-\[25px\] {
-  padding-top: 25px;
-  padding-bottom: 25px;
 }
 
 .py-10 {
@@ -783,16 +824,30 @@ video {
   padding-bottom: 100px;
 }
 
+.py-\[180px\] {
+  padding-top: 180px;
+  padding-bottom: 180px;
+}
+
+.py-\[25px\] {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
 .pb-\[120px\] {
   padding-bottom: 120px;
 }
 
-.pb-\[50px\] {
-  padding-bottom: 50px;
+.pb-\[250px\] {
+  padding-bottom: 250px;
 }
 
 .pb-\[40px\] {
   padding-bottom: 40px;
+}
+
+.pb-\[50px\] {
+  padding-bottom: 50px;
 }
 
 .text-left {
@@ -807,39 +862,29 @@ video {
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+.text-\[19px\] {
+  font-size: 19px;
 }
 
 .text-\[35px\] {
   font-size: 35px;
 }
 
-.text-\[19px\] {
-  font-size: 19px;
-}
-
-.font-medium {
-  font-weight: 500;
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
   font-weight: 700;
 }
 
+.font-medium {
+  font-weight: 500;
+}
+
 .leading-\[24px\] {
   line-height: 24px;
-}
-
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-\[\#FFF7DE\] {
-  --tw-text-opacity: 1;
-  color: rgb(255 247 222 / var(--tw-text-opacity));
 }
 
 .text-\[\#2A426B\] {
@@ -847,8 +892,30 @@ video {
   color: rgb(42 66 107 / var(--tw-text-opacity));
 }
 
+.text-\[\#FFF7DE\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 247 222 / var(--tw-text-opacity));
+}
+
+.text-secondary_white {
+  color: #FFF7DE !important;
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.underline {
+  text-decoration-line: underline;
+}
+
 .outline {
   outline-style: solid;
+}
+
+.text-shadow {
+  text-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
 }
 
 @media (min-width: 640px) {
