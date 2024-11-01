@@ -1,4 +1,18 @@
-<?php /* Template Name: Home */ ?>
+<?php /* Template Name: Home */ 
+/* Classes that are not Tailwind but arent accessing CSS, these classes are used for JS: 
+    home-section-1
+    page-animate-block
+
+
+
+ Classes that use CSS but are too customized for Tailwind:
+    up-curve-contain
+
+
+
+*/
+?>
+
 <?php get_header(); ?>
 
 <main id="content" class="home">
@@ -40,14 +54,7 @@
     </div>
 
                     
-        <div class="up-curve-contain">
-            <svg viewBox="0 0 1658 59" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1680 53.115V58.1982H0V53.1003C550.124 -17.7001 1129.88 -17.7001 1680 53.1003V53.115Z"
-                    fill="#FFF" />
-            </svg>
-        </div>
-    </div>
-
+    
 
 
 
@@ -58,32 +65,29 @@
     *         Section 2
     * 
     * *************************/ ?>
-    
-    <div class="relative mt-[150px] h-[700px] a-home-section home-section-2 page-animate-block" id="changing">
-        <div class="center">
-                        
-            <div class="relative split-content-wrap-large-text">
-                        
-                <div class="absolute part part-left mb-10">
-                    <?php if( get_field('home_2_paragraph_part') ) { ?>
-                        <p class="animateRise"><?php echo get_field('home_2_paragraph_part'); ?></p>
-                    <?php } ?>
-                </div>
-                    
-                <div class="absolute mt-[-170px] part part-right">
-                    <?php if( get_field('home_2_title_line') ) { ?>
-                        <h2 class="animateRise font-bold"><?php echo get_field('home_2_title_line'); ?></h2>
-                    <?php } ?>
-                    <?php if( get_field('home_2_button_text') ) { ?>
-                        <p><a href="<?php echo get_field('home_2_button_link'); ?>"
-                                class="btn animateRise"><?php echo get_field('home_2_button_text'); ?></a></p>
-                    <?php } ?>
-                </div>
-                    
+
+    <div class="relative mt-[150px] max-w-[1700px] h-[700px] py-12 home-section-2 page-animate-block" id="changing">
+        <div class="max-w-7xl mx-auto flex justify-between items-center h-full">
+            <div class="relative w-1/2 pr-4">
+                <?php if( get_field('home_2_paragraph_part') ) { ?>
+                    <p class="animateRise mb-10"><?php echo get_field('home_2_paragraph_part'); ?></p>
+                <?php } ?>
             </div>
-                    
+
+            <div class="relative w-1/2 pl-4">
+                <?php if( get_field('home_2_title_line') ) { ?>
+                    <h2 class="animateRise font-bold text-2xl md:text-4xl"><?php echo get_field('home_2_title_line'); ?></h2>
+                <?php } ?>
+                
+                <?php if( get_field('home_2_button_text') ) { ?>
+                    <p>
+                        <a href="<?php echo get_field('home_2_button_link'); ?>" class="btn animateRise bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition"><?php echo get_field('home_2_button_text'); ?></a>
+                    </p>
+                <?php } ?>
+            </div>
         </div>
     </div>
+
 
 
 
