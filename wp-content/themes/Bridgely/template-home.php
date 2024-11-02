@@ -66,17 +66,17 @@
     * 
     * *************************/ ?>
 
-    <div class="relative mt-[150px] max-w-[1700px] h-[700px] py-12 home-section-2 page-animate-block" id="changing">
+    <div class="relative mt-[20px] max-w-[1700px] h-[700px] py-[20px] home-section-2 page-animate-block" id="changing">
         <div class="max-w-7xl mx-auto flex justify-between items-center h-full">
-            <div class="relative w-1/2 pr-4">
+            <div class="relative w-[620px] pr-[55px]">
                 <?php if( get_field('home_2_paragraph_part') ) { ?>
                     <p class="animateRise mb-10"><?php echo get_field('home_2_paragraph_part'); ?></p>
                 <?php } ?>
             </div>
 
-            <div class="relative w-1/2 pl-4">
+            <div class="relative w-1/2 pl-4 w-calc-100-minus-820">
                 <?php if( get_field('home_2_title_line') ) { ?>
-                    <h2 class="animateRise font-bold text-2xl md:text-4xl"><?php echo get_field('home_2_title_line'); ?></h2>
+                    <h2 class="animateRise font-bold text-2xl text-5xl"><?php echo get_field('home_2_title_line'); ?></h2>
                 <?php } ?>
                 
                 <?php if( get_field('home_2_button_text') ) { ?>
@@ -96,16 +96,15 @@
     *         Section 3
     * 
     * *************************/ ?>
-    
-    <div class="bg-[#141C29] a-home-section home-section-3 page-animate-block">
-                        
-        <div class="home-section-3-middle py-0 pb-[50px]">
-            <div class="center">
-                <div class="home-video w-[80%] mx-auto">
-                        
+
+      <div class="home-section-3">         
+        <div class="bg-[#141C29] py-0 pb-[50px]">
+            <div class="relative max-w-[1210px] px-[20px] mx-auto">
+                <div class="w-[80%] mx-auto">
+                    
                     <?php if (get_field('home_section_3_video_url')) { ?>
                     
-                        <h3 class="tan-title text-[#FFF7DE] text-center text-[35px] font-bold py-[25px]">
+                        <h3 class="text-[#FFF7DE] text-center text-responsive font-bold">
                             <?php echo get_field('home_section_3_video_title_2'); ?>
                         </h3>
                     
@@ -116,13 +115,11 @@
                             </iframe>
                         </div>
                         <script src="https://player.vimeo.com/api/player.js"></script>
-                    
                     <?php } ?>
-                    
                 </div>
             </div>
         </div>
-    </div>
+
                     
     <?php /************************
     *
@@ -130,27 +127,27 @@
     * 
     * *************************/ ?>
     
-    <div class="partners-who-we-work-with partners-animate-section-2 relative py-[100px] text-center bg-cover bg-no-repeat" style="background-position: center top;">
-        <div class="center text-white mx-auto">
+    <div class="relative py-[100px] text-center bg-cover bg-no-repeat bg-center" style="background: url('../images/partners-support-bg.jpg');">
+        <div class="relative text-white max-w-screen-xl mx-auto primary-link">
 
             <?php if( get_field('partners_page_2_title') ) { ?>
-            <h2 class="text-h1 text-white animateRise mb-[23px] pb-[40px]"><?php echo get_field('partners_page_2_title'); ?></h2>
+            <h2 class="text-custom"><?php echo get_field('partners_page_2_title'); ?></h2>
             <?php } ?>
 
-            <div class="icon-wrap-section grid grid-cols-1 gap-[45px] mt-[45px] mx-auto">
-                <div class="inner-block animateRise">
+            <div class="icon-wrap-section grid grid-cols-3 gap-[45px] mt-[45px] mx-auto">
+                <div class="animateRise primary-link">
                     <?php if( get_field('partners_page_2_column_1_title') ) { ?>
                     <div class="text-wrap text-white text-[19px] leading-[24px] font-medium font-sans"><?php echo get_field('partners_page_2_column_1_title'); ?></div>
                     <?php } ?>
                 </div>
 
-                <div class="inner-block animateRise dotted_bridge">
+                <div class="animateRise dotted_bridge">
                     <?php if( get_field('partners_page_2_column_2_title') ) { ?>
                     <div class="text-wrap text-white text-[19px] leading-[24px] font-medium font-sans"><?php echo get_field('partners_page_2_column_2_title'); ?></div>
                     <?php } ?>
                 </div>
 
-                <div class="inner-block animateRise">
+                <div class="animateRise">
                     <?php if( get_field('partners_page_2_column_3_title') ) { ?>
                     <div class="text-wrap text-white text-[19px] leading-[24px] font-medium font-sans"><?php echo get_field('partners_page_2_column_3_title'); ?></div>
                     <?php } ?>
@@ -163,13 +160,13 @@
                 <?php } ?>
             </div>
         </div>
-
         <div class="absolute w-full overflow-hidden bottom-[-4px] left-0">
             <svg viewBox="0 0 1658 59" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1680 53.115V58.1982H0V53.1003C550.124 -17.7001 1129.88 -17.7001 1680 53.1003V53.115Z" fill="#FFF7DE" />
             </svg>
         </div>
     </div>
+
 
                 
     <div class="a-home-section home-section-3-mid-middle bg-[#FFF7DE] py-10">

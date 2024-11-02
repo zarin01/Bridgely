@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Custom styles should be placed after Tailwind imports */
+h1, h2, h3, h4, h5, h6 {
+    @apply font-bold; /* Using Tailwind's utility to apply font-weight */
+}
+
+.primary-link a {
+    @apply text-white underline;
+}
+
+/* Custom reusable class */
+@layer components {
+    .text-custom {
+      @apply mb-[34px] leading-[119%]; /* Tailwind utilities for margin-bottom and line-height */
+      font-size: calc(36px + 20 * ((100vw - 320px) / 840)); /* Custom font size */
+    }
+  }
