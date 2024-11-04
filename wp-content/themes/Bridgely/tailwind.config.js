@@ -31,7 +31,11 @@ module.exports = {
       backgroundImage: {
         'choose-your-start': "url('../library/images/partners-support-bg.jpg')",
         'footer-texture': "url('/img/footer-texture.png')",
-      }
+      },
+      padding: {
+        '6p': '6%',
+        '9p': '9%',
+      },
     },
   },
   plugins: [

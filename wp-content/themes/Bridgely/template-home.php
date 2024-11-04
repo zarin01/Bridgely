@@ -171,11 +171,11 @@
     * animateRise used for JS
     * *************************/ ?>
                 
-    <div class="relative py-[50px] home-section-3-mid-middle bg-secondary_white">
+    <div class="relative py-[50px] text-darkgray bg-secondary_white">
         <div class="center mx-auto">
-            <div class="relative flex flex-col sm:flex-row gap-8 mb-10 text-left w-full">
+            <div class="relative flex flex-col sm:flex-row gap-8 mb-10 w-full">
                 
-                <div class="relative">
+                <div class="relative w-full pr-6p">
                     <?php if( get_field('home_3_left_title') ) { ?>
                     <h2 class="text-darkgray animateRise"><?php echo get_field('home_3_left_title'); ?></h2>
                     <?php } ?>
@@ -184,12 +184,12 @@
                     <?php } ?>
                 </div>
                     
-                <div class="relative">
+                <div class="relative flex-none w-1/2 pl-9p">
                     <?php if( get_field('home_3_right_title') ) { ?>
                     <h2 class="text-darkgray animateRise"><?php echo get_field('home_3_right_title'); ?></h2>
                     <?php } ?>
                     <?php if( get_field('home_3_right_copy') ) { ?>
-                    <p class="text-darkgray animateRise"><?php echo get_field('home_3_right_copy'); ?></p>
+                    <p class="text-darkgray animateRise">text<?php echo get_field('home_3_right_copy'); ?></p>
                     <?php } ?>
                 </div>
                     

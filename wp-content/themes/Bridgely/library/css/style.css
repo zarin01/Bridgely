@@ -3967,7 +3967,7 @@ DESKTOP
   .split-content-wrap-large-text .text-pullout {
     font-size: calc(56px + 94 * ((100vw - 320px) / 1200));
   }
-
+/**
   .home-section-2 {
     padding: 100px 0;
   }
@@ -4021,7 +4021,7 @@ DESKTOP
   .fifty-fifty-fancy-split p {
     font-size: 18px;
   }
-
+**/
   .home-section-4 {
     padding: 140px 0;
   }

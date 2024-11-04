@@ -30,6 +30,7 @@
   p {
     @apply mb-[35px] font-light leading-[180%];
     font-size: 20px;
+    color: #141C29;
   }
 }
 
