@@ -805,6 +805,14 @@ p {
   width: 50%;
 }
 
+.w-4 {
+  width: 1rem;
+}
+
+.w-4\/5 {
+  width: 80%;
+}
+
 .w-\[620px\] {
   width: 620px;
 }
@@ -859,6 +867,14 @@ p {
 
 .flex-none {
   flex: none;
+}
+
+.basis-1\/2 {
+  flex-basis: 50%;
+}
+
+.basis-1 {
+  flex-basis: 0.25rem;
 }
 
 .border-collapse {
@@ -1077,6 +1093,10 @@ p {
   padding-bottom: 50px;
 }
 
+.pb-\[56\.25\%\] {
+  padding-bottom: 56.25%;
+}
+
 .pl-0 {
   padding-left: 0px;
 }
@@ -1087,6 +1107,10 @@ p {
 
 .pl-6p {
   padding-left: 6%;
+}
+
+.pl-9p {
+  padding-left: 9%;
 }
 
 .pl-\[10px\] {
@@ -1111,10 +1135,6 @@ p {
 
 .pt-\[120px\] {
   padding-top: 120px;
-}
-
-.pl-9p {
-  padding-left: 9%;
 }
 
 .text-left {
@@ -1244,6 +1264,29 @@ p {
   max-width: 1210px;
   padding: 0 20px;
   margin: 0 auto;
+}
+
+.fifty-fifty-fancy-split .part-left::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 11px;
+  bottom: -61px;
+  left: 2px;
+  background: url('../images/icon-bridge.png') no-repeat center center;
+  background-size: 40px 11px;
+}
+
+@media (min-width: 960px) {
+  .fifty-fifty-fancy-split .part-left::after {
+    bottom: auto;
+    top: 50%;
+    margin-top: -6px;
+    left: auto;
+    right: 0;
+    margin-right: -20px;
+  }
 }
 
 .hover\:bg-blue-600:hover {

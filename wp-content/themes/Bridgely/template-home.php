@@ -197,37 +197,39 @@
         </div>
     </div>
 
-
-
-    <div class="a-home-section home-section-3-middle bg-[#141C29] py-12">
+    <div class="bg-darkgray py-[25px]">
         <div class="center mx-auto">
-            <div class="home-video w-[80%] mx-auto">
-                    
+            <div class="w-4/5 mx-auto">
                 <?php if (get_field('home_section_3_video_url_2')) { ?>
-                
-                <h3 class="tan-title text-[#FFF7DE] text-center text-[35px] font-bold py-[25px]"><?php echo get_field('home_section_3_video_title'); ?></h3>
-                
-                <div class="relative" style="padding:56.25% 0 0 0;">
-                    <iframe src="<?php echo get_field('home_section_3_video_url_2'); ?>" 
-                        class="absolute top-0 left-0 w-full h-full"
-                        frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
-                    </iframe>
-                </div>
-                
+                    <h3 class="text-secondary_white text-center text-[35px] font-bold py-[25px]">
+                        <?php echo get_field('home_section_3_video_title'); ?>
+                    </h3>
+                    <div class="relative pb-[56.25%]">
+                        <iframe src="<?php echo get_field('home_section_3_video_url_2'); ?>" 
+                            class="absolute top-0 left-0 w-full h-full"
+                            frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
+                        </iframe>
+                    </div>
                 <?php } ?>
-                
             </div>
         </div>
     </div>
-                
-    <div class="a-home-section home-section-3-bottom bg-[#FFF7DE] py-12">
-        <div class="center mx-auto">
-                
+
+
+    <?php /************************
+    *
+    * Break Boundaries
+    * 
+    * 
+    * *************************/ ?>
+
+    <div class="relative bg-[#FFF7DE] py-12">
+        <div class="center">
             <?php if( get_field('bottom_title') ) { ?>
               <h2 class="text-center"><?php echo get_field('bottom_title'); ?></h2>
             <?php } ?>
             
-            <div class="fifty-fifty-fancy-split mx-auto max-w-[840px]">
+            <div class="flex fifty-fifty-fancy-split mx-auto max-w-[1170px] flex-none basis-1/2">
                 <?php if( get_field('bottom_copy') ) { ?>
                 <?php echo get_field('bottom_copy'); ?>
                 <?php } ?>

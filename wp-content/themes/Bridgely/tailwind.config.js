@@ -39,7 +39,7 @@ module.exports = {
     },
   },
   plugins: [
-    plugin(function({ addUtilities }) {
+    plugin(function({ addUtilities, e }) {
       const newUtilities = {
         '.text-shadow': {
           textShadow: '0 0 16px rgba(0, 0, 0, 0.5)',
@@ -49,6 +49,27 @@ module.exports = {
           maxWidth: '1210px',
           padding: '0 20px',
           margin: '0 auto',
+        },
+        '.fifty-fifty-fancy-split .part-left::after': {
+          content: '""',
+          position: 'absolute',
+          display: 'block',
+          width: '40px',
+          height: '11px',
+          bottom: '-61px',
+          left: '2px',
+          background: "url('../images/icon-bridge.png') no-repeat center center",
+          backgroundSize: '40px 11px',
+        },
+        '@media (min-width: 960px)': {
+          '.fifty-fifty-fancy-split .part-left::after': {
+            bottom: 'auto',
+            top: '50%',
+            marginTop: '-6px',
+            left: 'auto',
+            right: '0',
+            marginRight: '-20px',
+          },
         },
       };
       addUtilities(newUtilities, ['responsive', 'hover']);
