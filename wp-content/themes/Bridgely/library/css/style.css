@@ -18,13 +18,14 @@ TOOLS
   -moz-osx-font-smoothing: auto;
 }
 
+/***
 .center {
-  position: relative;
-  max-width: 1210px;
-  padding: 0 20px;
-  margin: 0 auto;
+	position: relative;
+	max-width: 1210px;
+	padding: 0 20px;
+	margin: 0 auto;
 }
-
+***/
 /*********************
 COLORS
 *********************/
@@ -654,6 +655,7 @@ h4:first-child, h5:first-child,
   margin-top: 0;
 }
 
+/**
 h1 {
   margin-bottom: 34px;
   font-size: calc(38px + 18 * ((100vw - 320px) / 840));
@@ -667,9 +669,7 @@ h2 {
 }
 
 h3 {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 500;
+  @include po-500;
   margin-bottom: 23px;
   font-size: 30px;
   line-height: 130%;
@@ -680,7 +680,7 @@ h4, h5 {
   font-size: 23px;
   line-height: 130%;
 }
-
+**/
 .text-xxl {
   margin-bottom: 24px;
   font-size: calc(36px + 44 * ((100vw - 320px) / 1200));
@@ -3249,9 +3249,12 @@ TABLET & SMALLER LAPTOPS
     height: 244px;
     background: url("../images/header-gradient.png") repeat-x left bottom;
     background-size: 4px 244px;
-  }
-  #main-header .center {
-    padding: 58px 20px 0;
+    /**
+      .center {
+        padding: 58px 20px 0; 
+      }
+    
+      **/
   }
 
   #mobile-nav-trigger {

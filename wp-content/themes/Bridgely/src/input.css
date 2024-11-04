@@ -2,19 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom styles should be placed after Tailwind imports */
-h1, h2, h3, h4, h5, h6 {
-    @apply font-bold; /* Using Tailwind's utility to apply font-weight */
-}
-
-.primary-link a {
-    @apply text-white underline;
-}
-
-/* Custom reusable class */
-@layer components {
-    .text-custom {
-      @apply mb-[34px] leading-[119%]; /* Tailwind utilities for margin-bottom and line-height */
-      font-size: calc(36px + 20 * ((100vw - 320px) / 840)); /* Custom font size */
-    }
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold;
   }
+
+  h1 {
+    @apply mb-8 leading-[130%];
+    font-size: clamp(38px, calc(38px + 18 * ((100vw - 320px) / 840)), 56px);
+  }
+
+  h2 {
+    @apply mb-6 leading-[130%];
+    font-size: clamp(34px, calc(34px + 16 * ((100vw - 320px) / 840)), 50px);
+  }
+
+  h3 {
+    @apply mb-5 leading-[130%];
+    font-size: 30px;
+  }
+
+  h4, h5 {
+    @apply mb-4 leading-[130%];
+    font-size: 23px;
+  }
+
+  p {
+    @apply mb-[35px] font-light leading-[180%];
+    font-size: 20px;
+  }
+}
+
+@layer components {
+  .primary-link a {
+    @apply text-white underline;
+  }
+
+  .text-custom {
+    @apply mb-[34px] leading-[119%];
+    font-size: clamp(36px, calc(36px + 20 * ((100vw - 320px) / 840)), 56px);
+  }
+}

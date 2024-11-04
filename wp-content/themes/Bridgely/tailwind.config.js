@@ -19,17 +19,19 @@ module.exports = {
         'calc-100-minus-820': 'calc(100% - 820px)',
       },
       maxWidth: {
-        '1210': '1210px', // Add this line to define max-w-1210
+        'screen-xl': '1210px',
+        '1210': '1210px',
       },
       fontSize: {
         'responsive': 'calc(36px + 20 * ((100vw - 320px) / 840))',
       },
       backgroundPosition: {
-        'center-top': 'center top', // Add this line
+        'center-top': 'center top',
       },
       backgroundImage: {
-        'partners-bg': "url('../images/partners-support-bg.jpg')",
-      },
+        'choose-your-start': "url('../library/images/partners-support-bg.jpg')",
+        'footer-texture': "url('/img/footer-texture.png')",
+      }
     },
   },
   plugins: [
@@ -37,6 +39,12 @@ module.exports = {
       const newUtilities = {
         '.text-shadow': {
           textShadow: '0 0 16px rgba(0, 0, 0, 0.5)',
+        },
+        '.center': {
+          position: 'relative',
+          maxWidth: '1210px',
+          padding: '0 20px',
+          margin: '0 auto',
         },
       };
       addUtilities(newUtilities, ['responsive', 'hover']);

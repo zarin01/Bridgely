@@ -31,7 +31,7 @@
         } ?>>
 
         <div class="relative text-secondary_white max-w-[1210px] px-5 mx-auto mt-0.5 text-shadow">
-            <div class="relative py-[180px] pb-[120px]">
+            <div class="relative py-[245px] pb-[120px]">
                 <div class="relative secondary_white max-w-[610px] text-left ml-0">
                     <?php if( get_field('home_1_main_title') ) { ?>
                         <h1 class="animateRise secondary_white font-bold text-shadow-lg"><?php echo get_field('home_1_main_title'); ?></h1>
@@ -53,42 +53,37 @@
         </div>
     </div>
 
-                    
-    
-
-
-
-
-
     <?php /************************
     *
     *         Section 2
     * 
+    * home-section-2 class adds in the Text Animation, removed CSS.
+    * changing ID used for JS purposes
     * *************************/ ?>
 
-    <div class="relative mt-[20px] max-w-[1700px] h-[700px] py-[20px] home-section-2 page-animate-block" id="changing">
-        <div class="max-w-7xl mx-auto flex justify-between items-center h-full">
-            <div class="relative w-[620px] pr-[55px]">
-                <?php if( get_field('home_2_paragraph_part') ) { ?>
-                    <p class="animateRise mb-10"><?php echo get_field('home_2_paragraph_part'); ?></p>
-                <?php } ?>
-            </div>
+    <div class="relative mt-[20px] max-w-[1700px] h-[500px] py-[20px] home-section-2" id="changing">
+        <div class="max-w-[1170px] mx-auto flex items-center h-full">
+            <div class="flex items-center justify-center">
+                <div class="relative w-[620px] pr-[55px]">
+                    <?php if( get_field('home_2_paragraph_part') ) { ?>
+                        <p class="animateRise mb-5"><?php echo get_field('home_2_paragraph_part'); ?></p>
+                    <?php } ?>
+                </div>
 
-            <div class="relative w-1/2 pl-4 w-calc-100-minus-820">
-                <?php if( get_field('home_2_title_line') ) { ?>
-                    <h2 class="animateRise font-bold text-2xl text-5xl"><?php echo get_field('home_2_title_line'); ?></h2>
-                <?php } ?>
-                
-                <?php if( get_field('home_2_button_text') ) { ?>
-                    <p>
-                        <a href="<?php echo get_field('home_2_button_link'); ?>" class="btn animateRise bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition"><?php echo get_field('home_2_button_text'); ?></a>
-                    </p>
-                <?php } ?>
+                <div class="relative pl-[10px] w-calc-100-minus-820 mt-[20px] mr-0 mb-auto ml-0">
+                    <?php if( get_field('home_2_title_line') ) { ?>
+                        <h2 class="animateRise font-bold text-2xl text-5xl leading-[62.4px]"><?php echo get_field('home_2_title_line'); ?></h2>
+                    <?php } ?>
+                    
+                    <?php if( get_field('home_2_button_text') ) { ?>
+                        <p>
+                            <a href="<?php echo get_field('home_2_button_link'); ?>" class="btn animateRise bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition"><?php echo get_field('home_2_button_text'); ?></a>
+                        </p>
+                    <?php } ?>
+                </div>
             </div>
         </div>
     </div>
-
-
 
 
     <?php /************************
@@ -104,7 +99,7 @@
                     
                     <?php if (get_field('home_section_3_video_url')) { ?>
                     
-                        <h3 class="text-[#FFF7DE] text-center text-responsive font-bold">
+                        <h3 class="text-[#FFF7DE] text-center font-bold text-[35px] py-[25px] px-0">
                             <?php echo get_field('home_section_3_video_title_2'); ?>
                         </h3>
                     
@@ -127,11 +122,11 @@
     * 
     * *************************/ ?>
     
-    <div class="relative py-[100px] text-center bg-cover bg-no-repeat bg-center" style="background: url('../images/partners-support-bg.jpg');">
+    <div class="relative bg-choose-your-start pt-[120px] pb-[180px] text-center bg-cover bg-no-repeat bg-center" >
         <div class="relative text-white max-w-screen-xl mx-auto primary-link">
 
             <?php if( get_field('partners_page_2_title') ) { ?>
-            <h2 class="text-custom"><?php echo get_field('partners_page_2_title'); ?></h2>
+            <h2 class="text-custom pb-[40px] text-responsive"><?php echo get_field('partners_page_2_title'); ?></h2>
             <?php } ?>
 
             <div class="icon-wrap-section grid grid-cols-3 gap-[45px] mt-[45px] mx-auto">
@@ -167,34 +162,43 @@
         </div>
     </div>
 
-
+    
+    <?php /************************
+    *
+    *         Locally led
+    * 
+    * 
+    * animateRise used for JS
+    * *************************/ ?>
                 
-    <div class="a-home-section home-section-3-mid-middle bg-[#FFF7DE] py-10">
+    <div class="relative py-[50px] home-section-3-mid-middle bg-secondary_white">
         <div class="center mx-auto">
-            <div class="fifty-fifty-fancy-split flex flex-col sm:flex-row gap-8">
+            <div class="relative flex flex-col sm:flex-row gap-8 mb-10 text-left w-full">
                 
-                <div class="part part-left">
+                <div class="relative">
                     <?php if( get_field('home_3_left_title') ) { ?>
-                    <h2 class="text-[#2A426B] animateRise"><?php echo get_field('home_3_left_title'); ?></h2>
+                    <h2 class="text-darkgray animateRise"><?php echo get_field('home_3_left_title'); ?></h2>
                     <?php } ?>
                     <?php if( get_field('home_3_left_copy') ) { ?>
-                    <p class="text-[#2A426B] animateRise"><?php echo get_field('home_3_left_copy'); ?></p>
+                    <p class="text-darkgray animateRise"><?php echo get_field('home_3_left_copy'); ?></p>
                     <?php } ?>
                 </div>
                     
-                <div class="part part-right">
+                <div class="relative">
                     <?php if( get_field('home_3_right_title') ) { ?>
-                    <h2 class="text-[#2A426B] animateRise"><?php echo get_field('home_3_right_title'); ?></h2>
+                    <h2 class="text-darkgray animateRise"><?php echo get_field('home_3_right_title'); ?></h2>
                     <?php } ?>
                     <?php if( get_field('home_3_right_copy') ) { ?>
-                    <p class="text-[#2A426B] animateRise"><?php echo get_field('home_3_right_copy'); ?></p>
+                    <p class="text-darkgray animateRise"><?php echo get_field('home_3_right_copy'); ?></p>
                     <?php } ?>
                 </div>
                     
             </div>
         </div>
     </div>
-                    
+
+
+
     <div class="a-home-section home-section-3-middle bg-[#141C29] py-12">
         <div class="center mx-auto">
             <div class="home-video w-[80%] mx-auto">
