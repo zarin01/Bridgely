@@ -223,13 +223,13 @@
     * 
     * *************************/ ?>
 
-    <div class="relative bg-[#FFF7DE] py-12">
+    <div class="relative bg-[#FFF7DE] text-darkgray py-12">
         <div class="center">
             <?php if( get_field('bottom_title') ) { ?>
-              <h2 class="text-center"><?php echo get_field('bottom_title'); ?></h2>
+              <h2 class="text-center text-darkgray"><?php echo get_field('bottom_title'); ?></h2>
             <?php } ?>
             
-            <div class="flex fifty-fifty-fancy-split mx-auto max-w-[1170px] flex-none basis-1/2">
+            <div class="flex fifty-fifty-fancy-split mx-auto max-w-[1170px] flex-none basis-1/2 text-darkgray">
                 <?php if( get_field('bottom_copy') ) { ?>
                 <?php echo get_field('bottom_copy'); ?>
                 <?php } ?>
@@ -240,68 +240,71 @@
                 
 
 
-<?php /************************
-	*
-	*         Section 4
-	* 
-	* *************************/ ?>
+    <?php /************************
+*
+*         Section 4
+*
+*************************/ ?>
 
-    <div class="a-home-section home-section-4 page-animate-block">
-        <div class="center">
+<div class="page-animate-block">
+    <div class="center">
+        <?php if( get_field('home_4_intro_text') ) : ?>
+            <h2 class="section-4-intro animateRise text-center mb-[86px]">
+                <?php echo get_field('home_4_intro_text'); ?>
+            </h2>
+        <?php endif; ?>
 
-            <?php if( get_field('home_4_intro_text') ) { ?>
-            <h2 class="section-4-intro animateRise"><?php echo get_field('home_4_intro_text'); ?></h2>
-            <?php } ?>
-            <?php if( get_field('home_4_support_line') ) { ?>
-            <div class="committed-to-text text-h4 orange animateRise"><?php echo get_field('home_4_support_line'); ?></div>
-            <?php } ?>
+        <?php if( get_field('home_4_support_line') ) : ?>
+            <div class="committed-to-text text-h4 text-primary animateRise committed-to-text-after">
+                <?php echo get_field('home_4_support_line'); ?>
+            </div>
+        <?php endif; ?>
 
-            <div class="committed-to-columns three-col-layout">
-                <div class="col col1 animateRise">
-                    <?php if( get_field('home_4_column_1_title') ) { ?>
-                    <div class="icon-wrap" style="width:50px; margin-bottom: 14px;"><img
-                            src="<?php bloginfo('template_directory'); ?>/library/images/Icon_Bridgely-Safety.png"
-                            alt="" />
+        <div class=" flex flex-row">
+            <div class="animateRise text-center max-w-[600px] mx-auto">
+                <?php if( get_field('home_4_column_1_title') ) : ?>
+                    <div class="icon-wrap w-[50px] mb-[14px] mx-auto">
+                        <img src="<?php bloginfo('template_directory'); ?>/library/images/Icon_Bridgely-Safety.png" style="width: 50px; height: 50px;" alt="" class="w-full h-full" />
                     </div>
-                    <h3><?php echo get_field('home_4_column_1_title'); ?></h3>
-                    <?php } ?>
-                    <?php if( get_field('home_4_column_1_copy') ) { ?>
+                    <h3 class="text-h3"><?php echo get_field('home_4_column_1_title'); ?></h3>
+                <?php endif; ?>
+                <?php if( get_field('home_4_column_1_copy') ) : ?>
                     <p><?php echo get_field('home_4_column_1_copy'); ?></p>
-                    <?php } ?>
-                </div>
-
-                <div class="col col2 animateRise">
-                    <?php if( get_field('home_4_column_2_title') ) { ?>
-                    <div class="icon-wrap" style="width:50px; margin-bottom: 14px;"><img
-                            src="<?php bloginfo('template_directory'); ?>/library/images/Icon_Bridgely-Search.png"
-                            alt="" /></div>
-                    <h3><?php echo get_field('home_4_column_2_title'); ?></h3>
-                    <?php } ?>
-                    <?php if( get_field('home_4_column_2_copy') ) { ?>
-                    <p><?php echo get_field('home_4_column_2_copy'); ?></p>
-                    <?php } ?>
-                </div>
-
-                <div class="col col3 animateRise">
-                    <?php if( get_field('home_4_column_3_title') ) { ?>
-                    <div class="icon-wrap" style="width:50px; margin-bottom: 14px;"><img
-                            src="<?php bloginfo('template_directory'); ?>/library/images/Icon_Bridgely-Collaboration.png"
-                            alt="" />
-                    </div>
-                    <h3><?php echo get_field('home_4_column_3_title'); ?></h3>
-                    <?php } ?>
-                    <?php if( get_field('home_4_column_3_copy') ) { ?>
-                    <p><?php echo get_field('home_4_column_3_copy'); ?></p>
-                    <?php } ?>
-                </div>
+                <?php endif; ?>
             </div>
 
+            <div class="col col2 animateRise text-center max-w-[600px] mx-auto">
+                <?php if( get_field('home_4_column_2_title') ) : ?>
+                    <div class="icon-wrap w-[50px] h-[50px] mb-4 mx-auto">
+                        <img src="<?php bloginfo('template_directory'); ?>/library/images/Icon_Bridgely-Search.png" alt="" class="w-full h-full" />
+                    </div>
+                    <h3 class="text-h3"><?php echo get_field('home_4_column_2_title'); ?></h3>
+                <?php endif; ?>
+                <?php if( get_field('home_4_column_2_copy') ) : ?>
+                    <p><?php echo get_field('home_4_column_2_copy'); ?></p>
+                <?php endif; ?>
+            </div>
+
+            <div class="col col3 animateRise text-center max-w-[600px] mx-auto">
+                <?php if( get_field('home_4_column_3_title') ) : ?>
+                    <div class="icon-wrap w-[50px] mb-[14px] mx-auto">
+                        <img src="<?php bloginfo('template_directory'); ?>/library/images/Icon_Bridgely-Collaboration.png" alt="" class="w-full h-full" />
+                    </div>
+                    <h3 class="text-h3"><?php echo get_field('home_4_column_3_title'); ?></h3>
+                <?php endif; ?>
+                <?php if( get_field('home_4_column_3_copy') ) : ?>
+                    <p><?php echo get_field('home_4_column_3_copy'); ?></p>
+                <?php endif; ?>
+            </div>
         </div>
     </div>
+</div>
+
+
 
     <?php /************************
 	*
-	*         Section 5, 6, 7
+	*         Section 5, 6, 7v
 	* 
 	* *************************/ ?>
 

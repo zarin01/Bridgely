@@ -717,12 +717,20 @@ p {
   margin-bottom: 2rem;
 }
 
+.mb-\[14px\] {
+  margin-bottom: 14px;
+}
+
 .mb-\[34px\] {
   margin-bottom: 34px;
 }
 
 .mb-\[35px\] {
   margin-bottom: 35px;
+}
+
+.mb-\[86px\] {
+  margin-bottom: 86px;
 }
 
 .mb-auto {
@@ -793,6 +801,10 @@ p {
   height: 100%;
 }
 
+.h-\[50px\] {
+  height: 50px;
+}
+
 .min-h-full {
   min-height: 100%;
 }
@@ -811,6 +823,10 @@ p {
 
 .w-4\/5 {
   width: 80%;
+}
+
+.w-\[50px\] {
+  width: 50px;
 }
 
 .w-\[620px\] {
@@ -849,6 +865,10 @@ p {
   max-width: 1700px;
 }
 
+.max-w-\[600px\] {
+  max-width: 600px;
+}
+
 .max-w-\[610px\] {
   max-width: 610px;
 }
@@ -869,12 +889,12 @@ p {
   flex: none;
 }
 
-.basis-1\/2 {
-  flex-basis: 50%;
-}
-
 .basis-1 {
   flex-basis: 0.25rem;
+}
+
+.basis-1\/2 {
+  flex-basis: 50%;
 }
 
 .border-collapse {
@@ -923,6 +943,15 @@ p {
 
 .gap-\[45px\] {
   gap: 45px;
+}
+
+.gap-x-\[45px\] {
+  -moz-column-gap: 45px;
+       column-gap: 45px;
+}
+
+.gap-y-10 {
+  row-gap: 2.5rem;
 }
 
 .space-y-0 > :not([hidden]) ~ :not([hidden]) {
@@ -1051,6 +1080,11 @@ p {
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+.py-\[140px\] {
+  padding-top: 140px;
+  padding-bottom: 140px;
 }
 
 .py-\[20px\] {
@@ -1226,6 +1260,10 @@ p {
   color: #141C29 !important;
 }
 
+.text-primary {
+  color: #E0B039 !important;
+}
+
 .text-secondary_white {
   color: #FFF7DE !important;
 }
@@ -1266,16 +1304,20 @@ p {
   margin: 0 auto;
 }
 
+.fifty-fifty-fancy-split .part {
+  flex: 0 0 50%;
+}
+
 .fifty-fifty-fancy-split .part-left::after {
   content: "";
   position: absolute;
   display: block;
-  width: 40px;
-  height: 11px;
+  width: 80px;
+  height: 30px;
   bottom: -61px;
-  left: 2px;
-  background: url('../images/icon-bridge.png') no-repeat center center;
-  background-size: 40px 11px;
+  left: 45% !important;
+  background: url('../library/images/icon-bridge.png') no-repeat center center !important;
+  background-size: 40px 11px !important;
 }
 
 @media (min-width: 960px) {
@@ -1289,6 +1331,19 @@ p {
   }
 }
 
+.committed-to-text-after::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 1166px;
+  height: 77px;
+  top: 12px;
+  left: 50%;
+  margin-left: -593px;
+  background: url('../library/images/dot-curve.png') no-repeat center center;
+  background-size: 1166px 77px;
+}
+
 .hover\:bg-blue-600:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(37 99 235 / var(--tw-bg-opacity));
@@ -1297,5 +1352,11 @@ p {
 @media (min-width: 640px) {
   .sm\:flex-row {
     flex-direction: row;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }

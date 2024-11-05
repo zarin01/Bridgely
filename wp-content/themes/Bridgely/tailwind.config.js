@@ -39,7 +39,7 @@ module.exports = {
     },
   },
   plugins: [
-    plugin(function({ addUtilities, e }) {
+    plugin(function({ addUtilities }) {
       const newUtilities = {
         '.text-shadow': {
           textShadow: '0 0 16px rgba(0, 0, 0, 0.5)',
@@ -50,16 +50,19 @@ module.exports = {
           padding: '0 20px',
           margin: '0 auto',
         },
+        '.fifty-fifty-fancy-split .part': {
+          flex: '0 0 50%',
+        },
         '.fifty-fifty-fancy-split .part-left::after': {
           content: '""',
           position: 'absolute',
           display: 'block',
-          width: '40px',
-          height: '11px',
+          width: '80px',
+          height: '30px',
           bottom: '-61px',
-          left: '2px',
-          background: "url('../images/icon-bridge.png') no-repeat center center",
-          backgroundSize: '40px 11px',
+          left: '45% !important',
+          background: "url('../library/images/icon-bridge.png') no-repeat center center !important",
+          backgroundSize: '40px 11px !important',
         },
         '@media (min-width: 960px)': {
           '.fifty-fifty-fancy-split .part-left::after': {
@@ -71,6 +74,18 @@ module.exports = {
             marginRight: '-20px',
           },
         },
+            '.committed-to-text-after::after': {
+              content: '""',
+              position: 'absolute',
+              display: 'block',
+              width: '1166px',
+              height: '77px',
+              top: '12px',
+              left: '50%',
+              marginLeft: '-593px',
+              background: "url('../library/images/dot-curve.png') no-repeat center center",
+              backgroundSize: '1166px 77px',
+            },
       };
       addUtilities(newUtilities, ['responsive', 'hover']);
     }),
