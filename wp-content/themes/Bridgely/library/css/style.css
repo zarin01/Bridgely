@@ -635,27 +635,26 @@ example
 320 is the min size to show this
 680 is the difference of the high end size where we want to show the large font, and the min size (1000-320=680)
 */
+/**
 h2, h3,
 .text-l, .text-h2,
 .text-m, .text-h3 {
   margin-top: 40px;
-}
-h2:first-child, h3:first-child,
-.text-l:first-child, .text-h2:first-child,
-.text-m:first-child, .text-h3:first-child {
-  margin-top: 0;
+
+  &:first-child {
+    margin-top: 0;
+  }
 }
 
 h4, h5,
 .text-s, .text-h4 {
   margin-top: 40px;
-}
-h4:first-child, h5:first-child,
-.text-s:first-child, .text-h4:first-child {
-  margin-top: 0;
+
+  &:first-child {
+    margin-top: 0;
+  }
 }
 
-/**
 h1 {
   margin-bottom: 34px;
   font-size: calc(38px + 18 * ((100vw - 320px) / 840));

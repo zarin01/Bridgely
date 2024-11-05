@@ -36,6 +36,9 @@ module.exports = {
         '6p': '6%',
         '9p': '9%',
       },
+      fontFamily: {
+          poppins: ['Poppins', 'sans-serif'],
+        },
     },
   },
   plugins: [

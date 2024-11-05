@@ -241,81 +241,81 @@
 
 
     <?php /************************
-*
-*         Section 4
-*
-*************************/ ?>
+    *
+    *         Section 4
+    *committed-to-text-after After Image
+    *************************/ ?>
 
-<div class="page-animate-block">
-    <div class="center">
-        <?php if( get_field('home_4_intro_text') ) : ?>
-            <h2 class="section-4-intro animateRise text-center mb-[86px]">
-                <?php echo get_field('home_4_intro_text'); ?>
-            </h2>
-        <?php endif; ?>
+    <div class="page-animate-block">
+        <div class="center py-[280px] md:py-[70px]">
+            <?php if( get_field('home_4_intro_text') ) : ?>
+                <h2 class="animateRise text-center mb-[86px]">
+                    <?php echo get_field('home_4_intro_text'); ?>
+                </h2>
+            <?php endif; ?>
 
-        <?php if( get_field('home_4_support_line') ) : ?>
-            <div class="committed-to-text text-h4 text-primary animateRise committed-to-text-after">
-                <?php echo get_field('home_4_support_line'); ?>
-            </div>
-        <?php endif; ?>
+            <?php if( get_field('home_4_support_line') ) : ?>
+                <div class="committed-to-text text-primary animateRise committed-to-text-after flex justify-center items-center text-[23px] font-bold leading-[115%] mt-[40px]">
+                    <?php echo get_field('home_4_support_line'); ?>
+                </div>
+            <?php endif; ?>
 
-        <div class=" flex flex-row">
-            <div class="animateRise text-center max-w-[600px] mx-auto">
-                <?php if( get_field('home_4_column_1_title') ) : ?>
-                    <div class="icon-wrap w-[50px] mb-[14px] mx-auto">
-                        <img src="<?php bloginfo('template_directory'); ?>/library/images/Icon_Bridgely-Safety.png" style="width: 50px; height: 50px;" alt="" class="w-full h-full" />
-                    </div>
-                    <h3 class="text-h3"><?php echo get_field('home_4_column_1_title'); ?></h3>
-                <?php endif; ?>
-                <?php if( get_field('home_4_column_1_copy') ) : ?>
-                    <p><?php echo get_field('home_4_column_1_copy'); ?></p>
-                <?php endif; ?>
-            </div>
+            <div class="flex flex-row mt-[45px]">
+                <div class="animateRise text-center w-[360px] mx-auto">
+                    <?php if( get_field('home_4_column_1_title') ) : ?>
+                        <div class="icon-wrap w-[50px] mb-[14px] mx-auto">
+                            <img src="<?php bloginfo('template_directory'); ?>/library/images/Icon_Bridgely-Safety.png" style="width: 50px; height: 50px;" alt="" class="w-full h-full" />
+                        </div>
+                        <h3 class="font-poppins font-medium mb-[23px] text-[30px] leading-[1.15]"><?php echo get_field('home_4_column_1_title'); ?></h3>
+                    <?php endif; ?>
+                    <?php if( get_field('home_4_column_1_copy') ) : ?>
+                        <p class="text-left"><?php echo get_field('home_4_column_1_copy'); ?></p>
+                    <?php endif; ?>
+                </div>
 
-            <div class="col col2 animateRise text-center max-w-[600px] mx-auto">
-                <?php if( get_field('home_4_column_2_title') ) : ?>
-                    <div class="icon-wrap w-[50px] h-[50px] mb-4 mx-auto">
-                        <img src="<?php bloginfo('template_directory'); ?>/library/images/Icon_Bridgely-Search.png" alt="" class="w-full h-full" />
-                    </div>
-                    <h3 class="text-h3"><?php echo get_field('home_4_column_2_title'); ?></h3>
-                <?php endif; ?>
-                <?php if( get_field('home_4_column_2_copy') ) : ?>
-                    <p><?php echo get_field('home_4_column_2_copy'); ?></p>
-                <?php endif; ?>
-            </div>
+                <div class="col col2 animateRise text-center w-[360px] mx-auto">
+                    <?php if( get_field('home_4_column_2_title') ) : ?>
+                        <div class="flex justify-center items-center">
+                            <img src="<?php bloginfo('template_directory'); ?>/library/images/Icon_Bridgely-Search.png" style="width: 50px; height: 50px;" alt="" class="w-full h-full" />
+                        </div>
+                        <h3 class="font-poppins font-medium mb-[23px] text-[30px] leading-[1.15]"><?php echo get_field('home_4_column_2_title'); ?></h3>
+                    <?php endif; ?>
+                    <?php if( get_field('home_4_column_2_copy') ) : ?>
+                        <p class="text-left"><?php echo get_field('home_4_column_2_copy'); ?></p>
+                    <?php endif; ?>
+                </div>
 
-            <div class="col col3 animateRise text-center max-w-[600px] mx-auto">
-                <?php if( get_field('home_4_column_3_title') ) : ?>
-                    <div class="icon-wrap w-[50px] mb-[14px] mx-auto">
-                        <img src="<?php bloginfo('template_directory'); ?>/library/images/Icon_Bridgely-Collaboration.png" alt="" class="w-full h-full" />
-                    </div>
-                    <h3 class="text-h3"><?php echo get_field('home_4_column_3_title'); ?></h3>
-                <?php endif; ?>
-                <?php if( get_field('home_4_column_3_copy') ) : ?>
-                    <p><?php echo get_field('home_4_column_3_copy'); ?></p>
-                <?php endif; ?>
+                <div class="col col3 animateRise text-center w-[360px] mx-auto">
+                    <?php if( get_field('home_4_column_3_title') ) : ?>
+                        <div class="icon-wrap w-[50px] mb-[14px] mx-auto">
+                            <img src="<?php bloginfo('template_directory'); ?>/library/images/Icon_Bridgely-Collaboration.png" style="width: 50px; height: 50px;" alt="" class="w-full h-full" />
+                        </div>
+                        <h3 class="font-poppins font-medium mb-[23px] text-[30px] leading-[1.15]"><?php echo get_field('home_4_column_3_title'); ?></h3>
+                    <?php endif; ?>
+                    <?php if( get_field('home_4_column_3_copy') ) : ?>
+                        <p class="text-left"><?php echo get_field('home_4_column_3_copy'); ?></p>
+                    <?php endif; ?>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
 
 
     <?php /************************
-	*
-	*         Section 5, 6, 7v
-	* 
-	* *************************/ ?>
+    *
+    *         Section 5, 6, 7
+    * 
+    *************************/ ?>
 
-<div id="download_app"> </div>
+    <div id="download_app"> </div>
 
-    <div class="a-home-section home-section-5 page-animate-block" style="background-color:#FFF7DE">
+    <div class="page-animate-block bg-[#FFF7DE] overflow-hidden z-30 text-left">
         <div class="center">
 
-            <div class="split-content-with-image">
+            <div class="split-content-with-image flex flex-col md:flex-row">
 
-                <div class="col col1 contentcol">
+                <div class="">
                     <?php if( get_field('home_6_title') ) { ?>
                     <h2 class="animateRise"><?php echo get_field('home_6_title'); ?></h2>
                     <?php } ?>
@@ -330,16 +330,15 @@
                     </ul>
                     <?php endif; ?>
                     <?php if( get_field('download_app') ) { ?>
-                    <div style="padding-top: 20px;" class="downloadapp animateRise">
+                    <div class="pt-5 animateRise">
                         <?php echo get_field('download_app'); ?></div>
                     <?php } ?>
                 </div>
 
-                <div class="col col2 imagecol">
+                <div class="col col2 imagecol hidden md:block">
                     <?php if( get_field('home_6_section_image') ) { ?>
                     <?php $theImage = get_field('home_6_section_image'); ?>
-                    <img src="<?php echo $theImage['url']; ?>" alt="<?php echo $theImage['alt']; ?>"
-                        class="animateRise" />
+                    <img src="<?php echo $theImage['url']; ?>" alt="<?php echo $theImage['alt']; ?>" class="animateRise" />
                     <?php } ?>
                 </div>
 
@@ -349,9 +348,7 @@
 
         <div class="center">
 
-            <?php // if( get_field('home_7_intro_text') ) { ?>
             <div class="section-7-intro-line"><?php // the_field('home_7_intro_text'); ?></div>
-            <?php // } ?>
 
             <?php $blockCounter = 0; ?>
 
@@ -363,10 +360,10 @@
                 <div class="tan-divider animateRise"></div>
                 <?php } ?>
 
-                <div class="tan-split-section animateRise<?php if($blockCounter % 2 == 0) { echo ' swap'; } ?>">
+                <div class="tan-split-section animateRise flex <?php if($blockCounter % 2 == 0) { echo 'flex-row-reverse'; } ?>">
                     <div class="col col-left">
                         <?php $theImage = get_sub_field('image'); ?>
-                        <img src="<?php echo $theImage['url']; ?>" alt="<?php echo $theImage['alt']; ?>" />
+                        <img src="<?php echo $theImage['url']; ?>" alt="<?php echo $theImage['alt']; ?>" class="w-full" />
                     </div>
 
                     <div class="col col-right">
@@ -403,6 +400,7 @@
 
     </div>
 
+
     <?php /************************
 	*
 	*         Section 6
@@ -423,38 +421,42 @@
 	* 
 	* *************************/ ?>
 
-    <div class="a-home-section home-section-8 reach-main-module page-animate-block" id="contactus">
+    <div class="a-home-section home-section-8 reach-main-module page-animate-block bg-[#141C29] pt-[110px] bg-[length:160%] md:bg-[length:130%] lg:bg-[length:110%] xl:bg-[length:100%] xl:pt-[120px] 2xl:pt-[140px] 3xl:pt-[160px] 4xl:pt-[170px] 5xl:pt-[180px] 6xl:pt-[200px] 7xl:pt-[220px] 8xl:pt-[240px] 9xl:pt-[260px] 10xl:pt-[280px] 11xl:pt-[300px]" id="contactus">
         <div class="center">
-
+                                
             <?php if( get_field('reach_out_title') ) { ?>
-            <div class="reach-out-title animateRise"><?php echo get_field('reach_out_title'); ?></div>
+            <div class="reach-out-title animateRise text-center mb-[32px] font-poppins font-bold text-[calc(43px + 124 * ((100vw - 320px) / 1200))] leading-[106%] text-[#FFF7DE] shadow-[0_0_30px_rgba(0,0,0,0.5)]">
+                <?php echo get_field('reach_out_title'); ?>
+            </div>
             <?php } ?>
             <?php if( get_field('reach_out_subtitle') ) { ?>
-            <div class="reach-out-support animateRise"><?php echo get_field('reach_out_subtitle'); ?></div>
+            <div class="reach-out-support animateRise text-center max-w-[618px] mx-auto mb-[60px] font-poppins font-semibold text-[21px] leading-[120%] text-[#FFF7DE]">
+                <?php echo get_field('reach_out_subtitle'); ?>
+            </div>
             <?php } ?>
-
+            
             <div class="form-wrap-outer">
                 <?php if( get_field('reach_out_form_title') ) { ?>
                 <p class="white animateRise"><?php echo get_field('reach_out_form_title'); ?></p>
                 <?php } ?>
-
+                
                 <?php if( get_field('reach_out_form_embed') ) { ?>
                 <div class="form-wrap-inner animateRise">
                     <?php echo get_field('reach_out_form_embed'); ?>
                 </div>
                 <?php } ?>
             </div>
-
+                
         </div>
-
+                
         <div class="down-curve-contain">
             <svg viewBox="0 0 1680 65" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1680 65V0H-3V64.9233C548.107 -8.56355 1128.89 -8.56355 1680 64.9233V65Z" fill="#FFF7DE" />
             </svg>
         </div>
-
+                
     </div>
-
+                
 
 </main>
 
