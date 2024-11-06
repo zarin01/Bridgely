@@ -12,23 +12,27 @@ module.exports = {
     extend: {
       screens: {
         xl2: '1200px',
-        min840: '840px',
-        min960: '960px',
+        x960: '960px',
+        x840: '840px',
       },      
       colors: {
-        primary: '#E0B039 !important',
-        secondary_white: '#FFF7DE !important',
-        darkgray: '#141C29 !important',
+        primary_orange: '#E0B039 !important',
+        primary_white: '#FFF7DE !important',
+        primary_gray: '#141C29 !important',
       },
       width: {
         'calc-100-minus-820': 'calc(100% - 820px)',
+        'calc-100-minus-420': 'calc(100% - 420px)',
         '140p': '140%',
         '106p': '106%',
+        '620': '620px',
       },
       maxWidth: {
-        'screen-xl': '1210px',
+        '610': '610px',
         '1210': '1210px',
-        
+      },
+      height: {
+        '500': '500px',
       },
       fontSize: {
         'responsive': 'calc(36px + 20 * ((100vw - 320px) / 840))',
@@ -50,8 +54,12 @@ module.exports = {
       },
       inset: {
         '-10': '-10px',
+        '-4': '-4px',
         '-20p': '-20%',
         '-5p': '-5%',
+      },
+      borderRadius: {
+        '4': '4px',
       },
     },
   },
@@ -108,7 +116,11 @@ module.exports = {
           top: '-1px',
           left: '-10px',
         },
-        
+        '.dotted_bridge': {
+          backgroundSize: 'cover',
+          backgroundPosition: 'center top',
+          padding: '30px 0',
+        },
       };
       addUtilities(newUtilities, ['responsive', 'hover']);
     }),
