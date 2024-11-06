@@ -27,7 +27,7 @@
         } ?>
     >
         <div class="relative text-secondary_white max-w-[1210px] px-5 mx-auto mt-0.5 text-shadow">
-            <div class="relative py-[245px] pb-[120px]">
+            <div class="relative pt-[180px] pb-[120px]">
                 <div class="relative secondary_white max-w-[610px] text-left ml-0">
                     <?php if( get_field('home_1_main_title') ) { ?>
                         <h1 class="animateRise secondary_white font-bold text-shadow-lg"><?php echo get_field('home_1_main_title'); ?></h1>
@@ -58,25 +58,29 @@
     * changing ID used for JS purposes
     * *************************/ ?>
 
-    <div class="relative mt-[20px] max-w-[1700px] h-[500px] py-[20px] home-section-2" id="changing">
-        <div class="max-w-[1170px] mx-auto flex flex-col md:flex-row items-center h-full px-4 md:px-0">
-            <div class="relative w-full md:w-[620px] pr-0 md:pr-[55px] mb-6 md:mb-0">
-                <?php if( get_field('home_2_paragraph_part') ) { ?>
-                    <p class="animateRise mb-5 text-center md:text-left"><?php echo get_field('home_2_paragraph_part'); ?></p>
-                <?php } ?>
-            </div>
+    <div id="changing" class="relative mt-[150px] h-[700px] md:mt-[20px] md:h-[500px] xl2:py-[50px] home-section-2 max-w-[1700px]">
+        <div class="max-w-[1210px] mx-auto flex flex-col md:flex-row items-center px-[20px] py-0">
+            <div class="flex items-center justify-center">
+                <div class="relative w-full md:w-[620px] md:pr-[55px] md:mb-0 pr-0 mb-6">
+                    <?php if( get_field('home_2_paragraph_part') ) { ?>
+                        <p class="animateRise mb-5 md:text-left max-sm:text-center"><?php echo get_field('home_2_paragraph_part'); ?></p>
+                    <?php } ?>
+                </div>
 
-            <div class="relative w-full md:w-auto md:pl-[10px] mt-[20px] md:mt-0 text-center md:text-left">
-                <?php if( get_field('home_2_title_line') ) { ?>
-                    <h2 class="animateRise font-bold text-2xl md:text-5xl leading-[36px] md:leading-[62.4px]"><?php echo get_field('home_2_title_line'); ?></h2>
-                <?php } ?>
-                
-                <?php if( get_field('home_2_button_text') ) { ?>
-                    <p class="mt-4 md:mt-6">
-                        <a href="<?php echo get_field('home_2_button_link'); ?>" class="btn animateRise bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition"><?php echo get_field('home_2_button_text'); ?></a>
-                    </p>
-                <?php } ?>
+                <div class="relative w-full md:pl-[10px] mt-[20px] md:mt-0 md:text-left max-sm:text-center md:w-[calc(100%-420px)] lg:w-[calc(100%-820px)] lg:mt-[20px]">
+                    <?php if( get_field('home_2_title_line') ) { ?>
+                        <h2 class="animateRise font-bold text-2xl md:text-5xl leading-[36px] md:leading-[62.4px]"><?php echo get_field('home_2_title_line'); ?></h2>
+                    <?php } ?>
+                    
+                    <?php if( get_field('home_2_button_text') ) { ?>
+                        <p class="mt-4 md:mt-6">
+                            <a href="<?php echo get_field('home_2_button_link'); ?>"
+                            class="animateRise relative inline-block px-[17px] py-[13px] font-poppins font-semibold text-[16px] leading-[16px] uppercase tracking-[0.5px] text-center text-white bg-[#D1A129] rounded-[4px]"><?php echo get_field('home_2_button_text'); ?></a>
+                        </p>
+                    <?php } ?>
+                </div>
             </div>
+            
         </div>
     </div>
 
@@ -120,11 +124,11 @@
     
     <div class="relative bg-choose-your-start pt-[120px] pb-[180px] text-center bg-cover bg-no-repeat bg-center">
         <div class="relative text-white max-w-screen-xl mx-auto primary-link px-4 md:px-0">
-                        
+
             <?php if( get_field('partners_page_2_title') ) { ?>
                 <h2 class="text-custom pb-[40px] text-responsive"><?php echo get_field('partners_page_2_title'); ?></h2>
             <?php } ?>
-            
+
             <div class="icon-wrap-section grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-[45px] mx-auto">
                 <div class="animateRise primary-link">
                     <?php if( get_field('partners_page_2_column_1_title') ) { ?>
@@ -133,7 +137,7 @@
                         </div>
                     <?php } ?>
                 </div>
-                    
+
                 <div class="animateRise dotted_bridge">
                     <?php if( get_field('partners_page_2_column_2_title') ) { ?>
                         <div class="text-wrap text-white text-[19px] leading-[24px] font-medium font-sans">
@@ -141,7 +145,7 @@
                         </div>
                     <?php } ?>
                 </div>
-                    
+
                 <div class="animateRise">
                     <?php if( get_field('partners_page_2_column_3_title') ) { ?>
                         <div class="text-wrap text-white text-[19px] leading-[24px] font-medium font-sans">
@@ -150,21 +154,21 @@
                     <?php } ?>
                 </div>
             </div>
-                    
+
             <div class="text-wrap mx-auto max-w-[840px] mt-8">
                 <?php if( get_field('partners_page_footer_section_text') ) { ?>
                     <p class="text-white footer_section_text"><?php echo get_field('partners_page_footer_section_text'); ?></p>
                 <?php } ?>
             </div>
         </div>
-                
+
         <div class="absolute w-full overflow-hidden bottom-[-4px] left-0">
             <svg viewBox="0 0 1658 59" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1680 53.115V58.1982H0V53.1003C550.124 -17.7001 1129.88 -17.7001 1680 53.1003V53.115Z" fill="#FFF7DE" />
             </svg>
         </div>
     </div>
-                
+
 
     
     <?php /************************

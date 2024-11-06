@@ -10,6 +10,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        xl2: '1200px', // Custom screen size at 1200px
+      },
       colors: {
         primary: '#E0B039 !important',
         secondary_white: '#FFF7DE !important',
