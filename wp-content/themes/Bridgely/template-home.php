@@ -65,7 +65,7 @@
                     <p class="animateRise mb-5 text-center md:text-left"><?php echo get_field('home_2_paragraph_part'); ?></p>
                 <?php } ?>
             </div>
-                
+
             <div class="relative w-full md:w-auto md:pl-[10px] mt-[20px] md:mt-0 text-center md:text-left">
                 <?php if( get_field('home_2_title_line') ) { ?>
                     <h2 class="animateRise font-bold text-2xl md:text-5xl leading-[36px] md:leading-[62.4px]"><?php echo get_field('home_2_title_line'); ?></h2>
@@ -118,45 +118,53 @@
     * 
     * *************************/ ?>
     
-    <div class="relative bg-choose-your-start pt-[120px] pb-[180px] text-center bg-cover bg-no-repeat bg-center" >
-        <div class="relative text-white max-w-screen-xl mx-auto primary-link">
-
+    <div class="relative bg-choose-your-start pt-[120px] pb-[180px] text-center bg-cover bg-no-repeat bg-center">
+        <div class="relative text-white max-w-screen-xl mx-auto primary-link px-4 md:px-0">
+                        
             <?php if( get_field('partners_page_2_title') ) { ?>
-            <h2 class="text-custom pb-[40px] text-responsive"><?php echo get_field('partners_page_2_title'); ?></h2>
+                <h2 class="text-custom pb-[40px] text-responsive"><?php echo get_field('partners_page_2_title'); ?></h2>
             <?php } ?>
-
-            <div class="icon-wrap-section grid grid-cols-3 gap-[45px] mt-[45px] mx-auto">
+            
+            <div class="icon-wrap-section grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-[45px] mx-auto">
                 <div class="animateRise primary-link">
                     <?php if( get_field('partners_page_2_column_1_title') ) { ?>
-                    <div class="text-wrap text-white text-[19px] leading-[24px] font-medium font-sans"><?php echo get_field('partners_page_2_column_1_title'); ?></div>
+                        <div class="text-wrap text-white text-[19px] leading-[24px] font-medium font-sans">
+                            <?php echo get_field('partners_page_2_column_1_title'); ?>
+                        </div>
                     <?php } ?>
                 </div>
-
+                    
                 <div class="animateRise dotted_bridge">
                     <?php if( get_field('partners_page_2_column_2_title') ) { ?>
-                    <div class="text-wrap text-white text-[19px] leading-[24px] font-medium font-sans"><?php echo get_field('partners_page_2_column_2_title'); ?></div>
+                        <div class="text-wrap text-white text-[19px] leading-[24px] font-medium font-sans">
+                            <?php echo get_field('partners_page_2_column_2_title'); ?>
+                        </div>
                     <?php } ?>
                 </div>
-
+                    
                 <div class="animateRise">
                     <?php if( get_field('partners_page_2_column_3_title') ) { ?>
-                    <div class="text-wrap text-white text-[19px] leading-[24px] font-medium font-sans"><?php echo get_field('partners_page_2_column_3_title'); ?></div>
+                        <div class="text-wrap text-white text-[19px] leading-[24px] font-medium font-sans">
+                            <?php echo get_field('partners_page_2_column_3_title'); ?>
+                        </div>
                     <?php } ?>
                 </div>
             </div>
-
-            <div class="text-wrap mx-auto max-w-[840px]">
+                    
+            <div class="text-wrap mx-auto max-w-[840px] mt-8">
                 <?php if( get_field('partners_page_footer_section_text') ) { ?>
-                <p class="text-white footer_section_text"><?php echo get_field('partners_page_footer_section_text'); ?></p>
+                    <p class="text-white footer_section_text"><?php echo get_field('partners_page_footer_section_text'); ?></p>
                 <?php } ?>
             </div>
         </div>
+                
         <div class="absolute w-full overflow-hidden bottom-[-4px] left-0">
             <svg viewBox="0 0 1658 59" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1680 53.115V58.1982H0V53.1003C550.124 -17.7001 1129.88 -17.7001 1680 53.1003V53.115Z" fill="#FFF7DE" />
             </svg>
         </div>
     </div>
+                
 
     
     <?php /************************
