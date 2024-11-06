@@ -5,10 +5,6 @@
 
 
 
- Classes that use CSS but are too customized for Tailwind:
-    up-curve-contain
-
-
 
 */
 ?>
@@ -28,8 +24,8 @@
         id="home-intro-hero"
         <?php if (get_field('home_1_background_image')) { 
             echo 'style="background-image: url(' . get_field('home_1_background_image') . ');"'; 
-        } ?>>
-
+        } ?>
+    >
         <div class="relative text-secondary_white max-w-[1210px] px-5 mx-auto mt-0.5 text-shadow">
             <div class="relative py-[245px] pb-[120px]">
                 <div class="relative secondary_white max-w-[610px] text-left ml-0">
@@ -45,13 +41,14 @@
             </div>
         </div>
 
-        <div class="up-curve-contain">
+        <!-- Adjusted SVG container with bottom positioning -->
+        <div class="absolute w-full overflow-hidden bottom-[-4px] left-0">
             <svg viewBox="0 0 1658 59" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1680 53.115V58.1982H0V53.1003C550.124 -17.7001 1129.88 -17.7001 1680 53.1003V53.115Z"
-                    fill="#FFF" />
+                <path d="M1680 53.115V58.1982H0V53.1003C550.124 -17.7001 1129.88 -17.7001 1680 53.1003V53.115Z" fill="#FFF" />
             </svg>
         </div>
     </div>
+
 
     <?php /************************
     *
@@ -62,28 +59,27 @@
     * *************************/ ?>
 
     <div class="relative mt-[20px] max-w-[1700px] h-[500px] py-[20px] home-section-2" id="changing">
-        <div class="max-w-[1170px] mx-auto flex items-center h-full">
-            <div class="flex items-center justify-center">
-                <div class="relative w-[620px] pr-[55px]">
-                    <?php if( get_field('home_2_paragraph_part') ) { ?>
-                        <p class="animateRise mb-5"><?php echo get_field('home_2_paragraph_part'); ?></p>
-                    <?php } ?>
-                </div>
-
-                <div class="relative pl-[10px] w-calc-100-minus-820 mt-[20px] mr-0 mb-auto ml-0">
-                    <?php if( get_field('home_2_title_line') ) { ?>
-                        <h2 class="animateRise font-bold text-2xl text-5xl leading-[62.4px]"><?php echo get_field('home_2_title_line'); ?></h2>
-                    <?php } ?>
-                    
-                    <?php if( get_field('home_2_button_text') ) { ?>
-                        <p>
-                            <a href="<?php echo get_field('home_2_button_link'); ?>" class="btn animateRise bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition"><?php echo get_field('home_2_button_text'); ?></a>
-                        </p>
-                    <?php } ?>
-                </div>
+        <div class="max-w-[1170px] mx-auto flex flex-col md:flex-row items-center h-full px-4 md:px-0">
+            <div class="relative w-full md:w-[620px] pr-0 md:pr-[55px] mb-6 md:mb-0">
+                <?php if( get_field('home_2_paragraph_part') ) { ?>
+                    <p class="animateRise mb-5 text-center md:text-left"><?php echo get_field('home_2_paragraph_part'); ?></p>
+                <?php } ?>
+            </div>
+                
+            <div class="relative w-full md:w-auto md:pl-[10px] mt-[20px] md:mt-0 text-center md:text-left">
+                <?php if( get_field('home_2_title_line') ) { ?>
+                    <h2 class="animateRise font-bold text-2xl md:text-5xl leading-[36px] md:leading-[62.4px]"><?php echo get_field('home_2_title_line'); ?></h2>
+                <?php } ?>
+                
+                <?php if( get_field('home_2_button_text') ) { ?>
+                    <p class="mt-4 md:mt-6">
+                        <a href="<?php echo get_field('home_2_button_link'); ?>" class="btn animateRise bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition"><?php echo get_field('home_2_button_text'); ?></a>
+                    </p>
+                <?php } ?>
             </div>
         </div>
     </div>
+
 
 
     <?php /************************
@@ -243,6 +239,7 @@
     <?php /************************
     *
     *         Section 4
+    *
     *committed-to-text-after After Image
     *************************/ ?>
 
@@ -309,18 +306,25 @@
     *************************/ ?>
 
     <div id="download_app"> </div>
-
-    <div class="page-animate-block bg-[#FFF7DE] overflow-hidden z-30 text-left">
+    
+    <div class="relative pb-[50px] bg-[#FFF7DE] overflow-hidden z-30 text-left">
+        <div class="relative z-10">
+          <div class="absolute top-0 left-[-10px] w-[calc(100%+20px)] overflow-hidden">
+              <svg class="w-full" viewBox="0 0 1680 65" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1680 65V0H-3V64.9233C548.107 -8.56355 1128.89 -8.56355 1680 64.9233V65Z" fill="#FFF" />
+              </svg>
+          </div>
+        </div>
         <div class="center">
 
-            <div class="split-content-with-image flex flex-col md:flex-row">
+            <div class="flex flex-col md:flex-row">
 
-                <div class="">
+                <div class="max-w-none pr-50 w-1/2 flex justify-center items-center flex-col">
                     <?php if( get_field('home_6_title') ) { ?>
-                    <h2 class="animateRise"><?php echo get_field('home_6_title'); ?></h2>
+                    <h2 class="animateRise mb-[26px] leading-[1.3]"><?php echo get_field('home_6_title'); ?></h2>
                     <?php } ?>
                     <?php if( get_field('home_6_subtitle') ) { ?>
-                    <p class="support-line animateRise"><?php echo get_field('home_6_subtitle'); ?></p>
+                    <p class="text-[18px] leading-[1.5] animateRise"><?php echo get_field('home_6_subtitle'); ?></p>
                     <?php } ?>
                     <?php if( have_rows('home_6_list_items') ): ?>
                     <ul class="animateRise">
@@ -335,7 +339,7 @@
                     <?php } ?>
                 </div>
 
-                <div class="col col2 imagecol hidden md:block">
+                <div class="block z-[1000] hidden md:block">
                     <?php if( get_field('home_6_section_image') ) { ?>
                     <?php $theImage = get_field('home_6_section_image'); ?>
                     <img src="<?php echo $theImage['url']; ?>" alt="<?php echo $theImage['alt']; ?>" class="animateRise" />
@@ -392,11 +396,7 @@
 
         </div>
 
-        <div class="down-curve-contain">
-            <svg viewBox="0 0 1680 65" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1680 65V0H-3V64.9233C548.107 -8.56355 1128.89 -8.56355 1680 64.9233V65Z" fill="#FFF" />
-            </svg>
-        </div>
+       
 
     </div>
 
@@ -418,30 +418,37 @@
     <?php /************************
 	*
 	*         Section 8
-	* 
+	* home-section-8 JS used class
 	* *************************/ ?>
-
-    <div class="a-home-section home-section-8 reach-main-module page-animate-block bg-[#141C29] pt-[110px] bg-[length:160%] md:bg-[length:130%] lg:bg-[length:110%] xl:bg-[length:100%] xl:pt-[120px] 2xl:pt-[140px] 3xl:pt-[160px] 4xl:pt-[170px] 5xl:pt-[180px] 6xl:pt-[200px] 7xl:pt-[220px] 8xl:pt-[240px] 9xl:pt-[260px] 10xl:pt-[280px] 11xl:pt-[300px]" id="contactus">
+    <div class="relative z-10">
+        <div class="absolute top-0 left-[-10px] w-[calc(100%+20px)] overflow-hidden">
+          <svg class="w-full" viewBox="0 0 1680 65" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1680 65V0H-3V64.9233C548.107 -8.56355 1128.89 -8.56355 1680 64.9233V65Z" fill="#FFF7DE" />
+          </svg>
+        </div>
+    </div>
+                
+    <div class="home-section-8 page-animate-block bg-[#141C29] relative pt-[110px] bg-[length:160%] md:bg-[length:130%] lg:bg-[length:110%] xl:bg-[length:100%] xl:pt-[120px] 2xl:pt-[140px] 3xl:pt-[160px] 4xl:pt-[170px] 5xl:pt-[180px] 6xl:pt-[200px] 7xl:pt-[220px] 8xl:pt-[240px] 9xl:pt-[260px] 10xl:pt-[280px] 11xl:pt-[300px]" id="contactus">
         <div class="center">
                                 
             <?php if( get_field('reach_out_title') ) { ?>
-            <div class="reach-out-title animateRise text-center mb-[32px] font-poppins font-bold text-[calc(43px + 124 * ((100vw - 320px) / 1200))] leading-[106%] text-[#FFF7DE] shadow-[0_0_30px_rgba(0,0,0,0.5)]">
+            <div class="animateRise relative text-center block font-poppins font-bold leading-[106%] text-secondary_white mb-[32px] fontSize-responsive_heading xl:mb-[18px] xl:text-[160px]">
                 <?php echo get_field('reach_out_title'); ?>
             </div>
             <?php } ?>
             <?php if( get_field('reach_out_subtitle') ) { ?>
-            <div class="reach-out-support animateRise text-center max-w-[618px] mx-auto mb-[60px] font-poppins font-semibold text-[21px] leading-[120%] text-[#FFF7DE]">
+            <div class="animateRise text-center max-w-[618px] mx-auto mb-[60px] font-poppins font-semibold text-[30px] md:text-[21px] leading-[120%] text-[#FFF7DE]">
                 <?php echo get_field('reach_out_subtitle'); ?>
             </div>
             <?php } ?>
             
-            <div class="form-wrap-outer">
+            <div class="relative max-w-[700px] mx-auto text-center">
                 <?php if( get_field('reach_out_form_title') ) { ?>
-                <p class="white animateRise"><?php echo get_field('reach_out_form_title'); ?></p>
+                <p class="animateRise"><?php echo get_field('reach_out_form_title'); ?></p>
                 <?php } ?>
                 
                 <?php if( get_field('reach_out_form_embed') ) { ?>
-                <div class="form-wrap-inner animateRise">
+                <div class="max-w-[624px] mx-auto animateRise">
                     <?php echo get_field('reach_out_form_embed'); ?>
                 </div>
                 <?php } ?>
@@ -449,12 +456,7 @@
                 
         </div>
                 
-        <div class="down-curve-contain">
-            <svg viewBox="0 0 1680 65" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1680 65V0H-3V64.9233C548.107 -8.56355 1128.89 -8.56355 1680 64.9233V65Z" fill="#FFF7DE" />
-            </svg>
-        </div>
-                
+       
     </div>
                 
 

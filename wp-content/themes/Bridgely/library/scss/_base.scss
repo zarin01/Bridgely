@@ -46,7 +46,7 @@ img.alignright {
     display: none !important;
   }
 }
-
+/**
 p {
   position: relative;
   margin-bottom: 35px;
@@ -59,7 +59,7 @@ p {
     margin-bottom: 0;
   }
 }
-
+**/
 p, li {
   a {
     word-break: break-word;
@@ -764,7 +764,7 @@ h4, h5 {
     }
   }
 }
-
+/**
 .up-curve-contain {
   position: absolute;
   display: block;
@@ -821,7 +821,7 @@ h4, h5 {
     color: $blue;
   }
 }
-/**
+
 .fifty-fifty-fancy-split {
   position: relative;
 

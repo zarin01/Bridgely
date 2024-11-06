@@ -17,6 +17,8 @@ module.exports = {
       },
       width: {
         'calc-100-minus-820': 'calc(100% - 820px)',
+        '140p': '140%',
+        '106p': '106%',
       },
       maxWidth: {
         'screen-xl': '1210px',
@@ -24,6 +26,7 @@ module.exports = {
       },
       fontSize: {
         'responsive': 'calc(36px + 20 * ((100vw - 320px) / 840))',
+        'responsive_heading': 'clamp(43px, calc(43px + 124 * ((100vw - 320px) / 1200)), 160px)',
       },
       backgroundPosition: {
         'center-top': 'center top',
@@ -37,8 +40,13 @@ module.exports = {
         '9p': '9%',
       },
       fontFamily: {
-          poppins: ['Poppins', 'sans-serif'],
-        },
+        poppins: ['Poppins', 'sans-serif'],
+      },
+      inset: {
+        '-10': '-10px',
+        '-20p': '-20%',
+        '-5p': '-5%',
+      },
     },
   },
   plugins: [
@@ -77,18 +85,24 @@ module.exports = {
             marginRight: '-20px',
           },
         },
-            '.committed-to-text-after::after': {
-              content: '""',
-              position: 'absolute',
-              display: 'block',
-              width: '1166px',
-              height: '77px',
-              top: '12px',
-              left: '50%',
-              marginLeft: '-593px',
-              background: "url('../library/images/dot-curve.png') no-repeat center center",
-              backgroundSize: '1166px 77px',
-            },
+        '.committed-to-text-after::after': {
+          content: '""',
+          position: 'absolute',
+          display: 'block',
+          width: '1166px',
+          height: '77px',
+          top: '12px',
+          left: '50%',
+          marginLeft: '-593px',
+          background: "url('../library/images/dot-curve.png') no-repeat center center",
+          backgroundSize: '1166px 77px',
+        },
+        '.down-curve-contain': {
+          width: 'calc(100% + 20px)',
+          top: '-1px',
+          left: '-10px',
+        },
+        
       };
       addUtilities(newUtilities, ['responsive', 'hover']);
     }),
