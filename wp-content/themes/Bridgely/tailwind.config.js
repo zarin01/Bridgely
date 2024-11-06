@@ -13,6 +13,7 @@ module.exports = {
       screens: {
         xl2: '1200px',
         min840: '840px',
+        min960: '960px',
       },      
       colors: {
         primary: '#E0B039 !important',

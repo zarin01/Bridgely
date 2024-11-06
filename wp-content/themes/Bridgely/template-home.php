@@ -130,7 +130,7 @@
                 <h2 class="text-custom pb-[40px] text-responsive"><?php echo get_field('partners_page_2_title'); ?></h2>
             <?php } ?>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-[45px] mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-[45px] mx-auto">
                 <div class="animateRise primary-link">
                     <?php if( get_field('partners_page_2_column_1_title') ) { ?>
                         <div class="text-wrap text-white text-[19px] leading-[24px] font-medium font-sans">
@@ -182,7 +182,7 @@
                 
     <div class="relative py-[50px] text-darkgray bg-secondary_white">
         <div class="center mx-auto">
-            <div class="relative flex flex-col sm:flex-row gap-8 mb-10 w-full">
+            <div class="relative flex flex-col min960:flex-row gap-8 mb-10 w-full">
                 
                 <div class="relative w-full pr-6p">
                     <?php if( get_field('home_3_left_title') ) { ?>
@@ -193,7 +193,7 @@
                     <?php } ?>
                 </div>
                     
-                <div class="relative flex-none w-1/2 pl-9p">
+                <div class="relative flex-none min960:w-1/2 min960:pl-9p">
                     <?php if( get_field('home_3_right_title') ) { ?>
                     <h2 class="text-darkgray animateRise"><?php echo get_field('home_3_right_title'); ?></h2>
                     <?php } ?>
