@@ -59,9 +59,9 @@
     * *************************/ ?>
 
     <div id="changing" class="relative mt-[150px] h-[700px] md:mt-[20px] md:h-[500px] xl2:py-[50px] home-section-2 max-w-[1700px]">
-        <div class="max-w-[1210px] mx-auto flex flex-col md:flex-row items-center px-[20px] py-0">
+        <div class="max-w-[1210px] mx-auto min840:flex min840:flex-row flex-col min840:items-center px-[20px] py-0">
             <div class="flex items-center justify-center">
-                <div class="relative w-full md:w-[620px] md:pr-[55px] md:mb-0 pr-0 mb-6">
+                <div class="relative w-full md:w-[620px] max-lg:pr-[55px] md:pr-[25px] md:mb-0 pr-0 mb-6">
                     <?php if( get_field('home_2_paragraph_part') ) { ?>
                         <p class="animateRise mb-5 md:text-left max-sm:text-center"><?php echo get_field('home_2_paragraph_part'); ?></p>
                     <?php } ?>
@@ -80,16 +80,17 @@
                     <?php } ?>
                 </div>
             </div>
-            
         </div>
     </div>
+
+
 
 
 
     <?php /************************
     *
     *         Section 3
-    * 
+    * home-section-3 used for JS css commented out
     * *************************/ ?>
 
       <div class="home-section-3">         
@@ -129,7 +130,7 @@
                 <h2 class="text-custom pb-[40px] text-responsive"><?php echo get_field('partners_page_2_title'); ?></h2>
             <?php } ?>
 
-            <div class="icon-wrap-section grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-[45px] mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-[45px] mx-auto">
                 <div class="animateRise primary-link">
                     <?php if( get_field('partners_page_2_column_1_title') ) { ?>
                         <div class="text-wrap text-white text-[19px] leading-[24px] font-medium font-sans">

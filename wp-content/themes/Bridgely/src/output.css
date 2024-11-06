@@ -664,6 +664,12 @@ p {
   }
 }
 
+@media (min-width: 840px) {
+  .container {
+    max-width: 840px;
+  }
+}
+
 @media (min-width: 1024px) {
   .container {
     max-width: 1024px;
@@ -1593,6 +1599,12 @@ p {
   }
 }
 
+@media not all and (min-width: 1024px) {
+  .max-lg\:pr-\[55px\] {
+    padding-right: 55px;
+  }
+}
+
 @media not all and (min-width: 640px) {
   .max-sm\:text-center {
     text-align: center;
@@ -1602,6 +1614,10 @@ p {
 @media (min-width: 640px) {
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sm\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .sm\:flex-row {
@@ -1646,6 +1662,10 @@ p {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
@@ -1668,8 +1688,8 @@ p {
     padding-left: 10px;
   }
 
-  .md\:pr-\[55px\] {
-    padding-right: 55px;
+  .md\:pr-\[25px\] {
+    padding-right: 25px;
   }
 
   .md\:text-left {
@@ -1687,6 +1707,24 @@ p {
 
   .md\:leading-\[62\.4px\] {
     line-height: 62.4px;
+  }
+}
+
+@media (min-width: 840px) {
+  .min840\:flex {
+    display: flex;
+  }
+
+  .min840\:flex-row {
+    flex-direction: row;
+  }
+
+  .min840\:flex-col {
+    flex-direction: column;
+  }
+
+  .min840\:items-center {
+    align-items: center;
   }
 }
 

@@ -11,8 +11,9 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        xl2: '1200px', // Custom screen size at 1200px
-      },
+        xl2: '1200px',
+        min840: '840px',
+      },      
       colors: {
         primary: '#E0B039 !important',
         secondary_white: '#FFF7DE !important',
@@ -26,6 +27,7 @@ module.exports = {
       maxWidth: {
         'screen-xl': '1210px',
         '1210': '1210px',
+        
       },
       fontSize: {
         'responsive': 'calc(36px + 20 * ((100vw - 320px) / 840))',
