@@ -16,9 +16,19 @@ module.exports = {
         x840: '840px',
       },      
       colors: {
-        primary_orange: '#E0B039 !important',
-        primary_white: '#FFF7DE !important',
-        primary_gray: '#141C29 !important',
+        primary_orange: '#E0B039',
+        custom_gold: '#D1A129',
+        primary_white: '#FFF7DE',
+        primary_gray: '#141C29',
+        black: '#000',
+        darkgray: '#141C29',
+        blue: '#2A426B',
+        darkblue: '#141C29',
+        orange: '#D1A129',
+        orangehover: '#E0B039',
+        tan: '#FFF7DE',
+        tan2: '#F5EFE7',
+        white: '#FFF',
       },
       width: {
         'calc-100-minus-820': 'calc(100% - 820px)',
@@ -26,8 +36,11 @@ module.exports = {
         'calc-100-plus-20': 'calc(100% + 20px)',
         '140p': '140%',
         '106p': '106%',
+        '45p': '45%',
         '360': '360px',
+        '400': '400px',
         '620': '620px',
+        '700': '700px',
       },
       maxWidth: {
         '610': '610px',
@@ -40,19 +53,28 @@ module.exports = {
       fontSize: {
         'responsive': 'calc(36px + 20 * ((100vw - 320px) / 840))',
         'responsive_heading': 'clamp(43px, calc(43px + 124 * ((100vw - 320px) / 1200)), 160px)',
+        'calc-32-plus-18': 'calc(32px + 18 * ((100vw - 320px) / 840))',
+        '160': '160px',
+        '30': '30px',
       },
       backgroundPosition: {
         'center-top': 'center top',
       },
       backgroundImage: {
         'choose-your-start': "url('../library/images/partners-support-bg.jpg')",
-        'footer-texture': "url('/img/footer-texture.png')",
+      },
+      backgroundSize: {
+        '160': '160%',
+        '130': '130%',
+        '110': '110%',
+        '100': '100%',
       },
       padding: {
         '6p': '6%',
         '9p': '9%',
         '56p': '56.25%',
         '280': '280px',
+        '140': '140px',
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
@@ -116,6 +138,23 @@ module.exports = {
           backgroundSize: 'cover',
           backgroundPosition: 'center top',
           padding: '30px 0',
+        },
+        '.text-point.yes::before': {
+          background: 'url("../library/images/Icon_Bridgely-Checkmark.png") no-repeat center center',
+          backgroundSize: '34px 32px !important',
+        },
+        '.text-point.no::before': {
+          background: 'url("../library/images/Icon_Bridgely-No.png") no-repeat center center',
+          backgroundSize: '34px 32px !important',
+        },
+        '.text-point::before': {
+          content: '""',
+          position: 'absolute !important',
+          display: 'block !important',
+          width: '34px',
+          height: '32px',
+          left: '0 !important',
+          top: '2px !important',
         },
       };
       addUtilities(newUtilities, ['responsive', 'hover']);

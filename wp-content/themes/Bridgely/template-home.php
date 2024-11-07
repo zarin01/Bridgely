@@ -1,11 +1,24 @@
 <?php /* Template Name: Home */ 
 /* Classes that are not Tailwind but arent accessing CSS, these classes are used for JS: 
-    home-section-1
-    page-animate-block
+    * home-section-1
+    * page-animate-block
+    * animateRise
 
+    Section 2:
+    * home-section-2 class adds in the Text Animation, removed CSS.
+    * changing ID used for JS purposes
 
+    Section 3:
+    * home-section-3 used for JS css commented out
+    * animateRise used for JS
+    * fifty-fifty-fancy-split Added to tailwind config file as plugin
 
+    Section 4
+    * committed-to-text-after added to config
+    * Reused ID download_app
 
+    Section 8
+    * home-section-8
 */
 ?>
 
@@ -16,7 +29,7 @@
     <?php /************************
 	*
 	*         Section 1
-	* home-section-1 used for animation JS
+	* 
 	* *************************/ ?>
 
     <div 
@@ -54,8 +67,6 @@
     *
     *         Section 2
     * 
-    * home-section-2 class adds in the Text Animation, removed CSS.
-    * changing ID used for JS purposes
     * *************************/ ?>
 
     <div id="changing" class="relative mt-36 h-128 md:mt-5 md:h-500 xl2:py-12 home-section-2">
@@ -90,7 +101,7 @@
     <?php /************************
     *
     *         Section 3
-    * home-section-3 used for JS css commented out
+    * 
     * *************************/ ?>
 
       <div class="home-section-3">         
@@ -176,8 +187,6 @@
     *
     *         Locally led
     * 
-    * 
-    * animateRise used for JS
     * *************************/ ?>
                 
     <div class="relative py-12 text-primary_gray bg-text-primary_white bg-primary_white">
@@ -253,7 +262,6 @@
     *
     *         Section 4
     *
-    *committed-to-text-after After Image
     *************************/ ?>
 
     <div class="page-animate-block">
@@ -365,36 +373,36 @@
 
         <div class="relative max-w-1210 px-5 mx-auto">
 
-            <div class="section-7-intro-line"><?php // the_field('home_7_intro_text'); ?></div>
+            <div class="mb-10 font-poppins font-bold text-center text-custom_gold text-3xl leading-tight md:mb-16"><?php // the_field('home_7_intro_text'); ?></div>
 
             <?php $blockCounter = 0; ?>
 
             <?php if( have_rows('home_7_content_blocks') ): ?>
-            <div class="temp">
+            <div class="m-0 p-0 border-0">
                 <?php while( have_rows('home_7_content_blocks') ) : the_row(); ?>
 
                 <?php if($blockCounter != 0) { ?>
                 <div class="relative block h-px mb-9 bg-primary_orange animateRise"></div>
                 <?php } ?>
 
-                <div class="relative mb-9 animateRise flex <?php if($blockCounter % 2 == 0) { echo 'flex flex-row-reverse'; } ?>">
-                    <div class="col col-left">
+                <div class="relative mb-9 animateRise flex <?php if($blockCounter % 2 == 0) { echo 'flex-row-reverse'; } ?>">
+                    <div class="max-w-400 lg:pl-12 md:pl-10 sm:pl-7.5 lg:pr-12 md:pr-10 sm:pr-7.5 lg:w-auto md:w-1/2 sm:w-45 sm:max-w-none mb-0">
                         <?php $theImage = get_sub_field('image'); ?>
                         <img src="<?php echo $theImage['url']; ?>" alt="<?php echo $theImage['alt']; ?>" class="w-full" />
                     </div>
 
-                    <div class="col col-right">
-                        <div class="inner-copy-wrap">
+                    <div class="pr-11 xl2:pr-12 x960:w-1/2 x960:pr-10 x840:pl-0 x840:pr-8">
+                        <div class="">
                             <?php if(get_sub_field('title')) { ?>
-                            <h3 class="text-h2"><?php the_sub_field('title'); ?></h3>
+                            <h3 class="mb-6 text-calc-32-plus-18"><?php the_sub_field('title'); ?></h3>
                             <?php } ?>
                             <?php if(get_sub_field('bullet_no')) { ?>
-                            <div class="text-point yes">
+                            <div class="relative pl-12 text-point yes">
                                 <p><?php the_sub_field('bullet_no'); ?></p>
                             </div>
                             <?php } ?>
                             <?php if(get_sub_field('bullet_yes')) { ?>
-                            <div class="text-point no">
+                            <div class="relative pl-12 text-point no">
                                 <p><?php the_sub_field('bullet_yes'); ?></p>
                             </div>
                             <?php } ?>
@@ -434,23 +442,23 @@
 	* home-section-8 JS used class
 	* *************************/ ?>
     <div class="relative z-10">
-        <div class="absolute top-0 left-[-10px] w-[calc(100%+20px)] overflow-hidden">
+        <div class="absolute top-0 -left-10 w-calc-100-plus-20 overflow-hidden">
           <svg class="w-full" viewBox="0 0 1680 65" xmlns="http://www.w3.org/2000/svg">
               <path d="M1680 65V0H-3V64.9233C548.107 -8.56355 1128.89 -8.56355 1680 64.9233V65Z" fill="#FFF7DE" />
           </svg>
         </div>
     </div>
                 
-    <div class="home-section-8 page-animate-block bg-primary_gray relative pt-[110px] bg-[length:160%] md:bg-[length:130%] lg:bg-[length:110%] xl:bg-[length:100%] xl:pt-32 2xl:pt-[140px] 3xl:pt-[160px] 4xl:pt-[170px] 5xl:pt-44 6xl:pt-[200px] 7xl:pt-[220px] 8xl:pt-[240px] 9xl:pt-[260px] 10xl:pt-[280px] 11xl:pt-[300px]" id="contactus">
+    <div class="home-section-8 page-animate-block bg-primary_gray relative pt-28 bg-160 md:bg-130 lg:bg-110 xl:bg-100 xl:pt-32 2xl:pt-36" id="contactus">
         <div class="relative max-w-1210 px-5 mx-auto">
                                 
             <?php if( get_field('reach_out_title') ) { ?>
-            <div class="animateRise relative text-center block font-poppins font-bold leading-[106%] text-primary_white mb-[32px] fontSize-responsive_heading xl:mb-[18px] xl:text-[160px]">
+            <div class="animateRise relative text-center block font-poppins font-bold leading-tight text-primary_white mb-8 fontSize-responsive_heading xl:mb-4.5 xl:160">
                 <?php echo get_field('reach_out_title'); ?>
             </div>
             <?php } ?>
             <?php if( get_field('reach_out_subtitle') ) { ?>
-            <div class="animateRise text-center max-w-[618px] mx-auto mb-[60px] font-poppins font-semibold text-[30px] md:text-[21px] leading-[120%] text-[#FFF7DE]">
+            <div class="animateRise text-center max-w-610 mx-auto mb-16 font-poppins font-semibold text-30 md:text-xl leading-relaxed text-primary_white">
                 <?php echo get_field('reach_out_subtitle'); ?>
             </div>
             <?php } ?>
@@ -461,7 +469,7 @@
                 <?php } ?>
                 
                 <?php if( get_field('reach_out_form_embed') ) { ?>
-                <div class="max-w-[624px] mx-auto animateRise">
+                <div class="max-w-700 mx-auto animateRise">
                     <?php echo get_field('reach_out_form_embed'); ?>
                 </div>
                 <?php } ?>
