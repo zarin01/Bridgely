@@ -679,7 +679,7 @@ h4, h5 {
   font-size: 23px;
   line-height: 130%;
 }
-**/
+
 .text-xxl {
   margin-bottom: 24px;
   font-size: calc(36px + 44 * ((100vw - 320px) / 1200));
@@ -694,7 +694,7 @@ h4, h5 {
 }
 
 .text-l,
-.text-h2 {
+.text-h2{
   margin-bottom: 23px;
   font-size: calc(32px + 18 * ((100vw - 320px) / 840));
   line-height: 119%;
@@ -702,9 +702,7 @@ h4, h5 {
 
 .text-m,
 .text-h3 {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 500;
+  @include po-500;
   margin-bottom: 23px;
   font-size: 30px;
   line-height: 115%;
@@ -718,7 +716,7 @@ h4, h5 {
   font-size: 23px;
   line-height: 115%;
 }
-
+**/
 .page-template-template-donate .split-content-with-image {
   display: flex;
   align-items: start;
@@ -1553,113 +1551,100 @@ h4, h5 {
   background-size: 34px 32px;
 }
 
+/*
 .tan-divider {
   position: relative;
   display: block;
   height: 1px;
   margin-bottom: 36px;
-  background: #D1A129;
+  background: $orange;
 }
 
 .reach-main-module {
   background: #141C29;
   background-size: 160%;
   padding-top: 110px;
-}
-.reach-main-module .reach-out-title {
-  position: relative;
-  text-align: center;
-  display: block;
-  margin-bottom: 32px;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: calc(43px + 124 * ((100vw - 320px) / 1200));
-  line-height: 106%;
-  color: #FFF7DE;
-  text-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
-}
-.reach-main-module .reach-out-support {
-  position: relative;
-  text-align: center;
-  max-width: 618px;
-  margin: 0 auto 60px;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 21px;
-  line-height: 120%;
-  color: #FFF7DE;
-}
-@media (min-width: 500px) {
-  .reach-main-module {
+
+  .reach-out-title {
+    position: relative;
+    text-align: center;
+    display: block;
+    margin-bottom: 32px;
+    @include po-700;
+    font-size: calc(43px + 124 * ((100vw - 320px) / 1200));
+    line-height: 106%;
+    color: $tan;
+    text-shadow: 0 0 30px rgba(0,0,0,0.5);
+  }
+
+  .reach-out-support {
+    position: relative;
+    text-align: center;
+    max-width: 618px;
+    margin: 0 auto 60px;
+    @include po-600;
+    font-size: 21px;
+    line-height: 120%;
+    color: $tan;
+  }
+
+  @media (min-width: 500px) {
     background-size: 130%;
   }
-}
-@media (min-width: 600px) {
-  .reach-main-module {
+
+  @media (min-width: 600px) {
     background-size: 110%;
   }
-}
-@media (min-width: 700px) {
-  .reach-main-module {
+
+  @media (min-width: 700px) {
     background-size: 100%;
     padding-top: 120px;
   }
-}
-@media (min-width: 800px) {
-  .reach-main-module {
+
+  @media (min-width: 800px) {
     padding-top: 140px;
+
+    .reach-out-support {
+      font-size: 30px;
+      margin-bottom: 80px;
+    }
   }
-  .reach-main-module .reach-out-support {
-    font-size: 30px;
-    margin-bottom: 80px;
-  }
-}
-@media (min-width: 900px) {
-  .reach-main-module {
+
+  @media (min-width: 900px) {
     padding-top: 160px;
   }
-}
-@media (min-width: 1000px) {
-  .reach-main-module {
+
+  @media (min-width: 1000px) {
     padding-top: 170px;
   }
-}
-@media (min-width: 1100px) {
-  .reach-main-module {
+
+  @media (min-width: 1100px) {
     padding-top: 180px;
   }
-}
-@media (min-width: 1200px) {
-  .reach-main-module {
+
+  @media (min-width: 1200px) {
     padding-top: 200px;
   }
-}
-@media (min-width: 1300px) {
-  .reach-main-module {
+
+  @media (min-width: 1300px) {
     padding-top: 220px;
   }
-}
-@media (min-width: 1400px) {
-  .reach-main-module {
+
+  @media (min-width: 1400px) {
     padding-top: 240px;
   }
-}
-@media (min-width: 1500px) {
-  .reach-main-module {
+
+  @media (min-width: 1500px) {
     padding-top: 260px;
   }
-}
-@media (min-width: 1600px) {
-  .reach-main-module {
+
+  @media (min-width: 1600px) {
     padding-top: 280px;
   }
-}
-@media (min-width: 1700px) {
-  .reach-main-module {
+
+  @media (min-width: 1700px) {
     padding-top: 300px;
-    background-size: auto;
+    background-size: auto
   }
 }
 
@@ -1668,11 +1653,12 @@ h4, h5 {
   max-width: 700px;
   margin: 0 auto;
   text-align: center;
-}
-.form-wrap-outer p {
-  text-align: center;
-  line-height: 120%;
-  margin-bottom: 35px;
+
+  p {
+    text-align: center;
+    line-height: 120%;
+    margin-bottom: 35px;
+  }
 }
 
 .form-wrap-inner {
@@ -1687,7 +1673,7 @@ h4, h5 {
 }
 
 #contact-intro-hero {
-  background: url("../images/contact-hero-bg.jpg") no-repeat center top;
+  background: url('../images/contact-hero-bg.jpg') no-repeat center top;
   background-size: cover;
 }
 
@@ -1697,17 +1683,20 @@ h4, h5 {
   text-align: center;
   max-width: 800px;
   margin: 0 auto;
-}
-.reach-out-main-top.vision {
-  max-width: 1010px;
-}
-.reach-out-main-top.vision .text-h1-special {
-  margin-bottom: 50px;
-}
-.reach-out-main-top.vision .vision-intro-copy-wrap .inner {
-  position: relative;
-  max-width: 960px;
-  margin: 0 auto;
+
+  &.vision {
+    max-width: 1010px;
+
+    .text-h1-special {
+      margin-bottom: 50px;
+    }
+
+    .vision-intro-copy-wrap .inner {
+      position: relative;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+  }
 }
 
 .text-h1-special {
@@ -1715,60 +1704,70 @@ h4, h5 {
   text-align: center;
   display: block;
   margin-bottom: 20px;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 700;
+  @include po-700;
   font-size: calc(43px + 57 * ((100vw - 320px) / 960));
   line-height: 106%;
+
+  &.special {
+    // font-size: calc(20px + 35 * ((100vw - 320px) / 960));
+  }
 }
 
 .reach-out-main-middle {
   position: relative;
   padding-bottom: 1px;
-}
-.reach-out-main-middle .bottom-stripe {
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 59%;
-  bottom: 0;
-  left: 0;
-  background: #141C29;
-  z-index: 1;
-}
-.reach-out-main-middle .contact-form-wrapper {
-  position: relative;
-  display: block;
-  padding: 30px 20px;
-  max-width: 920px;
-  margin: 0 auto 40px;
-  background: #F5EFE7;
-  z-index: 2;
-  border-radius: 7px;
-}
-.reach-out-main-middle .contact-form-wrapper .submitted-message p {
-  color: #141C29;
-  text-align: center;
-}
-.reach-out-main-middle .form-temp-inner {
-  position: relative;
-  display: block;
-  background: #FFF;
-  height: 340px;
-  border-radius: 7px;
+
+  .bottom-stripe {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 59%;
+    bottom: 0;
+    left: 0;
+    background: $darkblue;
+    z-index: 1;
+  }
+
+  .contact-form-wrapper {
+    position: relative;
+    display: block;
+    padding: 30px 20px;
+    max-width: 920px;
+    margin: 0 auto 40px;
+    background: $tan2;
+    z-index: 2;
+    border-radius: 7px;
+
+    .submitted-message {
+      p {
+        color: $darkblue;
+        text-align: center;
+      }
+    }
+  }
+
+  .form-temp-inner {
+    position: relative;
+    display: block;
+    background: $white;
+    height: 340px;
+    border-radius: 7px;
+  }
 }
 
-.submitted-message p {
-  text-align: center;
+.submitted-message {
+  p {
+    text-align: center;
+  }
 }
 
 .reach-out-main-bottom {
   position: relative;
   padding-bottom: 92px;
-  background: #141C29;
+  background: $darkblue;
 }
 
-/*
+
 .additional-contact-details {
   position: relative;
   padding-top: 20px;
@@ -3525,11 +3524,11 @@ TABLET & SMALLER LAPTOPS
       }
     }
   }
-  **/
+  
   .tan-divider {
     margin-bottom: 50px;
   }
-
+  **/
   .blank-intro-hero {
     padding-top: 47%;
   }

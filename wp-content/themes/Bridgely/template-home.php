@@ -26,7 +26,7 @@
             echo 'style="background-image: url(' . get_field('home_1_background_image') . ');"'; 
         } ?>
     >
-        <div class="relative text-text-primary_white max-w-1210 px-5 mx-auto mt-0.5 text-shadow">
+        <div class="relative text-primary_white max-w-1210 px-5 mx-auto mt-0.5 text-shadow">
             <div class="relative pt-44 pb-28">
                 <div class="relative text-primary_white max-w-610 text-left ml-0">
                     <?php if( get_field('home_1_main_title') ) { ?>
@@ -104,7 +104,7 @@
                             <?php echo get_field('home_section_3_video_title_2'); ?>
                         </h3>
                     
-                        <div class="relative" style="padding:56.25% 0 0 0;">
+                        <div class="relative pt-56p">
                             <iframe src="<?php echo get_field('home_section_3_video_url'); ?>" 
                                 class="absolute top-0 left-0 w-full h-full"
                                 frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
@@ -139,7 +139,7 @@
                     <?php } ?>
                 </div>
 
-                <div class="animateRise dotted_bridge">
+                <div class="animateRise">
                     <?php if( get_field('partners_page_2_column_2_title') ) { ?>
                         <div class="text-wrap text-white text-xl leading-6 font-medium font-sans">
                             <?php echo get_field('partners_page_2_column_2_title'); ?>
@@ -156,14 +156,14 @@
                 </div>
             </div>
 
-            <div class="text-wrap mx-auto max-w-[840px] mt-8">
+            <div class="text-wrap mx-auto max-w-840 mt-8">
                 <?php if( get_field('partners_page_footer_section_text') ) { ?>
                     <p class="text-white footer_section_text"><?php echo get_field('partners_page_footer_section_text'); ?></p>
                 <?php } ?>
             </div>
         </div>
 
-        <div class="absolute w-full overflow-hidden bottom-[-4px] left-0">
+        <div class="absolute w-full overflow-hidden -bottom-4 left-0">
             <svg viewBox="0 0 1658 59" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1680 53.115V58.1982H0V53.1003C550.124 -17.7001 1129.88 -17.7001 1680 53.1003V53.115Z" fill="#FFF7DE" />
             </svg>
@@ -180,8 +180,8 @@
     * animateRise used for JS
     * *************************/ ?>
                 
-    <div class="relative py-12 text-primary_gray bg-text-primary_white">
-        <div class="center mx-auto">
+    <div class="relative py-12 text-primary_gray bg-text-primary_white bg-primary_white">
+        <div class="relative max-w-1210 px-5 mx-auto">
             <div class="relative flex flex-col x960:flex-row gap-8 mb-10 w-full">
                 
                 <div class="relative w-full pr-6p">
@@ -207,13 +207,13 @@
     </div>
 
     <div class="bg-primary_gray py-6">
-        <div class="center mx-auto">
+        <div class="relative max-w-1210 px-5 mx-auto">
             <div class="w-4/5 mx-auto">
                 <?php if (get_field('home_section_3_video_url_2')) { ?>
-                    <h3 class="text-text-primary_white text-center text-4xl font-bold py-6">
+                    <h3 class="text-primary_white text-center text-4xl font-bold py-6">
                         <?php echo get_field('home_section_3_video_title'); ?>
                     </h3>
-                    <div class="relative pb-[56.25%]">
+                    <div class="relative pb-56p">
                         <iframe src="<?php echo get_field('home_section_3_video_url_2'); ?>" 
                             class="absolute top-0 left-0 w-full h-full"
                             frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
@@ -232,13 +232,13 @@
     * 
     * *************************/ ?>
 
-    <div class="relative bg-[#FFF7DE] text-primary_gray py-12">
-        <div class="center">
+    <div class="relative bg-primary_white text-primary_gray py-12">
+        <div class="relative max-w-1210 px-5 mx-auto">
             <?php if( get_field('bottom_title') ) { ?>
               <h2 class="text-center text-primary_gray"><?php echo get_field('bottom_title'); ?></h2>
             <?php } ?>
             
-            <div class="flex fifty-fifty-fancy-split mx-auto max-w-[1170px] flex-none basis-1/2 text-primary_gray">
+            <div class="flex fifty-fifty-fancy-split mx-auto max-w-screen-xl flex-none basis-1/2 text-primary_gray">
                 <?php if( get_field('bottom_copy') ) { ?>
                 <?php echo get_field('bottom_copy'); ?>
                 <?php } ?>
@@ -257,50 +257,50 @@
     *************************/ ?>
 
     <div class="page-animate-block">
-        <div class="center py-[280px] md:py-[70px]">
+        <div class="relative max-w-1210 px-5 mx-auto py-280 md:py-16">
             <?php if( get_field('home_4_intro_text') ) : ?>
-                <h2 class="animateRise text-center mb-[86px]">
+                <h2 class="animateRise text-center mb-20">
                     <?php echo get_field('home_4_intro_text'); ?>
                 </h2>
             <?php endif; ?>
 
             <?php if( get_field('home_4_support_line') ) : ?>
-                <div class="committed-to-text text-primary_orange animateRise committed-to-text-after flex justify-center items-center text-[23px] font-bold leading-[115%] mt-[40px]">
+                <div class="committed-to-text text-primary_orange animateRise committed-to-text-after flex justify-center items-center text-xl font-bold leading-normal mt-10">
                     <?php echo get_field('home_4_support_line'); ?>
                 </div>
             <?php endif; ?>
 
             <div class="flex flex-row mt-12">
-                <div class="animateRise text-center w-[360px] mx-auto">
+                <div class="animateRise text-center w-360 mx-auto">
                     <?php if( get_field('home_4_column_1_title') ) : ?>
-                        <div class="icon-wrap w-[50px] mb-[14px] mx-auto">
-                            <img src="<?php bloginfo('template_directory'); ?>/library/images/Icon_Bridgely-Safety.png" style="width: 50px; height: 50px;" alt="" class="w-full h-full" />
+                        <div class="w-12 mb-4 mx-auto">
+                            <img src="<?php bloginfo('template_directory'); ?>/library/images/Icon_Bridgely-Safety.png" class="w-12 h-12" alt="" />
                         </div>
-                        <h3 class="font-poppins font-medium mb-[23px] text-[30px] leading-[1.15]"><?php echo get_field('home_4_column_1_title'); ?></h3>
+                        <h3 class="font-poppins font-medium mb-6 text-3xl "><?php echo get_field('home_4_column_1_title'); ?></h3>
                     <?php endif; ?>
                     <?php if( get_field('home_4_column_1_copy') ) : ?>
                         <p class="text-left"><?php echo get_field('home_4_column_1_copy'); ?></p>
                     <?php endif; ?>
                 </div>
 
-                <div class="col col2 animateRise text-center w-[360px] mx-auto">
+                <div class="col col2 animateRise text-center w-360 mx-auto">
                     <?php if( get_field('home_4_column_2_title') ) : ?>
                         <div class="flex justify-center items-center">
-                            <img src="<?php bloginfo('template_directory'); ?>/library/images/Icon_Bridgely-Search.png" style="width: 50px; height: 50px;" alt="" class="w-full h-full" />
+                            <img src="<?php bloginfo('template_directory'); ?>/library/images/Icon_Bridgely-Search.png" class="w-12 h-12" alt="" />
                         </div>
-                        <h3 class="font-poppins font-medium mb-[23px] text-[30px] leading-[1.15]"><?php echo get_field('home_4_column_2_title'); ?></h3>
+                        <h3 class="font-poppins font-medium mb-6 text-3xl "><?php echo get_field('home_4_column_2_title'); ?></h3>
                     <?php endif; ?>
                     <?php if( get_field('home_4_column_2_copy') ) : ?>
                         <p class="text-left"><?php echo get_field('home_4_column_2_copy'); ?></p>
                     <?php endif; ?>
                 </div>
 
-                <div class="col col3 animateRise text-center w-[360px] mx-auto">
+                <div class="col col3 animateRise text-center w-360 mx-auto">
                     <?php if( get_field('home_4_column_3_title') ) : ?>
-                        <div class="icon-wrap w-[50px] mb-[14px] mx-auto">
-                            <img src="<?php bloginfo('template_directory'); ?>/library/images/Icon_Bridgely-Collaboration.png" style="width: 50px; height: 50px;" alt="" class="w-full h-full" />
+                        <div class="w-12 mb-4 mx-auto">
+                            <img src="<?php bloginfo('template_directory'); ?>/library/images/Icon_Bridgely-Collaboration.png" class="w-12 h-12" alt="" />
                         </div>
-                        <h3 class="font-poppins font-medium mb-[23px] text-[30px] leading-[1.15]"><?php echo get_field('home_4_column_3_title'); ?></h3>
+                        <h3 class="font-poppins font-medium mb-6 text-3xl "><?php echo get_field('home_4_column_3_title'); ?></h3>
                     <?php endif; ?>
                     <?php if( get_field('home_4_column_3_copy') ) : ?>
                         <p class="text-left"><?php echo get_field('home_4_column_3_copy'); ?></p>
@@ -320,24 +320,24 @@
 
     <div id="download_app"> </div>
     
-    <div class="relative pb-[50px] bg-[#FFF7DE] overflow-hidden z-30 text-left">
+    <div class="relative pb-12 bg-primary_white overflow-hidden z-30 text-left">
         <div class="relative z-10">
-          <div class="absolute top-0 left-[-10px] w-[calc(100%+20px)] overflow-hidden">
+          <div class="absolute top-0 -left-10 w-calc-100-plus-20 overflow-hidden">
               <svg class="w-full" viewBox="0 0 1680 65" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1680 65V0H-3V64.9233C548.107 -8.56355 1128.89 -8.56355 1680 64.9233V65Z" fill="#FFF" />
               </svg>
           </div>
         </div>
-        <div class="center">
+        <div class="relative max-w-1210 px-5 mx-auto">
 
             <div class="flex flex-col md:flex-row">
 
                 <div class="max-w-none pr-50 w-1/2 flex justify-center items-center flex-col">
                     <?php if( get_field('home_6_title') ) { ?>
-                    <h2 class="animateRise mb-[26px] leading-[1.3]"><?php echo get_field('home_6_title'); ?></h2>
+                    <h2 class="animateRise mb-7 leading-snug"><?php echo get_field('home_6_title'); ?></h2>
                     <?php } ?>
                     <?php if( get_field('home_6_subtitle') ) { ?>
-                    <p class="text-[18px] leading-[1.5] animateRise"><?php echo get_field('home_6_subtitle'); ?></p>
+                    <p class="text-lg leading-relaxed animateRise"><?php echo get_field('home_6_subtitle'); ?></p>
                     <?php } ?>
                     <?php if( have_rows('home_6_list_items') ): ?>
                     <ul class="animateRise">
@@ -352,7 +352,7 @@
                     <?php } ?>
                 </div>
 
-                <div class="block z-[1000] hidden md:block">
+                <div class="z-10 hidden md:block">
                     <?php if( get_field('home_6_section_image') ) { ?>
                     <?php $theImage = get_field('home_6_section_image'); ?>
                     <img src="<?php echo $theImage['url']; ?>" alt="<?php echo $theImage['alt']; ?>" class="animateRise" />
@@ -363,7 +363,7 @@
 
         </div>
 
-        <div class="center">
+        <div class="relative max-w-1210 px-5 mx-auto">
 
             <div class="section-7-intro-line"><?php // the_field('home_7_intro_text'); ?></div>
 
@@ -374,10 +374,10 @@
                 <?php while( have_rows('home_7_content_blocks') ) : the_row(); ?>
 
                 <?php if($blockCounter != 0) { ?>
-                <div class="tan-divider animateRise"></div>
+                <div class="relative block h-px mb-9 bg-primary_orange animateRise"></div>
                 <?php } ?>
 
-                <div class="tan-split-section animateRise flex <?php if($blockCounter % 2 == 0) { echo 'flex-row-reverse'; } ?>">
+                <div class="relative mb-9 animateRise flex <?php if($blockCounter % 2 == 0) { echo 'flex flex-row-reverse'; } ?>">
                     <div class="col col-left">
                         <?php $theImage = get_sub_field('image'); ?>
                         <img src="<?php echo $theImage['url']; ?>" alt="<?php echo $theImage['alt']; ?>" class="w-full" />
@@ -442,10 +442,10 @@
     </div>
                 
     <div class="home-section-8 page-animate-block bg-primary_gray relative pt-[110px] bg-[length:160%] md:bg-[length:130%] lg:bg-[length:110%] xl:bg-[length:100%] xl:pt-32 2xl:pt-[140px] 3xl:pt-[160px] 4xl:pt-[170px] 5xl:pt-44 6xl:pt-[200px] 7xl:pt-[220px] 8xl:pt-[240px] 9xl:pt-[260px] 10xl:pt-[280px] 11xl:pt-[300px]" id="contactus">
-        <div class="center">
+        <div class="relative max-w-1210 px-5 mx-auto">
                                 
             <?php if( get_field('reach_out_title') ) { ?>
-            <div class="animateRise relative text-center block font-poppins font-bold leading-[106%] text-text-primary_white mb-[32px] fontSize-responsive_heading xl:mb-[18px] xl:text-[160px]">
+            <div class="animateRise relative text-center block font-poppins font-bold leading-[106%] text-primary_white mb-[32px] fontSize-responsive_heading xl:mb-[18px] xl:text-[160px]">
                 <?php echo get_field('reach_out_title'); ?>
             </div>
             <?php } ?>

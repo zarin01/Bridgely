@@ -23,12 +23,15 @@ module.exports = {
       width: {
         'calc-100-minus-820': 'calc(100% - 820px)',
         'calc-100-minus-420': 'calc(100% - 420px)',
+        'calc-100-plus-20': 'calc(100% + 20px)',
         '140p': '140%',
         '106p': '106%',
+        '360': '360px',
         '620': '620px',
       },
       maxWidth: {
         '610': '610px',
+        '840': '840px',
         '1210': '1210px',
       },
       height: {
@@ -48,6 +51,8 @@ module.exports = {
       padding: {
         '6p': '6%',
         '9p': '9%',
+        '56p': '56.25%',
+        '280': '280px',
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
@@ -68,15 +73,6 @@ module.exports = {
       const newUtilities = {
         '.text-shadow': {
           textShadow: '0 0 16px rgba(0, 0, 0, 0.5)',
-        },
-        '.center': {
-          position: 'relative',
-          maxWidth: '1210px',
-          padding: '0 20px',
-          margin: '0 auto',
-        },
-        '.fifty-fifty-fancy-split .part': {
-          flex: '0 0 50%',
         },
         '.fifty-fifty-fancy-split .part-left::after': {
           content: '""',
