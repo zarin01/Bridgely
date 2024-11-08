@@ -52,7 +52,8 @@
 				<img src="<?php bloginfo('template_directory'); ?>/library/images/main-logo.svg" alt="Dream Centers" />
 			</a>
 
-			<nav class="x840:relative x840:block x840:float-right x840:top-auto x840:left-auto x840:p-0 x840:w-auto x840:bg-none absolute hidden ">
+			<nav class="x840:relative x840:block x840:float-right x840:top-auto x840:left-auto x840:p-0 x840:w-auto x840:bg-transparent
+			 absolute hidden top-[calc(100%-10px)] left-0 p-[30px_20px] w-full bg-white">
 				<div>
 					<?php wp_nav_menu(array(
 						'theme_location' => 'main-nav',
@@ -63,9 +64,10 @@
 			</nav>
 
 			<div id="mobile-nav-trigger" class="absolute x840:hidden block w-11 h-11 top-7 right-5 cursor-pointer outline-none bg-none">
-				<span class="line relative top-3.5"></span>
-				<span class="line relative top-21"></span>
-				<span class="line relative top-28"></span>
+				<!-- Line Class Styles Stripped other then .open Transform for Mobile Animation  -->
+				<span class="line relative line1 top-3.5"></span>
+				<span class="line relative line2 top-21"></span>
+				<span class="line relative line3 top-28"></span>
 			</div>
 
 			<div class="clear"></div>

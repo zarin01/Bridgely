@@ -87,6 +87,9 @@ module.exports = {
         '-20p': '-20%',
         '-5p': '-5%',
       },
+      rotate: {
+        '45': '45deg',
+      },
       borderRadius: {
         '4': '4px',
       },
@@ -176,6 +179,18 @@ module.exports = {
           backgroundColor: '#FFF',
           left: '9px',
           transition: 'all 0.15s ease-in-out',
+        },
+
+        '#mobile-nav-trigger.open .line1': {
+          top: '21px',
+          transform: 'rotate(45deg)',
+        },
+        '#mobile-nav-trigger.open .line2': {
+          opacity: '0',
+        },
+        '#mobile-nav-trigger.open .line3': {
+          top: '21px',
+          transform: 'rotate(-45deg)',
         },
 
 
