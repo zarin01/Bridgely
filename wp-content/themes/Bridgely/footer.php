@@ -13,7 +13,7 @@
       <?php wp_nav_menu(array(
         'theme_location' => 'footer-nav',
         'container' => '',
-        'menu_class' => 'flex text-white justify-center flex-row mx-auto sm:space-x-4 flex-wrap'
+        'menu_class' => 'flex text-white justify-center flex-row mx-auto sm:space-x-4 flex-wrap x840:max-w-auto max-w-290'
       )); ?>
     </div>
     
@@ -26,7 +26,7 @@
     </div>
     
     <div class="">
-      <p class="mb-0 font-medium text-sm text-white">
+      <p class="mb-0 font-medium text-xs text-white">
         &copy; <?php echo date('Y', time()); ?> Bridgely. All Rights Reserved.
         <span class="mx-2 text-custom_gold">|</span>
         <a href="/privacy/" class="hover:underline">Privacy Policy</a>

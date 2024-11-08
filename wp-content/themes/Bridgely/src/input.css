@@ -89,7 +89,6 @@
 }
 
 @layer components {
-  /* Custom Component Styles */
   .primary-link a {
     @apply text-white underline;
   }
@@ -100,63 +99,38 @@
   }
 }
 
-/* Responsive Utility for Hide Mobile */
-@media (max-width: 768px) {
-  .hide-mobile {
-    display: none !important;
-  }
-}
-
 @layer utilities {
-  /* Custom Button Styling */
-  .contact-us-button {
-    padding-top: 11px !important;
-    padding: 13px 17px !important;
-    display: inline-block !important;
-    color: #FFF !important;
-    background-color: #E0B039 !important;
-    border-radius: 4px !important;
+  /* Default menu list styles */
+  #menu-main-navigation li {
+    position: relative;
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
   }
 
-  /* Social Nav Icons */
+  #menu-main-navigation li a {
+    position: relative;
+    display: block;
+    padding: 11px 0;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #FFF;
+    text-decoration: none;
+    border-bottom: none;
+  }
+
   @media (min-width: 840px) {
-    .hover-translate-y-2:hover {
-      transform: translateY(-2px);
+    #menu-main-navigation li a {
+      padding: 13px 17px;
+      color: #FFF7DE;
     }
   }
 
-  #menu-social-navigation li.social-facebook a {
-    background-image: url("../library/images/icon-facebook.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 28px 28px;
-  }
+  
 
-  li.social-linkedin a {
-    background-image: url("../library/images/icon-linkedin.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 28px 28px;
-  }
-
-  li.social-instagram a {
-    background-image: url("../library/images/icon-instagram.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 28px 28px;
-  }
-
-  li.social-twitter a {
-    background-image: url("../library/images/icon-twitter.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 28px 28px;
-  }
-
-  li.social-youtube a {
-    background-image: url("../library/images/icon-youtube.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 28px 28px;
-  }
 }

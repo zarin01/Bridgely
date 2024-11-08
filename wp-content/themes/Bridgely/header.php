@@ -46,7 +46,7 @@
 <div class="m-0 p-0 border-0 text-base align-baseline">
 
 	<header class="absolute block w-full x840:h-60 h-32 left-0 top-0 bg-gradiant-image bg-repeat-x bg-left-bottom bg-4px-244px z-[9999]" data-size="big">
-		<div class="relative max-w-screen-xl mx-auto md:px-5 md:pt-14">
+		<div class="relative max-w-1210 mx-auto px-5 pt-14">
 		
 			<a href="<?php echo get_option('siteurl'); ?>" class="relative block float-left w-175">
 				<img src="<?php bloginfo('template_directory'); ?>/library/images/main-logo.svg" alt="Dream Centers" />
@@ -57,15 +57,15 @@
 					<?php wp_nav_menu(array(
 						'theme_location' => 'main-nav',
 						'container' => '',
-						'menu_class' => 'flex relative list-none font-bold m-0 p-0 text-white menu-item'
+						'menu_class' => 'flex gap-x-1 relative list-none font-bold m-0 p-0 text-white font-poppins'
 					)); ?>
 				</div>
 			</nav>
 
-			<div id="mobile-nav-trigger">
-				<span class="line line1"></span>
-				<span class="line line2"></span>
-				<span class="line line3"></span>
+			<div id="mobile-nav-trigger" class="absolute x840:hidden block w-11 h-11 top-7 right-5 cursor-pointer outline-none bg-none">
+				<span class="line relative top-3.5"></span>
+				<span class="line relative top-21"></span>
+				<span class="line relative top-28"></span>
 			</div>
 
 			<div class="clear"></div>

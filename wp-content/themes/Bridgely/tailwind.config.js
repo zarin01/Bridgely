@@ -4,7 +4,6 @@ const plugin = require('tailwindcss/plugin');
 module.exports = {
   content: [
     './**/*.php',
-    './**/*.html',
     './wp-content/themes/Bridgely/**/*.php',
     './src/**/*.js',
     './src/**/*.css',
@@ -12,11 +11,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      screens: {
-        xl2: '1200px',
-        x960: '960px',
-        x840: '840px',
-      },      
       colors: {
         primary_orange: '#E0B039',
         custom_gold: '#D1A129',
@@ -26,6 +20,11 @@ module.exports = {
         blue: '#2A426B',
         tan2: '#F5EFE7',
         white: '#FFF',
+      },
+      screens: {
+        xl2: '1200px',
+        x960: '960px',
+        x840: '840px',
       },
       width: {
         'calc-100-minus-820': 'calc(100% - 820px)',
@@ -41,6 +40,7 @@ module.exports = {
         '700': '700px',
       },
       maxWidth: {
+        '290': '290px',
         '610': '610px',
         '840': '840px',
         '1210': '1210px',
@@ -54,6 +54,9 @@ module.exports = {
         'calc-32-plus-18': 'calc(32px + 18 * ((100vw - 320px) / 840))',
         '160': '160px',
         '30': '30px',
+      },
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif'],
       },
       backgroundPosition: {
         'center-top': 'center top',
@@ -76,12 +79,11 @@ module.exports = {
         '280': '280px',
         '140': '140px',
       },
-      fontFamily: {
-        poppins: ['Poppins', 'sans-serif'],
-      },
       inset: {
         '-10': '-10px',
         '-4': '-4px',
+        '21': '21px',
+        '28': '28px',
         '-20p': '-20%',
         '-5p': '-5%',
       },
@@ -153,8 +155,7 @@ module.exports = {
         },
 
 
-        //Saved class due to loading the HTML class names through method
-        '.contact-us-button': {
+        '.contact-us-button a': {
           paddingTop: '11px !important',
           padding: '13px 17px !important',
           display: 'inline-block !important',
@@ -162,6 +163,22 @@ module.exports = {
           backgroundColor: '#E0B039 !important',
           borderRadius: '4px !important', 
         },
+
+        '.menu-item a': {
+          color: 'white',
+        },
+
+        '#mobile-nav-trigger .line': {
+          position: 'absolute',
+          display: 'block',
+          width: '26px',
+          height: '2px',
+          backgroundColor: '#FFF',
+          left: '9px',
+          transition: 'all 0.15s ease-in-out',
+        },
+
+
         
 
         //Social Nav Icons
@@ -175,30 +192,60 @@ module.exports = {
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'center center',
           backgroundSize: '28px 28px',
+          textIndent: '-9999px',
+          position: 'relative',
+          display: 'block',
+          overflow: 'hidden',
+          border: 'none',
+          TextDecoder: 'none'
         },
         'li.social-linkedin a': {
           backgroundImage: 'url("../library/images/icon-linkedin.png")',
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'center center',
           backgroundSize: '28px 28px',
+          textIndent: '-9999px',
+          position: 'relative',
+          display: 'block',
+          overflow: 'hidden',
+          border: 'none',
+          TextDecoder: 'none'
         },
         'li.social-instagram a': {
           backgroundImage: 'url("../library/images/icon-instagram.png")',
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'center center',
           backgroundSize: '28px 28px',
+          textIndent: '-9999px',
+          position: 'relative',
+          display: 'block',
+          overflow: 'hidden',
+          border: 'none',
+          TextDecoder: 'none'
         },
         'li.social-twitter a': {
           backgroundImage: 'url("../library/images/icon-twitter.png")',
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'center center',
           backgroundSize: '28px 28px',
+          textIndent: '-9999px',
+          position: 'relative',
+          display: 'block',
+          overflow: 'hidden',
+          border: 'none',
+          TextDecoder: 'none'
         },
         'li.social-youtube a': {
           backgroundImage: 'url("../library/images/icon-youtube.png")',
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'center center',
           backgroundSize: '28px 28px',
+          textIndent: '-9999px',
+          position: 'relative',
+          display: 'block',
+          overflow: 'hidden',
+          border: 'none',
+          TextDecoder: 'none'
         },
       };
       addUtilities(newUtilities, ['responsive', 'hover']);
