@@ -43,20 +43,21 @@
 
 <body <?php body_class(); ?>>
 
-<div id="wrap">
+<div class="m-0 p-0 border-0 text-base align-baseline">
 
-	<header id="main-header" data-size="big">
-		<div class="center">
+	<header class="absolute block w-full x840:h-60 h-32 left-0 top-0 bg-gradiant-image bg-repeat-x bg-left-bottom bg-4px-244px z-[9999]" data-size="big">
+		<div class="relative max-w-screen-xl mx-auto md:px-5 md:pt-14">
 		
-			<a href="<?php echo get_option('siteurl'); ?>" id="main-logo">
+			<a href="<?php echo get_option('siteurl'); ?>" class="relative block float-left w-175">
 				<img src="<?php bloginfo('template_directory'); ?>/library/images/main-logo.svg" alt="Dream Centers" />
 			</a>
 
-			<nav id="primary-navigation-wrapper">
-				<div class="inner">
+			<nav class="x840:relative x840:block x840:float-right x840:top-auto x840:left-auto x840:p-0 x840:w-auto x840:bg-none absolute hidden ">
+				<div>
 					<?php wp_nav_menu(array(
 						'theme_location' => 'main-nav',
-						'container' => ''
+						'container' => '',
+						'menu_class' => 'flex relative list-none font-bold m-0 p-0 text-white menu-item'
 					)); ?>
 				</div>
 			</nav>

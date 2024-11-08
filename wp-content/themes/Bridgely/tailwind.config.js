@@ -4,9 +4,11 @@ const plugin = require('tailwindcss/plugin');
 module.exports = {
   content: [
     './**/*.php',
+    './**/*.html',
+    './wp-content/themes/Bridgely/**/*.php',
     './src/**/*.js',
     './src/**/*.css',
-    './src/**/*.{html,js}'
+    './src/**/*.{html,js,php}'
   ],
   theme: {
     extend: {
@@ -32,6 +34,7 @@ module.exports = {
         '140p': '140%',
         '106p': '106%',
         '45p': '45%',
+        '175': '175px',
         '360': '360px',
         '400': '400px',
         '620': '620px',
@@ -57,12 +60,14 @@ module.exports = {
       },
       backgroundImage: {
         'choose-your-start': "url('../library/images/partners-support-bg.jpg')",
+        'gradiant-image': "url('../library/images/header-gradient.png')",
       },
       backgroundSize: {
         '160': '160%',
         '130': '130%',
         '110': '110%',
         '100': '100%',
+        '4px-244px': '4px 244px',
       },
       padding: {
         '6p': '6%',
@@ -150,18 +155,12 @@ module.exports = {
 
         //Saved class due to loading the HTML class names through method
         '.contact-us-button': {
-          paddingTop: '11px',
-        },
-        '.contact-us-button-link': {
-          padding: '13px 17px',
-          display: 'inline-block',
-          color: '#FFF',
-          backgroundColor: '#D1A129',
-          borderRadius: '4px',
-        },
-        '.contact-us-button-current': {
-          backgroundColor: '#E0B039',
-          border: 'none',
+          paddingTop: '11px !important',
+          padding: '13px 17px !important',
+          display: 'inline-block !important',
+          color: '#FFF !important',
+          backgroundColor: '#E0B039 !important',
+          borderRadius: '4px !important', 
         },
         
 
@@ -171,32 +170,32 @@ module.exports = {
             transform: 'translateY(-2px)',
           },
         },
-        '.social-facebook': {
-          backgroundImage: 'url("../images/icon-facebook.png")',
+        '#menu-social-navigation li.social-facebook a': {
+          backgroundImage: 'url("../library/images/icon-facebook.png")',
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'center center',
           backgroundSize: '28px 28px',
         },
-        '.social-linkedin': {
-          backgroundImage: 'url("../images/icon-linkedin.png")',
+        'li.social-linkedin a': {
+          backgroundImage: 'url("../library/images/icon-linkedin.png")',
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'center center',
           backgroundSize: '28px 28px',
         },
-        '.social-instagram': {
-          backgroundImage: 'url("../images/icon-instagram.png")',
+        'li.social-instagram a': {
+          backgroundImage: 'url("../library/images/icon-instagram.png")',
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'center center',
           backgroundSize: '28px 28px',
         },
-        '.social-twitter': {
-          backgroundImage: 'url("../images/icon-twitter.png")',
+        'li.social-twitter a': {
+          backgroundImage: 'url("../library/images/icon-twitter.png")',
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'center center',
           backgroundSize: '28px 28px',
         },
-        '.social-youtube': {
-          backgroundImage: 'url("../images/icon-youtube.png")',
+        'li.social-youtube a': {
+          backgroundImage: 'url("../library/images/icon-youtube.png")',
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'center center',
           backgroundSize: '28px 28px',
