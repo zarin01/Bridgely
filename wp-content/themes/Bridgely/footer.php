@@ -1,32 +1,43 @@
 </div>
 
-<footer id="footer">
-	<div class="center">
+<footer class="relative block py-16 text-center border-t border-solid border-white bg-primary_gray">
+  <div class="relative max-w-1210 mx-auto x840:flex flex-col x840:items-center px-5 py-0">
+    
+    <div class="mb-8">
+      <a href="<?php echo get_option('siteurl'); ?>" id="footer-logo">
+        <img src="<?php bloginfo('template_directory'); ?>/library/images/main-logo.svg" alt="Dream Centers" class="w-[175px] h-auto">
+      </a>
+    </div>
+    
+    <div class="mb-14 text-whites flex text-white justify-center flex-row ">
+      <?php wp_nav_menu(array(
+        'theme_location' => 'footer-nav',
+        'container' => '',
+        'menu_class' => 'flex text-white justify-center flex-row mx-auto sm:space-x-4 flex-wrap'
+      )); ?>
+    </div>
+    
+    <div class="mb-6">
+      <?php wp_nav_menu(array(
+        'theme_location' => 'social-nav',
+        'container' => '',
+        'menu_class' => 'flex text-white justify-center space-x-2'
+      )); ?>
+    </div>
+    
+    <div class="">
+      <p class="mb-0 font-medium text-sm text-white">
+        &copy; <?php echo date('Y', time()); ?> Bridgely. All Rights Reserved.
+        <span class="mx-2 text-custom_gold">|</span>
+        <a href="/privacy/" class="hover:underline">Privacy Policy</a>
+        <span class="mx-2 text-custom_gold">|</span>
+        <a href="/terms-of-use/" class="hover:underline">Terms of Use</a>
+      </p>
+    </div>
 
-		<div class="logo-row">
-			<a href="<?php echo get_option('siteurl'); ?>" id="footer-logo"><img src="<?php bloginfo('template_directory'); ?>/library/images/main-logo.svg" alt="Dream Centers" /></a>
-		</div>
-
-		<div class="nav-row">
-			<?php wp_nav_menu(array(
-				'theme_location' => 'footer-nav',
-				'container' => ''
-			)); ?>
-		</div>
-
-		<div class="social-row">
-			<?php wp_nav_menu(array(
-				'theme_location' => 'social-nav',
-				'container' => ''
-			)); ?>
-		</div>
-
-		<div class="copy-row">
-			<p>&copy; <?php echo date('Y', time()); ?> Bridgely. All Rights Reserved. &nbsp;&nbsp;<span class="divider">|</span>&nbsp;&nbsp;<a href="/privacy/">Privacy Policy</a>&nbsp;&nbsp;<span class="divider">|</span>&nbsp;&nbsp;<a href="/terms-of-use/">Terms of Use</a></p>
-		</div>
-
-	</div>
+  </div>
 </footer>
+
 
 <?php /*
 <style>

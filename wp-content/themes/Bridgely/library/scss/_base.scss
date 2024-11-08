@@ -59,7 +59,7 @@ p {
     margin-bottom: 0;
   }
 }
-**/
+
 p, li {
   a {
     word-break: break-word;
@@ -161,7 +161,7 @@ blockquote {
     }
   }
 }
-
+**/
 /*
 font style classes
 */
@@ -523,7 +523,7 @@ h4, h5 {
         font-weight: 700;
       }
     }
-
+    /**
     &.contact-us-button {
       padding-top: 11px;
 
@@ -541,7 +541,7 @@ h4, h5 {
           background: $orangehover;
         }
       }
-    }
+    }**/
   }
 }
 
@@ -602,7 +602,7 @@ h4, h5 {
       }
     }
   }
-
+/**
   #menu-footer-navigation {
     position: relative;
     max-width: 290px;
@@ -637,7 +637,7 @@ h4, h5 {
           border-radius: 4px;
         }
       }
-    }
+    }**/
   }
 
   #menu-social-navigation {
@@ -696,7 +696,7 @@ h4, h5 {
       }
     }
   }
-}
+
 
 #home-intro-hero {
   position: relative;

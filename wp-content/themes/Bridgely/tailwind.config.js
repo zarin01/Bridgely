@@ -21,12 +21,7 @@ module.exports = {
         primary_white: '#FFF7DE',
         primary_gray: '#141C29',
         black: '#000',
-        darkgray: '#141C29',
         blue: '#2A426B',
-        darkblue: '#141C29',
-        orange: '#D1A129',
-        orangehover: '#E0B039',
-        tan: '#FFF7DE',
         tan2: '#F5EFE7',
         white: '#FFF',
       },
@@ -134,11 +129,6 @@ module.exports = {
           top: '-1px',
           left: '-10px',
         },
-        '.dotted_bridge': {
-          backgroundSize: 'cover',
-          backgroundPosition: 'center top',
-          padding: '30px 0',
-        },
         '.text-point.yes::before': {
           background: 'url("../library/images/Icon_Bridgely-Checkmark.png") no-repeat center center',
           backgroundSize: '34px 32px !important',
@@ -155,6 +145,61 @@ module.exports = {
           height: '32px',
           left: '0 !important',
           top: '2px !important',
+        },
+
+
+        //Saved class due to loading the HTML class names through method
+        '.contact-us-button': {
+          paddingTop: '11px',
+        },
+        '.contact-us-button-link': {
+          padding: '13px 17px',
+          display: 'inline-block',
+          color: '#FFF',
+          backgroundColor: '#D1A129',
+          borderRadius: '4px',
+        },
+        '.contact-us-button-current': {
+          backgroundColor: '#E0B039',
+          border: 'none',
+        },
+        
+
+        //Social Nav Icons
+        '@media (min-width: 840px)': {
+          '.hover-translate-y-2:hover': {
+            transform: 'translateY(-2px)',
+          },
+        },
+        '.social-facebook': {
+          backgroundImage: 'url("../images/icon-facebook.png")',
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'center center',
+          backgroundSize: '28px 28px',
+        },
+        '.social-linkedin': {
+          backgroundImage: 'url("../images/icon-linkedin.png")',
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'center center',
+          backgroundSize: '28px 28px',
+        },
+        '.social-instagram': {
+          backgroundImage: 'url("../images/icon-instagram.png")',
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'center center',
+          backgroundSize: '28px 28px',
+        },
+        '.social-twitter': {
+          backgroundImage: 'url("../images/icon-twitter.png")',
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'center center',
+          backgroundSize: '28px 28px',
+        },
+        '.social-youtube': {
+          backgroundImage: 'url("../images/icon-youtube.png")',
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'center center',
+          backgroundSize: '28px 28px',
         },
       };
       addUtilities(newUtilities, ['responsive', 'hover']);

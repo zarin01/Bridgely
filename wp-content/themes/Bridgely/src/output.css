@@ -782,6 +782,11 @@ p {
   margin: 0px;
 }
 
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -797,6 +802,10 @@ p {
 
 .mb-10 {
   margin-bottom: 2.5rem;
+}
+
+.mb-14 {
+  margin-bottom: 3.5rem;
 }
 
 .mb-16 {
@@ -931,6 +940,10 @@ p {
   height: 500px;
 }
 
+.h-auto {
+  height: auto;
+}
+
 .h-full {
   height: 100%;
 }
@@ -971,6 +984,10 @@ p {
   width: 620px;
 }
 
+.w-\[175px\] {
+  width: 175px;
+}
+
 .w-auto {
   width: auto;
 }
@@ -995,6 +1012,10 @@ p {
   max-width: 1210px;
 }
 
+.max-w-5xl {
+  max-width: 64rem;
+}
+
 .max-w-610 {
   max-width: 610px;
 }
@@ -1017,6 +1038,10 @@ p {
 
 .max-w-screen-xl {
   max-width: 1280px;
+}
+
+.max-w-xs {
+  max-width: 20rem;
 }
 
 .flex-none {
@@ -1095,6 +1120,18 @@ p {
   row-gap: 2.5rem;
 }
 
+.space-x-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .space-y-0 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
@@ -1129,6 +1166,27 @@ p {
 
 .border-0 {
   border-width: 0px;
+}
+
+.border-t {
+  border-top-width: 1px;
+}
+
+.border-t-2 {
+  border-top-width: 2px;
+}
+
+.border-t-4 {
+  border-top-width: 4px;
+}
+
+.border-solid {
+  border-style: solid;
+}
+
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .bg-primary_gray {
@@ -1424,6 +1482,11 @@ p {
   font-size: calc(36px + 20 * ((100vw - 320px) / 840));
 }
 
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -1597,12 +1660,6 @@ p {
   left: -10px;
 }
 
-.dotted_bridge {
-  background-size: cover;
-  background-position: center top;
-  padding: 30px 0;
-}
-
 .text-point.yes::before {
   background: url("../library/images/Icon_Bridgely-Checkmark.png") no-repeat center center;
   background-size: 34px 32px !important;
@@ -1631,6 +1688,10 @@ p {
   }
 }
 
+.hover\:underline:hover {
+  text-decoration-line: underline;
+}
+
 @media not all and (min-width: 1024px) {
   .max-lg\:pr-14 {
     padding-right: 3.5rem;
@@ -1646,6 +1707,12 @@ p {
 @media (min-width: 640px) {
   .sm\:max-w-none {
     max-width: none;
+  }
+
+  .sm\:space-x-4 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1rem * var(--tw-space-x-reverse));
+    margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
   }
 }
 
