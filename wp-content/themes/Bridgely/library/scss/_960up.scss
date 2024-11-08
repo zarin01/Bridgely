@@ -40,7 +40,7 @@
     color: $tan;
   }
 }
-**/
+
 
 .fifty-fifty-fancy-split {
   display: flex;
@@ -509,7 +509,7 @@ p {
 .statmenu {
   background-color: #FFF7E4;
   width: 100%;
-  box-sizing: border-box; /* Ensures padding and borders are included in the width */
+  box-sizing: border-box; 
   padding: 50px;
   margin: 50px auto;
   h2 {
@@ -574,3 +574,4 @@ p {
     }
   }
 }
+**/

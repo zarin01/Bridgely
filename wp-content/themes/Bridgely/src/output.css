@@ -648,6 +648,13 @@ p {
   font-size: calc(43px + 124 * ((100vw - 320px) / 1200));
 }
 
+.menu-item a {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
 .container {
   width: 100%;
 }
@@ -766,8 +773,16 @@ p {
   left: 0px;
 }
 
+.left-auto {
+  left: auto;
+}
+
 .top-0 {
   top: 0px;
+}
+
+.top-auto {
+  top: auto;
 }
 
 .z-10 {
@@ -776,6 +791,18 @@ p {
 
 .z-30 {
   z-index: 30;
+}
+
+.z-\[9999\] {
+  z-index: 9999;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
 }
 
 .m-0 {
@@ -936,8 +963,16 @@ p {
   height: 3rem;
 }
 
+.h-32 {
+  height: 8rem;
+}
+
 .h-500 {
   height: 500px;
+}
+
+.h-60 {
+  height: 15rem;
 }
 
 .h-auto {
@@ -966,6 +1001,10 @@ p {
 
 .w-12 {
   width: 3rem;
+}
+
+.w-175 {
+  width: 175px;
 }
 
 .w-360 {
@@ -1066,6 +1105,10 @@ p {
 
 .resize {
   resize: both;
+}
+
+.list-none {
+  list-style-type: none;
 }
 
 .grid-cols-1 {
@@ -1208,6 +1251,14 @@ p {
   background-image: url('../library/images/partners-support-bg.jpg');
 }
 
+.bg-gradiant-image {
+  background-image: url('../library/images/header-gradient.png');
+}
+
+.bg-none {
+  background-image: none;
+}
+
 .bg-100 {
   background-size: 100%;
 }
@@ -1224,6 +1275,10 @@ p {
   background-size: 160%;
 }
 
+.bg-4px-244px {
+  background-size: 4px 244px;
+}
+
 .bg-cover {
   background-size: cover;
 }
@@ -1236,12 +1291,20 @@ p {
   background-position: center top;
 }
 
+.bg-left-bottom {
+  background-position: left bottom;
+}
+
 .bg-top {
   background-position: top;
 }
 
 .bg-no-repeat {
   background-repeat: no-repeat;
+}
+
+.bg-repeat-x {
+  background-repeat: repeat-x;
 }
 
 .p-0 {
@@ -1396,6 +1459,10 @@ p {
   padding-right: 2rem;
 }
 
+.pt-14 {
+  padding-top: 3.5rem;
+}
+
 .pt-28 {
   padding-top: 7rem;
 }
@@ -1426,6 +1493,10 @@ p {
 
 .text-center {
   text-align: center;
+}
+
+.align-baseline {
+  vertical-align: baseline;
 }
 
 .font-poppins {
@@ -1680,6 +1751,98 @@ p {
   top: 2px !important;
 }
 
+.contact-us-button {
+  padding-top: 11px !important;
+  padding: 13px 17px !important;
+  display: inline-block !important;
+  color: #FFF !important;
+  background-color: #E0B039 !important;
+  border-radius: 4px !important;
+}
+
+#menu-social-navigation li.social-facebook a {
+  background-image: url("../library/images/icon-facebook.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 28px 28px;
+}
+
+li.social-linkedin a {
+  background-image: url("../library/images/icon-linkedin.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 28px 28px;
+}
+
+li.social-instagram a {
+  background-image: url("../library/images/icon-instagram.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 28px 28px;
+}
+
+li.social-twitter a {
+  background-image: url("../library/images/icon-twitter.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 28px 28px;
+}
+
+li.social-youtube a {
+  background-image: url("../library/images/icon-youtube.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 28px 28px;
+}
+
+/* Custom Button Styling */
+
+.contact-us-button {
+  padding-top: 11px !important;
+  padding: 13px 17px !important;
+  display: inline-block !important;
+  color: #FFF !important;
+  background-color: #E0B039 !important;
+  border-radius: 4px !important;
+}
+
+/* Social Nav Icons */
+
+#menu-social-navigation li.social-facebook a {
+  background-image: url("../library/images/icon-facebook.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 28px 28px;
+}
+
+li.social-linkedin a {
+  background-image: url("../library/images/icon-linkedin.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 28px 28px;
+}
+
+li.social-instagram a {
+  background-image: url("../library/images/icon-instagram.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 28px 28px;
+}
+
+li.social-twitter a {
+  background-image: url("../library/images/icon-twitter.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 28px 28px;
+}
+
+li.social-youtube a {
+  background-image: url("../library/images/icon-youtube.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 28px 28px;
+}
+
 /* Responsive Utility for Hide Mobile */
 
 @media (max-width: 768px) {
@@ -1774,6 +1937,11 @@ p {
     padding-right: 0px;
   }
 
+  .md\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
   .md\:py-16 {
     padding-top: 4rem;
     padding-bottom: 4rem;
@@ -1795,6 +1963,10 @@ p {
     padding-right: 1.5rem;
   }
 
+  .md\:pt-14 {
+    padding-top: 3.5rem;
+  }
+
   .md\:text-left {
     text-align: left;
   }
@@ -1811,8 +1983,36 @@ p {
 }
 
 @media (min-width: 840px) {
+  .x840\:relative {
+    position: relative;
+  }
+
+  .x840\:left-auto {
+    left: auto;
+  }
+
+  .x840\:top-auto {
+    top: auto;
+  }
+
+  .x840\:float-right {
+    float: right;
+  }
+
+  .x840\:block {
+    display: block;
+  }
+
   .x840\:flex {
     display: flex;
+  }
+
+  .x840\:h-60 {
+    height: 15rem;
+  }
+
+  .x840\:w-auto {
+    width: auto;
   }
 
   .x840\:flex-row {
@@ -1821,6 +2021,14 @@ p {
 
   .x840\:items-center {
     align-items: center;
+  }
+
+  .x840\:bg-none {
+    background-image: none;
+  }
+
+  .x840\:p-0 {
+    padding: 0px;
   }
 
   .x840\:pl-0 {

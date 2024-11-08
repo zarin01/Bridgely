@@ -1,15 +1,15 @@
 /*********************
 CLEARFIX
-*********************/
+******************
 
 .clear {
   clear: both;
 }
-
+***/
 /*********************
 TOOLS
 *********************/
-
+/***
 * { 
 	-webkit-box-sizing: border-box; 
 	-moz-box-sizing: border-box; 
@@ -17,7 +17,7 @@ TOOLS
 	-webkit-font-smoothing: auto;
   -moz-osx-font-smoothing: auto;
 }
-/***
+
 .center {
 	position: relative;
 	max-width: 1210px;
@@ -27,7 +27,7 @@ TOOLS
 ***/
 /*********************
 COLORS
-*********************/
+******************
 
 $white: #FFF;
 $black: #000;
@@ -38,10 +38,10 @@ $orange: #D1A129;
 $orangehover: #E0B039;
 $tan: #FFF7DE;
 $tan2: #F5EFE7;
-
+***/
 /*********************
 TYPOGRAPHY
-*********************/
+*******************
 
 .text-left   { text-align: left; }
 .text-center { text-align: center; }
@@ -76,10 +76,10 @@ TYPOGRAPHY
 	font-style: normal;
 	font-weight: 700;
 }
-
+**/
 /*********************
 MIXINS
-*********************/
+*******************
 
 @mixin thetransition {
 	-webkit-transition: all .15s ease-in-out;
@@ -87,4 +87,4 @@ MIXINS
 	-ms-transition: all .15s ease-in-out;
 	-o-transition: all .15s ease-in-out;
 	transition: all .15s ease-in-out;
-}
+}**/

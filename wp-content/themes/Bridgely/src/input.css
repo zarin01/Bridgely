@@ -82,6 +82,10 @@
   .fontSize-responsive_heading {
     font-size: calc(43px + 124 * ((100vw - 320px) / 1200));
   }
+
+  .menu-item a {
+    @apply px-4 py-2;
+}
 }
 
 @layer components {
@@ -100,5 +104,59 @@
 @media (max-width: 768px) {
   .hide-mobile {
     display: none !important;
+  }
+}
+
+@layer utilities {
+  /* Custom Button Styling */
+  .contact-us-button {
+    padding-top: 11px !important;
+    padding: 13px 17px !important;
+    display: inline-block !important;
+    color: #FFF !important;
+    background-color: #E0B039 !important;
+    border-radius: 4px !important;
+  }
+
+  /* Social Nav Icons */
+  @media (min-width: 840px) {
+    .hover-translate-y-2:hover {
+      transform: translateY(-2px);
+    }
+  }
+
+  #menu-social-navigation li.social-facebook a {
+    background-image: url("../library/images/icon-facebook.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 28px 28px;
+  }
+
+  li.social-linkedin a {
+    background-image: url("../library/images/icon-linkedin.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 28px 28px;
+  }
+
+  li.social-instagram a {
+    background-image: url("../library/images/icon-instagram.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 28px 28px;
+  }
+
+  li.social-twitter a {
+    background-image: url("../library/images/icon-twitter.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 28px 28px;
+  }
+
+  li.social-youtube a {
+    background-image: url("../library/images/icon-youtube.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 28px 28px;
   }
 }
