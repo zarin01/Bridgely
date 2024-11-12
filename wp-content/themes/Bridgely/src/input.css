@@ -124,7 +124,6 @@
     font-size: 18px;
     line-height: 18px;
     text-transform: uppercase;
-    color: #FFF;
     text-decoration: none;
     border-bottom: none;
   }
@@ -132,7 +131,6 @@
   @media (min-width: 840px) {
     #menu-main-navigation li a {
       padding: 13px 17px;
-      color: #FFF7DE;
     }
   }
 

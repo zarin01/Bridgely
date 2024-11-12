@@ -22,9 +22,9 @@ module.exports = {
         white: '#FFF',
       },
       screens: {
-        xl2: '1200px',
-        x960: '960px',
         x840: '840px',
+        x960: '960px',
+        xl2: '1200px',       
       },
       width: {
         'calc-100-minus-820': 'calc(100% - 820px)',
@@ -36,16 +36,21 @@ module.exports = {
         '175': '175px',
         '360': '360px',
         '400': '400px',
+        '500': '500px',
         '620': '620px',
         '700': '700px',
       },
       maxWidth: {
         '290': '290px',
+        '380': '380px',
+        '500': '500px',
         '610': '610px',
+        '710': '710px',
         '840': '840px',
         '1210': '1210px',
       },
       height: {
+        '77': '77px',
         '500': '500px',
       },
       fontSize: {
@@ -53,6 +58,7 @@ module.exports = {
         'responsive_heading': 'clamp(43px, calc(43px + 124 * ((100vw - 320px) / 1200)), 160px)',
         'calc-32-plus-18': 'calc(32px + 18 * ((100vw - 320px) / 840))',
         '160': '160px',
+        '23': '23px',
         '30': '30px',
       },
       fontFamily: {
@@ -71,21 +77,25 @@ module.exports = {
         '110': '110%',
         '100': '100%',
         '4px-244px': '4px 244px',
+        '2px-122px': '2px 122px',
       },
       padding: {
         '6p': '6%',
         '9p': '9%',
         '56p': '56.25%',
-        '280': '280px',
         '140': '140px',
+        '245': '245px',
+        '280': '280px',
       },
       inset: {
         '-10': '-10px',
         '-4': '-4px',
         '21': '21px',
         '28': '28px',
+        '130': '130px',
         '-20p': '-20%',
         '-5p': '-5%',
+        'calc-100-minus-10': 'calc(100%-10px)',
       },
       rotate: {
         '45': '45deg',
@@ -96,22 +106,52 @@ module.exports = {
     },
   },
   plugins: [
-    plugin(function({ addUtilities }) {
+    plugin(function({ addUtilities, theme  }) {
       const newUtilities = {
+
+        /*
+         Base Common Classes with Styles not Offered by Tailwind
+         */
+
         '.text-shadow': {
           textShadow: '0 0 16px rgba(0, 0, 0, 0.5)',
         },
-        '.fifty-fifty-fancy-split .part-left::after': {
-          content: '""',
-          position: 'absolute',
-          display: 'block',
-          width: '80px',
-          height: '30px',
-          bottom: '-61px',
-          left: '45% !important',
-          background: "url('../library/images/icon-bridge.png') no-repeat center center !important",
-          backgroundSize: '40px 11px !important',
+
+        '.btn': {
+          position: 'relative',
+          display: 'inline-block',
+          padding: '2px 17px',
+          fontFamily: theme('fontFamily.poppins'),
+          fontStyle: 'normal',
+          fontWeight: 600,
+          textDecoration: 'none',
+          fontSize: '16px',
+          textTransform: 'uppercase',
+          textAlign: 'center',
+          border: 'none',
+          color: theme('colors.white'),
+          backgroundColor: theme('colors.custom_gold'),
+          borderRadius: theme('borderRadius.4'),
         },
+
+        '.animateRise': {
+          transform: 'translateY(20px)',
+          opacity: '0',
+        },
+
+
+        /*
+         Before and After Classes 
+        */
+        '@media (min-width: 1200px)': {
+          '.fifty-fifty-fancy-split .part-left': {
+            paddingRight: '9%',
+          },  
+          '.fifty-fifty-fancy-split .part-right': {
+            paddingLeft: '9%',
+          },
+        },
+
         '@media (min-width: 960px)': {
           '.fifty-fifty-fancy-split .part-left::after': {
             bottom: 'auto',
@@ -119,26 +159,57 @@ module.exports = {
             marginTop: '-6px',
             left: 'auto',
             right: '0',
+            left: '95% !important',
             marginRight: '-20px',
           },
+
+          '.fifty-fifty-fancy-split .part-right': {
+            paddingLeft: '9%',
+          },
+
+          '.fifty-fifty-fancy-split .part-left': {
+            marginBottom: '0',
+            paddingRight: '9%',
+          },
+
+          '.fifty-fifty-fancy-split .part': {
+            flex: '0 0 50%',
+          },
         },
+
+        '.fifty-fifty-fancy-split .part-left': {
+          marginBottom: '121px',
+        },
+
+        '.fifty-fifty-fancy-split .part': {
+          position: 'relative',
+        },
+
+        '.fifty-fifty-fancy-split .part-left::after': {
+          content: '""',
+          position: 'absolute',
+          display: 'block',
+          width: '40px',
+          height: '11px',
+          bottom: '-61px',
+          background: "url('../library/images/icon-bridge.png') no-repeat center center !important",
+          backgroundSize: '40px 11px !important',
+        },
+
+
         '.committed-to-text-after::after': {
           content: '""',
           position: 'absolute',
           display: 'block',
           width: '1166px',
-          height: '77px',
-          top: '12px',
+          height: '115px',
           left: '50%',
           marginLeft: '-593px',
           background: "url('../library/images/dot-curve.png') no-repeat center center",
           backgroundSize: '1166px 77px',
         },
-        '.down-curve-contain': {
-          width: 'calc(100% + 20px)',
-          top: '-1px',
-          left: '-10px',
-        },
+        
+
         '.text-point.yes::before': {
           background: 'url("../library/images/Icon_Bridgely-Checkmark.png") no-repeat center center',
           backgroundSize: '34px 32px !important',
@@ -157,6 +228,15 @@ module.exports = {
           top: '2px !important',
         },
 
+        /* 
+        Wordpress Loaded Nav and Menu Classes
+         */
+        
+        '@media (max-width: 840px)': {
+          '.contact-us-button': {
+            paddingTop: '11px !important',
+          },
+        },
 
         '.contact-us-button a': {
           paddingTop: '11px !important',
@@ -166,9 +246,9 @@ module.exports = {
           backgroundColor: '#E0B039 !important',
           borderRadius: '4px !important', 
         },
-
-        '.menu-item a': {
-          color: 'white',
+        
+        '#menu-main-navigation li.current-menu-item a': {
+          fontWeight: '700',
         },
 
         '#mobile-nav-trigger .line': {
@@ -194,14 +274,34 @@ module.exports = {
         },
 
 
-        
-
-        //Social Nav Icons
+        /* 
+        Wordpress Loaded Footer Classes 
+        */
+       
         '@media (min-width: 840px)': {
+          '#footer #menu-footer-navigation li a': {
+            padding: '13px 17px',
+          },
           '.hover-translate-y-2:hover': {
             transform: 'translateY(-2px)',
           },
         },
+
+        'footer #menu-footer-navigation li a': {
+          position: 'relative',
+          display: 'block',
+          padding: '13px 5px',
+          fontFamily: '"Poppins", sans-serif',
+          fontStyle: 'normal',
+          fontWeight: '500',
+          fontSize: '16px',
+          lineHeight: '17px',
+          color: '#FFF',
+          textTransform: 'uppercase',
+          border: 'none',
+          textDecoration: 'none',
+        },
+
         '#menu-social-navigation li.social-facebook a': {
           backgroundImage: 'url("../library/images/icon-facebook.png")',
           backgroundRepeat: 'no-repeat',
@@ -214,6 +314,7 @@ module.exports = {
           border: 'none',
           TextDecoder: 'none'
         },
+
         'li.social-linkedin a': {
           backgroundImage: 'url("../library/images/icon-linkedin.png")',
           backgroundRepeat: 'no-repeat',
@@ -226,6 +327,7 @@ module.exports = {
           border: 'none',
           TextDecoder: 'none'
         },
+
         'li.social-instagram a': {
           backgroundImage: 'url("../library/images/icon-instagram.png")',
           backgroundRepeat: 'no-repeat',
@@ -238,30 +340,7 @@ module.exports = {
           border: 'none',
           TextDecoder: 'none'
         },
-        'li.social-twitter a': {
-          backgroundImage: 'url("../library/images/icon-twitter.png")',
-          backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'center center',
-          backgroundSize: '28px 28px',
-          textIndent: '-9999px',
-          position: 'relative',
-          display: 'block',
-          overflow: 'hidden',
-          border: 'none',
-          TextDecoder: 'none'
-        },
-        'li.social-youtube a': {
-          backgroundImage: 'url("../library/images/icon-youtube.png")',
-          backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'center center',
-          backgroundSize: '28px 28px',
-          textIndent: '-9999px',
-          position: 'relative',
-          display: 'block',
-          overflow: 'hidden',
-          border: 'none',
-          TextDecoder: 'none'
-        },
+       
       };
       addUtilities(newUtilities, ['responsive', 'hover']);
     }),

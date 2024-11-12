@@ -1,7 +1,7 @@
 </div>
 
 <footer class="relative block py-16 text-center border-t border-solid border-white bg-primary_gray">
-  <div class="relative max-w-1210 mx-auto x840:flex flex-col x840:items-center px-5 py-0">
+  <div class="relative max-w-1210 mx-auto flex flex-col items-center px-5 py-0">
     
     <div class="mb-8">
       <a href="<?php echo get_option('siteurl'); ?>" id="footer-logo">
@@ -13,7 +13,7 @@
       <?php wp_nav_menu(array(
         'theme_location' => 'footer-nav',
         'container' => '',
-        'menu_class' => 'flex text-white justify-center flex-row mx-auto sm:space-x-4 flex-wrap x840:max-w-auto max-w-290'
+        'menu_class' => 'flex text-white justify-center flex-row mx-auto sm:space-x-4 flex-wrap x840:max-w-auto x840:max-w-1210 max-w-290'
       )); ?>
     </div>
     

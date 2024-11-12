@@ -45,20 +45,20 @@
 
 <div class="m-0 p-0 border-0 text-base align-baseline">
 
-	<header class="absolute block w-full x840:h-60 h-32 left-0 top-0 bg-gradiant-image bg-repeat-x bg-left-bottom bg-4px-244px z-[9999]" data-size="big">
-		<div class="relative max-w-1210 mx-auto px-5 pt-14">
+	<header class="absolute block w-full x840:h-60 h-36 left-0 top-0 bg-gradiant-image bg-repeat-x x840:bg-left-bottom x840:bg-4px-244px bg-2px-122px z-[9999]" data-size="big">
+		<div class="relative max-w-1210 mx-auto py-8 px-5 x840:pt-14">
 		
 			<a href="<?php echo get_option('siteurl'); ?>" class="relative block float-left w-175">
 				<img src="<?php bloginfo('template_directory'); ?>/library/images/main-logo.svg" alt="Dream Centers" />
 			</a>
-
-			<nav class="x840:relative x840:block x840:float-right x840:top-auto x840:left-auto x840:p-0 x840:w-auto x840:bg-transparent
-			 absolute hidden top-[calc(100%-10px)] left-0 p-[30px_20px] w-full bg-white">
+			<!-- primary-navigation-wrapper Used For Mobile Nav Bar -->
+			<nav id="primary-navigation-wrapper" class="x840:relative x840:block x840:float-right x840:top-auto x840:left-auto x840:p-0 x840:w-auto x840:mt-0 x840:bg-transparent
+			 absolute mt-14 hidden top-calc-100-minus-10 left-0 p-[30px_20px] w-full bg-white">
 				<div>
 					<?php wp_nav_menu(array(
 						'theme_location' => 'main-nav',
 						'container' => '',
-						'menu_class' => 'flex gap-x-1 relative list-none font-bold m-0 p-0 text-white font-poppins'
+						'menu_class' => 'flex x840:flex-row flex-col gap-x-1 relative list-none font-bold m-0 p-0 x840:text-white text-blue font-poppins'
 					)); ?>
 				</div>
 			</nav>
@@ -71,6 +71,6 @@
 			</div>
 
 			<div class="clear"></div>
-
+			</div>
 		</div>
 	</header>
