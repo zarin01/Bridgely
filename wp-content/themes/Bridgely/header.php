@@ -53,7 +53,7 @@
 			</a>
 			<!-- primary-navigation-wrapper Used For Mobile Nav Bar -->
 			<nav id="primary-navigation-wrapper" class="x840:relative x840:block x840:float-right x840:top-auto x840:left-auto x840:p-0 x840:w-auto x840:mt-0 x840:bg-transparent
-			 absolute mt-14 hidden top-calc-100-minus-10 left-0 p-[30px_20px] w-full bg-white">
+			 absolute mt-14 hidden top-calc-100-minus-10 left-0 p-[30px_20px] w-full bg-white x840:text-white">
 				<div>
 					<?php wp_nav_menu(array(
 						'theme_location' => 'main-nav',

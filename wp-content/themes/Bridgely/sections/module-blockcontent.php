@@ -23,7 +23,7 @@
 <?php  } else if( $moduletype == 'moduletypTwoCol3070' ) { ?>
 
 <div class="default-section-3070 page-animate-block" id="changing">
-    <div class="center">
+    <div class="relative mx-auto px-5 max-w-1210">
         <div class="split-content-wrap-large-text">
             <?php while (have_rows('content_blocks')) : the_row(); ?>
 

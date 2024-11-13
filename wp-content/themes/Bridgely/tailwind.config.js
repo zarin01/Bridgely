@@ -30,8 +30,9 @@ module.exports = {
         'calc-100-minus-820': 'calc(100% - 820px)',
         'calc-100-minus-420': 'calc(100% - 420px)',
         'calc-100-plus-20': 'calc(100% + 20px)',
-        '140p': '140%',
         '106p': '106%',
+        '120p': '120%',
+        '140p': '140%',
         '45p': '45%',
         '175': '175px',
         '360': '360px',
@@ -52,6 +53,7 @@ module.exports = {
       height: {
         '77': '77px',
         '500': '500px',
+        '700': '700px',
       },
       fontSize: {
         'responsive': 'calc(36px + 20 * ((100vw - 320px) / 840))',
@@ -93,8 +95,10 @@ module.exports = {
         '21': '21px',
         '28': '28px',
         '130': '130px',
-        '-20p': '-20%',
         '-5p': '-5%',
+        '-10p': '-10%',
+        '-20p': '-20%',
+        
         'calc-100-minus-10': 'calc(100%-10px)',
       },
       rotate: {
@@ -228,10 +232,10 @@ module.exports = {
           top: '2px !important',
         },
 
+
         /* 
         Wordpress Loaded Nav and Menu Classes
-         */
-        
+        */
         '@media (max-width: 840px)': {
           '.contact-us-button': {
             paddingTop: '11px !important',
@@ -249,6 +253,7 @@ module.exports = {
         
         '#menu-main-navigation li.current-menu-item a': {
           fontWeight: '700',
+          color: '#FFF',
         },
 
         '#mobile-nav-trigger .line': {
@@ -339,6 +344,31 @@ module.exports = {
           overflow: 'hidden',
           border: 'none',
           TextDecoder: 'none'
+        },
+
+
+        /* 
+        70 30 page styles
+        */
+
+        '@media (min-width: 840px)': {
+          '.default-section-3070': {
+            marginTop: '20px',
+            padding: '20px 0',
+            height: 'fit-content',
+          },
+        },
+
+        '@media (min-width: 960px)': {
+          '.default-section-3070': {
+            marginTop: '20px',
+            padding: '20px 0',
+            height: 'fit-content',
+          },
+        },
+
+        '.default-section-3070': {
+          position: 'relative',
         },
        
       };
