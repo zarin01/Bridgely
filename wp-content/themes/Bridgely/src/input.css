@@ -67,6 +67,7 @@
   h3 {
     @apply mb-5 leading-[130%];
     font-size: 30px;
+    font-weight: 500;
   }
 
   h4, h5 {

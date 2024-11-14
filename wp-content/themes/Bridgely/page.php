@@ -20,9 +20,9 @@
 
     <?php /* Page Title */ ?>
     <?php if( get_field('general_page_1_intro_title') ) { ?>
-        <div class="default-animate-title flex items-center justify-center">
-            <div class="relative mx-auto px-5 max-w-1210">
-                <div class="intro-copy-wrap text-center">
+        <div class="default-animate-title flex items-center justify-center text-blue">
+            <div class="relative mx-auto px-5 max-w-1210 text-blue">
+                <div class="intro-copy-wrap text-center text-blue">
                     <h1 class="x960:text-6xl text-blue"><?php echo get_field('general_page_1_intro_title'); ?></h1>
                 </div>
             </div>

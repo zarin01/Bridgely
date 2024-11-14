@@ -2,12 +2,13 @@
 const plugin = require('tailwindcss/plugin');
 
 module.exports = {
+  mode: 'jit',
   content: [
     './**/*.php',
     './wp-content/themes/Bridgely/**/*.php',
-    './src/**/*.js',
-    './src/**/*.css',
-    './src/**/*.{html,js,php}'
+    './wp-content/themes/Bridgely/**/*.js',
+    './wp-content/themes/Bridgely/**/*.css', 
+    './src/**/*.{js,css,html,php}', 
   ],
   theme: {
     extend: {
@@ -34,6 +35,8 @@ module.exports = {
         '120p': '120%',
         '140p': '140%',
         '45p': '45%',
+        '50': '50px',
+        '70': '70px',
         '175': '175px',
         '360': '360px',
         '400': '400px',
@@ -48,6 +51,7 @@ module.exports = {
         '610': '610px',
         '710': '710px',
         '840': '840px',
+        '1050': '1050px',
         '1210': '1210px',
       },
       height: {
@@ -242,6 +246,10 @@ module.exports = {
           },
         },
 
+        '#menu-main-navigation li a':{
+          color: '#FFF !important',
+        },
+
         '.contact-us-button a': {
           paddingTop: '11px !important',
           padding: '13px 17px !important',
@@ -350,26 +358,51 @@ module.exports = {
         /* 
         70 30 page styles
         */
+        '.default-section-3070 a, .default-page-template a': {
+          color: '#d1a129',
+        },
+        '#poverty-stat': {
+          borderBottom: '1px solid #d1a129',
+          paddingBottom: '40px',
+        },
+        '#poverty-stat ul li a': {
+          fontSize: '14px',
+          fontWeight: '700',
+          textDecoration: 'underline',
+        },
+        '#poverty-stat ul li': {
+          listStyleType: 'square',
+          marginLeft: '50px',
+        },
+        '.list-square::marker': {
+            color: '#E0B039',
+        },
+        '#poverty-stat p': {
+          marginBottom: '3px',
+        },
 
         '@media (min-width: 960px)': {
-          '.part-70': {
+          '.default-section-3070 .part-70': {
             width: 'calc(100% - 420px)',
           },
 
-          '.part-30': {
+          '.default-section-3070 .part-30': {
             width: '420px',
+          },
+          '.default-section-3070 .part h3': {
+            padding: '20px 0 20px 0',
           },
         },
         '@media (min-width: 840px)': {
-          '.part-70': {
+          '.default-section-3070 .part-70': {
             position: 'relative',
-            paddingLeft: '40px',
+            paddingLeft: '40px !important',
             width: '55%',
             textAlign: 'left',
             height: 'fit-content',
           },
 
-          '.part-30': {
+          '.default-section-3070 .part-30': {
             position: 'relative',
             width: '45%',
             height: 'fit-content',
