@@ -10,7 +10,7 @@
 <div class="main-page-template-content">
     <div class="center">
         <div class="content-inner" id="<?php $titleanchor = get_sub_field('section_title'); $noSpaces = str_replace(' ', '', $titleanchor); echo $noSpaces; ?>">
-            <?php if(get_sub_field('section_title')) { ?><h2><?php echo get_sub_field('section_title'); ?></h2>
+            <?php if(get_sub_field('section_title')) { ?><h2 ><?php echo get_sub_field('section_title'); ?></h2>
             <?php } ?>
             <?php if(get_sub_field('section_image')) { ?><img src="<?php echo get_sub_field('section_image'); ?>" />
             <?php } ?>
@@ -22,9 +22,9 @@
 
 <?php  } else if( $moduletype == 'moduletypTwoCol3070' ) { ?>
 
-<div class="default-section-3070 page-animate-block" id="changing">
+<div class="x840:flex x840:item-start x840:items-center x840:justify-center" id="changing">
     <div class="relative mx-auto px-5 max-w-1210">
-        <div class="split-content-wrap-large-text">
+        <div class="relative split-content-wrap-large-text">
             <?php while (have_rows('content_blocks')) : the_row(); ?>
 
             <div

@@ -351,25 +351,31 @@ module.exports = {
         70 30 page styles
         */
 
-        '@media (min-width: 840px)': {
-          '.default-section-3070': {
-            marginTop: '20px',
-            padding: '20px 0',
-            height: 'fit-content',
-          },
-        },
-
         '@media (min-width: 960px)': {
-          '.default-section-3070': {
-            marginTop: '20px',
-            padding: '20px 0',
+          '.part-70': {
+            width: 'calc(100% - 420px)',
+          },
+
+          '.part-30': {
+            width: '420px',
+          },
+        },
+        '@media (min-width: 840px)': {
+          '.part-70': {
+            position: 'relative',
+            paddingLeft: '40px',
+            width: '55%',
+            textAlign: 'left',
+            height: 'fit-content',
+          },
+
+          '.part-30': {
+            position: 'relative',
+            width: '45%',
             height: 'fit-content',
           },
         },
 
-        '.default-section-3070': {
-          position: 'relative',
-        },
        
       };
       addUtilities(newUtilities, ['responsive', 'hover']);
