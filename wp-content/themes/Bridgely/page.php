@@ -23,7 +23,7 @@
         <div class="default-animate-title flex items-center justify-center text-blue">
             <div class="relative mx-auto px-5 max-w-1210 text-blue">
                 <div class="intro-copy-wrap text-center text-blue">
-                    <h1 class="x960:text-6xl text-blue"><?php echo get_field('general_page_1_intro_title'); ?></h1>
+                    <h1 class="x960:text-6xl text-blue page-header"><?php echo get_field('general_page_1_intro_title'); ?></h1>
                 </div>
             </div>
         </div>

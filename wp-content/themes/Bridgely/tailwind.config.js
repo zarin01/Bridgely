@@ -297,6 +297,27 @@ module.exports = {
           transform: 'rotate(-45deg)',
         },
 
+        /* 
+        Page Template Refusing to Accpet Color Updates, Adding them Here for now until
+        I find a fix:
+        */
+        '.page-header': {
+          color: '#2A426B',
+        },
+
+        '.full-width-component h3. .full-width-component h2': {
+          marginTop: '40px',
+          marginBottom: '23px',
+          lineHeight: '130%',
+        },
+
+        '.statmenu': {
+          backgroundColor: '#fff7e4',
+        },
+        '.statmenu .statmenu-item a': {
+          color: 'black',
+          textDecoration: 'underline',
+        },
 
         /* 
         Wordpress Loaded Footer Classes 
@@ -403,6 +424,7 @@ module.exports = {
 
           '.default-section-3070 .part-30': {
             width: '420px',
+            paddingRight: '30px',
           },
           '.default-section-3070 .part h3': {
             padding: '20px 0 20px 0',
@@ -421,6 +443,7 @@ module.exports = {
             position: 'relative',
             width: '45%',
             height: 'fit-content',
+            paddingRight: '15px',
           },
         },
 
