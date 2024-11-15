@@ -311,6 +311,10 @@ module.exports = {
           },
         },
 
+        'footer': {
+          background: '#141c29'
+        },
+
         'footer #menu-footer-navigation li a': {
           position: 'relative',
           display: 'block',
