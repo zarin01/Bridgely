@@ -305,11 +305,15 @@ module.exports = {
           color: '#2A426B',
         },
 
-        '.full-width-component h3. .full-width-component h2': {
+        '.full-width-component h3, .full-width-component h2': {
           marginTop: '40px',
           marginBottom: '23px',
           lineHeight: '130%',
         },
+        '.full-width-component .content-inner p': {
+          marginTop: '25px',
+        },
+
 
         '.statmenu': {
           backgroundColor: '#fff7e4',
@@ -334,6 +338,9 @@ module.exports = {
 
         'footer': {
           background: '#141c29'
+        },
+        'footer a, footer p': {
+          color: '#FFF',
         },
 
         'footer #menu-footer-navigation li a': {

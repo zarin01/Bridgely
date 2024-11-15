@@ -78,30 +78,29 @@
                         background-color: #d1a129;
                         }
                         </style>
-                        <amp-social-share
-                        type="twitter"
-                        width="30"
-                        height="30"
-                        aria-label="Share on Twitter"
-                        data-param-text="<?php echo  strip_tags($sharetext); ?>"
-                        aria-label="Share on LinkedIn"
-                        ></amp-social-share>
-                        <amp-social-share
-                        type="linkedin"
-                        width="30"
-                        height="30"
-                        data-param-text="<?php echo  strip_tags($sharetext); ?>"
-                        data-param-url="<?php echo urlencode(get_permalink()); ?>"
-                        aria-label="Share on LinkedIn"
-                        ></amp-social-share>
-                        <amp-social-share
-                        type="facebook"
-                        width="30"
-                        height="30"
-                        data-param-quote="<?php echo  strip_tags($sharetext); ?>"
-                        data-param-url="<?php echo urlencode(get_permalink()); ?>"
-                        aria-label="Share on SMS"
-                        ></amp-social-share>
+                        <div class="flex space-x-4">
+                            <amp-social-share
+                                type="twitter"
+                                class="w-8 h-8"
+                                aria-label="Share on Twitter"
+                                data-param-text="<?php echo strip_tags($sharetext); ?>">
+                            </amp-social-share>
+                            <amp-social-share
+                                type="linkedin"
+                                class="w-8 h-8"
+                                data-param-text="<?php echo strip_tags($sharetext); ?>"
+                                data-param-url="<?php echo urlencode(get_permalink()); ?>"
+                                aria-label="Share on LinkedIn">
+                            </amp-social-share>
+                            <amp-social-share
+                                type="facebook"
+                                class="w-8 h-8"
+                                data-param-quote="<?php echo strip_tags($sharetext); ?>"
+                                data-param-url="<?php echo urlencode(get_permalink()); ?>"
+                                aria-label="Share on Facebook">
+                            </amp-social-share>
+                        </div>
+
                 </li>
                 <?php } ?>
                 <?php $counter++; // add one per row ?>
