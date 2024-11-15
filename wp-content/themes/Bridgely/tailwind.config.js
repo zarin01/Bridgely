@@ -4,11 +4,21 @@ const plugin = require('tailwindcss/plugin');
 module.exports = {
   mode: 'jit',
   content: [
+    './src/**/*.{html,js}',
+    './public/index.html',
     './**/*.php',
     './wp-content/themes/Bridgely/**/*.php',
     './wp-content/themes/Bridgely/**/*.js',
     './wp-content/themes/Bridgely/**/*.css', 
     './src/**/*.{js,css,html,php}', 
+  ],
+  safelist: [
+    {
+      pattern: /^bg-(blue|green|yellow|red|purple|pink|indigo|cyan|teal|lime|amber|orange|emerald|violet|fuchsia|rose|sky)-[1-9]00$/,
+    },
+    {
+      pattern: /^text-(blue|green|yellow|red|purple|pink|indigo|cyan|teal|lime|amber|orange|emerald|violet|fuchsia|rose|sky)-[1-9]00$/,
+    },
   ],
   theme: {
     extend: {
@@ -89,6 +99,7 @@ module.exports = {
         '6p': '6%',
         '9p': '9%',
         '56p': '56.25%',
+        '10px': '10px',
         '140': '140px',
         '245': '245px',
         '280': '280px',

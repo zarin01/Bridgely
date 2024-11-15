@@ -112,7 +112,7 @@
                <?php if (get_sub_field('icons')) { ?>
                    <img class="icon block max-w-full h-auto object-contain align-middle h-50 w-70" src="<?php echo get_sub_field('icons'); ?>"><?php } ?>
                <?php if (get_sub_field('menu_item')) { ?>
-                   <a class="text-primary_gray " href="#<?php $anchor = get_sub_field('menu_item'); $noSpaces = str_replace(' ', '', $anchor); echo $noSpaces; ?>
+                   <a class="text-primary_gray pl-10px" href="#<?php $anchor = get_sub_field('menu_item'); $noSpaces = str_replace(' ', '', $anchor); echo $noSpaces; ?>
                    "><?php echo get_sub_field('menu_item'); ?></a><?php } ?>
             </div>
             <?php endwhile; ?>
