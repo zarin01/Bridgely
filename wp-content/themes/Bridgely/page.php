@@ -9,12 +9,12 @@
             class="blank-intro-hero relative h-700 bg-no-repeat bg-top bg-cover" 
             style="background-image: url('<?php echo get_field('general_page_1_banner_image'); ?>');">
 
-            <div class="absolute block overflow-hidden -bottom-10 -left-20p sm:w-120p sm:-left-10p md:w-106p md:-left-5p inset-x-0">
-                <svg class="w-[200%] md:w-[150%] lg:w-full" viewBox="0 0 1658 59" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1680 53.115V58.1982H0V53.1003C550.124 -17.7001 1129.88 -17.7001 1680 53.1003V53.115Z"
-                        fill="#FFF" />
-                </svg>
-            </div>
+            <div class="absolute block overflow-hidden -bottom-10 -left-20p sm:w-120p sm:-left-10p md:w-106p md:-left-5p">
+            <svg viewBox="0 0 1658 59" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1680 53.115V58.1982H0V53.1003C550.124 -17.7001 1129.88 -17.7001 1680 53.1003V53.115Z"
+                    fill="#FFF" />
+            </svg>
+        </div>
     </div>
     <?php } ?>
 

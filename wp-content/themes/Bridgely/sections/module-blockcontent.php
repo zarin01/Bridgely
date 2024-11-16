@@ -37,7 +37,7 @@
 
 <div class="default-section-3070 x840:flexx840:item-start x840:items-center x840:justify-center" id="changing">
     <div class="relative mx-auto px-5 max-w-1210">
-        <div class="relative split-content-wrap-large-text flex x840:flex-row ">
+        <div class="relative split-content-wrap-large-text flex x840:flex-row flex-col">
             <?php while (have_rows('content_blocks')) : the_row(); ?>
 
             <div
