@@ -73,15 +73,10 @@
                 <li id="stat-<?php echo $counter; ?>" class="list-square ml-12 font-light mb-2 text-xl">
                 <?php echo get_sub_field('poverty_stat');
                     $sharetext = get_sub_field('poverty_stat'); ?>
-                        <style>
-                        amp-social-share[type='twitter'], amp-social-share[type='linkedin'],  amp-social-share[type='facebook'] {
-                        background-color: #d1a129;
-                        }
-                        </style>
                         <div class="flex space-x-4">
                             <amp-social-share
                                 type="twitter"
-                                class="w-8 h-8"
+                                class="w-8 h-8 bg-orange"
                                 aria-label="Share on Twitter"
                                 data-param-text="<?php echo strip_tags($sharetext); ?>">
                             </amp-social-share>
@@ -118,7 +113,7 @@
 <!-- Poverty Menu Component -->
 <?php } else if( $moduletype == 'moduletypePovertyMenu' ) { ?>
 
-<div class="statmenu page-animate-block bg-primary_white py-12 px-12 my-12 mx-auto" id="changing">
+<div class="statmenu page-animate-block bg-tan py-12 px-12 my-12 mx-auto" id="changing">
     <div class="relative mx-auto px-5 max-w-1210">
 
         <?php if(get_sub_field('section_title')) { ?><h2 class="text-center"><?php echo get_sub_field('section_title'); ?></h2>
@@ -131,7 +126,7 @@
                <?php if (get_sub_field('icons')) { ?>
                    <img class="icon block h-auto object-contain align-middle h-50 w-70 max-w-20" src="<?php echo get_sub_field('icons'); ?>"><?php } ?>
                <?php if (get_sub_field('menu_item')) { ?>
-                   <a class="text-primary_gray pl-10px" href="#<?php $anchor = get_sub_field('menu_item'); $noSpaces = str_replace(' ', '', $anchor); echo $noSpaces; ?>
+                   <a class="text-dark_blue pl-10px" href="#<?php $anchor = get_sub_field('menu_item'); $noSpaces = str_replace(' ', '', $anchor); echo $noSpaces; ?>
                    "><?php echo get_sub_field('menu_item'); ?></a><?php } ?>
             </div>
             <?php endwhile; ?>

@@ -12,25 +12,18 @@ module.exports = {
     './wp-content/themes/Bridgely/**/*.css', 
     './src/**/*.{js,css,html,php}', 
   ],
-  safelist: [
-    {
-      pattern: /^bg-(blue|green|yellow|red|purple|pink|indigo|cyan|teal|lime|amber|orange|emerald|violet|fuchsia|rose|sky)-[1-9]00$/,
-    },
-    {
-      pattern: /^text-(blue|green|yellow|red|purple|pink|indigo|cyan|teal|lime|amber|orange|emerald|violet|fuchsia|rose|sky)-[1-9]00$/,
-    },
-  ],
   theme: {
     extend: {
       colors: {
-        primary_orange: '#E0B039',
-        custom_gold: '#D1A129',
-        primary_white: '#FFF7DE',
-        primary_gray: '#141C29',
-        black: '#000',
-        blue: '#2A426B',
-        tan2: '#F5EFE7',
         white: '#FFF',
+        black: '#000',
+        dark_blue: '#141C29',
+        blue: '#2A426B',
+        orange: '#D1A129',
+        orangehover: '#E0B039',
+        tan: '#FFF7DE',
+        tan2: '#F5EFE7',
+        
       },
       screens: {
         x840: '840px',
@@ -149,7 +142,7 @@ module.exports = {
           textAlign: 'center',
           border: 'none',
           color: theme('colors.white'),
-          backgroundColor: theme('colors.custom_gold'),
+          backgroundColor: theme('colors.orange'),
           borderRadius: theme('borderRadius.4'),
         },
 
@@ -298,32 +291,6 @@ module.exports = {
         },
 
         /* 
-        Page Template Refusing to Accpet Color Updates, Adding them Here for now until
-        I find a fix:
-        */
-        '.page-header': {
-          color: '#2A426B',
-        },
-
-        '.full-width-component h3, .full-width-component h2': {
-          marginTop: '40px',
-          marginBottom: '23px',
-          lineHeight: '130%',
-        },
-        '.full-width-component .content-inner p': {
-          marginTop: '25px',
-        },
-
-
-        '.statmenu': {
-          backgroundColor: '#fff7e4',
-        },
-        '.statmenu .statmenu-item a': {
-          color: 'black',
-          textDecoration: 'underline',
-        },
-
-        /* 
         Wordpress Loaded Footer Classes 
         */
        
@@ -398,6 +365,39 @@ module.exports = {
         },
 
 
+
+
+
+        /* 
+        Components Section:
+        */
+
+        /* 
+        Page Template Refusing to Accpet Color Updates, Adding them Here for now until
+        I find a fix:
+        */
+        '.page-header': {
+          color: '#2A426B',
+        },
+
+        '.full-width-component h3, .full-width-component h2': {
+          marginTop: '40px',
+          marginBottom: '23px',
+          lineHeight: '130%',
+        },
+        '.full-width-component .content-inner p': {
+          marginTop: '25px',
+        },
+
+
+        '.statmenu': {
+          backgroundColor: '#fff7e4',
+        },
+        '.statmenu .statmenu-item a': {
+          color: 'black',
+          textDecoration: 'underline',
+        },
+
         /* 
         70 30 page styles
         */
@@ -452,6 +452,16 @@ module.exports = {
             height: 'fit-content',
             paddingRight: '15px',
           },
+        },
+
+        ".amp-social-share[type='twitter']": {
+          backgroundColor: '#d1a129',
+        },
+        ".amp-social-share[type='linkedin']": {
+          backgroundColor: '#d1a129',
+        },
+        ".amp-social-share[type='facebook']": {
+          backgroundColor: '#d1a129',
         },
 
        

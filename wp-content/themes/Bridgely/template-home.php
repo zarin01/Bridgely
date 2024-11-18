@@ -39,11 +39,11 @@
             echo 'style="background-image: url(' . get_field('home_1_background_image') . ');"'; 
         } ?>
     >
-        <div class="relative text-primary_white max-w-1210 px-5 mx-auto mt-0.5 text-shadow">
+        <div class="relative text-tan max-w-1210 px-5 mx-auto mt-0.5 text-shadow">
             <div class="relative x840:text-red x840:pt-245 x840:pb-130 pt-44 pb-28">
-                <div class="relative text-primary_white max-w-610 text-left ml-0">
+                <div class="relative text-tan max-w-610 text-left ml-0">
                     <?php if( get_field('home_1_main_title') ) { ?>
-                        <h1 class="animateRise text-primary_white font-bold text-shadow-lg"><?php echo get_field('home_1_main_title'); ?></h1>
+                        <h1 class="animateRise text-tan font-bold text-shadow-lg"><?php echo get_field('home_1_main_title'); ?></h1>
                     <?php } ?>
                     <?php if( get_field('home_1_support_title') ) { ?>
                         <p class="text-shadow-sm max-w-610 font-bold text-lg animateRise">
@@ -87,7 +87,7 @@
                     <?php if( get_field('home_2_button_text') ) { ?>
                         <p class="mt-4 md:mt-6">
                             <a href="<?php echo get_field('home_2_button_link'); ?>"
-                            class="animateRise relative inline-block px-4 py-3 font-poppins font-semibold text-base leading-4 uppercase tracking-tight text-center text-white bg-primary_orange rounded-4"><?php echo get_field('home_2_button_text'); ?></a>
+                            class="animateRise relative inline-block px-4 py-3 font-poppins font-semibold text-base leading-4 uppercase tracking-tight text-center text-white bg-orangehover rounded-4"><?php echo get_field('home_2_button_text'); ?></a>
                         </p>
                     <?php } ?>
                 </div>
@@ -108,13 +108,13 @@
     * *************************/ ?>
 
       <div class="home-section-3">         
-        <div class="bg-primary_gray pt-10 pb-12">
+        <div class="bg-dark_blue pt-10 pb-12">
             <div class="relative max-w-1210 px-5 mx-auto">
                 <div class="w-4/5 mx-auto">
                     
                     <?php if (get_field('home_section_3_video_url')) { ?>
                     
-                        <h3 class="text-primary_white text-center font-bold text-4xl py-6 px-0 mb-6">
+                        <h3 class="text-tan text-center font-bold text-4xl py-6 px-0 mb-6">
                             <?php echo get_field('home_section_3_video_title_2'); ?>
                         </h3>
                     
@@ -192,25 +192,25 @@
     * 
     * *************************/ ?>
                 
-    <div class="relative py-12 text-primary_gray bg-text-primary_white bg-primary_white">
+    <div class="relative py-12 text-dark_blue bg-text-tan bg-tan">
         <div class="relative max-w-1210 px-5 mx-auto">
             <div class="relative flex flex-col x960:flex-row gap-8 mb-10 w-full">
                 
                 <div class="relative w-full pr-6p">
                     <?php if( get_field('home_3_left_title') ) { ?>
-                    <h2 class="text-primary_gray x960:text-5xl x960:max-w-380 animateRise"><?php echo get_field('home_3_left_title'); ?></h2>
+                    <h2 class="text-dark_blue x960:text-5xl x960:max-w-380 animateRise"><?php echo get_field('home_3_left_title'); ?></h2>
                     <?php } ?>
                     <?php if( get_field('home_3_left_copy') ) { ?>
-                    <p class="text-primary_gray animateRise"><?php echo get_field('home_3_left_copy'); ?></p>
+                    <p class="text-dark_blue animateRise"><?php echo get_field('home_3_left_copy'); ?></p>
                     <?php } ?>
                 </div>
                     
                 <div class="relative flex-none x960:w-1/2 x960:pl-9p">
                     <?php if( get_field('home_3_right_title') ) { ?>
-                    <h2 class="text-primary_gray animateRise"><?php echo get_field('home_3_right_title'); ?></h2>
+                    <h2 class="text-dark_blue animateRise"><?php echo get_field('home_3_right_title'); ?></h2>
                     <?php } ?>
                     <?php if( get_field('home_3_right_copy') ) { ?>
-                    <p class="text-primary_gray animateRise"><?php echo get_field('home_3_right_copy'); ?></p>
+                    <p class="text-dark_blue animateRise"><?php echo get_field('home_3_right_copy'); ?></p>
                     <?php } ?>
                 </div>
                     
@@ -218,11 +218,11 @@
         </div>
     </div>
 
-    <div class="bg-primary_gray py-6">
+    <div class="bg-dark_blue py-6">
         <div class="relative max-w-1210 px-5 mx-auto">
             <div class="w-4/5 mx-auto">
                 <?php if (get_field('home_section_3_video_url_2')) { ?>
-                    <h3 class="text-primary_white text-center text-4xl font-bold py-6">
+                    <h3 class="text-tan text-center text-4xl font-bold py-6">
                         <?php echo get_field('home_section_3_video_title'); ?>
                     </h3>
                     <div class="relative pb-56p">
@@ -244,13 +244,13 @@
     * 
     * *************************/ ?>
 
-    <div class="relative bg-primary_white text-primary_gray py-12">
+    <div class="relative bg-tan text-dark_blue py-12">
         <div class="relative max-w-1210 px-5 mx-auto">
             <?php if( get_field('bottom_title') ) { ?>
-              <h2 class="text-center text-primary_gray"><?php echo get_field('bottom_title'); ?></h2>
+              <h2 class="text-center text-dark_blue"><?php echo get_field('bottom_title'); ?></h2>
             <?php } ?>
             
-            <div class="flex fifty-fifty-fancy-split mx-auto max-w-screen-xl flex-col x960:flex-row x960:flex-none x960:basis-1/2 text-primary_gray">
+            <div class="flex fifty-fifty-fancy-split mx-auto max-w-screen-xl flex-col x960:flex-row x960:flex-none x960:basis-1/2 text-dark_blue">
                 <?php if( get_field('bottom_copy') ) { ?>
                 <?php echo get_field('bottom_copy'); ?>
                 <?php } ?>
@@ -276,7 +276,7 @@
             <?php endif; ?>
 
             <?php if( get_field('home_4_support_line') ) : ?>
-                <div class="committed-to-text relative text-primary_orange mb-4 h-77 animateRise committed-to-text-after flex justify-center items-start text-23 font-bold leading-normal uppercase">
+                <div class="committed-to-text relative text-orangehover mb-4 h-77 animateRise committed-to-text-after flex justify-center items-start text-23 font-bold leading-normal uppercase">
                     <?php echo get_field('home_4_support_line'); ?>
                 </div>
             <?php endif; ?>
@@ -331,7 +331,7 @@
 
     <div id="download_app"> </div>
     
-    <div class="relative pb-12 bg-primary_white overflow-hidden z-30 text-left">
+    <div class="relative pb-12 bg-tan overflow-hidden z-30 text-left">
         <div class="relative z-10">
           <div class="absolute top-0 -left-10 w-calc-100-plus-20 overflow-hidden">
               <svg class="w-full" viewBox="0 0 1680 65" xmlns="http://www.w3.org/2000/svg">
@@ -376,7 +376,7 @@
 
         <div class="relative max-w-1210 px-5 mx-auto">
 
-            <div class="mb-10 font-poppins font-bold text-center text-custom_gold text-3xl leading-tight md:mb-16"><?php // the_field('home_7_intro_text'); ?></div>
+            <div class="mb-10 font-poppins font-bold text-center text-orange text-3xl leading-tight md:mb-16"><?php // the_field('home_7_intro_text'); ?></div>
 
             <?php $blockCounter = 0; ?>
 
@@ -385,7 +385,7 @@
                 <?php while( have_rows('home_7_content_blocks') ) : the_row(); ?>
 
                 <?php if($blockCounter != 0) { ?>
-                <div class="relative block h-px mb-9 bg-primary_orange animateRise"></div>
+                <div class="relative block h-px mb-9 bg-orangehover animateRise"></div>
                 <?php } ?>
 
                 <div class="relative mb-9 animateRise flex flex-col x840:flex-row <?php if($blockCounter % 2 == 0) { echo 'x840:flex-row-reverse'; } ?>">
@@ -453,16 +453,16 @@
         </div>
     </div>
                 
-    <div class="home-section-8 page-animate-block bg-primary_gray relative x840:p-28 p-14 bg-160 md:bg-130 lg:bg-110 xl:bg-100 xl:p-32 2xl:p-36" id="contactus">
+    <div class="home-section-8 page-animate-block bg-dark_blue relative x840:p-28 p-14 bg-160 md:bg-130 lg:bg-110 xl:bg-100 xl:p-32 2xl:p-36" id="contactus">
         <div class="relative max-w-1210 px-5 mx-auto">
                                 
             <?php if( get_field('reach_out_title') ) { ?>
-            <div class="animateRise relative text-center block font-poppins font-bold leading-tight text-primary_white mb-8 fontSize-responsive_heading xl:mb-4.5 xl:160">
+            <div class="animateRise relative text-center block font-poppins font-bold leading-tight text-tan mb-8 fontSize-responsive_heading xl:mb-4.5 xl:160">
                 <?php echo get_field('reach_out_title'); ?>
             </div>
             <?php } ?>
             <?php if( get_field('reach_out_subtitle') ) { ?>
-            <div class="animateRise text-center max-w-610 mx-auto mb-16 font-poppins font-semibold x840:text-30 text-23 leading-relaxed text-primary_white">
+            <div class="animateRise text-center max-w-610 mx-auto mb-16 font-poppins font-semibold x840:text-30 text-23 leading-relaxed text-tan">
                 <?php echo get_field('reach_out_subtitle'); ?>
             </div>
             <?php } ?>
