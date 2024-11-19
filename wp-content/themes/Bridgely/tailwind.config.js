@@ -1,9 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 const plugin = require('tailwindcss/plugin');
-const colors = require('tailwindcss/colors')
+
 module.exports = {
   mode: 'jit',
-  important: true,
   content: [
     './src/**/*.{html,js}',
     './public/index.html',
