@@ -1,5 +1,5 @@
 jQuery(document).ready(function($) {
-
+	console.log('test');
 	// mobile nav functionality
 	$(function () {
 

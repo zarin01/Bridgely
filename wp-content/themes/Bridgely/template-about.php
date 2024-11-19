@@ -29,7 +29,7 @@
 
 			<div class="vision-intro-copy-wrap">
 				<?php if (get_field('about_page_1_intro_title')) { ?>
-					<h1 class="text-black animateRise"><?php echo get_field('about_page_1_intro_title'); ?></h1>
+					<h1 class="text-blue mb-12 x960:text-7xl animateRise"><?php echo get_field('about_page_1_intro_title'); ?></h1>
 				<?php } ?>
 				<?php if (get_field('about_page_1_intro_content')) { ?>
 					<div class="inner animateRise">
@@ -56,28 +56,30 @@
 	 * 
 	 * *************************/ ?>
 
-	<div class="about-section-vision about-animate-section-2" <?php if (get_field('about_page_2_background_image')) {
-																	echo ' style="background:url(' . get_field('about_page_2_background_image') . ') no-repeat center top; background-size:cover;"';
-																} ?>>
-		<div class="center">
+	<div 
+	    class="about-section-vision about-animate-section-2 x12:py-36 x960:py-32 x840:py-24 bg-auto bg-no-repeat bg-center" 
+	    <?php if (get_field('about_page_2_background_image')) {
+	        echo 'style="background-image: url(' . esc_url(get_field('about_page_2_background_image')) . '); background-repeat: no-repeat; background-position: center; background-size: cover;"';
+	    } ?>>
+		<div class="relative max-w-1210 px-5 mx-auto">
 
-			<div class="copy-wrap-part">
+			<div class="copy-wrap-part  relative max-w-500 pt-11 mt-3.5">
 
 				<?php if (get_field('about_page_mission_title')) { ?>
-					<h2 class="white text-h1 animateRise"><?php echo get_field('about_page_mission_title'); ?></h2>
+					<h2 class="text-white animateRise"><?php echo get_field('about_page_mission_title'); ?></h2>
 				<?php } ?>
 				<?php if (get_field('about_page_mission_content')) { ?>
-					<div class="animateRise" style="position: relative;">
+					<div class="relative text-white animateRise">
 						<?php echo get_field('about_page_mission_content'); ?>
 					</div>
 				<?php } ?>
 
 
 				<?php if (get_field('about_page_2_title')) { ?>
-					<h2 class="white text-h1 animateRise"><?php echo get_field('about_page_2_title'); ?></h2>
+					<h2 class="text-white animateRise"><?php echo get_field('about_page_2_title'); ?></h2>
 				<?php } ?>
 				<?php if (get_field('about_page_2_content')) { ?>
-					<div class="animateRise" style="position: relative;">
+					<div class="relative text-white animateRise">
 						<?php echo get_field('about_page_2_content'); ?>
 					</div>
 				<?php } ?>
@@ -93,11 +95,11 @@
 	 * 
 	 * *************************/ ?>
 
-	<div class="about-animate-section-3 why-join-bridgely-about-section">
-		<div class="center">
+	<div class="about-animate-section-3 why-join-bridgely-about-section   relative text-center py-20">
+		<div class="relative max-w-1210 px-5 mx-auto">
 
 			<?php if (get_field('partners_page_3_title')) { ?>
-				<h2 class="text-h1 blue animateRise"><?php echo get_field('partners_page_3_title'); ?></h2>
+				<h2 class="text-blue text-responsive animateRise"><?php echo get_field('partners_page_3_title'); ?></h2>
 			<?php } ?>
 
 			<?php if (get_field('partners_page_3_video_url')) { ?>
@@ -112,8 +114,8 @@
 	 * 
 	 * *************************/ ?>
 
-	<div class="our-pillars-section about-animate-section-4">
-		<div class="center">
+	<div class="our-pillars-section about-animate-section-4 bg-our-pillars  relative overflow-hidden text-left">
+		<div class="relative max-w-1210 px-5 mx-auto">
 			<?php if (get_field('about_page_4_title')) { ?>
 				<h1 class="text-h1-special blue animateRise"><?php echo get_field('about_page_4_title'); ?></h1>
 			<?php } ?>
@@ -165,7 +167,7 @@
 	 * *************************/ ?>
 
 	<div class="about-section-why about-animate-section-3">
-		<div class="center">
+		<div class="relative max-w-1210 px-5 mx-auto">
 
 			<?php if (get_field('about_page_3_title')) { ?>
 				<h2 class="text-h1 blue animateRise"><?php echo get_field('about_page_3_title'); ?></h2>
@@ -214,7 +216,7 @@
 	 * *************************/ ?>
 
 	<div class="reach-out-simple about-animate-section-5">
-		<div class="center">
+		<div class="relative max-w-1210 px-5 mx-auto">
 
 			<?php if (get_field('about_page_5_title')) { ?>
 				<h1 class="text-h1-special white text-center animateRise"><?php echo get_field('about_page_5_title'); ?></h1>
