@@ -1,8 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 const plugin = require('tailwindcss/plugin');
-
+const colors = require('tailwindcss/colors')
 module.exports = {
   mode: 'jit',
+  important: true,
   content: [
     './src/**/*.{html,js}',
     './public/index.html',
@@ -24,11 +25,13 @@ module.exports = {
         tan: '#FFF7DE',
         tan2: '#F5EFE7',
         
+        
       },
       screens: {
         x840: '840px',
         x960: '960px',
-        xl2: '1200px',       
+        xl2: '1200px',
+        x14: '1400px',    
       },
       width: {
         'calc-100-minus-820': 'calc(100% - 820px)',
@@ -91,6 +94,7 @@ module.exports = {
       padding: {
         '6p': '6%',
         '9p': '9%',
+        '47p': '47%',
         '56p': '56.25%',
         '10px': '10px',
         '140': '140px',
@@ -127,6 +131,9 @@ module.exports = {
 
         '.text-shadow': {
           textShadow: '0 0 16px rgba(0, 0, 0, 0.5)',
+        },
+        '.transform-matrix': {
+          transform: 'matrix(1, 0, 0, 1, 0, 0)',
         },
 
         '.btn': {
@@ -381,7 +388,7 @@ module.exports = {
         },
 
         '.full-width-component h3, .full-width-component h2': {
-          marginTop: '40px',
+          paddingTop: '40px',
           marginBottom: '23px',
           lineHeight: '130%',
         },
@@ -454,14 +461,14 @@ module.exports = {
           },
         },
 
-        ".amp-social-share[type='twitter']": {
-          backgroundColor: '#d1a129',
+        ".twitter-logo": {
+          backgroundColor: '#d1a129 !important',
         },
-        ".amp-social-share[type='linkedin']": {
-          backgroundColor: '#d1a129',
+        ".linkedin-logo": {
+          backgroundColor: '#d1a129 !important',
         },
-        ".amp-social-share[type='facebook']": {
-          backgroundColor: '#d1a129',
+        ".facebook-logo": {
+          backgroundColor: '#d1a129 !important',
         },
 
        

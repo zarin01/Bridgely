@@ -21,7 +21,7 @@
     <?php /* Page Title */ ?>
     <?php if( get_field('general_page_1_intro_title') ) { ?>
         <div class="default-animate-title flex items-center justify-center text-blue">
-            <div class="relative mx-auto px-5 max-w-1210 text-blue">
+            <div class="relative mx-auto mt-2 px-5 max-w-1210 text-blue">
                 <div class="intro-copy-wrap text-center text-blue">
                     <h1 class="x960:text-6xl text-blue page-header"><?php echo get_field('general_page_1_intro_title'); ?></h1>
                 </div>
@@ -40,7 +40,7 @@
 	<?php get_template_part('sections/module', 'blockcontent'); ?>
 
 	<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
-	<div class="main-page-template-content default-section-3070 page-animate-block" id="changing">
+	<div class="main-page-template-content page-animate-block" id="changing">
 		<div class="default-page-template-content">
 			<div class="relative mx-auto px-5 max-w-1210">
 

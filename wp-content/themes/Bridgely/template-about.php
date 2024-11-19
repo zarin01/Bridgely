@@ -9,10 +9,9 @@
 	 * 
 	 * *************************/ ?>
 
-	<div class="blank-intro-hero" id="about-intro-hero" <?php if (get_field('about_page_1_banner_image')) {
-															echo ' style="background:url(' . get_field('about_page_1_banner_image') . ') no-repeat center top; background-size:cover;"';
-														} ?>>
-		<div class="up-curve-contain">
+	<div class="relative overflow-hidden x14:p-0 x14:h-700 x840:pt-47p" id="about-intro-hero" <?php if (get_field('about_page_1_banner_image')) {
+			echo ' style="background:url(' . get_field('about_page_1_banner_image') . ') no-repeat center top; background-size:cover;"';} ?>>
+		<div class="absolute w-full overflow-hidden -bottom-4 left-0">
 			<svg viewBox="0 0 1658 59" xmlns="http://www.w3.org/2000/svg">
 				<path d="M1680 53.115V58.1982H0V53.1003C550.124 -17.7001 1129.88 -17.7001 1680 53.1003V53.115Z" fill="#FFF" />
 			</svg>
@@ -25,12 +24,12 @@
 	 * 
 	 * *************************/ ?>
 
-	<div class="reach-out-main-top vision about-animate-section-1">
-		<div class="center">
+	<div class="reach-out-main-top vision about-animate-section-1   relative mx-auto text-center py-20 x12:pb-32 max-w-5xl x960:pb-24">
+		<div class="relative max-w-1210 px-5 mx-auto">
 
 			<div class="vision-intro-copy-wrap">
 				<?php if (get_field('about_page_1_intro_title')) { ?>
-					<h1 class="text-h1-special special blue animateRise"><?php echo get_field('about_page_1_intro_title'); ?></h1>
+					<h1 class="text-black animateRise"><?php echo get_field('about_page_1_intro_title'); ?></h1>
 				<?php } ?>
 				<?php if (get_field('about_page_1_intro_content')) { ?>
 					<div class="inner animateRise">

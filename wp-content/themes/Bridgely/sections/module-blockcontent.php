@@ -13,7 +13,7 @@
     <div class="relative mx-auto px-5 max-w-1210">
         <div class="content-inner" id="<?php $titleanchor = get_sub_field('section_title'); $noSpaces = str_replace(' ', '', $titleanchor); echo $noSpaces; ?>">
             <?php if(get_sub_field('section_title')) { ?>
-                <h2 class="font-medium mb-8 mt-10 text-center"><?php echo get_sub_field('section_title'); ?></h2>
+                <h2 class="font-medium mb-8 pt-10 text-center"><?php echo get_sub_field('section_title'); ?></h2>
             <?php } ?>
             <?php if(get_sub_field('section_image')) { ?>
                 <div class="flex justify-center">
@@ -35,7 +35,7 @@
 <!-- 30/70 Component -->
 <?php  } else if( $moduletype == 'moduletypTwoCol3070' ) { ?>
 
-<div class="default-section-3070 x840:flexx840:item-start x840:items-center x840:justify-center" id="changing">
+<div class="default-section-3070 py-2 my-2  x840:flexx840:item-start x840:items-center x840:justify-center" id="changing">
     <div class="relative mx-auto px-5 max-w-1210">
         <div class="relative split-content-wrap-large-text flex x840:flex-row flex-col">
             <?php while (have_rows('content_blocks')) : the_row(); ?>
@@ -43,7 +43,7 @@
             <div
                 class="part part-<?php if (get_sub_field('right_or_left')) { ?><?php echo get_sub_field('right_or_left'); ?><?php } ?>">
                 <?php if (get_sub_field('block_title')) { ?>
-                <h2 class="animateRise" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+                <h2 class="opacity-100 transform-matrix">
                     <?php echo get_sub_field('block_title'); ?></h2><?php } ?>
 
                 <?php if (get_sub_field('block_content')) { ?>
@@ -70,26 +70,33 @@
                 <?php $counter = 1; ?>
                 <?php while (have_rows('poverty_stats')) : the_row(); ?>
                 <?php if (get_sub_field('poverty_stat')) { ?>
-                <li id="stat-<?php echo $counter; ?>" class="list-square ml-12 font-light mb-2 text-xl">
+                <li id="stat-<?php echo $counter; ?>" class="list-square ml-12 font-light mb-4 text-xl">
                 <?php echo get_sub_field('poverty_stat');
                     $sharetext = get_sub_field('poverty_stat'); ?>
                         <div class="flex space-x-4">
                             <amp-social-share
                                 type="twitter"
-                                class="w-8 h-8 bg-orange"
+                                width="30"
+                                height="30"
+                                class="bg-orange twitter-logo"
                                 aria-label="Share on Twitter"
                                 data-param-text="<?php echo strip_tags($sharetext); ?>">
                             </amp-social-share>
                             <amp-social-share
                                 type="linkedin"
-                                class="w-8 h-8"
+                                width="30"
+                                height="30"
+                                class="linkedin-logo"
                                 data-param-text="<?php echo strip_tags($sharetext); ?>"
                                 data-param-url="<?php echo urlencode(get_permalink()); ?>"
                                 aria-label="Share on LinkedIn">
                             </amp-social-share>
                             <amp-social-share
                                 type="facebook"
-                                class="w-8 h-8"
+                                width="30"
+                                height="30"
+                                fill="#d1a129"
+                                class="facebook-logo"
                                 data-param-quote="<?php echo strip_tags($sharetext); ?>"
                                 data-param-url="<?php echo urlencode(get_permalink()); ?>"
                                 aria-label="Share on Facebook">
