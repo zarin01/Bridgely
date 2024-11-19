@@ -1003,6 +1003,10 @@ p {
   margin-top: 0.75rem;
 }
 
+.mt-3\.5 {
+  margin-top: 0.875rem;
+}
+
 .mt-36 {
   margin-top: 9rem;
 }
@@ -2185,6 +2189,10 @@ p {
   background-image: none;
 }
 
+.bg-our-pillars {
+  background-image: url('../library/images/our-pillars-bg.jpg');
+}
+
 .bg-100 {
   background-size: 100%;
 }
@@ -2207,6 +2215,10 @@ p {
 
 .bg-4px-244px {
   background-size: 4px 244px;
+}
+
+.bg-auto {
+  background-size: auto;
 }
 
 .bg-cover {
@@ -2360,6 +2372,11 @@ p {
   padding-bottom: 0.75rem;
 }
 
+.py-32 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
@@ -2495,6 +2512,10 @@ p {
   padding-top: 2.5rem;
 }
 
+.pt-11 {
+  padding-top: 2.75rem;
+}
+
 .pt-12 {
   padding-top: 3rem;
 }
@@ -2617,6 +2638,11 @@ p {
 
 .text-6xl {
   font-size: 3.75rem;
+  line-height: 1;
+}
+
+.text-7xl {
+  font-size: 4.5rem;
   line-height: 1;
 }
 
@@ -3726,6 +3752,20 @@ li.social-instagram a {
   -text-decoder: none;
 }
 
+.copy-wrap-part::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 70px;
+  height: 19px;
+  background-image: url('../library/images/icon-bridge2.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70px 19px;
+}
+
 .page-header {
   color: #2A426B;
 }
@@ -4011,6 +4051,11 @@ li.social-instagram a {
     padding: 7rem;
   }
 
+  .x840\:py-24 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
   .x840\:pb-24 {
     padding-bottom: 6rem;
   }
@@ -4090,6 +4135,11 @@ li.social-instagram a {
     flex-direction: row;
   }
 
+  .x960\:py-32 {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
   .x960\:pb-140 {
     padding-bottom: 140px;
   }
@@ -4125,6 +4175,11 @@ li.social-instagram a {
 
   .x960\:text-6xl {
     font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .x960\:text-7xl {
+    font-size: 4.5rem;
     line-height: 1;
   }
 }

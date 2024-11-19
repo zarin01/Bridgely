@@ -81,6 +81,7 @@ module.exports = {
       backgroundImage: {
         'choose-your-start': "url('../library/images/partners-support-bg.jpg')",
         'gradiant-image': "url('../library/images/header-gradient.png')",
+        'our-pillars': "url('../library/images/our-pillars-bg.jpg')",
       },
       backgroundSize: {
         '160': '160%',
@@ -370,9 +371,27 @@ module.exports = {
           TextDecoder: 'none'
         },
 
-
-
-
+        /* 
+        About Page:
+        */
+        '.copy-wrap-part::before': {
+          content: '""',
+          position: 'absolute',
+          display: 'block',
+          top: '0',
+          left: '0',
+          width: '70px',
+          height: '19px',
+          backgroundImage: "url('../library/images/icon-bridge2.png')",
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'center',
+          backgroundSize: '70px 19px',
+        },
+        '@media (min-width: 960px)': {
+          '.x960\\:copy-wrap-part::before': {
+            left: '-12px',
+          },
+        },
 
         /* 
         Components Section:
