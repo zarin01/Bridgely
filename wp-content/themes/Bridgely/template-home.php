@@ -43,7 +43,7 @@
             <div class="relative x840:text-red x840:pt-245 x840:pb-130 pt-44 pb-28">
                 <div class="relative text-tan max-w-610 text-left ml-0">
                     <?php if( get_field('home_1_main_title') ) { ?>
-                        <h1 class="animateRise text-black font-bold text-shadow-lg"><?php echo get_field('home_1_main_title'); ?></h1>
+                        <h1 class="animateRise text-tan font-bold text-shadow-lg"><?php echo get_field('home_1_main_title'); ?></h1>
                     <?php } ?>
                     <?php if( get_field('home_1_support_title') ) { ?>
                         <p class="text-shadow-sm max-w-610 font-bold text-lg animateRise">

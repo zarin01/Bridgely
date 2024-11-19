@@ -169,7 +169,7 @@ module.exports = {
             paddingLeft: '9%',
           },
         },
-
+        
         '@media (min-width: 960px)': {
           '.fifty-fifty-fancy-split .part-left::after': {
             bottom: 'auto',
