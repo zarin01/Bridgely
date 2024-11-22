@@ -98,11 +98,11 @@
 	* 
 	* *************************/ ?>
 
-    <div class="why-join-bridgely-section partners-animate-section-3   bg-white relative text-center py-12 x960:pt-12 x960:pb-20 x840:pt-28 x840:pb-20">
-        <div class="relative max-w-1210 mx-auto px-5 py-0">
+    <div class="why-join-bridgely-section partners-animate-section-3   bg-white relative text-center py-12 x960:pt-13 x960:pb-20 x840:pt-28 x840:pb-20">
+        <div class="relative mx-auto px-5 py-0">
 
             <?php if( get_field('partners_page_3_title') ) { ?>
-            <h2 class="text-h1 blue animateRise"><?php echo get_field('partners_page_3_title'); ?></h2>
+            <h2 class="text-blue animateRise x960:mb-16 mb-12 text-responsive"><?php echo get_field('partners_page_3_title'); ?></h2>
             <?php } ?>
 
             <?php if( get_field('partners_page_3_content') ) { ?>
@@ -118,17 +118,12 @@
 	 *         Testimony Section
 	 * 
 	 * *************************/ 
-        // Define the slider name and ID
-$slider_name = 'Leaders Behind the Movement';
-$slider_id = 591;
+   
+    // echo do_shortcode([custom_slider]);
+      
+      ?>
 
-// Construct the shortcode dynamically using the post ID
-$shortcode = sprintf('[custom_slider post_id="%d"]', $slider_id);
-
-// Output the shortcode where needed
-echo do_shortcode($shortcode);
-
-    ?>
+   
 
     <?php /************************
 	*
@@ -136,11 +131,11 @@ echo do_shortcode($shortcode);
 	* 
 	* *************************/ ?>
 
-    <div class="how-to-become-section partners-animate-section-4">
+    <div class="how-to-become-section partners-animate-section-4  x960:py-5 x840:py-24 relative text-center py-5 mb-9 flex justify-center">
         <div class="relative max-w-1210 mx-auto px-5 py-0">
 
             <?php if( get_field('partners_page_4_title') ) { ?>
-            <h2 class="text-h1 blue animateRise"><?php echo get_field('partners_page_4_title'); ?></h2>
+            <h2 class="text-blue text-responsive max-w-880 mx-auto animateRise"><?php echo get_field('partners_page_4_title'); ?></h2>
             <?php } ?>
             <?php if( get_field('partners_page_4_content') ) { ?>
             <p class="how-to-become-intro-p animateRise"><?php echo get_field('partners_page_4_content'); ?></p>
@@ -148,13 +143,13 @@ echo do_shortcode($shortcode);
 
             <?php if( get_field('partners_page_4_diagram_image') ) { ?>
             <?php $theImage = get_field('partners_page_4_diagram_image'); ?>
-            <div class="how-to-become-diagram-wrap">
+            <div class="how-to-become-diagram-wrap x960:mx-auto x960:my-16 relative block max-w-710 pb-2">
                 <img src="<?php echo $theImage['url']; ?>" alt="<?php echo $theImage['alt']; ?>" class="animateRise" />
-                <a href="/declaration" class="diagram-link" id="diagram-link-1"></a>
+                <a href="/declaration" class="diagram-link x640:h-40 x500:w-32 x500:h-36 absolute block w-20 h-28" id="diagram-link-1"></a>
                 <a href="/apply" class="diagram-link" id="diagram-link-2"></a>
-                <a href="#diagram-text-3" class="diagram-link" id="diagram-link-3" data-fancybox></a>
-                <a href="#diagram-text-4" class="diagram-link" id="diagram-link-4" data-fancybox></a>
-                <a href="#diagram-text-5" class="diagram-link" id="diagram-link-5" data-fancybox></a>
+                <a href="#diagram-text-3" class="diagram-link x640:h-40 x500:w-32 x500:h-36 absolute block w-20 h-28" id="diagram-link-3" data-fancybox></a>
+                <a href="#diagram-text-4" class="diagram-link x640:h-40 x500:w-32 x500:h-36 absolute block w-20 h-28" id="diagram-link-4" data-fancybox></a>
+                <a href="#diagram-text-5" class="diagram-link x640:h-40 x500:w-32 x500:h-36 absolute block w-20 h-28" id="diagram-link-5" data-fancybox></a>
             </div>
             <?php } ?>
 

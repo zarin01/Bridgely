@@ -1,3 +1,4 @@
+<?php
 function create_slider_shortcode($atts) {
     $atts = shortcode_atts([
         'post_id' => get_the_ID(), // Default to current post ID if not specified
