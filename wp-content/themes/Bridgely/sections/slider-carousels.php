@@ -33,26 +33,26 @@ function register_slider_carousel_shortcode() {
                         $description  = $slide['slider_description'] ?? 'No description available';
                         $giver_details = $slide['testimony_giver_details'] ?? [];
 
-                        $output .= '<div class="flex-none w-full" style="width: 100%;">';
-                        $output .= '<div class="p-4 flex flex-row items-center relative max-w-1210 px-5 mx-auto">';
+                        $output .= '<div class="flex-none w-full">';
+                        $output .= '<div class="p-4 pb-10 flex flex-row items-start relative max-w-880 px-5 mx-auto justify-center split-content-with-image">';
 
                         // Slide image
                         if (!empty($image_url)) {
-                            $output .= '<img src="' . esc_url($image_url) . '" alt="Slide Image" class="rounded shadow-lg mb-4">';
+                            $output .= '<img src="' . esc_url($image_url) . '" alt="Slide Image" class="rounded shadow-lg mb-4 max-w-290">';
                         } else {
-                            $output .= '<p class="text-center text-white"></p>';
+                            $output .= '<p class="text-center text-white w-4/12"></p>';
                         }
 
                         // Slide description and details
-                        $output .= '<div class="flex flex-col">';
-                        $output .= '<p class="text-xl font-semibold text-center text-white">' . esc_html($description) . '</p>';
+                        $output .= '<div class="flex flex-col x840:block x840:w-45p x960:w-6/12 w-fit pl-9p items-end testimony-slider">';
+                        $output .= '<p class="text-xl text-left text-white italic testimony-before">' . esc_html($description) . '</p>';
 
                         if (!empty($giver_details)) {
-                            $output .= '<div class="text-white mt-2 text-center">';
+                            $output .= '<div class="text-white mt-2 text-left">';
                             foreach ($giver_details as $detail) {
                                 $user_info = $detail['testimony_users_information'] ?? '';
                                 if (!empty($user_info)) {
-                                    $output .= '<p>' . esc_html($user_info) . '</p>';
+                                    $output .= '<p class="font-bold mb-0">' . esc_html($user_info) . '</p>';
                                 }
                             }
                             $output .= '</div>';
@@ -68,13 +68,13 @@ function register_slider_carousel_shortcode() {
                     $output .= '</div>'; // End slider wrapper
 
                     // Navigation buttons
-                    $output .= '<button class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-none text-white rounded-full p-2 z-10" id="sliderPrev">';
+                    $output .= '<button class="absolute top-1/4 left-4 transform -translate-y-1/2 bg-none text-white rounded-full p-2 z-10" id="sliderPrev">';
                     $output .= '<svg xmlns="http://www.w3.org/2000/svg" fill="#FFF" viewBox="0 0 320 512" width="40" height="35">';
                     $output .= '<path fill="#FFF" d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"></path>';
                     $output .= '</svg>';
                     $output .= '</button>';
 
-                    $output .= '<button class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-none text-white rounded-full p-2 z-10" id="sliderNext">';
+                    $output .= '<button class="absolute top-1/4 right-4 transform -translate-y-1/2 bg-none text-white rounded-full p-2 z-10" id="sliderNext">';
                     $output .= '<svg xmlns="http://www.w3.org/2000/svg" fill="#FFF" viewBox="0 0 320 512" width="35" height="35">';
                     $output .= '<path fill="#FFF" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5 12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path>';
                     $output .= '</svg>';

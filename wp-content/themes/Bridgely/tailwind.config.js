@@ -498,6 +498,39 @@ module.exports = {
           backgroundColor: '#d1a129 !important',
         },
 
+
+        /* 
+        Partners Page
+        */
+        '.testimony-slider': {
+          position: 'relative',
+        },
+        '.testimony-slider .testimony-before:first-child': {
+          position: 'relative',
+        },
+        '.testimony-slider .testimony-before::before': {
+          display: 'none',
+          position: 'absolute',
+          content: '""',
+          width: '250px',
+          height: '250px',
+          top: '-20px',
+          left: '-120px',
+          backgroundImage: `url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23d1a129" viewBox="0 0 24 24"><text x="0" y="20" font-size="20" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">"</text></svg>')`,
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: 'contain',
+        },
+        '@media (min-width: 960px)': {
+          '.testimony-slider .split-content-with-image p::before': {
+            display: 'block',
+          },
+        },
+        '@media (min-width: 840px)': {
+          '.testimony-slider .testimony-before p:first-child::before': {
+            display: 'block',
+          },
+        },
+
        
       };
       addUtilities(newUtilities, ['responsive', 'hover']);
