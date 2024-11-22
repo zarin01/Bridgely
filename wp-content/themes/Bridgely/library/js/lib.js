@@ -473,3 +473,34 @@ jQuery(document).ready(function($) {
 			});
 		}
 	});
+
+
+
+	document.addEventListener('DOMContentLoaded', () => {
+		const sliderWrapper = document.getElementById('sliderWrapper');
+		const sliderItems = document.querySelectorAll('.slider-item');
+		const prevButton = document.getElementById('sliderPrev');
+		const nextButton = document.getElementById('sliderNext');
+	
+		let currentIndex = 0;
+	
+		function updateSlider() {
+			const offset = currentIndex * -100; // Assuming each slide is 100% width
+			sliderWrapper.style.transform = `translateX(${offset}%)`;
+		}
+	
+		prevButton.addEventListener('click', () => {
+			if (currentIndex > 0) {
+				currentIndex--;
+				updateSlider();
+			}
+		});
+	
+		nextButton.addEventListener('click', () => {
+			if (currentIndex < sliderItems.length - 1) {
+				currentIndex++;
+				updateSlider();
+			}
+		});
+	});
+		
