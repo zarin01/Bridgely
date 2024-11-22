@@ -817,6 +817,10 @@ p {
   left: 0px;
 }
 
+.left-13p {
+  left: 13%;
+}
+
 .left-4 {
   left: 1rem;
 }
@@ -899,10 +903,6 @@ p {
 
 .top-full {
   top: 100%;
-}
-
-.left-13p {
-  left: 13%;
 }
 
 .z-10 {
@@ -2501,6 +2501,11 @@ p {
   padding-right: 0.25rem;
 }
 
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 .px-12 {
   padding-left: 3rem;
   padding-right: 3rem;
@@ -2594,11 +2599,6 @@ p {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
 }
 
 .pb-0 {
@@ -3924,7 +3924,7 @@ p {
 }
 
 @media (min-width: 840px) {
-  .testimony-slider .testimony-before p:first-child::before {
+  .testimony-slider .testimony-before p::before {
     display: block;
   }
 }
@@ -4068,15 +4068,7 @@ li.social-instagram a {
   background-color: #d1a129 !important;
 }
 
-.testimony-slider {
-  position: relative;
-}
-
-.testimony-slider .testimony-before:first-child {
-  position: relative;
-}
-
-.testimony-slider .testimony-before::before {
+.testimony-slider .testimony-before p::before {
   display: none;
   position: absolute;
   content: "";

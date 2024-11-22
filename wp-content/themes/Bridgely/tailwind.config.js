@@ -509,13 +509,7 @@ module.exports = {
         /* 
         Partners Page
         */
-        '.testimony-slider': {
-          position: 'relative',
-        },
-        '.testimony-slider .testimony-before:first-child': {
-          position: 'relative',
-        },
-        '.testimony-slider .testimony-before::before': {
+        '.testimony-slider .testimony-before p::before': {
           display: 'none',
           position: 'absolute',
           content: '""',
@@ -533,7 +527,7 @@ module.exports = {
           },
         },
         '@media (min-width: 840px)': {
-          '.testimony-slider .testimony-before p:first-child::before': {
+          '.testimony-slider .testimony-before p::before': {
             display: 'block',
           },
         },
