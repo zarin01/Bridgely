@@ -907,6 +907,11 @@ p {
   margin-bottom: 0.5rem;
 }
 
+.my-16 {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
 .-ml-2 {
   margin-left: -0.5rem;
 }
@@ -1285,6 +1290,10 @@ p {
 
 .max-w-xs {
   max-width: 20rem;
+}
+
+.max-w-880 {
+  max-width: 880px;
 }
 
 .flex-none {
@@ -2463,6 +2472,10 @@ p {
   padding-bottom: 140px;
 }
 
+.pb-20 {
+  padding-bottom: 5rem;
+}
+
 .pb-24 {
   padding-bottom: 6rem;
 }
@@ -2643,8 +2656,8 @@ p {
   padding-top: 1.5rem;
 }
 
-.pb-20 {
-  padding-bottom: 5rem;
+.pb-2 {
+  padding-bottom: 0.5rem;
 }
 
 .text-left {
@@ -4144,6 +4157,10 @@ li.social-instagram a {
     padding-bottom: 6rem;
   }
 
+  .x840\:pb-20 {
+    padding-bottom: 5rem;
+  }
+
   .x840\:pb-24 {
     padding-bottom: 6rem;
   }
@@ -4176,16 +4193,12 @@ li.social-instagram a {
     padding-top: 245px;
   }
 
-  .x840\:pt-47p {
-    padding-top: 47%;
-  }
-
-  .x840\:pb-20 {
-    padding-bottom: 5rem;
-  }
-
   .x840\:pt-28 {
     padding-top: 7rem;
+  }
+
+  .x840\:pt-47p {
+    padding-top: 47%;
   }
 
   .x840\:text-30 {
@@ -4199,12 +4212,22 @@ li.social-instagram a {
 }
 
 @media (min-width: 960px) {
-  .x960\:mt-0 {
-    margin-top: 0px;
+  .x960\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  .x960\:mb-40 {
-    margin-bottom: 10rem;
+  .x960\:my-16 {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  .x960\:mb-16 {
+    margin-bottom: 4rem;
+  }
+
+  .x960\:mt-0 {
+    margin-top: 0px;
   }
 
   .x960\:block {
@@ -4240,8 +4263,22 @@ li.social-instagram a {
     padding-bottom: 8rem;
   }
 
+  .x960\:py-5 {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .x960\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
   .x960\:pb-140 {
     padding-bottom: 140px;
+  }
+
+  .x960\:pb-20 {
+    padding-bottom: 5rem;
   }
 
   .x960\:pb-24 {
@@ -4266,18 +4303,6 @@ li.social-instagram a {
 
   .x960\:pt-5 {
     padding-top: 1.25rem;
-  }
-
-  .x960\:pt-32 {
-    padding-top: 8rem;
-  }
-
-  .x960\:pb-20 {
-    padding-bottom: 5rem;
-  }
-
-  .x960\:pt-12 {
-    padding-top: 3rem;
   }
 
   .x960\:text-5xl {
