@@ -99,7 +99,7 @@
 	* *************************/ ?>
 
     <div class="why-join-bridgely-section partners-animate-section-3   bg-white relative text-center py-12 x960:pt-13 x960:pb-20 x840:pt-28 x840:pb-20">
-        <div class="relative mx-auto px-5 py-0">
+        <div class="relative mx-auto px-10 py-0">
 
             <?php if( get_field('partners_page_3_title') ) { ?>
             <h2 class="text-blue animateRise x960:mb-16 mb-12 text-responsive"><?php echo get_field('partners_page_3_title'); ?></h2>
@@ -145,12 +145,18 @@
             <?php if( get_field('partners_page_4_diagram_image') ) { ?>
             <?php $theImage = get_field('partners_page_4_diagram_image'); ?>
             <div class="how-to-become-diagram-wrap x960:mx-auto x960:my-16 relative block max-w-710 pb-2">
-                <img src="<?php echo $theImage['url']; ?>" alt="<?php echo $theImage['alt']; ?>" class="animateRise" />
-                <a href="/declaration" class="diagram-link x640:h-40 x500:w-32 x500:h-36 -x500:-ml-16 absolute block w-20 h-28 -left-50p " id="diagram-link-1"></a>
-                <a href="/apply" class="diagram-link" id="diagram-link-2"></a>
-                <a href="#diagram-text-3" class="diagram-link x640:h-40 x500:w-32 x500:h-36 absolute block w-20 h-28" id="diagram-link-3" data-fancybox></a>
-                <a href="#diagram-text-4" class="diagram-link x640:h-40 x500:w-32 x500:h-36 absolute block w-20 h-28" id="diagram-link-4" data-fancybox></a>
-                <a href="#diagram-text-5" class="diagram-link x640:h-40 x500:w-32 x500:h-36 absolute block w-20 h-28" id="diagram-link-5" data-fancybox></a>
+                <img src="<?php echo $theImage['url']; ?>" alt="<?php echo $theImage['alt']; ?>" class="animateRise relative block max-w-full h-auto" />
+
+                <a href="/declaration" class="absolute diagram-link x640:h-40 x500:w-32 x500:h-36 block w-20 h-28 left-40p top-0p" id="diagram-link-1"></a>
+
+                <a href="/apply" class="diagram-link x640:h-42 x500:w-32 x500:h-40 absolute block w-20 h-32 right-0 top-1/4" id="diagram-link-2"></a>
+
+                <a href="#diagram-text-3" class="diagram-link x640:h-42 x500:w-32 x500:h-36 absolute block w-20 h-28 bottom-3p right-13p" id="diagram-link-3" data-fancybox></a>
+
+                <a href="#diagram-text-4" class="diagram-link x640:h-40 x500:w-32 x500:h-36 absolute block w-20 h-28 bottom-3p left-13p" id="diagram-link-4" data-fancybox></a>
+
+                <a href="#diagram-text-5" class="diagram-link x640:h-40 x500:w-32 x500:h-36 absolute block w-20 h-28 top-1/4 left-0" id="diagram-link-5" data-fancybox></a>
+
             </div>
             <?php } ?>
 

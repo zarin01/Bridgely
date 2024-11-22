@@ -801,6 +801,14 @@ p {
   bottom: 0px;
 }
 
+.bottom-1 {
+  bottom: 0.25rem;
+}
+
+.bottom-3p {
+  bottom: 3%;
+}
+
 .bottom-4 {
   bottom: 1rem;
 }
@@ -813,12 +821,20 @@ p {
   left: 1rem;
 }
 
+.left-40p {
+  left: 40%;
+}
+
 .left-auto {
   left: auto;
 }
 
 .right-0 {
   right: 0px;
+}
+
+.right-13p {
+  right: 13%;
 }
 
 .right-20 {
@@ -837,12 +853,16 @@ p {
   top: 0px;
 }
 
+.top-0p {
+  top: 0%;
+}
+
 .top-1 {
   top: 0.25rem;
 }
 
-.top-1\/2 {
-  top: 50%;
+.top-1\/4 {
+  top: 25%;
 }
 
 .top-21 {
@@ -877,8 +897,12 @@ p {
   top: calc(100%-10px);
 }
 
-.top-1\/4 {
-  top: 25%;
+.top-full {
+  top: 100%;
+}
+
+.left-13p {
+  left: 13%;
 }
 
 .z-10 {
@@ -955,6 +979,10 @@ p {
 
 .-ml-2\.5 {
   margin-left: -0.625rem;
+}
+
+.-ml-minus-6p {
+  margin-left: 64px;
 }
 
 .mb-0 {
@@ -1147,6 +1175,14 @@ p {
 
 .h-40 {
   height: 10rem;
+}
+
+.h-44 {
+  height: 11rem;
+}
+
+.h-48 {
+  height: 12rem;
 }
 
 .h-500 {
@@ -2558,6 +2594,11 @@ p {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .pb-0 {
@@ -4101,6 +4142,10 @@ li.social-instagram a {
 @media (min-width: 500px) {
   .x500\:h-36 {
     height: 9rem;
+  }
+
+  .x500\:h-40 {
+    height: 10rem;
   }
 
   .x500\:w-32 {
