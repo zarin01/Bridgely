@@ -9,12 +9,11 @@
 	* 
 	* *************************/ ?>
 
-    <div class="blank-intro-hero" id="partners-intro-hero"
+    <div class="blank-intro-hero x14:h-700 x840:pt-47p" id="partners-intro-hero"
         <?php if(get_field('partners_page_1_banner_image')) { echo ' style="background:url('.get_field('partners_page_1_banner_image').') no-repeat center top; background-size:cover;"'; } ?>>
-        <div class="up-curve-contain">
-            <svg viewBox="0 0 1658 59" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1680 53.115V58.1982H0V53.1003C550.124 -17.7001 1129.88 -17.7001 1680 53.1003V53.115Z"
-                    fill="#FFF" />
+        <div class="absolute w-full overflow-hidden left-0">
+            <svg class="w-calc-100-plus-10 relative block -ml-2.5" viewBox="0 0 1658 59" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1680 53.115V58.1982H0V53.1003C550.124 -17.7001 1129.88 -17.7001 1680 53.1003V53.115Z" fill="#FFF" />
             </svg>
         </div>
     </div>
@@ -25,15 +24,15 @@
 	* 
 	* *************************/ ?>
 
-    <div class="partners-intro-content partners-animate-section-1">
-        <div class="center">
+    <div class="partners-intro-content partners-animate-section-1 relative x12:pb-120 x960:pb-24 pt-20">
+        <div class="relative max-w-1210 mx-auto px-5 py-0">
 
-            <div class="col col1 animateRise">
+            <div class="animateRise">
                 <?php if( get_field('partners_page_1_intro_title') ) { ?>
-                <h1 class="text-h1-special special blue"><?php echo get_field('partners_page_1_intro_title'); ?></h1>
+                <h1 class="text-blue text-center text-7xl"><?php echo get_field('partners_page_1_intro_title'); ?></h1>
                 <?php } ?>
                 <?php if( get_field('partners_page_1_intro_title') ) { ?>
-                <h1 class="text-h1-special extra-special blue"><?php echo get_field('partners_page_intro_subtitle_title'); ?>
+                <h1 class="text-blue text-center x960:text-8xl text-7xl"><?php echo get_field('partners_page_intro_subtitle_title'); ?>
                 </h1>
                 <?php } ?>
                 <?php if( get_field('partners_page_1_intro_content') ) { ?>
@@ -50,42 +49,42 @@
 	* 
 	* *************************/ ?>
 
-    <div class="partners-who-we-work-with partners-animate-section-2">
-        <div class="center">
+    <div class="partners-who-we-work-with partners-animate-section-2  x12:pt-32 x12:mb-40 x960:py-32 x840: relative bg-choose-your-start py-24 text-center bg-cover bg-no-repeat bg-center ">
+        <div class="relative max-w-1210 mx-auto px-5 py-0">
 
             <?php if( get_field('partners_page_2_title') ) { ?>
-            <h2 class="text-h1 white animateRise"><?php echo get_field('partners_page_2_title'); ?></h2>
+            <h2 class="text-white animateRise mb-6 pb-10 text-responsive"><?php echo get_field('partners_page_2_title'); ?></h2>
             <?php } ?>
 
-            <div class="icon-wrap-section">
-                <div class="inner-block animateRise">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 mx-auto">
+                <div class="animateRise primary-link">
                     <?php if( get_field('partners_page_2_column_1_title') ) { ?>
-                    <div class="text-wrap"><?php echo get_field('partners_page_2_column_1_title'); ?></div>
+                    <div class="text-wrap text-white text-xl leading-6 font-medium font-sans"><?php echo get_field('partners_page_2_column_1_title'); ?></div>
                     <?php } ?>
                 </div>
 
-                <div class="inner-block animateRise dotted_bridge">
+                <div class="animateRise dotted_bridge">
                     <?php if( get_field('partners_page_2_column_2_title') ) { ?>
-                    <div class="text-wrap"><?php echo get_field('partners_page_2_column_2_title'); ?></div>
+                    <div class="text-wrap text-white text-xl leading-6 font-medium font-sans"><?php echo get_field('partners_page_2_column_2_title'); ?></div>
                     <?php } ?>
                 </div>
 
-                <div class="inner-block animateRise">
+                <div class="animateRise">
                     <?php if( get_field('partners_page_2_column_3_title') ) { ?>
-                    <div class="text-wrap"><?php echo get_field('partners_page_2_column_3_title'); ?></div>
+                    <div class="text-wrap text-white text-xl leading-6 font-medium font-sans"><?php echo get_field('partners_page_2_column_3_title'); ?></div>
                     <?php } ?>
                 </div>
             </div>
 
-            <div>
+            <div class="text-wrap mx-auto max-w-840 mt-8">
                 <?php if( get_field('partners_page_footer_section_text') ) { ?>
-                <div class="text-wrap">
+                <div class="text-wrap text-white text-xl leading-6 font-medium font-sans">
                     <p class="white footer_section_text"><?php echo get_field('partners_page_footer_section_text'); ?></p>
                 </div>
                 <?php } ?>
             </div>
         </div>
-		<div style="position: absolute; display: block; overflow: hidden;width: 100%;bottom: -4px;left: 0;">
+		<div class="absolute block overflow-hidden w-full left-0 -bottom-4">
             <svg viewBox="0 0 1658 59" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1680 53.115V58.1982H0V53.1003C550.124 -17.7001 1129.88 -17.7001 1680 53.1003V53.115Z"
                     fill="#FFF" />
@@ -99,8 +98,8 @@
 	* 
 	* *************************/ ?>
 
-    <div class="why-join-bridgely-section partners-animate-section-3">
-        <div class="center">
+    <div class="why-join-bridgely-section partners-animate-section-3   bg-white relative text-center py-12 x960:pt-12 x960:pb-20 x840:pt-28 x840:pb-20">
+        <div class="relative max-w-1210 mx-auto px-5 py-0">
 
             <?php if( get_field('partners_page_3_title') ) { ?>
             <h2 class="text-h1 blue animateRise"><?php echo get_field('partners_page_3_title'); ?></h2>
@@ -118,11 +117,18 @@
 	 *
 	 *         Testimony Section
 	 * 
-	 * *************************/ ?>
+	 * *************************/ 
+        // Define the slider name and ID
+$slider_name = 'Leaders Behind the Movement';
+$slider_id = 591;
 
+// Construct the shortcode dynamically using the post ID
+$shortcode = sprintf('[custom_slider post_id="%d"]', $slider_id);
 
-	<?php get_template_part('sections/section', 'endorsements-slides'); ?>
-        
+// Output the shortcode where needed
+echo do_shortcode($shortcode);
+
+    ?>
 
     <?php /************************
 	*
@@ -131,7 +137,7 @@
 	* *************************/ ?>
 
     <div class="how-to-become-section partners-animate-section-4">
-        <div class="center">
+        <div class="relative max-w-1210 mx-auto px-5 py-0">
 
             <?php if( get_field('partners_page_4_title') ) { ?>
             <h2 class="text-h1 blue animateRise"><?php echo get_field('partners_page_4_title'); ?></h2>
@@ -192,7 +198,7 @@
     <div class="cta-section-vision"
         style="background:url(<?php echo get_field('cta_background_image'); ?>) no-repeat 60% top; background-size:cover;">
         <?php } ?>
-        <div class="center">
+        <div class="relative max-w-1210 mx-auto px-5 py-0">
 
             <div class="cta-wrap">
                 <?php if( get_field('cta_content') ) { ?>
