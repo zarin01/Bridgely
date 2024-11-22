@@ -21,8 +21,8 @@ function register_slider_carousel_shortcode() {
                         return '<p>No slides available.</p>';
                     }
 
-                    $output = '<div class="slider-container bg-blue relative overflow-hidden w-full max-w-7xl mx-auto">';
-                    $output .= '<div class="slider-wrapper flex transition-transform duration-500 ease-in-out" id="sliderWrapper">';
+                    $output = '<div class="relative w-full max-w-7xl mx-auto overflow-hidden">';
+                    $output .= '<div class="flex transition-transform duration-500 ease-in-out" id="sliderWrapper" style="width: ' . (count($slider_repeater) * 100) . '%;">';
 
                     foreach ($slider_repeater as $slide) {
                         $image_url = $slide['slider_image']['url'] ?? '';
@@ -30,27 +30,27 @@ function register_slider_carousel_shortcode() {
                         $giver_details = $slide['testimony_giver_details'] ?? '';
                         $testimony_users_information = $slide['testimony_users_information'] ?? [];
 
-                        $output .= '<div class="slider-item flex flex-col md:flex-row items-center justify-center w-full md:w-1/2 p-4">';
-                        $output .= '<div class="slider-image w-full md:w-1/2"><img src="' . esc_url($image_url) . '" alt="" class="rounded shadow-lg"></div>';
-                        $output .= '<div class="slider-content w-full md:w-1/2 p-4">';
-                        $output .= '<p class="slider-description text-xl font-semibold mb-4">' . esc_html($description) . '</p>';
-                        $output .= '<div class="giver-details text-gray-500 mb-4">' . esc_html($giver_details) . '</div>';
-                        $output .= '<ul class="testimony-details list-disc pl-4">';
+                        $output .= '<div class="flex-none w-full" style="width: 100%;">';
+                        $output .= '<div class="p-4 flex flex-col items-center">';
+                        $output .= '<img src="' . esc_url($image_url) . '" alt="" class="rounded shadow-lg mb-4">';
+                        $output .= '<p class="text-xl font-semibold text-center">' . esc_html($description) . '</p>';
+                        $output .= '<div class="text-gray-500 mt-2 text-center">' . esc_html($giver_details) . '</div>';
+                        $output .= '<ul class="list-disc text-gray-600 text-left mt-4">';
                         
                         foreach ($testimony_users_information as $info) {
-                            $output .= '<li class="text-gray-600">' . esc_html($info) . '</li>';
+                            $output .= '<li>' . esc_html($info) . '</li>';
                         }
 
                         $output .= '</ul>';
-                        $output .= '</div>'; // slider-content
-                        $output .= '</div>'; // slider-item
+                        $output .= '</div>'; // Inner content
+                        $output .= '</div>'; // Slider item
                     }
 
                     $output .= '</div>'; // slider-wrapper
 
                     // Slider navigation buttons
-                    $output .= '<button class="slider-prev absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-700 text-white rounded-full p-2" id="sliderPrev">&lt;</button>';
-                    $output .= '<button class="slider-next absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-700 text-white rounded-full p-2" id="sliderNext">&gt;</button>';
+                    $output .= '<button class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-700 text-white rounded-full p-2 z-10" id="sliderPrev">&lt;</button>';
+                    $output .= '<button class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-700 text-white rounded-full p-2 z-10" id="sliderNext">&gt;</button>';
 
                     $output .= '</div>'; // slider-container
 
@@ -61,3 +61,4 @@ function register_slider_carousel_shortcode() {
     }
 }
 add_action('init', 'register_slider_carousel_shortcode');
+

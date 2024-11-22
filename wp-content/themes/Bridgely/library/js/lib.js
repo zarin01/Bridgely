@@ -474,18 +474,16 @@ jQuery(document).ready(function($) {
 		}
 	});
 
-
-
 	document.addEventListener('DOMContentLoaded', () => {
 		const sliderWrapper = document.getElementById('sliderWrapper');
-		const sliderItems = document.querySelectorAll('.slider-item');
+		const sliderItems = document.querySelectorAll('#sliderWrapper > div');
 		const prevButton = document.getElementById('sliderPrev');
 		const nextButton = document.getElementById('sliderNext');
 	
 		let currentIndex = 0;
 	
 		function updateSlider() {
-			const offset = currentIndex * -100; // Assuming each slide is 100% width
+			const offset = currentIndex * -100; // Each slide is 100% width
 			sliderWrapper.style.transform = `translateX(${offset}%)`;
 		}
 	
@@ -503,4 +501,4 @@ jQuery(document).ready(function($) {
 			}
 		});
 	});
-		
+	
