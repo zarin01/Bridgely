@@ -39,6 +39,7 @@ module.exports = {
         'calc-100-minus-420': 'calc(100% - 420px)',
         'calc-100-plus-20': 'calc(100% + 20px)',
         'calc-100-plus-10': 'calc(100% + 10px)',
+        'calc-100p-divide-1': 'calc(100%/1)',
         '106p': '106%',
         '120p': '120%',
         '140p': '140%',
@@ -67,6 +68,7 @@ module.exports = {
         '77': '77px',
         '500': '500px',
         '700': '700px',
+        '850': '850px',
       },
       fontSize: {
         'responsive': 'calc(36px + 20 * ((100vw - 320px) / 840))',

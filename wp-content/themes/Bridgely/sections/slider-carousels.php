@@ -10,63 +10,79 @@ function register_slider_carousel_shortcode() {
 
     if ($slider_posts) {
         foreach ($slider_posts as $post) {
-            $shortcode_field = get_field('shortcode', $post->ID); 
+            $shortcode_field = get_field('shortcode', $post->ID);
 
             if (!empty($shortcode_field)) {
                 add_shortcode($shortcode_field, function() use ($post) {
                     $slider_repeater = get_field('slider', $post->ID);
-
                     if (!$slider_repeater) {
                         return '<p>No slides available.</p>';
                     }
 
                     $slider_title = get_the_title($post->ID);
-                    $output = '<div class="bg-dark_blue w-full max-w-full">';
-                    $output .= '<div class="relative bg-dark_blue w-full mx-auto overflow-hidden">';
+
+                    // Slider container
+                    $output  = '<div class="relative bg-dark_blue h-850 overflow-hidden pt-16 pb-20">';
+                    $output .= '<div class="relative bg-dark_blue w-full mx-auto overflow-hidden max-w-1210 px-5 py-0">';
                     $output .= '<h2 class="text-orange text-5xl text-center w-full capitalize font-bold mb-6 mt-10">' . esc_html($slider_title) . '</h2>';
-                    $output .= '<div class="flex transition-transform duration-500 ease-in-out" id="sliderWrapper">';
-                    
+                    $output .= '<div class="relative flex transition-transform duration-500 ease-in-out pt-16 pb-20 h-850" id="sliderWrapper">';
+
+                    // Slides
                     foreach ($slider_repeater as $slide) {
-                        $image_url = $slide['slider_image']['url'] ?? '';
-                        $description = $slide['slider_description'] ?? '';
+                        $image_url    = $slide['slider_image'] ?? '';
+                        $description  = $slide['slider_description'] ?? 'No description available';
                         $giver_details = $slide['testimony_giver_details'] ?? [];
-                        $testimony_users_information = $slide['testimony_users_information'] ?? [];
 
                         $output .= '<div class="flex-none w-full" style="width: 100%;">';
-                        $output .= '<div class="p-4 flex flex-col items-center">';
-                        $output .= '<img src="' . esc_url($image_url) . '" alt="" class="rounded shadow-lg mb-4">';
+                        $output .= '<div class="p-4 flex flex-row items-center relative max-w-1210 px-5 mx-auto">';
+
+                        // Slide image
+                        if (!empty($image_url)) {
+                            $output .= '<img src="' . esc_url($image_url) . '" alt="Slide Image" class="rounded shadow-lg mb-4">';
+                        } else {
+                            $output .= '<p class="text-center text-white"></p>';
+                        }
+
+                        // Slide description and details
+                        $output .= '<div class="flex flex-col">';
                         $output .= '<p class="text-xl font-semibold text-center text-white">' . esc_html($description) . '</p>';
 
                         if (!empty($giver_details)) {
                             $output .= '<div class="text-white mt-2 text-center">';
                             foreach ($giver_details as $detail) {
-                                $giver_name = $detail['giver_name'] ?? '';
-                                $giver_title = $detail['giver_title'] ?? '';
-                                if ($giver_name || $giver_title) {
-                                    $output .= '<p>' . esc_html($giver_name) . ' - ' . esc_html($giver_title) . '</p>';
+                                $user_info = $detail['testimony_users_information'] ?? '';
+                                if (!empty($user_info)) {
+                                    $output .= '<p>' . esc_html($user_info) . '</p>';
                                 }
                             }
                             $output .= '</div>';
+                        } else {
+                            $output .= '<p class="text-center text-white"></p>';
                         }
 
-                        $output .= '<ul class="list-disc text-white text-left mt-4">';
-                        foreach ($testimony_users_information as $info) {
-                            $output .= '<li>' . esc_html($info) . '</li>';
-                        }
-                        $output .= '</ul>';
-
-                        $output .= '</div>';
-                        $output .= '</div>';
+                        $output .= '</div>'; // End slide details
+                        $output .= '</div>'; // End slide content
+                        $output .= '</div>'; // End slide
                     }
 
-                    $output .= '</div>';
+                    $output .= '</div>'; // End slider wrapper
 
-                    // Add slider navigation buttons
-                    $output .= '<button class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-700 text-white rounded-full p-2 z-10" id="sliderPrev">&lt;</button>';
-                    $output .= '<button class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-700 text-white rounded-full p-2 z-10" id="sliderNext">&gt;</button>';
+                    // Navigation buttons
+                    $output .= '<button class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-none text-white rounded-full p-2 z-10" id="sliderPrev">';
+                    $output .= '<svg xmlns="http://www.w3.org/2000/svg" fill="#FFF" viewBox="0 0 320 512" width="40" height="35">';
+                    $output .= '<path fill="#FFF" d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"></path>';
+                    $output .= '</svg>';
+                    $output .= '</button>';
 
-                    $output .= '</div>';
-                    $output .= '</div>';
+                    $output .= '<button class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-none text-white rounded-full p-2 z-10" id="sliderNext">';
+                    $output .= '<svg xmlns="http://www.w3.org/2000/svg" fill="#FFF" viewBox="0 0 320 512" width="35" height="35">';
+                    $output .= '<path fill="#FFF" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5 12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path>';
+                    $output .= '</svg>';
+                    $output .= '</button>';
+
+                    $output .= '</div>'; // End slider container
+                    $output .= '</div>'; // End outer container
+
                     return $output;
                 });
             }
@@ -74,3 +90,4 @@ function register_slider_carousel_shortcode() {
     }
 }
 add_action('init', 'register_slider_carousel_shortcode');
+?>
