@@ -118,9 +118,8 @@
 	 *         Testimony Section
 	 * 
 	 * *************************/  ?>
-    <div class="bg-blue">
-        <?php  echo do_shortcode('[leaders-behind-movement]');?>
-    </div>
+
+    <?php  echo do_shortcode('[leaders-behind-movement]');?>
     
       
      
