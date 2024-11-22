@@ -10,6 +10,8 @@ if(!defined('THEME_URL'))
 //require_once( TEMPLATEPATH.'/library/includes/mysql-replace.php' );
 //MySQL_Replace::replace('old', 'new');
 
+require_once get_template_directory() . '/sections/slider-carousels.php';
+
 //	dependicies
 require_once( TEMPLATEPATH.'/library/includes/wp-header-remove.php' );
 
@@ -76,6 +78,8 @@ function magneti_enqueue_scripts() {
 	wp_enqueue_script( 'sm5' );
 	wp_enqueue_script( 'sm6' );
 	wp_enqueue_script( 'lib' );
+
+	
 	
 	//localize
 	/*

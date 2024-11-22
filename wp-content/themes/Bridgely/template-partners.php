@@ -119,7 +119,7 @@
 	 * 
 	 * *************************/ 
    
-    // echo do_shortcode([custom_slider]);
+     echo do_shortcode('[leaders-behind-movement]');
       
       ?>
 
@@ -145,7 +145,7 @@
             <?php $theImage = get_field('partners_page_4_diagram_image'); ?>
             <div class="how-to-become-diagram-wrap x960:mx-auto x960:my-16 relative block max-w-710 pb-2">
                 <img src="<?php echo $theImage['url']; ?>" alt="<?php echo $theImage['alt']; ?>" class="animateRise" />
-                <a href="/declaration" class="diagram-link x640:h-40 x500:w-32 x500:h-36 absolute block w-20 h-28" id="diagram-link-1"></a>
+                <a href="/declaration" class="diagram-link x640:h-40 x500:w-32 x500:h-36 -x500:-ml-16 absolute block w-20 h-28 -left-50p " id="diagram-link-1"></a>
                 <a href="/apply" class="diagram-link" id="diagram-link-2"></a>
                 <a href="#diagram-text-3" class="diagram-link x640:h-40 x500:w-32 x500:h-36 absolute block w-20 h-28" id="diagram-link-3" data-fancybox></a>
                 <a href="#diagram-text-4" class="diagram-link x640:h-40 x500:w-32 x500:h-36 absolute block w-20 h-28" id="diagram-link-4" data-fancybox></a>
@@ -190,16 +190,16 @@
 	* *************************/ ?>
 
 <?php if( get_field('cta_background_image') ) { ?>
-    <div class="cta-section-vision"
+    <div class="cta-section-vision relative py-32 "
         style="background:url(<?php echo get_field('cta_background_image'); ?>) no-repeat 60% top; background-size:cover;">
         <?php } ?>
         <div class="relative max-w-1210 mx-auto px-5 py-0">
 
-            <div class="cta-wrap">
+            <div class="cta-wrap  relative max-w-500 pt-11 mt-4 text-responsive">
                 <?php if( get_field('cta_content') ) { ?>
-                <h2 class="white text-h1"><?php echo get_field('cta_content', false, false); ?></h2>
+                <h2 class="text-white"><?php echo get_field('cta_content', false, false); ?></h2>
                 <?php } ?>
-                <div class="cta_button_wrap">
+                <div class="cta_button_wrap  w-3/6 text-center flex mx-auto pt-5">
                     <?php if( get_field('cta_button_text') ) { ?>
                     <a class="btn"
                         href="<?php echo get_field('cta_button_link'); ?>"><?php echo get_field('cta_button_text'); ?></a>
