@@ -22,9 +22,9 @@ function register_slider_carousel_shortcode() {
                     $slider_title = get_the_title($post->ID);
 
                     // Slider container
-                    $output  = '<div class="relative bg-dark_blue h-850 overflow-hidden pt-16 pb-20">';
-                    $output .= '<div class="relative bg-dark_blue w-full mx-auto overflow-hidden max-w-1210 px-5 py-0">';
-                    $output .= '<h2 class="text-orange text-5xl text-center w-full capitalize font-bold mb-6 mt-10">' . esc_html($slider_title) . '</h2>';
+                    $output  = '<div class="relative bg-primary_gray h-850 overflow-hidden pt-16 pb-20">';
+                    $output .= '<div class="relative bg-primary_gray w-full mx-auto overflow-hidden max-w-1210 px-5 py-0">';
+                    $output .= '<h2 class="text-custom_gold text-5xl text-center w-full capitalize font-bold mb-6 mt-10">' . esc_html($slider_title) . '</h2>';
                     $output .= '<div class="relative flex transition-transform duration-500 ease-in-out pt-16 pb-20 h-850" id="sliderWrapper">';
 
                     // Slides
@@ -46,7 +46,7 @@ function register_slider_carousel_shortcode() {
                         // Slide description and details
                         $output .= '<div class="relative flex flex-col x840:block x840:w-45p x960:w-6/12 w-fit pl-9p items-end testimony-slider">';
                         $output .= '<p class="relative text-xl text-white italic testimony-before">'
-                                     // <span class="text-5xl leading-none text-gold align-top mr-2 text-poppins text-250 text-orange">&ldquo;</span> 
+                                     // <span class="text-5xl leading-none text-gold align-top mr-2 text-poppins text-250 text-custom_gold">&ldquo;</span> 
                                         . esc_html($description) . 
                                     '</p>';
 

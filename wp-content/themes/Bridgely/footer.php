@@ -1,6 +1,6 @@
 </div>
 
-<footer class="relative block py-16 text-center border-t border-solid border-white bg-dark_blue">
+<footer class="relative block py-16 text-center border-t border-solid border-white bg-primary_gray">
   <div class="relative max-w-1210 mx-auto flex flex-col items-center px-5 py-0">
     
     <div class="mb-8">
@@ -28,9 +28,9 @@
     <div class="">
       <p class="mb-0 font-medium text-xs text-white">
         &copy; <?php echo date('Y', time()); ?> Bridgely. All Rights Reserved.
-        <span class="mx-2 text-orange">|</span>
+        <span class="mx-2 text-custom_gold">|</span>
         <a href="/privacy/" class="hover:underline">Privacy Policy</a>
-        <span class="mx-2 text-orange">|</span>
+        <span class="mx-2 text-custom_gold">|</span>
         <a href="/terms-of-use/" class="hover:underline">Terms of Use</a>
       </p>
     </div>

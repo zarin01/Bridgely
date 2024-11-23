@@ -9,9 +9,9 @@ $args = array(
 $endorsements = new WP_Query($args);
 
 if ($endorsements->have_posts()) : ?>
-<div class="bg-dark_blue py-12 testimony">
+<div class="bg-primary_gray py-12 testimony">
     <div class="max-w-6xl mx-auto text-center">
-        <h2 class="text-3xl font-bold text-orange mb-6">Leaders Behind the Movement</h2>
+        <h2 class="text-3xl font-bold text-custom_gold mb-6">Leaders Behind the Movement</h2>
 
         <amp-carousel id="bridgely_carousel" layout="fill" type="slides" role="region"
             aria-label="Go to next testimony" loop autoplay delay="10000"
