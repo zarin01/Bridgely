@@ -45,7 +45,13 @@ function register_slider_carousel_shortcode() {
 
                         // Slide description and details
                         $output .= '<div class="relative flex flex-col x840:block x840:w-45p x960:w-6/12 w-fit pl-9p items-end testimony-slider">';
-                        $output .= '<p class="text-xl text-left text-white italic  relative    testimony-before">' . esc_html($description) . '</p>';
+                        $output .= '<p class="relative text-xl text-white italic testimony-before">'
+                                     // <span class="text-5xl leading-none text-gold align-top mr-2 text-poppins text-250 text-orange">&ldquo;</span> 
+                                        . esc_html($description) . 
+                                    '</p>';
+
+
+
 
                         if (!empty($giver_details)) {
                             $output .= '<div class="text-white mt-2 text-left">';

@@ -805,6 +805,10 @@ p {
   bottom: 0.25rem;
 }
 
+.bottom-26p {
+  bottom: 26%;
+}
+
 .bottom-3p {
   bottom: 3%;
 }
@@ -977,10 +981,6 @@ p {
   margin-left: -0.5rem;
 }
 
-.-ml-2\.5 {
-  margin-left: -0.625rem;
-}
-
 .-ml-minus-6p {
   margin-left: 64px;
 }
@@ -1067,6 +1067,10 @@ p {
 
 .mr-0 {
   margin-right: 0px;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
 }
 
 .mt-0 {
@@ -2821,6 +2825,10 @@ p {
   vertical-align: baseline;
 }
 
+.align-top {
+  vertical-align: top;
+}
+
 .align-middle {
   vertical-align: middle;
 }
@@ -2913,6 +2921,10 @@ p {
   line-height: 1rem;
 }
 
+.text-250 {
+  font-size: 250px;
+}
+
 .\!font-bold {
   font-weight: 700 !important;
 }
@@ -2967,6 +2979,10 @@ p {
 
 .leading-\[180\%\] {
   line-height: 180%;
+}
+
+.leading-none {
+  line-height: 1;
 }
 
 .leading-normal {
@@ -3796,289 +3812,17 @@ p {
   display: inline-block;
   padding: 2px 17px;
   font-family: Poppins, sans-serif;
-  font-style: normal;
   font-weight: 600;
-  text-decoration: none;
   font-size: 16px;
-  text-transform: uppercase;
-  text-align: center;
-  border: none;
   color: #FFF;
   background-color: #D1A129;
   border-radius: 4px;
+  text-align: center;
 }
 
 .animateRise {
   transform: translateY(20px);
   opacity: 0;
-}
-
-@media (min-width: 1200px) {
-  .fifty-fifty-fancy-split .part-left {
-    padding-right: 9%;
-  }
-
-  .fifty-fifty-fancy-split .part-right {
-    padding-left: 9%;
-  }
-}
-
-@media (min-width: 960px) {
-  .testimony-slider .split-content-with-image p::before {
-    display: block;
-  }
-}
-
-.fifty-fifty-fancy-split .part-left {
-  margin-bottom: 121px;
-}
-
-.fifty-fifty-fancy-split .part {
-  position: relative;
-}
-
-.fifty-fifty-fancy-split .part-left::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 40px;
-  height: 11px;
-  bottom: -61px;
-  background: url('../library/images/icon-bridge.png') no-repeat center center !important;
-  background-size: 40px 11px !important;
-}
-
-.committed-to-text-after::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 1166px;
-  height: 115px;
-  left: 50%;
-  margin-left: -593px;
-  background: url('../library/images/dot-curve.png') no-repeat center center;
-  background-size: 1166px 77px;
-}
-
-.text-point.yes::before {
-  background: url("../library/images/Icon_Bridgely-Checkmark.png") no-repeat center center;
-  background-size: 34px 32px !important;
-}
-
-.text-point.no::before {
-  background: url("../library/images/Icon_Bridgely-No.png") no-repeat center center;
-  background-size: 34px 32px !important;
-}
-
-.text-point::before {
-  content: "";
-  position: absolute !important;
-  display: block !important;
-  width: 34px;
-  height: 32px;
-  left: 0 !important;
-  top: 2px !important;
-}
-
-@media (max-width: 840px) {
-  .contact-us-button {
-    padding-top: 11px !important;
-  }
-}
-
-#menu-main-navigation li a {
-  color: #FFF !important;
-}
-
-.contact-us-button a {
-  padding-top: 11px !important;
-  padding: 13px 17px !important;
-  display: inline-block !important;
-  color: #FFF !important;
-  background-color: #E0B039 !important;
-  border-radius: 4px !important;
-}
-
-#mobile-nav-trigger .line {
-  position: absolute;
-  display: block;
-  width: 26px;
-  height: 2px;
-  background-color: #FFF;
-  left: 9px;
-  transition: all 0.15s ease-in-out;
-}
-
-#mobile-nav-trigger.open .line1 {
-  top: 21px;
-  transform: rotate(45deg);
-}
-
-#mobile-nav-trigger.open .line2 {
-  opacity: 0;
-}
-
-#mobile-nav-trigger.open .line3 {
-  top: 21px;
-  transform: rotate(-45deg);
-}
-
-@media (min-width: 840px) {
-  .testimony-slider .testimony-before p::before {
-    display: block;
-  }
-}
-
-footer {
-  background: #141c29;
-}
-
-footer a, footer p {
-  color: #FFF;
-}
-
-footer #menu-footer-navigation li a {
-  position: relative;
-  display: block;
-  padding: 13px 5px;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 17px;
-  color: #FFF;
-  text-transform: uppercase;
-  border: none;
-  text-decoration: none;
-}
-
-#menu-social-navigation li.social-facebook a {
-  background-image: url("../library/images/icon-facebook.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 28px 28px;
-  text-indent: -9999px;
-  position: relative;
-  display: block;
-  overflow: hidden;
-  border: none;
-  -text-decoder: none;
-}
-
-li.social-linkedin a {
-  background-image: url("../library/images/icon-linkedin.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 28px 28px;
-  text-indent: -9999px;
-  position: relative;
-  display: block;
-  overflow: hidden;
-  border: none;
-  -text-decoder: none;
-}
-
-li.social-instagram a {
-  background-image: url("../library/images/icon-instagram.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 28px 28px;
-  text-indent: -9999px;
-  position: relative;
-  display: block;
-  overflow: hidden;
-  border: none;
-  -text-decoder: none;
-}
-
-.copy-wrap-part::before {
-  content: "";
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-  width: 70px;
-  height: 19px;
-  background-image: url('../library/images/icon-bridge2.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 70px 19px;
-}
-
-.page-header {
-  color: #2A426B;
-}
-
-.full-width-component h3, .full-width-component h2 {
-  padding-top: 40px;
-  margin-bottom: 23px;
-  line-height: 130%;
-}
-
-.full-width-component .content-inner p {
-  margin-top: 25px;
-}
-
-.statmenu {
-  background-color: #fff7e4;
-}
-
-.statmenu .statmenu-item a {
-  color: black;
-  text-decoration: underline;
-}
-
-.default-section-3070 a, .default-page-template a {
-  color: #d1a129;
-}
-
-#poverty-stat {
-  border-bottom: 1px solid #d1a129;
-  padding-bottom: 40px;
-}
-
-#poverty-stat ul li a {
-  font-size: 14px;
-  font-weight: 700;
-  text-decoration: underline;
-}
-
-#poverty-stat ul li {
-  list-style-type: square;
-  margin-left: 50px;
-}
-
-.list-square::marker {
-  color: #E0B039;
-}
-
-#poverty-stat p {
-  margin-bottom: 3px;
-}
-
-.twitter-logo {
-  background-color: #d1a129 !important;
-}
-
-.linkedin-logo {
-  background-color: #d1a129 !important;
-}
-
-.facebook-logo {
-  background-color: #d1a129 !important;
-}
-
-.testimony-slider .testimony-before p::before {
-  display: none;
-  position: absolute;
-  content: "";
-  width: 250px;
-  height: 250px;
-  top: -20px;
-  left: -120px;
-  background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23d1a129" viewBox="0 0 24 24"><text x="0" y="20" font-size="20" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">"</text></svg>');
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
 #mobile-nav-trigger.open .line1 {

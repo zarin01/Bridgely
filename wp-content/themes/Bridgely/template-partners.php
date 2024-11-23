@@ -11,9 +11,10 @@
 
     <div class="blank-intro-hero x14:h-700 x840:pt-47p" id="partners-intro-hero"
         <?php if(get_field('partners_page_1_banner_image')) { echo ' style="background:url('.get_field('partners_page_1_banner_image').') no-repeat center top; background-size:cover;"'; } ?>>
-        <div class="absolute w-full overflow-hidden left-0">
-            <svg class="w-calc-100-plus-10 relative block -ml-2.5" viewBox="0 0 1658 59" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1680 53.115V58.1982H0V53.1003C550.124 -17.7001 1129.88 -17.7001 1680 53.1003V53.115Z" fill="#FFF" />
+        <div class="absolute block overflow-hidden w-full left-0 bottom-26p">
+            <svg viewBox="0 0 1658 59" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1680 53.115V58.1982H0V53.1003C550.124 -17.7001 1129.88 -17.7001 1680 53.1003V53.115Z"
+                    fill="#FFF" />
             </svg>
         </div>
     </div>
