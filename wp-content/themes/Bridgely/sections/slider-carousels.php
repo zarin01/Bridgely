@@ -44,11 +44,11 @@ function register_slider_carousel_shortcode() {
                         }
 
                         // Slide description and details
-                        $output .= '<div class="relative flex flex-col x840:block x840:w-45p x960:w-6/12 w-fit pl-9p items-end testimony-slider">';
-                        $output .= '<p class="relative text-xl text-white italic testimony-before">'
-                                     // <span class="text-5xl leading-none text-gold align-top mr-2 text-poppins text-250 text-custom_gold">&ldquo;</span> 
-                                        . esc_html($description) . 
-                                    '</p>';
+                        $output .= '<div class="relative bottom-28 flex flex-col x840:block x840:w-45p x960:w-6/12 w-fit pl-11p items-end testimony-slider">';
+
+                        $output .= '<span class="absolute left-10p leading-none text-gold align-top mr-2 text-poppins text-250 text-custom_gold">&ldquo;</span>>';
+
+                        $output .= '<p class="relative text-xl text-white italic testimony-before">'. esc_html($description) .'</p>';
 
 
 

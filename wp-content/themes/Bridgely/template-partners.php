@@ -9,16 +9,15 @@
 	* 
 	* *************************/ ?>
 
-    <div class="blank-intro-hero x14:h-700 x840:pt-47p" id="partners-intro-hero"
+    <div class="blank-intro-hero x14:h-700 x840:pt-47p relative" id="partners-intro-hero"
         <?php if(get_field('partners_page_1_banner_image')) { echo ' style="background:url('.get_field('partners_page_1_banner_image').') no-repeat center top; background-size:cover;"'; } ?>>
-        <div class="absolute block overflow-hidden w-full left-0 bottom-26p">
+       <div class="absolute w-full overflow-hidden -bottom-4 left-0">
             <svg viewBox="0 0 1658 59" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1680 53.115V58.1982H0V53.1003C550.124 -17.7001 1129.88 -17.7001 1680 53.1003V53.115Z"
-                    fill="#FFF" />
+                <path d="M1680 53.115V58.1982H0V53.1003C550.124 -17.7001 1129.88 -17.7001 1680 53.1003V53.115Z" fill="#FFF"></path>
             </svg>
         </div>
     </div>
-
+    
     <?php /************************
 	*
 	*         Section 2
@@ -134,7 +133,7 @@
 	* *************************/ ?>
 
     <div class="how-to-become-section partners-animate-section-4  x960:py-5 x840:py-24 relative text-center py-5 mb-9 flex justify-center">
-        <div class="relative max-w-1210 mx-auto px-5 py-0">
+        <div class="relative max-w-1210 mx-auto px-5 pb-0 pt-2">
 
             <?php if( get_field('partners_page_4_title') ) { ?>
             <h2 class="text-blue text-responsive max-w-880 mx-auto animateRise"><?php echo get_field('partners_page_4_title'); ?></h2>
