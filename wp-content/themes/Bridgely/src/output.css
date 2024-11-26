@@ -969,6 +969,10 @@ p {
   margin-bottom: 6rem;
 }
 
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
 .mb-3\.5 {
   margin-bottom: 0.875rem;
 }
@@ -2600,6 +2604,10 @@ p {
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+.font-yellowtail {
+  font-family: Yellowtail, cursive;
+}
+
 .text-200 {
   font-size: 200px;
 }
@@ -4147,6 +4155,14 @@ footer #menu-footer-navigation li a {
     margin-top: 1.25rem;
   }
 
+  .x840\:ml-auto {
+    margin-left: auto;
+  }
+
+  .x840\:mr-auto {
+    margin-right: auto;
+  }
+
   .x840\:block {
     display: block;
   }
@@ -4185,6 +4201,14 @@ footer #menu-footer-navigation li a {
 
   .x840\:max-w-1210 {
     max-width: 1210px;
+  }
+
+  .x840\:max-w-940 {
+    max-width: 940px;
+  }
+
+  .x840\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .x840\:flex-row {
@@ -4279,6 +4303,10 @@ footer #menu-footer-navigation li a {
 
   .x840\:pt-14 {
     padding-top: 3.5rem;
+  }
+
+  .x840\:pt-24 {
+    padding-top: 6rem;
   }
 
   .x840\:pt-245 {

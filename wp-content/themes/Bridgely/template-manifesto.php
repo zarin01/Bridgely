@@ -329,14 +329,14 @@
 	* 
 	* *************************/ ?>
 
-	<div class="manifesto-signature-wrap">
+	<div class="manifesto-signature-wrap  x840:pt-24 x840:px-0 x840:pb-30 relative text-center bg-primary_gray pt-20 px-0 pb-28">
 		<div class="relative max-w-1210 mx-auto px-5 py-0">
 
 			<?php $colCount = 0; ?>
 
 			<?php if( have_rows('manifesto_4_signatures') ): ?>
-				<div class="signature-cols-outer-wrap">
-					<div class="signature-cols">
+				<div class="signature-cols-outer-wrap  ">
+					<div class="signature-cols  x840:max-w-940 x840:ml-auto x840:mr-auto x840:grid-cols-3 x840:gap-15 x840:mb-15 relative grid ">
 					    <?php while( have_rows('manifesto_4_signatures') ) : the_row(); ?>
 
 					    	<?php if($colCount == 3) { ?>
@@ -348,7 +348,7 @@
 
 					    	<div class="col col<?php echo $colCount; if($colCount < 3) { echo ' animateRise'; } ?>">
 								<?php if( get_sub_field('signature_text') ) { ?>
-									<div class="line1"><?php the_sub_field('signature_text'); ?></div>
+									<div class="line1 font-yellowtail text-primary_white relative mb-3 text-5xl"><?php the_sub_field('signature_text'); ?></div>
 								<?php } ?>
 								<?php if( get_sub_field('country') ) { ?>
 									<div class="line2"><?php the_sub_field('country'); ?></div>
