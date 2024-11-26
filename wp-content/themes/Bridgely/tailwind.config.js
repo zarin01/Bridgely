@@ -83,10 +83,12 @@ module.exports = {
         '160': '160px',
         '23': '23px',
         '30': '30px',
+        '200': '200px',
         '250': '250px',
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
+        UDPGothic: ['BIZ UDPGothic', 'Poppins', 'sans-serif'],
       },
       backgroundPosition: {
         'center-top': 'center top',
@@ -132,6 +134,7 @@ module.exports = {
         '10p': '10%',
         '3p': '3%',
         '0p': '0%',
+        '-1p': '-1%',
         '-5p': '-5%',
         '-10p': '-10%',
         '-20p': '-20%',

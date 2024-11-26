@@ -22,7 +22,7 @@ function register_slider_carousel_shortcode() {
                     $slider_title = get_the_title($post->ID);
 
                     // Slider container
-                    $output  = '<div class="relative bg-primary_gray h-850 overflow-hidden pt-16 pb-20">';
+                    $output  = '<div class="relative bg-primary_gray x840:h-850 overflow-hidden pt-16 pb-20">';
                     $output .= '<div class="relative bg-primary_gray w-full mx-auto overflow-hidden max-w-1210 px-5 py-0">';
                     $output .= '<h2 class="text-custom_gold text-5xl text-center w-full capitalize font-bold mb-6 mt-10">' . esc_html($slider_title) . '</h2>';
                     $output .= '<div class="relative flex transition-transform duration-500 ease-in-out pt-16 pb-20 h-850" id="sliderWrapper">';
@@ -34,7 +34,7 @@ function register_slider_carousel_shortcode() {
                         $giver_details = $slide['testimony_giver_details'] ?? [];
 
                         $output .= '<div class="flex-none w-full">';
-                        $output .= '<div class="p-4 pb-10 flex flex-row items-start relative max-w-880 px-5 mx-auto justify-center split-content-with-image">';
+                        $output .= '<div class="p-4 pb-10 flex x840:flex-row flex-col x840:items-start relative max-w-880 px-5 mx-auto justify-center items-center split-content-with-image">';
 
                         // Slide image
                         if (!empty($image_url)) {
@@ -44,9 +44,9 @@ function register_slider_carousel_shortcode() {
                         }
 
                         // Slide description and details
-                        $output .= '<div class="relative bottom-28 flex flex-col x840:block x840:w-45p x960:w-6/12 w-fit pl-11p items-end testimony-slider">';
+                        $output .= '<div class="relative bottom-28 flex flex-col x840:block x840:w-45p x960:w-6/12 w-fit pl-11p x840:items-end items-center testimony-slider">';
 
-                        $output .= '<span class="absolute left-10p leading-none text-gold align-top mr-2 text-poppins text-250 text-custom_gold">&ldquo;</span>>';
+                        $output .= '<span class="absolute -left-1p leading-none text-gold align-top mr-2 x840:block hidden font-UDPGothic text-200 text-custom_gold">&ldquo;</span>>';
 
                         $output .= '<p class="relative text-xl text-white italic testimony-before">'. esc_html($description) .'</p>';
 

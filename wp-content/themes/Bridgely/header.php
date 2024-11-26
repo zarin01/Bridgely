@@ -18,6 +18,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Yellowtail&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&display=swap" rel="stylesheet">
 
 	<?php if(is_page_template('template-about.php') || is_page_template('template-partners.php') || is_page_template('template-manifesto.php')) { ?>
 		<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/library/js/fancy/jquery.fancybox.min.css" type="text/css" media="screen" />
