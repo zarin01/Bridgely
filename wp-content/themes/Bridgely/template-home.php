@@ -462,7 +462,7 @@
             </div>
             <?php } ?>
             <?php if( get_field('reach_out_subtitle') ) { ?>
-            <div class="animateRise text-center max-w-610 mx-auto mb-16 font-poppins font-semibold x840:text-30 text-23 leading-relaxed text-primary_white">
+            <div class="animateRise text-center max-w-610 mx-auto mb-16 font-poppins font-semibold x840:text-3xl text-23 leading-relaxed text-primary_white">
                 <?php echo get_field('reach_out_subtitle'); ?>
             </div>
             <?php } ?>

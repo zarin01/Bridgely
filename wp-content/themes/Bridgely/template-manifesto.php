@@ -1,17 +1,6 @@
 <?php /* Template Name: Manifesto */ ?>
 <?php get_header(); ?>
 
-<style>
-	.small {
-		font-size: 14px;
-		margin-bottom: 3px;
-	}
-	sup {
-		font-size: 10px;
-		vertical-align: super;
-	}
-</style>
-
 <main id="content" class="manifesto">
 
 	<?php /************************
@@ -20,24 +9,24 @@
 	* 
 	* *************************/ ?>
 
-	<div class="manifesto-section-1">
-		<div class="center">
+	<div class="manifesto-section-1 relative pt-40 md:pt-[245px] bg-cover bg-center-top bg-manifesto-bg">
+		<div class="relative max-w-1050 mx-auto px-5 py-0">
 
-			<div class="animate-1-control-wrap" style="position: relative; display: block; min-height: 1000px;">
-				<div class="manifesto-content-section-1">
+			<div class="animate-1-control-wrap relative block min-h-[1000px]">
+				<div class="manifesto-content-section-1 relative max-w-[680px]">
 					<?php if( get_field('manifesto_intro_title') ) { ?>
-						<h1 class="line1 animateRise"><?php echo get_field('manifesto_intro_title'); ?></h1>
+						<h1 class="line1 animateRise relative mb-6 text-calc-100-minus-320 font-poppins font-bold leading-[96%] text-[#FFF7E4] tracking-tight"><?php echo get_field('manifesto_intro_title'); ?></h1>
 					<?php } ?>
 					<?php if( get_field('manifesto_intro_support_title') ) { ?>
-						<div class="support-line animateRise"><?php echo get_field('manifesto_intro_support_title'); ?></div>
+						<div class="support-line animateRise relative mb-12 text-[26px] md:text-[34px] font-poppins font-semibold text-custom_gold leading-[112%]"><?php echo get_field('manifesto_intro_support_title'); ?></div>
 					<?php } ?>
 				</div>
 
-				<div class="manifesto-content-section-2">
+				<div class="manifesto-content-section-2 relative md:pl-[calc(100%-512px)]">
 					<?php if( get_field('manifesto_intro_content') ) { ?>
-						<?php echo get_field('manifesto_intro_content'); ?>
+						<div class="prose text-white font-normal"><?php echo get_field('manifesto_intro_content'); ?></div>
 						<span id="color-trigger-1"></span>
-						<div style="display: none !important">
+						<div class="hidden">
 							<div id="manifesto-pop-1">
 								
 								<ul>
@@ -79,15 +68,15 @@
 				</div>
 			</div>
 
-			<div class="manifesto-content-section-3">
+			<div class="manifesto-content-section-3 relative pt-7 md:pt-[67px] pb-15 md:pb-[110px]">
 				<?php if( get_field('manifesto_bridge_image') ) { ?>
 					<?php $theImage = get_field('manifesto_bridge_image'); ?>
-					<img src="<?php echo $theImage ?>" alt="" class="animateRise2" />
+					<img src="<?php echo $theImage ?>" alt="" class="animateRise2 block max-w-full h-auto" />
 				<?php } ?>
 			</div>
 
-			<div class="manifesto-content-section-4">
-				<?php if( get_field('manifesto_middle_content') ) { ?>
+			<div class="manifesto-content-section-4 relative md:pr-[calc(100%-480px)] md:pb-[100px] text-white font-semibold">
+				<div class="font-semibold"><?php if( get_field('manifesto_middle_content') ) { ?></div>
 					<?php echo get_field('manifesto_middle_content'); ?>
 					<span id="color-trigger-2"></span>
 					<div style="display: none !important">
@@ -99,10 +88,10 @@
 				<?php } ?>
 			</div>
 
-			<div class="manifesto-content-section-5">
+			<div class="manifesto-content-section-5 relative md:pt-[100px] text-white md:pb-[85px]">
 				<div class="background-blue-part animateOpacity"></div>
 
-				<div class="inner-split-wrap-part">
+				<div class="inner-split-wrap-part grid md:grid-cols-2 gap-10">
 					<div class="col col1">
 						<?php if( get_field('manifesto_blue_section_image') ) { ?>
 							<?php $theImage = get_field('manifesto_blue_section_image'); ?>
@@ -138,7 +127,7 @@
 				</div>
 			</div>
 
-			<div class="manifesto-content-section-6">
+			<div class="manifesto-content-section-6 relative md:pt-[96px] md:pr-[calc(100%-554px)] text-white">
 				<?php if( get_field('manifesto_bottom_content') ) { ?>
 					<?php echo get_field('manifesto_bottom_content'); ?>
 					<span id="color-trigger-4"></span>
@@ -146,7 +135,7 @@
 			</div>
 
 			<?php if( have_rows('manifesto_bottom_orange_lines') ): ?>
-				<div class="manifesto-content-section-7">
+				<div class="manifesto-content-section-7 relative pt-7 md:pt-[78px] pb-10 md:pb-[40px]  text-custom_gold">
 				    <?php while( have_rows('manifesto_bottom_orange_lines') ) : the_row(); ?>
 				    	<p class="special-orange animateSlideRight"><?php the_sub_field('content'); ?></p>
 				    <?php endwhile; ?>
@@ -186,31 +175,31 @@
 	* 
 	* *************************/ ?>
 
-	<div class="manifesto-section-2">
-		<div class="center">
+	<div class="manifesto-section-2  x12:overflow-hidden relative pt-16 bg-primary_white">
+		<div class="relative max-w-1210 mx-auto px-5 py-0">
 
-			<div class="manifesto-content-section-8">
+			<div class="manifesto-content-section-8 relative  x840:pr-calc-100-minus-608">
 				<?php if( get_field('manifesto_2_first_content_section') ) { ?>
 					<?php echo get_field('manifesto_2_first_content_section'); ?>
 				<?php } ?>
 			</div>
 
-			<div class="manifesto-content-section-9">
+			<div class="manifesto-content-section-9  relative x840:pt-6 x840:pb-26 x840:pr-calc-100-minus-608 pt-3.5 pb-10">
 				<?php if( get_field('manifesto_2_special_line') ) { ?>
-					<div class="bold-line animateSlideRight animateColor2"><?php echo get_field('manifesto_2_special_line'); ?></div>
+					<div class="font-bold text-black text-82p relative text-poppins leading-none tracking-tighter  animateSlideRight animateColor2"><?php echo get_field('manifesto_2_special_line'); ?></div>
 				<?php } ?>
 			</div>
 
-			<div class="manifesto-content-section-10">
-				<div class="split-content-special">
-					<div class="col col1">
+			<div class="manifesto-content-section-10  x840:pb-22 pb-12 relative">
+				<div class="split-content-special   x840:flex relative">
+					<div class="x12:mb-0 x12:pr-22 x840:mb-0 x840:pr-10 x840:w-3/6 mb-9 relative">
 						<?php if( get_field('manifesto_2_second_content_section_image') ) { ?>
 							<?php $theImage = get_field('manifesto_2_second_content_section_image'); ?>
-							<img src="<?php echo $theImage['url']; ?>" alt="<?php echo $theImage['alt']; ?>" class="animateRise" />
+							<img src="<?php echo $theImage['url']; ?>" alt="<?php echo $theImage['alt']; ?>" class="animateRise  xl2:max-w-half xl2:float-right relative block max-w-full h-auto" />
 						<?php } ?>
 					</div>
 
-					<div class="col col2">
+					<div class="col col2 x12:pl-0 x12:w-61p xl2:pr-0 x840:pl-12 x840:w-1/2 relative">
 						<?php if( get_field('manifesto_2_second_content_section') ) { ?>
 							<?php echo get_field('manifesto_2_second_content_section'); ?>
 						<?php } ?>
@@ -221,76 +210,81 @@
 		</div>
 	</div>
 
-	<?php /************************
-	*
-	*         Section 3
-	* 
-	* *************************/ ?>
+	<?php
+	/************************
+	 *
+	 *         Section 3
+	 *
+	 *************************/
+	?>
 
-	<div class="our-pillars-section manifesto-section-3">
-		<div class="bg-part animateOpacity"></div>
-		
-		<div class="center">
-			<div class="top-text">
-				<?php if( get_field('manifesto_3_intro_title_1') ) { ?>
-					<div class="we-affirm-intro animateRise"><?php echo get_field('manifesto_3_intro_title_1'); ?></div>
-				<?php } ?>
-				<?php if( get_field('manifesto_3_intro_title_2') ) { ?>
-					<h2 class="text-h1-special special animateRise animateColor3"><?php echo get_field('manifesto_3_intro_title_2'); ?></h2>
-				<?php } ?>
-			</div>
+	<div class="our-pillars-section manifesto-section-3 bg-cover bg-no-repeat bg-center-top relative overflow-hidden text-left min-h-[500px] py-20 lg:py-[100px] xl:py-[130px] xl:pb-[100px] bg-[url('../images/our-pillars-bg.jpg')]">
+	  <div class="bg-part absolute inset-0 bg-cover bg-no-repeat bg-center-top bg-manifesto-bottom-bg"></div>
 
-			<?php $pillarCount = 0; ?>
+	  <div class="relative max-w-[1210px] mx-auto px-5 py-0">
+	    <div class="top-text text-center">
+	      <?php if (get_field('manifesto_3_intro_title_1')) { ?>
+	        <div class="we-affirm-intro animateRise text-center mx-auto mb-2 max-w-[560px] text-white font-poppins font-semibold text-3xl leading-9">
+	          <?php echo get_field('manifesto_3_intro_title_1'); ?>
+	        </div>
+	      <?php } ?>
+	      <?php if (get_field('manifesto_3_intro_title_2')) { ?>
+	        <h2 class="text-h1-special special animateRise animateColor3 text-center text-white font-poppins font-bold text-[68px] lg:text-[calc(43px+57*((100vw-320px)/960))] leading-[106%] mt-6">
+	          <?php echo get_field('manifesto_3_intro_title_2'); ?>
+	        </h2>
+	      <?php } ?>
+	    </div>
 
-			<?php if( have_rows('manifesto_3_pillars') ): ?>
-				<div class="pillar-contain-wrap">
-				    <?php while( have_rows('manifesto_3_pillars') ) : the_row(); ?>
+	    <?php $pillarCount = 0; ?>
 
-				    	<span class="a-pillar animateRise">
-							<div class="inside">
-								<div class="label"><span><?php the_sub_field('title'); ?></span>
-								<?php the_sub_field('description'); ?></div>
-								<div style="display:none !important;">
-									<div class="text-h3 blue"><?php the_sub_field('title'); ?></div>
-								</div>
-							</div>
-						</span>
+	    <?php if (have_rows('manifesto_3_pillars')): ?>
+	      <div class="pillar-contain-wrap grid grid-cols-1 gap-4 sm:gap-4 lg:gap-6 my-[40px] lg:my-[70px] xl:my-[80px]">
+	        <?php while (have_rows('manifesto_3_pillars')): the_row(); ?>
+	          <span class="a-pillar animateRise relative">
+	            <div class="inside flex flex-col items-center justify-center text-center z-2 h-fit p-4 lg:p-[4%]   bg-primary_white">
+	              <div class="label relative pb-2 w-full text-gold font-poppins font-bold text-[30px] text-left">
+	                <span class="text-custom_gold text-left tracking-wide pb-2.5 block"><?php the_sub_field('title'); ?></span>
+	                <?php the_sub_field('description'); ?>
+	              </div>
+	            </div>
+	          </span>
+	          <?php $pillarCount++; ?>
+	        <?php endwhile; ?>
+	      </div>
+	    <?php endif; ?>
 
-						<?php $pillarCount++; ?>
+	    <?php if (get_field('manifesto_3_middle_title')) { ?>
+	      <h2 class="text-h1-special special second-use text-center text-white font-poppins font-bold mt-[100px] xl:mt-[130px] mb-[60px] xl:mb-[90px] x960:text-7xl">
+	        <?php echo get_field('manifesto_3_middle_title'); ?>
+	      </h2>
+	    <?php } ?>
 
-				    <?php endwhile; ?>
-				</div>
-			<?php endif; ?>	
+	    <?php $colCount = 0; ?>
 
-			<?php if( get_field('manifesto_3_middle_title') ) { ?>
-				<h2 class="text-h1-special special second-use"><?php echo get_field('manifesto_3_middle_title'); ?></h2>
-			<?php } ?>
+	    <?php if (have_rows('manifesto_3_support_columns')): ?>
+	      <div class="support-cols grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-[60px] md:gap-[50px] md:gap-y-[70px]">
+	        <?php while (have_rows('manifesto_3_support_columns')): the_row(); ?>
+	          <div class="col col<?php echo $colCount; ?> animateRise">
+	            <?php if (get_sub_field('title')) { ?>
+	              <div class="line1 font-poppins font-bold text-custom_gold"><?php the_sub_field('title'); ?></div>
+	            <?php } ?>
+	            <?php if (get_sub_field('content')) { ?>
+	              <p class="mt-4 text-left text-white"><?php the_sub_field('content'); ?></p>
+	            <?php } ?>
+	          </div>
+	          <?php $colCount++; ?>
+	        <?php endwhile; ?>
+	      </div>
+	    <?php endif; ?>
+	  </div>
 
-			<?php $colCount = 0; ?>
-
-			<?php if( have_rows('manifesto_3_support_columns') ): ?>
-				<div class="support-cols">
-				    <?php while( have_rows('manifesto_3_support_columns') ) : the_row(); ?>
-				    	
-				    	<div class="col col<?php echo $colCount; ?> animateRise">
-				    		<?php if( get_sub_field('title') ) { ?>
-								<div class="line1"><?php the_sub_field('title'); ?></div>
-							<?php } ?>
-							<?php if( get_sub_field('content') ) { ?>
-								<p><?php the_sub_field('content'); ?></p>
-							<?php } ?>
-						</div>
-
-				    	<?php $colCount++; ?>
-				    <?php endwhile; ?>
-				</div>
-			<?php endif; ?>
-		</div>
-
-		<div class="down-curve-contain">
-			<svg viewBox="0 0 1680 65" xmlns="http://www.w3.org/2000/svg"><path d="M1680 65V0H-3V64.9233C548.107 -8.56355 1128.89 -8.56355 1680 64.9233V65Z" fill="#FFF7E4"/></svg>
-		</div>
+	  	<div class="absolute block overflow-hidden w-calc-100-plus-20 -left-10 -top-px">
+	  		<svg viewBox="0 0 1680 65" xmlns="http://www.w3.org/2000/svg">
+				<path d="M1680 65V0H-3V64.9233C548.107 -8.56355 1128.89 -8.56355 1680 64.9233V65Z" fill="#FFF7E4"></path>
+			</svg>
+        </div>
 	</div>
+
 
 	
 	<?php /************************
@@ -299,23 +293,23 @@
 	* 
 	* *************************/ ?>
 
-	<div class="reach-out-simple manifesto" id="sign-this-declaration">
-		<div class="center">
+	<div class="reach-out-simple manifesto  bg-manifesto-footer-bg bg-cover pt-2.5  x840:pt-25 x840:px-0 x840:pb-20 py-20" id="sign-this-declaration">
+		<div class="relative max-w-1210 mx-auto px-5 py-0">
 
 			<?php if( get_field('manifesto_4_intro_text') ) { ?>
-				<div class="sign-dec-intro"><?php echo get_field('manifesto_4_intro_text'); ?></div>
+				<div class="sign-dec-intro  relative max-w-550 text-white mx-auto mt-0 mb-24 text-poppins text-28 leading-9 font-bold"><?php echo get_field('manifesto_4_intro_text'); ?></div>
 			<?php } ?>
 
 			<?php if( get_field('manifesto_4_declaration_title') ) { ?>
-				<h2 class="text-h1-special white text-center animateRise"><?php echo get_field('manifesto_4_declaration_title'); ?></h2>
+				<h2 class="x960:text-8xl text-primary_white text-center animateRise mb-10 "><?php echo get_field('manifesto_4_declaration_title'); ?></h2>
 			<?php } ?>
 
-			<div class="form-wrap-outer">
+			<div class="form-wrap-outer  relative max-w-710 mx-auto my-0 text-center">
 				<?php if( get_field('manifesto_4_declaration_form_title') ) { ?>
-					<p class="white animateRise"><?php echo get_field('manifesto_4_declaration_form_title'); ?></p>
+					<p class="text-white text-xl animateRise"><?php echo get_field('manifesto_4_declaration_form_title'); ?></p>
 				<?php } ?>
 
-				<div class="form-wrap-inner animateRise">
+				<div class="form-wrap-inner animateRise  max-w-624 mx-auto my-0">
 					<?php if( get_field('manifesto_4_declaration_form_embed') ) { ?>
 						<?php echo get_field('manifesto_4_declaration_form_embed'); ?>
 					<?php } ?>
@@ -323,7 +317,7 @@
 			</div>
 
 			<?php if( get_field('declaration_form_support_text') ) { ?>
-				<div class="extra-form-line animateRise"><?php echo get_field('declaration_form_support_text'); ?></div>
+				<div class="extra-form-line animateRise relative max-w-380 my-0 mx-auto pt-11 text-poppins text-white text-lg text-center font-medium"><?php echo get_field('declaration_form_support_text'); ?></div>
 			<?php } ?>
 
 		</div>
@@ -336,7 +330,7 @@
 	* *************************/ ?>
 
 	<div class="manifesto-signature-wrap">
-		<div class="center">
+		<div class="relative max-w-1210 mx-auto px-5 py-0">
 
 			<?php $colCount = 0; ?>
 

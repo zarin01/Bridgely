@@ -49,6 +49,7 @@ module.exports = {
         '106p': '106%',
         '120p': '120%',
         '140p': '140%',
+        '61p': '61%',
         '45p': '45%',
         '50': '50px',
         '70': '70px',
@@ -63,12 +64,15 @@ module.exports = {
         '290': '290px',
         '380': '380px',
         '500': '500px',
+        '550': '550px',
         '610': '610px',
+        '624': '624px',
         '710': '710px',
         '840': '840px',
         '880': '880px',
         '1050': '1050px',
         '1210': '1210px',
+        'half': '50%',
       },
       height: {
         '77': '77px',
@@ -83,14 +87,16 @@ module.exports = {
         'calc-100-minus-320': 'calc(43px + 57 * ( ( 100vw - 320px ) / 960 ))',
         '160': '160px',
         '23': '23px',
-        '30': '30px',
+        '28': '28px',
         '68': '68px',
+        '82p': '82px',
         '200': '200px',
         '250': '250px',
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
         UDPGothic: ['BIZ UDPGothic', 'Poppins', 'sans-serif'],
+        yellowtail: ["Yellowtail", 'cursive'],
       },
       backgroundPosition: {
         'center-top': 'center top',
@@ -99,6 +105,9 @@ module.exports = {
         'choose-your-start': "url('../library/images/partners-support-bg.jpg')",
         'gradiant-image': "url('../library/images/header-gradient.png')",
         'our-pillars': "url('../library/images/our-pillars-bg.jpg')",
+        'manifesto-bg': "url('https://bridgely.org/wp-content/themes/Bridgely/library/images/manifesto-section-1-bg.jpg')",
+        'manifesto-bottom-bg': "url('../library/images/manifesto-bottom-bg.jpg')",
+        'manifesto-footer-bg': "url('../library/images/manifesto-very-bottom-bg.jpg')",
       },
       backgroundSize: {
         '160': '160%',
@@ -120,6 +129,7 @@ module.exports = {
         '120': '120px',
         '245': '245px',
         '280': '280px',
+        'calc-100-minus-608': '280px',
       },
       margin: {
         'minus-6p': '-64px',
@@ -529,6 +539,52 @@ module.exports = {
             },
           },
         },
+
+
+        /* 
+        Manifesto Page
+        */
+        '.manifesto-section-1 p a.orange': {
+          display: 'inline',
+          fontWeight: '700',
+          color: '#D1A129',
+          borderBottom: 'none',
+          textDecoration: 'none',
+        },
+        '.manifesto-section-1 p a.orange:hover': {
+          textDecoration: 'underline',
+        },
+        '.manifesto-section-2 p': {
+          fontWeight: 400,
+        }, 
+        '@media (min-width: 840px)': {
+          '.manifesto-section-3 .support-cols .col::after': {
+            width: '1px !important',
+            height: '100% !important',
+            bottom: '0 !important',
+            left: 'auto !important',
+            right: '-25px !important',
+          },
+        },
+      
+        '.manifesto-section-3 .support-cols .col::after': {
+          content: '""',
+          position: 'absolute',
+          display: 'block',
+          width: '100%',
+          height: '1px',
+          bottom: '-30px',
+          left: '0',
+          background: '#D1A129',
+          zIndex: '0',
+        },
+
+        '.reach-out-simple.manifesto .extra-form-line a': {
+          color: '#D1A129',
+          textDecoration: 'none',
+          border: 'none',
+        },
+       
 
        
       };
