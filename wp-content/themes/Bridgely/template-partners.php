@@ -144,7 +144,7 @@
 
             <?php if( get_field('partners_page_4_diagram_image') ) { ?>
             <?php $theImage = get_field('partners_page_4_diagram_image'); ?>
-            <div class="how-to-become-diagram-wrap x960:mx-auto x960:my-16 relative block max-w-710 pb-2">
+            <div class="how-to-become-diagram-wrap mx-auto my-16 relative block max-w-710 pb-2">
                 <img src="<?php echo $theImage['url']; ?>" alt="<?php echo $theImage['alt']; ?>" class="animateRise relative block max-w-full h-auto" />
 
                 <a href="/declaration" class="absolute diagram-link x640:h-40 x500:w-32 x500:h-36 block w-20 h-28 left-40p top-0p" id="diagram-link-1"></a>
