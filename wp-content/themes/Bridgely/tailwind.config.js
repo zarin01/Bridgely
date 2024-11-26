@@ -80,9 +80,11 @@ module.exports = {
         responsive: 'calc(36px + 20 * ((100vw - 320px) / 840))',
         responsive_heading: 'clamp(43px, calc(43px + 124 * ((100vw - 320px) / 1200)), 160px)',
         'calc-32-plus-18': 'calc(32px + 18 * ((100vw - 320px) / 840))',
+        'calc-100-minus-320': 'calc(43px + 57 * ( ( 100vw - 320px ) / 960 ))',
         '160': '160px',
         '23': '23px',
         '30': '30px',
+        '68': '68px',
         '200': '200px',
         '250': '250px',
       },
@@ -112,6 +114,7 @@ module.exports = {
         '11p': '11%',
         '47p': '47%',
         '56p': '56.25%',
+        '67p': '67%',
         '10px': '10px',
         '140': '140px',
         '120': '120px',
@@ -125,6 +128,7 @@ module.exports = {
         '-10': '-10px',
         '-4': '-4px',
         '-3': '-3px',
+        '-1px': '-1px',
         '21': '21px',
         '28': '28px',
         '130': '130px',
@@ -478,6 +482,51 @@ module.exports = {
             width: '45%',
             height: 'fit-content',
             paddingRight: '15px',
+          },
+        },
+
+
+
+
+        /* 
+        Organizations Loaded Components Styles
+        */
+
+        '.orange-button': {
+          padding: '5px 25px',
+          display: 'inline-block',
+          color: '#fff',
+          backgroundColor: '#d1a129',
+          borderRadius: '4px',
+          borderBottom: 'none',
+          fontWeight: 'bold',
+          margin: '10px 0',
+          textDecoration: 'none',
+        },
+
+        '.three-column-icon-section .committed-to-text': {
+          textAlign: 'center',
+          textTransform: 'uppercase',
+          letterSpacing: '2px',
+          '@screen md': {
+            textAlign: 'center',
+            textTransform: 'uppercase',
+            letterSpacing: '2px',
+          },
+          '&::after': {
+            content: '""',
+            position: 'absolute',
+            display: 'block',
+            width: '1166px',
+            height: '60px',
+            top: '12px',
+            left: '50%',
+            marginLeft: '-593px',
+            background: `url("https://bridgelystg.wpengine.com/wp-content/themes/Bridgely/library/images/dot-curve.png") no-repeat center center`,
+            backgroundSize: '1166px 77px',
+            '@screen md': {
+              backgroundSize: '1166px 77px',
+            },
           },
         },
 

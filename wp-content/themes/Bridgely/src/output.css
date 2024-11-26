@@ -725,6 +725,38 @@ p {
   font-size: clamp(36px, calc(36px + 20 * ((100vw - 320px) / 840)), 56px);
 }
 
+.three-column-icon-section .committed-to-text {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+.three-column-icon-section .committed-to-text::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 1166px;
+  height: 60px;
+  top: 12px;
+  left: 50%;
+  margin-left: -593px;
+  background: url("https://bridgelystg.wpengine.com/wp-content/themes/Bridgely/library/images/dot-curve.png") no-repeat center center;
+  background-size: 1166px 77px;
+}
+
+@media (min-width: 960px) {
+  .three-column-icon-section .committed-to-text {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .three-column-icon-section .committed-to-text::after {
+    background-size: 1166px 77px;
+  }
+}
+
 .static {
   position: static;
 }
@@ -763,6 +795,10 @@ p {
 
 .-left-20p {
   left: -20%;
+}
+
+.-top-1px {
+  top: -1px;
 }
 
 .bottom-28 {
@@ -837,6 +873,14 @@ p {
   top: calc(100%-10px);
 }
 
+.-top-px {
+  top: -1px;
+}
+
+.bottom-\[-4px\] {
+  bottom: -4px;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -867,9 +911,19 @@ p {
   margin-right: auto;
 }
 
+.my-0 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
 .my-12 {
   margin-top: 3rem;
   margin-bottom: 3rem;
+}
+
+.my-16 {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 .my-2 {
@@ -877,9 +931,9 @@ p {
   margin-bottom: 0.5rem;
 }
 
-.my-16 {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .mb-0 {
@@ -904,6 +958,10 @@ p {
 
 .mb-20 {
   margin-bottom: 5rem;
+}
+
+.mb-3\.5 {
+  margin-bottom: 0.875rem;
 }
 
 .mb-4 {
@@ -942,6 +1000,10 @@ p {
   margin-right: 0.5rem;
 }
 
+.mt-0 {
+  margin-top: 0px;
+}
+
 .mt-0\.5 {
   margin-top: 0.125rem;
 }
@@ -966,6 +1028,10 @@ p {
   margin-top: 5rem;
 }
 
+.mt-3\.5 {
+  margin-top: 0.875rem;
+}
+
 .mt-4 {
   margin-top: 1rem;
 }
@@ -976,6 +1042,10 @@ p {
 
 .mt-8 {
   margin-top: 2rem;
+}
+
+.mr-2\.5 {
+  margin-right: 0.625rem;
 }
 
 .block {
@@ -1004,6 +1074,10 @@ p {
 
 .h-12 {
   height: 3rem;
+}
+
+.h-20 {
+  height: 5rem;
 }
 
 .h-28 {
@@ -1078,6 +1152,10 @@ p {
   width: 70px;
 }
 
+.w-9\/12 {
+  width: 75%;
+}
+
 .w-\[175px\] {
   width: 175px;
 }
@@ -1097,6 +1175,10 @@ p {
 
 .w-full {
   width: 100%;
+}
+
+.w-6\/12 {
+  width: 50%;
 }
 
 .max-w-1050 {
@@ -1151,6 +1233,10 @@ p {
   max-width: 100%;
 }
 
+.max-w-lg {
+  max-width: 32rem;
+}
+
 .max-w-screen-lg {
   max-width: 1024px;
 }
@@ -1161,6 +1247,10 @@ p {
 
 .max-w-screen-xl {
   max-width: 1280px;
+}
+
+.max-w-\[600px\] {
+  max-width: 600px;
 }
 
 .flex-none {
@@ -1222,6 +1312,14 @@ p {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-10 {
+  gap: 2.5rem;
+}
+
+.gap-11 {
+  gap: 2.75rem;
 }
 
 .gap-x-1 {
@@ -2063,6 +2161,11 @@ p {
   background-color: rgb(113 63 18 / var(--tw-bg-opacity));
 }
 
+.bg-custom_gold {
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 161 41 / var(--tw-bg-opacity));
+}
+
 .bg-choose-your-start {
   background-image: url('../library/images/partners-support-bg.jpg');
 }
@@ -2161,6 +2264,11 @@ p {
   padding-right: 3rem;
 }
 
+.px-2\.5 {
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -2176,9 +2284,19 @@ p {
   padding-bottom: 0px;
 }
 
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 .py-12 {
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+
+.py-120 {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .py-16 {
@@ -2339,6 +2457,10 @@ p {
   padding-top: 56.25%;
 }
 
+.pt-67p {
+  padding-top: 67%;
+}
+
 .text-left {
   text-align: left;
 }
@@ -2379,6 +2501,11 @@ p {
   font-size: 23px;
 }
 
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -2402,6 +2529,10 @@ p {
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.text-calc-100-minus-320 {
+  font-size: calc(43px + 57 * ( ( 100vw - 320px ) / 960 ));
 }
 
 .text-calc-32-plus-18 {
@@ -2498,6 +2629,10 @@ p {
 
 .tracking-wide {
   letter-spacing: 0.025em;
+}
+
+.tracking-wider {
+  letter-spacing: 0.05em;
 }
 
 .text-amber-100 {
@@ -3521,6 +3656,39 @@ footer #menu-footer-navigation li a {
   margin-bottom: 3px;
 }
 
+.three-column-icon-section .committed-to-text {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+@media (min-width: 768px) {
+  .three-column-icon-section .committed-to-text {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+}
+
+.three-column-icon-section .committed-to-text::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 1166px;
+  height: 60px;
+  top: 12px;
+  left: 50%;
+  margin-left: -593px;
+  background: url("https://bridgelystg.wpengine.com/wp-content/themes/Bridgely/library/images/dot-curve.png") no-repeat center center;
+  background-size: 1166px 77px;
+}
+
+@media (min-width: 768px) {
+  .three-column-icon-section .committed-to-text::after {
+    background-size: 1166px 77px;
+  }
+}
+
 #mobile-nav-trigger.open .line1 {
   transform: rotate(45deg) !important;
 }
@@ -3618,6 +3786,11 @@ footer #menu-footer-navigation li a {
     left: -5%;
   }
 
+  .md\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .md\:mb-0 {
     margin-bottom: 0px;
   }
@@ -3642,12 +3815,25 @@ footer #menu-footer-navigation li a {
     width: 106%;
   }
 
+  .md\:w-\[70px\] {
+    width: 70px;
+  }
+
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:border-r {
+    border-right-width: 1px;
+  }
+
+  .md\:border-custom_gold {
+    --tw-border-opacity: 1;
+    border-color: rgb(209 161 41 / var(--tw-border-opacity));
   }
 
   .md\:bg-130 {
@@ -3657,6 +3843,11 @@ footer #menu-footer-navigation li a {
   .md\:px-40 {
     padding-left: 10rem;
     padding-right: 10rem;
+  }
+
+  .md\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 
   .md\:pl-2 {
@@ -3838,16 +4029,6 @@ footer #menu-footer-navigation li a {
 }
 
 @media (min-width: 960px) {
-  .x960\:mx-auto {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .x960\:my-16 {
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-  }
-
   .x960\:mb-16 {
     margin-bottom: 4rem;
   }
@@ -3933,6 +4114,10 @@ footer #menu-footer-navigation li a {
   .x960\:text-5xl {
     font-size: 3rem;
     line-height: 1;
+  }
+
+  .x960\:text-68 {
+    font-size: 68px;
   }
 
   .x960\:text-6xl {

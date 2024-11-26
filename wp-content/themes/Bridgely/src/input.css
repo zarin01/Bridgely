@@ -86,7 +86,7 @@
 
   .menu-item a {
     @apply px-4 py-2;
-}
+  }
 }
 
 @layer components {
@@ -98,10 +98,41 @@
     @apply mb-[34px] leading-[119%];
     font-size: clamp(36px, calc(36px + 20 * ((100vw - 320px) / 840)), 56px);
   }
+
+  .three-column-icon-section .committed-to-text {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+  }
+
+  .three-column-icon-section .committed-to-text::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 1166px;
+    height: 60px;
+    top: 12px;
+    left: 50%;
+    margin-left: -593px;
+    background: url("https://bridgelystg.wpengine.com/wp-content/themes/Bridgely/library/images/dot-curve.png") no-repeat center center;
+    background-size: 1166px 77px;
+  }
+
+  @media (min-width: 960px) {
+    .three-column-icon-section .committed-to-text {
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .three-column-icon-section .committed-to-text::after {
+      background-size: 1166px 77px;
+    }
+  }
 }
 
 @layer utilities {
-
   #mobile-nav-trigger.open .line1 {
     transform: rotate(45deg) !important;
   }
@@ -134,7 +165,4 @@
       padding: 13px 17px;
     }
   }
-
-  
-
 }
