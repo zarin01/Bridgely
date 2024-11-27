@@ -9,20 +9,20 @@
 	* 
 	* *************************/ ?>
 
-	<div class="manifesto-section-1 relative pt-40 md:pt-[245px] bg-cover bg-center-top bg-manifesto-bg">
+	<div class="manifesto-section-1 relative pt-40 md:pt-245 bg-cover bg-center-top bg-manifesto-bg">
 		<div class="relative max-w-1050 mx-auto px-5 py-0">
 
-			<div class="animate-1-control-wrap relative block min-h-[1000px]">
-				<div class="manifesto-content-section-1 relative max-w-[680px]">
+			<div class="animate-1-control-wrap relative block min-h-1000px">
+				<div class="manifesto-content-section-1 relative max-w-680px">
 					<?php if( get_field('manifesto_intro_title') ) { ?>
-						<h1 class="line1 animateRise relative mb-6 text-calc-100-minus-320 font-poppins font-bold leading-[96%] text-[#FFF7E4] tracking-tight"><?php echo get_field('manifesto_intro_title'); ?></h1>
+						<h1 class="line1 animateRise relative mb-6 text-calc-100-minus-320 font-poppins font-bold leading-96% text-primary_white tracking-tight"><?php echo get_field('manifesto_intro_title'); ?></h1>
 					<?php } ?>
 					<?php if( get_field('manifesto_intro_support_title') ) { ?>
-						<div class="support-line animateRise relative mb-12 text-[26px] md:text-[34px] font-poppins font-semibold text-custom_gold leading-[112%]"><?php echo get_field('manifesto_intro_support_title'); ?></div>
+						<div class="support-line animateRise relative mb-12 text-26px md:text-4xl font-poppins font-semibold text-custom_gold leading-112%"><?php echo get_field('manifesto_intro_support_title'); ?></div>
 					<?php } ?>
 				</div>
 
-				<div class="manifesto-content-section-2 relative md:pl-[calc(100%-512px)]">
+				<div class="manifesto-content-section-2 relative md:pl-calc-100-minus-512">
 					<?php if( get_field('manifesto_intro_content') ) { ?>
 						<div class="prose text-white font-normal"><?php echo get_field('manifesto_intro_content'); ?></div>
 						<span id="color-trigger-1"></span>
@@ -68,27 +68,27 @@
 				</div>
 			</div>
 
-			<div class="manifesto-content-section-3 relative pt-7 md:pt-[67px] pb-15 md:pb-[110px]">
+			<div class="manifesto-content-section-3 relative pt-7 md:pt-18 pb-15 md:pb-28">
 				<?php if( get_field('manifesto_bridge_image') ) { ?>
 					<?php $theImage = get_field('manifesto_bridge_image'); ?>
 					<img src="<?php echo $theImage ?>" alt="" class="animateRise2 block max-w-full h-auto" />
 				<?php } ?>
 			</div>
 
-			<div class="manifesto-content-section-4 relative md:pr-[calc(100%-480px)] md:pb-[100px] text-white font-semibold">
+			<div class="manifesto-content-section-4 relative md:pr-calc-100-minus-480 md:pb-26 text-white font-semibold">
 				<div class="font-semibold"><?php if( get_field('manifesto_middle_content') ) { ?></div>
 					<?php echo get_field('manifesto_middle_content'); ?>
 					<span id="color-trigger-2"></span>
-					<div style="display: none !important">
+					<div class="hidden">
 						<div id="manifesto-pop-2">
 							<p>Cross-border generosity results in $68 billion per year (excluding U.S. government aid (ODA), remittances and private investments) and is operationalized by thousands of nonprofit organizations. Child sponsorship connects millions of donors with millions of children, mobilizing $3.5-5 billion per year.</p>
- 							<p style="line-height:100%;"><span style="font-size:14px; word-break:break-word;">¹Global Philanthropy Environment Index. https://globalindices.iupui.edu/tracker/themes/index.html</span></p>
+ 							<p class="leading-100%"><span class="break-words text-sm">¹Global Philanthropy Environment Index. https://globalindices.iupui.edu/tracker/themes/index.html</span></p>
 						</div>
 					</div>
 				<?php } ?>
 			</div>
 
-			<div class="manifesto-content-section-5 relative md:pt-[100px] text-white md:pb-[85px]">
+			<div class="manifesto-content-section-5 relative md:pt-26 text-white md:pb-22">
 				<div class="background-blue-part animateOpacity"></div>
 
 				<div class="inner-split-wrap-part grid md:grid-cols-2 gap-10">
@@ -218,7 +218,7 @@
 	 *************************/
 	?>
 
-	<div class="our-pillars-section manifesto-section-3 bg-cover bg-no-repeat bg-center-top relative overflow-hidden text-left min-h-[500px] py-20 lg:py-[100px] xl:py-[130px] xl:pb-[100px] bg-[url('../images/our-pillars-bg.jpg')]">
+	<div class="our-pillars-section manifesto-section-3 bg-cover bg-no-repeat bg-center-top relative overflow-hidden text-left min-h-500px py-20 lg:py-22 xl:py-140 xl:pb-22 bg-our-pillars">
 	  <div class="bg-part absolute inset-0 bg-cover bg-no-repeat bg-center-top bg-manifesto-bottom-bg"></div>
 
 	  <div class="relative max-w-[1210px] mx-auto px-5 py-0">
@@ -254,7 +254,7 @@
 	    <?php endif; ?>
 
 	    <?php if (get_field('manifesto_3_middle_title')) { ?>
-	      <h2 class="text-h1-special special second-use text-center text-white font-poppins font-bold mt-[100px] xl:mt-[130px] mb-[60px] xl:mb-[90px] x960:text-7xl">
+	      <h2 class="text-h1-special special second-use text-center text-white font-poppins font-bold mt-22 xl:mt-[130px] mb-[60px] xl:mb-[90px] x960:text-7xl">
 	        <?php echo get_field('manifesto_3_middle_title'); ?>
 	      </h2>
 	    <?php } ?>
@@ -343,17 +343,20 @@
 					    		</div>
 					    		</div>
 					    		<div class="signature-cols-outer-wrap" id="additional-signatures">
-					    		<div class="signature-cols">
+					    		<div class="signature-cols relative x840:max-w-940 x840:mx-auto x840:mb-15 x840:grid-cols-3 x840:gap-x-15 grid grid-cols-1 gap-y-13 mb-15">
 					    	<?php } ?>
 
-					    	<div class="col col<?php echo $colCount; if($colCount < 3) { echo ' animateRise'; } ?>">
+					    	<div class="relative  col col<?php echo $colCount; if($colCount < 3) { echo ' animateRise'; } ?>">
 								<?php if( get_sub_field('signature_text') ) { ?>
-									<div class="line1 font-yellowtail text-primary_white relative mb-3 text-5xl"><?php the_sub_field('signature_text'); ?></div>
-								<?php } ?>
+
+									<div class="relaive mb-2.5 text-5xl text-primary_white leading-10 text-poppins  line1 "><?php the_sub_field('signature_text'); ?></div>
+								
+									<?php } ?>
+
 								<?php if( get_sub_field('country') ) { ?>
-									<div class="line2"><?php the_sub_field('country'); ?></div>
+									<div class="relaive mb-2.5 text-base text-white leading-6 text-poppins  line2"><?php the_sub_field('country'); ?></div>
 								<?php } ?>
-								<div class="line2 line3"><?php if( get_sub_field('company') ) { ?><?php the_sub_field('company'); ?><?php } ?><?php if( get_sub_field('company') && get_sub_field('title') ) { ?> <span>|</span> <?php } ?><?php if( get_sub_field('title') ) { ?><?php the_sub_field('title'); ?><?php } ?></div>
+								<div class="mt-1.5    line2 line3"><?php if( get_sub_field('company') ) { ?><?php the_sub_field('company'); ?><?php } ?><?php if( get_sub_field('company') && get_sub_field('title') ) { ?> <span>|</span> <?php } ?><?php if( get_sub_field('title') ) { ?><?php the_sub_field('title'); ?><?php } ?></div>
 							</div>
 
 					    	<?php $colCount++; ?>
