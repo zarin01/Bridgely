@@ -62,7 +62,7 @@
 
             <?php if( get_field('general_bottom_content') ) { ?>
             <div class="text-wrap text-white">
-                <p class="text-white w-9/12 my-0 mx-auto relative text-poppins"><?php echo get_field('general_bottom_content'); ?></p>
+                <p class="text-white w-9/12 my-0 mx-auto relative font-poppins"><?php echo get_field('general_bottom_content'); ?></p>
             </div>
             <?php } ?>
             
@@ -288,7 +288,7 @@
                 <?php } ?>
                 <div class="cta_button_wrap  w-6/12 items-center flex mx-auto my-0 pt-5">
                     <?php if( get_field('cta_button_text') ) { ?>
-                    <a class="mr-2.5 text-center py-3 px-4 text-poppins text-white bg-custom_gold w-full rounded font-bold"
+                    <a class="mr-2.5 text-center py-3 px-4 font-poppins text-white bg-custom_gold w-full rounded font-bold"
                         href="<?php echo get_field('cta_button_link'); ?>"><?php echo get_field('cta_button_text'); ?></a>
                     <?php } ?>
                 </div>

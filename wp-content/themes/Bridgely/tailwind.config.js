@@ -31,6 +31,7 @@ module.exports = {
         blue: '#2A426B',
         tan2: '#F5EFE7',
         white: '#FFF',
+        manifesto_background: '#151C27',
       },
       screens: {
         x500: '500px',
@@ -46,6 +47,7 @@ module.exports = {
         'calc-100-plus-20': 'calc(100% + 20px)',
         'calc-100-plus-10': 'calc(100% + 10px)',
         'calc-100p-divide-1': 'calc(100%/1)',
+        '115p': '115%',
         '106p': '106%',
         '120p': '120%',
         '140p': '140%',
@@ -70,7 +72,7 @@ module.exports = {
         '710': '710px',
         '840': '840px',
         '880': '880px',
-        '940': '940px',
+        '950': '950px',
         '1050': '1050px',
         '1210': '1210px',
         'half': '50%',
@@ -97,6 +99,7 @@ module.exports = {
         '23': '23px',
         '26px': '26px',
         '28': '28px',
+        '40': '40px',
         '68': '68px',
         '82p': '82px',
         '200': '200px',
@@ -134,19 +137,22 @@ module.exports = {
         '56p': '56.25%',
         '67p': '67%',
         '10px': '10px',
-        '10px': '10px',
+        '100px': '100px',
         '140': '140px',
         '120': '120px',
         '245': '245px',
         '280': '280px',
-        'calc-100-minus-608': 'calc(100%-608px)',
-        'calc-100-minus-512': 'calc(100%-512px)',
-        'calc-100-minus-480': 'calc(100%-480px)',
+        'calc-100-minus-608': 'calc(100% - 608px)',
+        'calc-100-minus-512': 'calc(100% - 512px)',
+        'calc-100-minus-480': 'calc(100% - 480px)',
       },
       margin: {
         'minus-6p': '-64px',
       },
       inset: {
+        '-190px': '-190px',
+        '-94px': '-94px',
+        '-20px': '-20px',
         '-10': '-10px',
         '-4': '-4px',
         '-3': '-3px',
@@ -309,6 +315,18 @@ module.exports = {
         /* 
         Wordpress Loaded Nav and Menu Classes
         */
+       '@media (min-width: 840px)': {
+          '#menu-main-navigation li.current-menu-item a::after': {
+            content: '""',
+            position: 'absolute',
+            display: 'block',
+            height: '1px',
+            width: 'calc(100% - 20px)',
+            bottom: '0',
+            left: '10px',
+            background: '#D1A129',
+          },
+        },
         '@media (max-width: 840px)': {
           '.contact-us-button': {
             paddingTop: '11px !important',
@@ -601,6 +619,10 @@ module.exports = {
           textDecoration: 'none',
           border: 'none',
         },
+
+        '.manifesto-signature-wrap .col .line3 span': {
+          color: '#D1A129',
+        }
        
 
        

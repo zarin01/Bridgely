@@ -130,6 +130,19 @@
       background-size: 1166px 77px;
     }
   }
+
+  @media (min-width: 840px) {
+    #menu-main-navigation li.current-menu-item a::after {
+      content: "";
+      position: absolute;
+      display: block;
+      height: 1px;
+      width: calc(100% - 20px);
+      bottom: 0;
+      left: 10px;
+      background: #D1A129;
+    }
+  }
 }
 
 @layer utilities {

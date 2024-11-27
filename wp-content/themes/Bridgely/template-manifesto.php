@@ -15,16 +15,16 @@
 			<div class="animate-1-control-wrap relative block min-h-1000px">
 				<div class="manifesto-content-section-1 relative max-w-680px">
 					<?php if( get_field('manifesto_intro_title') ) { ?>
-						<h1 class="line1 animateRise relative mb-6 text-calc-100-minus-320 font-poppins font-bold leading-96% text-primary_white tracking-tight"><?php echo get_field('manifesto_intro_title'); ?></h1>
+						<h1 class="line1 animateRise relative mb-6 x840:text-8xl text-calc-100-minus-320 font-poppins font-bold leading-96% text-primary_white tracking-tight"><?php echo get_field('manifesto_intro_title'); ?></h1>
 					<?php } ?>
 					<?php if( get_field('manifesto_intro_support_title') ) { ?>
-						<div class="support-line animateRise relative mb-12 text-26px md:text-4xl font-poppins font-semibold text-custom_gold leading-112%"><?php echo get_field('manifesto_intro_support_title'); ?></div>
+						<div class="support-line animateRise relative font-semibold mb-12 text-26px md:text-4xl font-poppins  text-custom_gold leading-112%"><?php echo get_field('manifesto_intro_support_title'); ?></div>
 					<?php } ?>
 				</div>
 
 				<div class="manifesto-content-section-2 relative md:pl-calc-100-minus-512">
 					<?php if( get_field('manifesto_intro_content') ) { ?>
-						<div class="prose text-white font-normal"><?php echo get_field('manifesto_intro_content'); ?></div>
+						<div class="prose text-white font-semibold font-poppins"><?php echo get_field('manifesto_intro_content'); ?></div>
 						<span id="color-trigger-1"></span>
 						<div class="hidden">
 							<div id="manifesto-pop-1">
@@ -75,7 +75,7 @@
 				<?php } ?>
 			</div>
 
-			<div class="manifesto-content-section-4 relative md:pr-calc-100-minus-480 md:pb-26 text-white font-semibold">
+			<div class="manifesto-content-section-4 relative x840:pr-calc-100-minus-480 x840:pb-100px text-white font-semibold">
 				<div class="font-semibold"><?php if( get_field('manifesto_middle_content') ) { ?></div>
 					<?php echo get_field('manifesto_middle_content'); ?>
 					<span id="color-trigger-2"></span>
@@ -88,10 +88,11 @@
 				<?php } ?>
 			</div>
 
-			<div class="manifesto-content-section-5 relative md:pt-26 text-white md:pb-22">
-				<div class="background-blue-part animateOpacity"></div>
+			<div class="manifesto-content-section-5 relative x840:pt-100px text-white x840:pb-22">
+				<div class="background-blue-part animateOpacity x14:w-115p x14:-right-190px absolute x12:block xl2:w-full xl2:h-full x12:top-0 x12:right-94px x12:bg-manifesto_background
+				 x840:opacity-55 x840:block x840:absolute x840:h-full x840:w-11/12 x840:top-0 x840:-right-20px x840:bg-manifesto_background opacity-0"></div>
 
-				<div class="inner-split-wrap-part grid md:grid-cols-2 gap-10">
+				<div class="inner-split-wrap-part grid x840:grid-cols-2 gap-10">
 					<div class="col col1">
 						<?php if( get_field('manifesto_blue_section_image') ) { ?>
 							<?php $theImage = get_field('manifesto_blue_section_image'); ?>
@@ -137,7 +138,7 @@
 			<?php if( have_rows('manifesto_bottom_orange_lines') ): ?>
 				<div class="manifesto-content-section-7 relative pt-7 md:pt-[78px] pb-10 md:pb-[40px]  text-custom_gold">
 				    <?php while( have_rows('manifesto_bottom_orange_lines') ) : the_row(); ?>
-				    	<p class="special-orange animateSlideRight"><?php the_sub_field('content'); ?></p>
+				    	<p class="special-orange animateSlideRight  text-custom_gold relative x840:mb-7 x840:text-4xl text-2xl font-semibold"><?php the_sub_field('content'); ?></p>
 				    <?php endwhile; ?>
 
 				    <div style="display: none !important">
@@ -186,7 +187,7 @@
 
 			<div class="manifesto-content-section-9  relative x840:pt-6 x840:pb-26 x840:pr-calc-100-minus-608 pt-3.5 pb-10">
 				<?php if( get_field('manifesto_2_special_line') ) { ?>
-					<div class="font-bold text-black text-82p relative text-poppins leading-none tracking-tighter  animateSlideRight animateColor2"><?php echo get_field('manifesto_2_special_line'); ?></div>
+					<div class="font-bold text-[#55524a] text-82p relative font-poppins leading-none tracking-tighter  animateSlideRight animateColor2"><?php echo get_field('manifesto_2_special_line'); ?></div>
 				<?php } ?>
 			</div>
 
@@ -297,7 +298,7 @@
 		<div class="relative max-w-1210 mx-auto px-5 py-0">
 
 			<?php if( get_field('manifesto_4_intro_text') ) { ?>
-				<div class="sign-dec-intro  relative max-w-550 text-white mx-auto mt-0 mb-24 text-poppins text-28 leading-9 font-bold"><?php echo get_field('manifesto_4_intro_text'); ?></div>
+				<div class="sign-dec-intro  relative max-w-550 text-white mx-auto mt-0 mb-24 font-poppins text-28 leading-9 font-bold"><?php echo get_field('manifesto_4_intro_text'); ?></div>
 			<?php } ?>
 
 			<?php if( get_field('manifesto_4_declaration_title') ) { ?>
@@ -317,7 +318,7 @@
 			</div>
 
 			<?php if( get_field('declaration_form_support_text') ) { ?>
-				<div class="extra-form-line animateRise relative max-w-380 my-0 mx-auto pt-11 text-poppins text-white text-lg text-center font-medium"><?php echo get_field('declaration_form_support_text'); ?></div>
+				<div class="extra-form-line animateRise relative max-w-380 my-0 mx-auto pt-11 font-poppins text-white text-lg text-center font-medium"><?php echo get_field('declaration_form_support_text'); ?></div>
 			<?php } ?>
 
 		</div>
@@ -336,27 +337,27 @@
 
 			<?php if( have_rows('manifesto_4_signatures') ): ?>
 				<div class="signature-cols-outer-wrap  ">
-					<div class="signature-cols  x840:max-w-940 x840:ml-auto x840:mr-auto x840:grid-cols-3 x840:gap-15 x840:mb-15 relative grid ">
+					<div class="signature-cols  x840:max-w-950 x840:ml-auto x840:mr-auto x840:grid-cols-3 x840:gap-x-16 x840:mb-16 relative grid ">
 					    <?php while( have_rows('manifesto_4_signatures') ) : the_row(); ?>
 
 					    	<?php if($colCount == 3) { ?>
 					    		</div>
 					    		</div>
-					    		<div class="signature-cols-outer-wrap" id="additional-signatures">
-					    		<div class="signature-cols relative x840:max-w-940 x840:mx-auto x840:mb-15 x840:grid-cols-3 x840:gap-x-15 grid grid-cols-1 gap-y-13 mb-15">
+					    		<div class="signature-cols-outer-wrap hidden" id="additional-signatures">
+					    		<div class="signature-cols relative x840:max-w-950 x840:mx-auto x840:mb-16 x840:grid-cols-3 x840:gap-x-16 grid grid-cols-1 gap-y-14 mb-16">
 					    	<?php } ?>
 
 					    	<div class="relative  col col<?php echo $colCount; if($colCount < 3) { echo ' animateRise'; } ?>">
 								<?php if( get_sub_field('signature_text') ) { ?>
 
-									<div class="relaive mb-2.5 text-5xl text-primary_white leading-10 text-poppins  line1 "><?php the_sub_field('signature_text'); ?></div>
+									<div class="relaive mb-2.5 text-40 text-primary_white leading-10 font-yellowtail  line1 "><?php the_sub_field('signature_text'); ?></div>
 								
 									<?php } ?>
 
 								<?php if( get_sub_field('country') ) { ?>
-									<div class="relaive mb-2.5 text-base text-white leading-6 text-poppins  line2"><?php the_sub_field('country'); ?></div>
+									<div class="relaive mb-2.5 font-medium text-base text-white leading-6 font-poppins  line2"><?php the_sub_field('country'); ?></div>
 								<?php } ?>
-								<div class="mt-1.5    line2 line3"><?php if( get_sub_field('company') ) { ?><?php the_sub_field('company'); ?><?php } ?><?php if( get_sub_field('company') && get_sub_field('title') ) { ?> <span>|</span> <?php } ?><?php if( get_sub_field('title') ) { ?><?php the_sub_field('title'); ?><?php } ?></div>
+								<div class="mt-1.5 relative font-medium font-poppins text-white leading-6 text-base     line2 line3"><?php if( get_sub_field('company') ) { ?><?php the_sub_field('company'); ?><?php } ?><?php if( get_sub_field('company') && get_sub_field('title') ) { ?> <span>|</span> <?php } ?><?php if( get_sub_field('title') ) { ?><?php the_sub_field('title'); ?><?php } ?></div>
 							</div>
 
 					    	<?php $colCount++; ?>
