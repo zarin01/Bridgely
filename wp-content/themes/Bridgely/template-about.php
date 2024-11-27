@@ -64,7 +64,7 @@
     *         Testimony Section
     *************************/ ?>
 
-    <?php get_template_part('sections/section', 'endorsements-slides'); ?>
+    <?php  echo do_shortcode('[leaders-behind-movement]');?>
 
     <?php /************************
     *         Section 3

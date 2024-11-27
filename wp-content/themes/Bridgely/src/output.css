@@ -881,6 +881,10 @@ p {
   z-index: 10;
 }
 
+.z-20 {
+  z-index: 20;
+}
+
 .z-30 {
   z-index: 30;
 }
@@ -889,17 +893,34 @@ p {
   z-index: 9999;
 }
 
+.col-span-full {
+  grid-column: 1 / -1;
+}
+
 .float-left {
   float: left;
+}
+
+.-m-10 {
+  margin: -2.5rem;
 }
 
 .m-0 {
   margin: 0px;
 }
 
+.m-6 {
+  margin: 1.5rem;
+}
+
 .mx-2 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+}
+
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .mx-auto {
@@ -935,6 +956,11 @@ p {
 .my-\[40px\] {
   margin-top: 40px;
   margin-bottom: 40px;
+}
+
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .mb-0 {
@@ -1166,6 +1192,10 @@ p {
   width: 3rem;
 }
 
+.w-14 {
+  width: 3.5rem;
+}
+
 .w-175 {
   width: 175px;
 }
@@ -1188,6 +1218,10 @@ p {
 
 .w-6\/12 {
   width: 50%;
+}
+
+.w-7 {
+  width: 1.75rem;
 }
 
 .w-70 {
@@ -1336,6 +1370,10 @@ p {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .flex-row {
   flex-direction: row;
 }
@@ -1374,6 +1412,10 @@ p {
 
 .gap-4 {
   gap: 1rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
 }
 
 .gap-8 {
@@ -1459,6 +1501,10 @@ p {
   border-width: 0px;
 }
 
+.border-2 {
+  border-width: 2px;
+}
+
 .border-b {
   border-bottom-width: 1px;
 }
@@ -1469,6 +1515,11 @@ p {
 
 .border-solid {
   border-style: solid;
+}
+
+.border-blue {
+  --tw-border-opacity: 1;
+  border-color: rgb(42 66 107 / var(--tw-border-opacity));
 }
 
 .border-white {
@@ -1519,6 +1570,11 @@ p {
 .bg-amber-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(120 53 15 / var(--tw-bg-opacity));
+}
+
+.bg-blue {
+  --tw-bg-opacity: 1;
+  background-color: rgb(42 66 107 / var(--tw-bg-opacity));
 }
 
 .bg-custom_gold {
@@ -2354,6 +2410,11 @@ p {
   padding-right: 3rem;
 }
 
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .px-2\.5 {
   padding-left: 0.625rem;
   padding-right: 0.625rem;
@@ -2367,6 +2428,11 @@ p {
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .py-0 {
@@ -2444,6 +2510,11 @@ p {
   padding-bottom: 2rem;
 }
 
+.py-80 {
+  padding-top: 20rem;
+  padding-bottom: 20rem;
+}
+
 .pb-0 {
   padding-bottom: 0px;
 }
@@ -2496,6 +2567,14 @@ p {
   padding-bottom: 20rem;
 }
 
+.pb-96 {
+  padding-bottom: 24rem;
+}
+
+.pl-10 {
+  padding-left: 2.5rem;
+}
+
 .pl-10px {
   padding-left: 10px;
 }
@@ -2506,6 +2585,10 @@ p {
 
 .pl-12 {
   padding-left: 3rem;
+}
+
+.pl-5 {
+  padding-left: 1.25rem;
 }
 
 .pr-0 {
@@ -3000,6 +3083,16 @@ p {
 .text-gray-400 {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+.text-gray-600 {
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+
+.text-gray-700 {
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 
 .text-green-100 {
@@ -4236,6 +4329,10 @@ footer #menu-footer-navigation li a {
     max-width: 950px;
   }
 
+  .x840\:flex-none {
+    flex: none;
+  }
+
   .x840\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -4403,6 +4500,18 @@ footer #menu-footer-navigation li a {
   .x840\:opacity-55 {
     opacity: 0.55;
   }
+
+  .x840\:committed-to-text-after::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 1166px;
+    height: 115px;
+    left: 50%;
+    margin-left: -593px;
+    background: url('../library/images/dot-curve.png') no-repeat center center;
+    background-size: 1166px 77px;
+  }
 }
 
 @media (min-width: 960px) {
@@ -4416,6 +4525,10 @@ footer #menu-footer-navigation li a {
 
   .x960\:block {
     display: block;
+  }
+
+  .x960\:flex {
+    display: flex;
   }
 
   .x960\:w-1\/2 {
@@ -4440,6 +4553,10 @@ footer #menu-footer-navigation li a {
 
   .x960\:basis-1\/2 {
     flex-basis: 50%;
+  }
+
+  .x960\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .x960\:flex-row {
@@ -4521,6 +4638,10 @@ footer #menu-footer-navigation li a {
 
   .lg\:mt-5 {
     margin-top: 1.25rem;
+  }
+
+  .lg\:w-1\/3 {
+    width: 33.333333%;
   }
 
   .lg\:w-620 {

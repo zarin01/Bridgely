@@ -451,26 +451,38 @@ jQuery(document).ready(function($) {
 	
 	if( $('body').hasClass('page-template-template-donate') ) {
 
-		$(function() {
-			$("#once_button").click(function() {
-				$("#give_monthly").removeClass("active");
-				$("#give_once").addClass("active");
-			
-				// Add 'active' class to the clicked button and remove it from the other button
-				$(this).addClass("active");
-				$("#monthly_button").removeClass("active");
-				});
-			
-				$("#monthly_button").click(function() {
-				$("#give_once").removeClass("active");
-				$("#give_monthly").addClass("active");
-			
-				// Add 'active' class to the clicked button and remove it from the other button
-				$(this).addClass("active");
-				$("#once_button").removeClass("active");
-				$("#give_once").hide();
-				});
-			});
+		 // Get buttons and donation sections
+		 const onceButton = document.getElementById('once_button');
+		 const monthlyButton = document.getElementById('monthly_button');
+		 const giveOnce = document.getElementById('give_once');
+		 const giveMonthly = document.getElementById('give_monthly');
+ 
+		 onceButton.addEventListener('click', () => {
+			 // Add 'active' classes using Tailwind utilities
+			 giveMonthly.classList.add('hidden');
+			 giveMonthly.classList.remove('block');
+			 giveOnce.classList.add('block');
+			 giveOnce.classList.remove('hidden');
+ 
+			 onceButton.classList.add('bg-white', 'text-blue');
+			 onceButton.classList.remove('bg-blue', 'text-white');
+			 monthlyButton.classList.remove('bg-white', 'text-blue');
+			 monthlyButton.classList.add('bg-blue', 'text-white');
+		 });
+ 
+		 monthlyButton.addEventListener('click', () => {
+			 // Add 'active' classes using Tailwind utilities
+			 giveOnce.classList.add('hidden');
+			 giveOnce.classList.remove('block');
+			 giveMonthly.classList.add('block');
+			 giveMonthly.classList.remove('hidden');
+ 
+			 monthlyButton.classList.add('bg-white', 'text-blue');
+			 monthlyButton.classList.remove('bg-blue', 'text-white');
+			 onceButton.classList.remove('bg-white', 'text-blue');
+			 onceButton.classList.add('bg-blue', 'text-white');
+		 });
+		  
 		}
 	});
 
