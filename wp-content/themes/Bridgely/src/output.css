@@ -1345,6 +1345,10 @@ p {
   max-width: 1280px;
 }
 
+.max-w-5xl {
+  max-width: 64rem;
+}
+
 .flex-none {
   flex: none;
 }
@@ -4792,10 +4796,6 @@ footer #menu-footer-navigation li a {
     width: 100%;
   }
 
-  .xl2\:max-w-half {
-    max-width: 50%;
-  }
-
   .xl2\:pr-0 {
     padding-right: 0px;
   }
@@ -4848,6 +4848,16 @@ footer #menu-footer-navigation li a {
 
   .x14\:w-115p {
     width: 115%;
+  }
+
+  .x14\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .x14\:py-0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 }
 

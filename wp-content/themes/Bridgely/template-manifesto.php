@@ -193,10 +193,10 @@
 
 			<div class="manifesto-content-section-10  x840:pb-22 pb-12 relative">
 				<div class="split-content-special   x840:flex relative">
-					<div class="x12:mb-0 x12:pr-22 x840:mb-0 x840:pr-10 x840:w-3/6 mb-9 relative">
+					<div class="x12:w-30p x12:mb-0 x12:pr-22 x840:mb-0 x840:pr-10 x840:w-3/6 mb-9 relative">
 						<?php if( get_field('manifesto_2_second_content_section_image') ) { ?>
 							<?php $theImage = get_field('manifesto_2_second_content_section_image'); ?>
-							<img src="<?php echo $theImage['url']; ?>" alt="<?php echo $theImage['alt']; ?>" class="animateRise  xl2:max-w-half xl2:float-right relative block max-w-full h-auto" />
+							<img src="<?php echo $theImage['url']; ?>" alt="<?php echo $theImage['alt']; ?>" class="animateRise xl2:float-right relative block max-w-full h-auto" />
 						<?php } ?>
 					</div>
 
