@@ -326,6 +326,9 @@ module.exports = {
             left: '10px',
             background: '#D1A129',
           },
+          '#menu-main-navigation li a':{
+          color: '#FFF !important',
+        },
         },
         '@media (max-width: 840px)': {
           '.contact-us-button': {
@@ -333,9 +336,7 @@ module.exports = {
           },
         },
 
-        '#menu-main-navigation li a':{
-          color: '#FFF !important',
-        },
+        
 
         '.contact-us-button a': {
           paddingTop: '11px !important',
@@ -372,6 +373,89 @@ module.exports = {
           top: '21px',
           transform: 'rotate(-45deg)',
         },
+
+        '#menu-item-346 a': {
+          padding: '13px 17px',
+          display: 'inline-block',
+          color: '#FFF',
+          background: '#D1A129 !important',
+          borderRadius: '4px',
+          paddingLeft: '10px',
+          marginBottom: '10px',
+          width: '100%',
+          textAlign: 'center',
+        }, 
+        '#menu-item-518 a': {
+          padding: '13px 17px',
+          display: 'inline-block',
+          color: '#FFF',
+          background: '#D1A129 !important',
+          borderRadius: '4px',
+          paddingLeft: '10px',
+          textAlign: 'center',
+        },
+
+        '@media (max-width: 839px)': {
+          '.primary-navigation-wrapper': {
+          position: 'absolute',
+          display: 'none',
+          top: 'calc(100% - 10px)',
+          left: '0',
+          padding: '30px 20px',
+          width: '100%',
+          background: '#fff',
+        }, 
+        '#menu-main-navigation': {
+          position: 'relative',
+          marginBottom: '10px',
+        },
+        '#menu-main-navigation li': {
+          position: 'relative',
+          display: 'block',
+          listStyle: 'none',
+          margin: '0',
+          padding: '0',
+        },
+        '#menu-main-navigation li a': {
+          position: 'relative',
+          display: 'block',
+          padding: '11px 0',
+          fontFamily: '"Poppins", sans-serif',
+          fontStyle: 'normal',
+          fontWeight: '500',
+          fontSize: '18px',
+          lineHeight: '18px',
+          textTransform: 'uppercase',
+          color: 'black',
+          textDecoration: 'none',
+          borderBottom: 'none',
+        },
+        '#menu-item-26 a, #menu-item-24 a': {
+          color: 'black !important',
+        },
+        '#menu-item-346 a': {
+          padding: '13px 17px',
+          display: 'inline-block',
+          background: '#D1A129 !important',
+          borderRadius: '4px',
+          width: '15%',
+          color: '#FFF !important',
+          paddingLeft: '10px',
+          marginBottom: '10px',
+          textAlign: 'center',
+        }, 
+        '#menu-item-518 a': {
+          padding: '13px 17px',
+          display: 'inline-block',
+          color: '#FFF !important',
+          background: '#D1A129 !important',
+          borderRadius: '4px',
+          width: '32%',
+          paddingLeft: '10px',
+          textAlign: 'center',
+        },
+        },
+        
 
         /* 
         Page Template Refusing to Accpet Color Updates, Adding them Here for now until

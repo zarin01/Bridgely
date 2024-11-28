@@ -2935,6 +2935,11 @@ p {
   color: rgb(120 53 15 / var(--tw-text-opacity));
 }
 
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 .text-blue {
   --tw-text-opacity: 1;
   color: rgb(42 66 107 / var(--tw-text-opacity));
@@ -3814,10 +3819,6 @@ p {
   }
 }
 
-#menu-main-navigation li a {
-  color: #FFF !important;
-}
-
 #mobile-nav-trigger .line {
   position: absolute;
   display: block;
@@ -3840,6 +3841,95 @@ p {
 #mobile-nav-trigger.open .line3 {
   top: 21px;
   transform: rotate(-45deg);
+}
+
+#menu-item-346 a {
+  padding: 13px 17px;
+  display: inline-block;
+  color: #FFF;
+  background: #D1A129 !important;
+  border-radius: 4px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+#menu-item-518 a {
+  padding: 13px 17px;
+  display: inline-block;
+  color: #FFF;
+  background: #D1A129 !important;
+  border-radius: 4px;
+  padding-left: 10px;
+  text-align: center;
+}
+
+@media (max-width: 839px) {
+  .primary-navigation-wrapper {
+    position: absolute;
+    display: none;
+    top: calc(100% - 10px);
+    left: 0;
+    padding: 30px 20px;
+    width: 100%;
+    background: #fff;
+  }
+
+  #menu-main-navigation {
+    position: relative;
+    margin-bottom: 10px;
+  }
+
+  #menu-main-navigation li {
+    position: relative;
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  #menu-main-navigation li a {
+    position: relative;
+    display: block;
+    padding: 11px 0;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+    border-bottom: none;
+  }
+
+  #menu-item-26 a, #menu-item-24 a {
+    color: black !important;
+  }
+
+  #menu-item-346 a {
+    padding: 13px 17px;
+    display: inline-block;
+    background: #D1A129 !important;
+    border-radius: 4px;
+    width: 15%;
+    color: #FFF !important;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  #menu-item-518 a {
+    padding: 13px 17px;
+    display: inline-block;
+    color: #FFF !important;
+    background: #D1A129 !important;
+    border-radius: 4px;
+    width: 32%;
+    padding-left: 10px;
+    text-align: center;
+  }
 }
 
 .page-header {

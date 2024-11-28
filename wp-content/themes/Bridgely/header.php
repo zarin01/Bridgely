@@ -60,7 +60,7 @@
 					<?php wp_nav_menu(array(
 						'theme_location' => 'main-nav',
 						'container' => '',
-						'menu_class' => 'flex x840:flex-row flex-col gap-x-1 relative list-none font-bold m-0 p-0 x840:text-white text-blue font-poppins'
+						'menu_class' => 'flex x840:flex-row flex-col gap-x-1 relative list-none font-bold m-0 p-0 x840:text-white text-black font-poppins'
 					)); ?>
 				</div>
 			</nav>
