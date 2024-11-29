@@ -357,14 +357,24 @@ module.exports = {
         },
         },
         '@media (max-width: 840px)': {
-          '.contact-us-button': {
-            paddingTop: '11px !important',
-          },
+
+          '#menu-footer-navigation #menu-item-514 a': {
+            marginTop: '5px',
+          }
         },
 
         
 
         '.contact-us-button a': {
+          paddingTop: '11px !important',
+          padding: '13px 17px !important',
+          display: 'inline-block !important',
+          color: '#FFF !important',
+          backgroundColor: '#E0B039 !important',
+          borderRadius: '4px !important', 
+        },
+
+        '#menu-footer-navigation #menu-item-345 a, #menu-footer-navigation #menu-item-514 a': {
           paddingTop: '11px !important',
           padding: '13px 17px !important',
           display: 'inline-block !important',
@@ -547,25 +557,27 @@ module.exports = {
           textDecoration: 'none',
         },
 
-        '#menu-social-navigation li.social-facebook a': {
+        '#menu-social-navigation #menu-item-33 a': {
           backgroundImage: 'url("../library/images/icon-facebook.png")',
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'center center',
           backgroundSize: '28px 28px',
-          textIndent: '-9999px',
+          color: 'transparent',
           position: 'relative',
           display: 'block',
           overflow: 'hidden',
           border: 'none',
-          TextDecoder: 'none'
+          TextDecoder: 'none',
+          float: 'right',
+          width: '50%',
         },
 
-        'li.social-linkedin a': {
+        '#menu-social-navigation #menu-item-34 a': {
           backgroundImage: 'url("../library/images/icon-linkedin.png")',
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'center center',
           backgroundSize: '28px 28px',
-          textIndent: '-9999px',
+          color: 'transparent',
           position: 'relative',
           display: 'block',
           overflow: 'hidden',
@@ -573,17 +585,19 @@ module.exports = {
           TextDecoder: 'none'
         },
 
-        'li.social-instagram a': {
+        '#menu-social-navigation #menu-item-35 a': {
           backgroundImage: 'url("../library/images/icon-instagram.png")',
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'center center',
           backgroundSize: '28px 28px',
-          textIndent: '-9999px',
+          color: 'transparent',
           position: 'relative',
           display: 'block',
           overflow: 'hidden',
           border: 'none',
-          TextDecoder: 'none'
+          TextDecoder: 'none',
+          float: 'left',
+          width: '50%',
         },
 
         '#menu-footer-navigation ul li.contact-us-button a': {
