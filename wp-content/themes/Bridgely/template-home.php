@@ -54,7 +54,7 @@
             </div>
         </div>
 
-        <div class="absolute w-full overflow-hidden -bottom-4 left-0">
+        <div class="absolute w-full overflow-hidden -bottom-1px left-0">
             <svg viewBox="0 0 1658 59" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1680 53.115V58.1982H0V53.1003C550.124 -17.7001 1129.88 -17.7001 1680 53.1003V53.115Z" fill="#FFF" />
             </svg>
@@ -81,7 +81,7 @@
                 <!-- Second section: Title and Button -->
                 <div class="relative w-full md:pl-2 mt-5 md:mt-0 md:text-left lg:w-calc-100-minus-820 lg:mt-5">
                     <?php if( get_field('home_2_title_line') ) { ?>
-                        <h2 class="animateRise font-bold text-calc-32-plus-18 md:text-5xl leading-9 md:leading-16"><?php echo get_field('home_2_title_line'); ?></h2>
+                        <h2 class="animateRise font-bold text-calc-32-plus-18 md:text-48px md:leading-16 leading-130%"><?php echo get_field('home_2_title_line'); ?></h2>
                     <?php } ?>
                     
                     <?php if( get_field('home_2_button_text') ) { ?>
@@ -147,7 +147,7 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 mx-auto">
                 <div class="animateRise primary-link">
                     <?php if( get_field('partners_page_2_column_1_title') ) { ?>
-                        <div class="text-wrap text-white text-xl leading-6 font-medium font-sans">
+                        <div class="text-wrap text-white text-2xl leading-6 font-medium font-sans">
                             <?php echo get_field('partners_page_2_column_1_title'); ?>
                         </div>
                     <?php } ?>
@@ -155,7 +155,7 @@
 
                 <div class="animateRise">
                     <?php if( get_field('partners_page_2_column_2_title') ) { ?>
-                        <div class="text-wrap text-white text-xl leading-6 font-medium font-sans">
+                        <div class="text-wrap text-white text-2xl leading-6 font-medium font-sans">
                             <?php echo get_field('partners_page_2_column_2_title'); ?>
                         </div>
                     <?php } ?>
@@ -163,7 +163,7 @@
 
                 <div class="animateRise">
                     <?php if( get_field('partners_page_2_column_3_title') ) { ?>
-                        <div class="text-wrap text-white text-xl leading-6 font-medium font-sans">
+                        <div class="text-wrap text-white text-2xl leading-6 font-medium font-sans">
                             <?php echo get_field('partners_page_2_column_3_title'); ?>
                         </div>
                     <?php } ?>
@@ -177,7 +177,7 @@
             </div>
         </div>
 
-        <div class="absolute w-full overflow-hidden -bottom-4 left-0">
+        <div class="absolute w-full overflow-hidden -bottom-1px left-0">
             <svg viewBox="0 0 1658 59" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1680 53.115V58.1982H0V53.1003C550.124 -17.7001 1129.88 -17.7001 1680 53.1003V53.115Z" fill="#FFF7DE" />
             </svg>
@@ -198,7 +198,7 @@
                 
                 <div class="relative w-full pr-6p">
                     <?php if( get_field('home_3_left_title') ) { ?>
-                    <h2 class="text-dark_blue x960:text-5xl x960:max-w-380 animateRise"><?php echo get_field('home_3_left_title'); ?></h2>
+                    <h2 class="text-dark_blue x960:text-48px animateRise leading-130%"><?php echo get_field('home_3_left_title'); ?></h2>
                     <?php } ?>
                     <?php if( get_field('home_3_left_copy') ) { ?>
                     <p class="text-dark_blue animateRise"><?php echo get_field('home_3_left_copy'); ?></p>
@@ -225,7 +225,7 @@
                     <h3 class="text-primary_white text-center text-4xl font-bold py-6">
                         <?php echo get_field('home_section_3_video_title'); ?>
                     </h3>
-                    <div class="relative pb-56p">
+                    <div class="relative pb-56p mb-6">
                         <iframe src="<?php echo get_field('home_section_3_video_url_2'); ?>" 
                             class="absolute top-0 left-0 w-full h-full"
                             frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
@@ -276,7 +276,7 @@
             <?php endif; ?>
 
             <?php if( get_field('home_4_support_line') ) : ?>
-                <div class="committed-to-text relative text-custom_goldhover mb-4 h-77 animateRise committed-to-text-after flex justify-center items-start text-23 font-bold leading-normal uppercase">
+                <div class="committed-to-text relative text-custom_gold mb-4 h-77 animateRise committed-to-text-after flex justify-center items-start text-23 font-bold leading-normal uppercase">
                     <?php echo get_field('home_4_support_line'); ?>
                 </div>
             <?php endif; ?>
@@ -329,7 +329,7 @@
     * 
     *************************/ ?>
 
-    <div id="download_app"> </div>
+    <div id="download_app" > </div>
     
     <div class="relative pb-12 bg-primary_white overflow-hidden z-30 text-left">
         <div class="relative z-10">
@@ -446,7 +446,7 @@
 	* home-section-8 JS used class
 	* *************************/ ?>
     <div class="relative z-10">
-        <div class="absolute top-0 -left-10 w-calc-100-plus-20 overflow-hidden">
+        <div class="absolute top-0 -left-10 w-calc-100-plus-10 overflow-hidden">
           <svg class="w-full" viewBox="0 0 1680 65" xmlns="http://www.w3.org/2000/svg">
               <path d="M1680 65V0H-3V64.9233C548.107 -8.56355 1128.89 -8.56355 1680 64.9233V65Z" fill="#FFF7DE" />
           </svg>

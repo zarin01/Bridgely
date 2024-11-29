@@ -46,6 +46,7 @@ module.exports = {
         'calc-100-minus-420': 'calc(100% - 420px)',
         'calc-100-plus-20': 'calc(100% + 20px)',
         'calc-100-plus-10': 'calc(100% + 10px)',
+        'calc-100-plus-10': 'calc(100% + 10px)',
         'calc-100p-divide-1': 'calc(100%/1)',
         '115p': '115%',
         '106p': '106%',
@@ -102,6 +103,7 @@ module.exports = {
         '26px': '26px',
         '28': '28px',
         '40': '40px',
+        '48px': '48px',
         '68': '68px',
         '82p': '82px',
         '200': '200px',
@@ -185,6 +187,7 @@ module.exports = {
         '96%': '96%',
         '100%': '100%',
         '112%': '112%',
+        '130%': '130%',
       },
     },
   },
@@ -227,27 +230,47 @@ module.exports = {
 
         /*
          Before and After Classes 
-        */
-        '@media (min-width: 1200px)': {
-          '.fifty-fifty-fancy-split .part-left': {
-            paddingRight: '9%',
-          },  
-          '.fifty-fifty-fancy-split .part-right': {
-            paddingLeft: '9%',
-          },
+        */  
+       
+        '.fifty-fifty-fancy-split .part-left::after': {
+          content: '""',
+          position: 'absolute',
+          display: 'block',
+          width: '40px',
+          height: '11px',
+          background: "url('../library/images/icon-bridge.png') no-repeat center center !important",
+          backgroundSize: '40px 11px !important',
+          bottom: 'auto',
+          top: '50%',
+          marginTop: '-6px',
+          left: 'auto',
+          right: '0',
+          left: '105% !important',
+          marginRight: '-20px',
+
+          
         },
 
-        '@media (min-width: 960px)': {
+       '@media (max-width: 960px)': {
           '.fifty-fifty-fancy-split .part-left::after': {
-            bottom: 'auto',
-            top: '50%',
-            marginTop: '-6px',
-            left: 'auto',
-            right: '0',
-            left: '95% !important',
-            marginRight: '-20px',
+            left: '44% !important',
+            top: '100% !important',
+          },
+          
+          '.fifty-fifty-fancy-split .part-right': {
+            paddingLeft: '0% !important',
+            marginTop: '25px',
           },
 
+          '.fifty-fifty-fancy-split .part-left': {
+            marginBottom: '0 !important',
+            paddingRight: '0 !important',
+            
+          },
+
+
+
+        },
           '.fifty-fifty-fancy-split .part-right': {
             paddingLeft: '9%',
           },
@@ -260,7 +283,7 @@ module.exports = {
           '.fifty-fifty-fancy-split .part': {
             flex: '0 0 50%',
           },
-        },
+      
 
         '.fifty-fifty-fancy-split .part-left': {
           marginBottom: '121px',
@@ -270,16 +293,7 @@ module.exports = {
           position: 'relative',
         },
 
-        '.fifty-fifty-fancy-split .part-left::after': {
-          content: '""',
-          position: 'absolute',
-          display: 'block',
-          width: '40px',
-          height: '11px',
-          bottom: '-61px',
-          background: "url('../library/images/icon-bridge.png') no-repeat center center !important",
-          backgroundSize: '40px 11px !important',
-        },
+       
 
 
         '.committed-to-text-after::after': {
@@ -292,6 +306,16 @@ module.exports = {
           marginLeft: '-593px',
           background: "url('../library/images/dot-curve.png') no-repeat center center",
           backgroundSize: '1166px 77px',
+        },
+
+        '@media (max-width: 1140px)': {
+          '.committed-to-text-after::after': {
+            width: '100%',
+            height: '95px',
+            marginLeft: '0',
+            left: '0',
+            backgroundSize: 'contain',
+          },
         },
         
 
@@ -396,6 +420,14 @@ module.exports = {
           paddingLeft: '10px',
           textAlign: 'center',
         },
+        '@media (max-width: 550px)':{
+          '#menu-item-346 a': {
+              width: '95% !important',
+            }, 
+            '#menu-item-518 a': {
+              width: '95% !important',
+            }, 
+        },
 
         '@media (max-width: 839px)': {
           '.primary-navigation-wrapper': {
@@ -435,6 +467,7 @@ module.exports = {
         '#menu-item-26 a, #menu-item-24 a': {
           color: 'black !important',
         },
+
         '#menu-item-346 a': {
           padding: '13px 17px',
           display: 'inline-block',
@@ -467,15 +500,9 @@ module.exports = {
           color: '#2A426B',
         },
 
-        '.full-width-component h3, .full-width-component h2': {
-          marginTop: '40px',
-          marginBottom: '23px',
-          lineHeight: '130%',
-        },
         '.full-width-component .content-inner p': {
           marginTop: '25px',
         },
-
 
         '.statmenu': {
           backgroundColor: '#fff7e4',
@@ -557,6 +584,14 @@ module.exports = {
           overflow: 'hidden',
           border: 'none',
           TextDecoder: 'none'
+        },
+
+        '#menu-footer-navigation ul li.contact-us-button a': {
+          padding: '13px 17px',
+          display: 'inline-block',
+          color: '#FFF',
+          backgroundColor: '#D1A129',
+          borderRadius: '4px',
         },
 
 

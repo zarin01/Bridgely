@@ -781,6 +781,10 @@ p {
   bottom: -10px;
 }
 
+.-bottom-1px {
+  bottom: -1px;
+}
+
 .-bottom-4 {
   bottom: -4px;
 }
@@ -1180,6 +1184,10 @@ p {
   height: 1px;
 }
 
+.h-500 {
+  height: 500px;
+}
+
 .min-h-1000px {
   min-height: 1000px;
 }
@@ -1242,6 +1250,10 @@ p {
 
 .w-auto {
   width: auto;
+}
+
+.w-calc-100-plus-10 {
+  width: calc(100% + 10px);
 }
 
 .w-calc-100-plus-20 {
@@ -2431,11 +2443,6 @@ p {
   padding-right: 0.25rem;
 }
 
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
 .px-12 {
   padding-left: 3rem;
   padding-right: 3rem;
@@ -2682,6 +2689,10 @@ p {
   padding-top: 11rem;
 }
 
+.pt-47p {
+  padding-top: 47%;
+}
+
 .pt-5 {
   padding-top: 1.25rem;
 }
@@ -2828,6 +2839,11 @@ p {
   line-height: 1rem;
 }
 
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -2866,6 +2882,10 @@ p {
 
 .leading-112\% {
   line-height: 112%;
+}
+
+.leading-130\% {
+  line-height: 130%;
 }
 
 .leading-4 {
@@ -3772,29 +3792,41 @@ p {
   opacity: 0;
 }
 
-@media (min-width: 1200px) {
-  .fifty-fifty-fancy-split .part-left {
-    padding-right: 9%;
+.fifty-fifty-fancy-split .part-left::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 11px;
+  background: url('../library/images/icon-bridge.png') no-repeat center center !important;
+  background-size: 40px 11px !important;
+  bottom: auto;
+  top: 50%;
+  margin-top: -6px;
+  left: 105% !important;
+  right: 0;
+  margin-right: -20px;
+}
+
+@media (max-width: 960px) {
+  .fifty-fifty-fancy-split .part-left::after {
+    left: 44% !important;
+    top: 100% !important;
   }
 
   .fifty-fifty-fancy-split .part-right {
-    padding-left: 9%;
+    padding-left: 0% !important;
+    margin-top: 25px;
+  }
+
+  .fifty-fifty-fancy-split .part-left {
+    margin-bottom: 0 !important;
+    padding-right: 0 !important;
   }
 }
 
-@media (min-width: 960px) {
-  .default-section-3070 .part-70 {
-    width: calc(100% - 420px);
-  }
-
-  .default-section-3070 .part-30 {
-    width: 420px;
-    padding-right: 30px;
-  }
-
-  .default-section-3070 .part h3 {
-    padding: 20px 0 20px 0;
-  }
+.fifty-fifty-fancy-split .part-right {
+  padding-left: 9%;
 }
 
 .fifty-fifty-fancy-split .part-left {
@@ -3803,17 +3835,6 @@ p {
 
 .fifty-fifty-fancy-split .part {
   position: relative;
-}
-
-.fifty-fifty-fancy-split .part-left::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 40px;
-  height: 11px;
-  bottom: -61px;
-  background: url('../library/images/icon-bridge.png') no-repeat center center !important;
-  background-size: 40px 11px !important;
 }
 
 .committed-to-text-after::after {
@@ -3826,6 +3847,16 @@ p {
   margin-left: -593px;
   background: url('../library/images/dot-curve.png') no-repeat center center;
   background-size: 1166px 77px;
+}
+
+@media (max-width: 1140px) {
+  .committed-to-text-after::after {
+    width: 100%;
+    height: 95px;
+    margin-left: 0;
+    left: 0;
+    background-size: contain;
+  }
 }
 
 .text-point.yes::before {
@@ -3904,6 +3935,16 @@ p {
   text-align: center;
 }
 
+@media (max-width: 550px) {
+  #menu-item-346 a {
+    width: 95% !important;
+  }
+
+  #menu-item-518 a {
+    width: 95% !important;
+  }
+}
+
 @media (max-width: 839px) {
   .primary-navigation-wrapper {
     position: absolute;
@@ -3975,12 +4016,6 @@ p {
   color: #2A426B;
 }
 
-.full-width-component h3, .full-width-component h2 {
-  margin-top: 40px;
-  margin-bottom: 23px;
-  line-height: 130%;
-}
-
 .full-width-component .content-inner p {
   margin-top: 25px;
 }
@@ -4043,6 +4078,21 @@ footer #menu-footer-navigation li a {
 
 #poverty-stat p {
   margin-bottom: 3px;
+}
+
+@media (min-width: 960px) {
+  .default-section-3070 .part-70 {
+    width: calc(100% - 420px);
+  }
+
+  .default-section-3070 .part-30 {
+    width: 420px;
+    padding-right: 30px;
+  }
+
+  .default-section-3070 .part h3 {
+    padding: 20px 0 20px 0;
+  }
 }
 
 .three-column-icon-section .committed-to-text {
@@ -4333,14 +4383,13 @@ footer #menu-footer-navigation li a {
     text-align: left;
   }
 
+  .md\:text-48px {
+    font-size: 48px;
+  }
+
   .md\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
-  }
-
-  .md\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
   }
 }
 
@@ -4641,6 +4690,16 @@ footer #menu-footer-navigation li a {
     background: url('../library/images/dot-curve.png') no-repeat center center;
     background-size: 1166px 77px;
   }
+
+  @media (max-width: 1140px) {
+    .x840\:committed-to-text-after::after {
+      width: 100%;
+      height: 95px;
+      margin-left: 0;
+      left: 0;
+      background-size: contain;
+    }
+  }
 }
 
 @media (min-width: 960px) {
@@ -4670,10 +4729,6 @@ footer #menu-footer-navigation li a {
 
   .x960\:w-6\/12 {
     width: 50%;
-  }
-
-  .x960\:max-w-380 {
-    max-width: 380px;
   }
 
   .x960\:flex-none {
@@ -4734,9 +4789,8 @@ footer #menu-footer-navigation li a {
     padding-top: 1.25rem;
   }
 
-  .x960\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
+  .x960\:text-48px {
+    font-size: 48px;
   }
 
   .x960\:text-68 {

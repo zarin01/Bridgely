@@ -9,9 +9,9 @@
 	* 
 	* *************************/ ?>
 
-    <div class="blank-intro-hero x14:h-700 x840:pt-47p relative" id="partners-intro-hero"
+    <div class="blank-intro-hero x14:h-700 pt-47p relative" id="partners-intro-hero"
         <?php if(get_field('partners_page_1_banner_image')) { echo ' style="background:url('.get_field('partners_page_1_banner_image').') no-repeat center top; background-size:cover;"'; } ?>>
-       <div class="absolute w-full overflow-hidden -bottom-4 left-0">
+       <div class="absolute w-full overflow-hidden -bottom-1px left-0">
             <svg viewBox="0 0 1658 59" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1680 53.115V58.1982H0V53.1003C550.124 -17.7001 1129.88 -17.7001 1680 53.1003V53.115Z" fill="#FFF"></path>
             </svg>
@@ -99,7 +99,7 @@
 	* *************************/ ?>
 
     <div class="why-join-bridgely-section partners-animate-section-3   bg-white relative text-center py-12 x960:pt-13 x960:pb-20 x840:pt-28 x840:pb-20">
-        <div class="relative mx-auto px-10 py-0">
+        <div class="relative max-w-1210 mx-auto px-5 py-0">
 
             <?php if( get_field('partners_page_3_title') ) { ?>
             <h2 class="text-blue animateRise x960:mb-16 mb-12 text-responsive"><?php echo get_field('partners_page_3_title'); ?></h2>
@@ -204,7 +204,7 @@
 
             <div class="cta-wrap  relative max-w-500 pt-11 mt-4 text-responsive">
                 <?php if( get_field('cta_content') ) { ?>
-                <h2 class="text-white"><?php echo get_field('cta_content', false, false); ?></h2>
+                <h2 class="text-white mb-5 text-responsive leading-112%"><?php echo get_field('cta_content', false, false); ?></h2>
                 <?php } ?>
                 <div class="cta_button_wrap  w-3/6 text-center flex mx-auto pt-5">
                     <?php if( get_field('cta_button_text') ) { ?>
