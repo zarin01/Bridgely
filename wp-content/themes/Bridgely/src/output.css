@@ -725,35 +725,11 @@ p {
   font-size: clamp(36px, calc(36px + 20 * ((100vw - 320px) / 840)), 56px);
 }
 
-.three-column-icon-section .committed-to-text {
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  position: relative;
-}
-
-.three-column-icon-section .committed-to-text::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 1166px;
-  height: 60px;
-  top: 12px;
-  left: 50%;
-  margin-left: -593px;
-  background: url("https://bridgelystg.wpengine.com/wp-content/themes/Bridgely/library/images/dot-curve.png") no-repeat center center;
-  background-size: 1166px 77px;
-}
-
 @media (min-width: 960px) {
   .three-column-icon-section .committed-to-text {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
-  }
-
-  .three-column-icon-section .committed-to-text::after {
-    background-size: 1166px 77px;
   }
 }
 
@@ -1238,6 +1214,10 @@ p {
 
 .w-70 {
   width: 70px;
+}
+
+.w-70p {
+  width: 70%;
 }
 
 .w-9\/12 {
@@ -3837,6 +3817,32 @@ p {
   position: relative;
 }
 
+.committed-to-text::after {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 14px;
+  text-align: center;
+  height: 77px;
+  background: url('../library/images/dot-curve.png') no-repeat center center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+@media (min-width: 960px) {
+  .default-section-3070 .part-70 {
+    width: calc(100% - 420px);
+  }
+
+  .default-section-3070 .part-30 {
+    width: 420px;
+    padding-right: 30px;
+  }
+
+  .default-section-3070 .part h3 {
+    padding: 20px 0 20px 0;
+  }
+}
+
 .committed-to-text-after::after {
   content: "";
   position: absolute;
@@ -4138,19 +4144,16 @@ footer #menu-footer-navigation li a {
   margin-bottom: 3px;
 }
 
-@media (min-width: 960px) {
-  .default-section-3070 .part-70 {
-    width: calc(100% - 420px);
-  }
-
-  .default-section-3070 .part-30 {
-    width: 420px;
-    padding-right: 30px;
-  }
-
-  .default-section-3070 .part h3 {
-    padding: 20px 0 20px 0;
-  }
+a.orange-button, #orange-button {
+  padding: 5px 25px;
+  display: inline-block;
+  color: #fff;
+  background-color: #d1a129;
+  border-radius: 4px;
+  border-bottom: none;
+  font-weight: bold;
+  margin: 10px 0;
+  text-decoration: none;
 }
 
 .three-column-icon-section .committed-to-text {

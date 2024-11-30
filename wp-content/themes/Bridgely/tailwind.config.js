@@ -52,6 +52,7 @@ module.exports = {
         '106p': '106%',
         '120p': '120%',
         '140p': '140%',
+        '70p': '70%',
         '61p': '61%',
         '30p': '39%',
         '45p': '45%',
@@ -292,7 +293,28 @@ module.exports = {
         '.fifty-fifty-fancy-split .part': {
           position: 'relative',
         },
-
+        
+        '.committed-to-text::after': {
+          position: 'relative',
+          overflow: 'hidden',
+          marginBottom: '14px',
+          textAlign: 'center',
+          height: '77px',
+          background: "url('../library/images/dot-curve.png') no-repeat center center",
+          textTransform: 'uppercase',
+          letterSpacing: '2px',
+        },
+        '@media (min-width: 960px)': {
+          '.committed-to-text::after': {
+            position: 'relative',
+            overflow: 'hidden',
+            marginBottom: '14px',
+            textAlign: 'center',
+            height: '77px',
+            textTransform: 'uppercase',
+            letterSpacing: '2px',
+          },
+        },
        
 
 
@@ -672,7 +694,7 @@ module.exports = {
         Organizations Loaded Components Styles
         */
 
-        '.orange-button': {
+        'a.orange-button, #orange-button': {
           padding: '5px 25px',
           display: 'inline-block',
           color: '#fff',

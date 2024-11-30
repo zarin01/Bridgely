@@ -47,7 +47,7 @@
 
     <div class="py-12 px-12 mt-12"
         <?php if(get_field('background_image')) { echo ' style="background:url('.get_field('background_image').') no-repeat center top; background-size:cover;"'; } ?>>
-        <div class="relative max-w-1210 mx-auto px-5 py-0">
+        <div class="relative max-w-1210 mx-auto px-5 py-0  flex items-center justify-center">
 
             <?php if( get_field('general_wysiwyg_content') ) { ?>
             <div class="text-wrap text-white">
@@ -57,11 +57,11 @@
             
         </div>
     </div>
-    <div class="bg-primary_gray py-10 px-2.5 text-center">
-        <div class="relative max-w-1210 mx-auto px-5 py-0">
+    <div class="bg-primary_gray py-10 px-2.5 text-center flex items-center justify-center">
+        <div class="relative max-w-1210 mx-auto px-5 py-0 flex items-center justify-center">
 
             <?php if( get_field('general_bottom_content') ) { ?>
-            <div class="text-wrap text-white">
+            <div class="text-wrap text-white w-70p">
                 <p class="text-white w-9/12 my-0 mx-auto relative font-poppins"><?php echo get_field('general_bottom_content'); ?></p>
             </div>
             <?php } ?>
@@ -98,7 +98,7 @@
 	* 
 	* *************************/ ?>
 
-    <div class="three-column-icon-section page-animate-block  relative py-12 "
+    <div class="three-column-icon-section page-animate-block  relative py-12 z-10"
         style="background-color: <?php echo get_field('3_col_column_backgound_color'); ?>">
         <div class="relative max-w-1210 mx-auto px-5 py-0">
             <?php if( get_field('3_col_intro_text') ) { ?>
@@ -108,7 +108,7 @@
             <h3 class="text-blue"><?php echo get_field('3_col_sub_title'); ?></h3>
             <?php } ?>
             <?php if( get_field('3_col_support_line') ) { ?>
-            <div class="relative overflow-hidden mb-3.5 text-center h-20 uppercase tracking-wider font-bold text-2xl text-custom_gold">
+            <div class="relative committed-to-text overflow-hidden mb-3.5 text-center h-20 uppercase tracking-wider font-bold text-2xl text-custom_gold">
                 <?php echo get_field('3_col_support_line'); ?></div>
             <?php } ?>
 
