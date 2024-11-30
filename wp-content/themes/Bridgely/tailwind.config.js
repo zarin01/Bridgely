@@ -32,6 +32,7 @@ module.exports = {
         tan2: '#F5EFE7',
         white: '#FFF',
         manifesto_background: '#151C27',
+        manifesto_test: '#55524a',
       },
       screens: {
         x500: '500px',
@@ -79,6 +80,7 @@ module.exports = {
         '1050': '1050px',
         '1210': '1210px',
         'half': '50%',
+        '150%': '150%',
         'double': '200%',
       },
       maxHeight: {
@@ -135,6 +137,7 @@ module.exports = {
         '2px-122px': '2px 122px',
       },
       padding: {
+        '2p': '2%',
         '6p': '6%',
         '9p': '9%',
         '11p': '11%',

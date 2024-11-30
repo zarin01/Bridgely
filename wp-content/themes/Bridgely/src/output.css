@@ -789,10 +789,6 @@ p {
   bottom: 3%;
 }
 
-.bottom-\[-4px\] {
-  bottom: -4px;
-}
-
 .left-0 {
   left: 0px;
 }
@@ -855,10 +851,6 @@ p {
 
 .top-calc-100-minus-10 {
   top: calc(100%-10px);
-}
-
-.-top-1px {
-  top: -1px;
 }
 
 .z-10 {
@@ -1253,10 +1245,6 @@ p {
   width: 100%;
 }
 
-.w-\[70px\] {
-  width: 70px;
-}
-
 .max-w-1050 {
   max-width: 1050px;
 }
@@ -1511,6 +1499,10 @@ p {
   border-radius: 0.5rem;
 }
 
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
 .border {
   border-width: 1px;
 }
@@ -1546,6 +1538,11 @@ p {
 .border-blue {
   --tw-border-opacity: 1;
   border-color: rgb(42 66 107 / var(--tw-border-opacity));
+}
+
+.border-custom_gold {
+  --tw-border-opacity: 1;
+  border-color: rgb(209 161 41 / var(--tw-border-opacity));
 }
 
 .border-primary_orange {
@@ -2446,6 +2443,11 @@ p {
   padding-right: 0.625rem;
 }
 
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -2830,6 +2832,10 @@ p {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-48px {
+  font-size: 48px;
 }
 
 .font-bold {
@@ -3707,6 +3713,11 @@ p {
   color: rgb(113 63 18 / var(--tw-text-opacity));
 }
 
+.text-manifesto_test {
+  --tw-text-opacity: 1;
+  color: rgb(85 82 74 / var(--tw-text-opacity));
+}
+
 .opacity-0 {
   opacity: 0;
 }
@@ -4305,12 +4316,12 @@ a.orange-button, #orange-button {
     max-width: none;
   }
 
-  .sm\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .sm\:grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .sm\:gap-4 {
@@ -4329,11 +4340,6 @@ a.orange-button, #orange-button {
 }
 
 @media (min-width: 768px) {
-  .md\:mx-auto {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .md\:mb-0 {
     margin-bottom: 0px;
   }
@@ -4352,10 +4358,6 @@ a.orange-button, #orange-button {
 
   .md\:w-1\/2 {
     width: 50%;
-  }
-
-  .md\:w-\[70px\] {
-    width: 70px;
   }
 
   .md\:grid-cols-2 {
@@ -4765,20 +4767,12 @@ a.orange-button, #orange-button {
 }
 
 @media (min-width: 960px) {
-  .x960\:z-10 {
-    z-index: 10;
-  }
-
   .x960\:mb-16 {
     margin-bottom: 4rem;
   }
 
   .x960\:mt-0 {
     margin-top: 0px;
-  }
-
-  .x960\:mt-5 {
-    margin-top: 1.25rem;
   }
 
   .x960\:block {
@@ -4817,20 +4811,16 @@ a.orange-button, #orange-button {
     flex-direction: row;
   }
 
-  .x960\:divide-solid > :not([hidden]) ~ :not([hidden]) {
-    border-style: solid;
-  }
-
   .x960\:rounded-sm {
     border-radius: 0.125rem;
   }
 
-  .x960\:border-r {
-    border-right-width: 1px;
-  }
-
   .x960\:border-l {
     border-left-width: 1px;
+  }
+
+  .x960\:border-r {
+    border-right-width: 1px;
   }
 
   .x960\:border-solid {
@@ -4842,16 +4832,6 @@ a.orange-button, #orange-button {
     border-color: rgb(209 161 41 / var(--tw-border-opacity));
   }
 
-  .x960\:py-32 {
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-  }
-
-  .x960\:py-5 {
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
-  }
-
   .x960\:px-5 {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
@@ -4860,6 +4840,16 @@ a.orange-button, #orange-button {
   .x960\:py-12 {
     padding-top: 3rem;
     padding-bottom: 3rem;
+  }
+
+  .x960\:py-32 {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  .x960\:py-5 {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
   }
 
   .x960\:pb-140 {
@@ -4912,8 +4902,8 @@ a.orange-button, #orange-button {
     line-height: 1;
   }
 
-  .x960\:text-40 {
-    font-size: 40px;
+  .x960\:text-82p {
+    font-size: 82px;
   }
 }
 
@@ -4959,8 +4949,8 @@ a.orange-button, #orange-button {
     background-size: 110%;
   }
 
-  .lg\:p-\[4\%\] {
-    padding: 4%;
+  .lg\:p-2p {
+    padding: 2%;
   }
 
   .lg\:pl-12 {
@@ -4987,6 +4977,10 @@ a.orange-button, #orange-button {
 
   .xl2\:w-full {
     width: 100%;
+  }
+
+  .xl2\:max-w-150\% {
+    max-width: 150%;
   }
 
   .xl2\:pr-0 {
@@ -5041,6 +5035,10 @@ a.orange-button, #orange-button {
 
   .x14\:w-115p {
     width: 115%;
+  }
+
+  .x14\:max-w-double {
+    max-width: 200%;
   }
 
   .x14\:px-0 {

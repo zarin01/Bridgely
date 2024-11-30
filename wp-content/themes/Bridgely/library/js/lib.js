@@ -157,7 +157,6 @@ jQuery(document).ready(function($) {
 								.addTo(controller);
 
 
-
 			var scene6tween = TweenMax.staggerTo(".manifesto-content-section-7 .animateSlideRight", 0.5, {transform: "translateX(0)", opacity: 1, ease: Power4.easeOut}, 0.4);
 
 			var scene6 = new ScrollMagic.Scene({triggerElement: ".manifesto-content-section-7", triggerHook: "onEnter", offset: offsetHeight})

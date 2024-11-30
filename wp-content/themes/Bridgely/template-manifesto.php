@@ -187,16 +187,16 @@
 
 			<div class="manifesto-content-section-9  relative x840:pt-6 x840:pb-26 x840:pr-calc-100-minus-608 pt-3.5 pb-10">
 				<?php if( get_field('manifesto_2_special_line') ) { ?>
-					<div class="font-bold text-[#55524a] text-82p relative font-poppins leading-none tracking-tighter  animateSlideRight animateColor2"><?php echo get_field('manifesto_2_special_line'); ?></div>
+					<div class="font-bold text-manifesto_test  x960:text-82p text-48px  relative font-poppins leading-none tracking-tighter animateSlideRight animateColor2"><?php echo get_field('manifesto_2_special_line'); ?></div>
 				<?php } ?>
 			</div>
 
 			<div class="manifesto-content-section-10  x840:pb-22 pb-12 relative">
-				<div class="split-content-special   x840:flex relative">
-					<div class="x12:w-30p x12:mb-0 x12:pr-22 x840:mb-0 x840:pr-10 x840:w-3/6 mb-9 relative">
+				<div class="split-content-special x840:flex relative mt-8">
+					<div class="x12:w-30p x12:mb-0 x12:pr-22 x840:mb-0 x840:pr-10 x840:w-3/6 mb-9 relative ">
 						<?php if( get_field('manifesto_2_second_content_section_image') ) { ?>
 							<?php $theImage = get_field('manifesto_2_second_content_section_image'); ?>
-							<img src="<?php echo $theImage['url']; ?>" alt="<?php echo $theImage['alt']; ?>" class="animateRise xl2:float-right relative block max-w-full h-auto" />
+							<img src="<?php echo $theImage['url']; ?>" alt="<?php echo $theImage['alt']; ?>" class="animateRise x14:max-w-double xl2:max-w-150% xl2:float-right relative block max-w-full h-auto" />
 						<?php } ?>
 					</div>
 
@@ -242,7 +242,7 @@
 	      <div class="pillar-contain-wrap grid grid-cols-1 gap-4 sm:gap-4 lg:gap-6 my-[40px] lg:my-[70px] xl:my-[80px]">
 	        <?php while (have_rows('manifesto_3_pillars')): the_row(); ?>
 	          <span class="a-pillar animateRise relative">
-	            <div class="inside flex flex-col items-center justify-center text-center z-2 h-fit p-4 lg:p-[4%]   bg-primary_white">
+	            <div class="inside flex flex-col items-center justify-center text-center z-2 h-fit p-4 lg:p-2p   bg-primary_white">
 	              <div class="label relative pb-2 w-full text-gold font-poppins font-bold text-[30px] text-left">
 	                <span class="text-custom_gold text-left tracking-wide pb-2.5 block"><?php the_sub_field('title'); ?></span>
 	                <?php the_sub_field('description'); ?>
@@ -337,14 +337,14 @@
 
 			<?php if( have_rows('manifesto_4_signatures') ): ?>
 				<div class="signature-cols-outer-wrap  ">
-					<div class="signature-cols  x840:max-w-950 x840:ml-auto x840:mr-auto x840:grid-cols-3 x840:gap-x-16 x840:mb-16 relative grid ">
+					<div class="signature-cols mt-14  x840:max-w-950 x840:ml-auto x840:mr-auto x840:grid-cols-3 x840:gap-x-16 x840:mb-16 relative grid ">
 					    <?php while( have_rows('manifesto_4_signatures') ) : the_row(); ?>
 
 					    	<?php if($colCount == 3) { ?>
 					    		</div>
 					    		</div>
 					    		<div class="signature-cols-outer-wrap hidden" id="additional-signatures">
-					    		<div class="signature-cols relative x840:max-w-950 x840:mx-auto x840:mb-16 x840:grid-cols-3 x840:gap-x-16 grid grid-cols-1 gap-y-14 mb-16">
+					    		<div class="signature-cols mt-14 relative x840:max-w-950 x840:mx-auto x840:mb-16 x840:grid-cols-3 x840:gap-x-16 grid grid-cols-1 gap-y-14 mb-16">
 					    	<?php } ?>
 
 					    	<div class="relative  col col<?php echo $colCount; if($colCount < 3) { echo ' animateRise'; } ?>">
@@ -367,8 +367,8 @@
 			<?php endif; ?>
 
 			<?php if( get_field('manifesto_4_signature_button_text') ) { ?>
-				<div class="signature-button-wrap">
-					<a href="#" class="btn animateRise" id="show-more-signatures"><?php echo get_field('manifesto_4_signature_button_text'); ?></a>
+				<div class="x960:mt-0 mt-14">
+					<a href="#" class="animateRise py-2 px-3 font-semibold text-lg text-white border border-solid border-custom_gold rounded-md" id="show-more-signatures"><?php echo get_field('manifesto_4_signature_button_text'); ?></a>
 				</div>
 			<?php } ?>
 
