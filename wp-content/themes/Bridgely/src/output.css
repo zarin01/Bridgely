@@ -857,6 +857,10 @@ p {
   top: calc(100%-10px);
 }
 
+.-top-1px {
+  top: -1px;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -1247,6 +1251,10 @@ p {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[70px\] {
+  width: 70px;
 }
 
 .max-w-1050 {
@@ -3829,17 +3837,8 @@ p {
 }
 
 @media (min-width: 960px) {
-  .default-section-3070 .part-70 {
-    width: calc(100% - 420px);
-  }
-
-  .default-section-3070 .part-30 {
-    width: 420px;
-    padding-right: 30px;
-  }
-
-  .default-section-3070 .part h3 {
-    padding: 20px 0 20px 0;
+  .three-column-icon-section p {
+    margin-bottom: 5px;
   }
 }
 
@@ -4179,7 +4178,7 @@ a.orange-button, #orange-button {
   top: 12px;
   left: 50%;
   margin-left: -593px;
-  background: url("https://bridgelystg.wpengine.com/wp-content/themes/Bridgely/library/images/dot-curve.png") no-repeat center center;
+  background: url('../library/images/dot-curve.png') no-repeat center center;
   background-size: 1166px 77px;
 }
 
@@ -4187,6 +4186,16 @@ a.orange-button, #orange-button {
   .three-column-icon-section .committed-to-text::after {
     background-size: 1166px 77px;
   }
+}
+
+.three-column-icon-section .small {
+  padding-top: 10px;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.three-column-icon-section p {
+  margin-bottom: 5px;
 }
 
 .manifesto-section-1 p a.orange {
@@ -4300,6 +4309,10 @@ a.orange-button, #orange-button {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .sm\:grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
   .sm\:gap-4 {
     gap: 1rem;
   }
@@ -4363,6 +4376,10 @@ a.orange-button, #orange-button {
 
   .md\:gap-y-\[70px\] {
     row-gap: 70px;
+  }
+
+  .md\:rounded-sm {
+    border-radius: 0.125rem;
   }
 
   .md\:border-r {
@@ -4748,12 +4765,20 @@ a.orange-button, #orange-button {
 }
 
 @media (min-width: 960px) {
+  .x960\:z-10 {
+    z-index: 10;
+  }
+
   .x960\:mb-16 {
     margin-bottom: 4rem;
   }
 
   .x960\:mt-0 {
     margin-top: 0px;
+  }
+
+  .x960\:mt-5 {
+    margin-top: 1.25rem;
   }
 
   .x960\:block {
@@ -4792,6 +4817,31 @@ a.orange-button, #orange-button {
     flex-direction: row;
   }
 
+  .x960\:divide-solid > :not([hidden]) ~ :not([hidden]) {
+    border-style: solid;
+  }
+
+  .x960\:rounded-sm {
+    border-radius: 0.125rem;
+  }
+
+  .x960\:border-r {
+    border-right-width: 1px;
+  }
+
+  .x960\:border-l {
+    border-left-width: 1px;
+  }
+
+  .x960\:border-solid {
+    border-style: solid;
+  }
+
+  .x960\:border-custom_gold {
+    --tw-border-opacity: 1;
+    border-color: rgb(209 161 41 / var(--tw-border-opacity));
+  }
+
   .x960\:py-32 {
     padding-top: 8rem;
     padding-bottom: 8rem;
@@ -4800,6 +4850,16 @@ a.orange-button, #orange-button {
   .x960\:py-5 {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
+  }
+
+  .x960\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .x960\:py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 
   .x960\:pb-140 {
@@ -4850,6 +4910,10 @@ a.orange-button, #orange-button {
   .x960\:text-8xl {
     font-size: 6rem;
     line-height: 1;
+  }
+
+  .x960\:text-40 {
+    font-size: 40px;
   }
 }
 

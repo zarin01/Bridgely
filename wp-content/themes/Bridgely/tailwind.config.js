@@ -724,11 +724,25 @@ module.exports = {
             top: '12px',
             left: '50%',
             marginLeft: '-593px',
-            background: `url("https://bridgelystg.wpengine.com/wp-content/themes/Bridgely/library/images/dot-curve.png") no-repeat center center`,
+            background: "url('../library/images/dot-curve.png') no-repeat center center",
             backgroundSize: '1166px 77px',
             '@screen md': {
               backgroundSize: '1166px 77px',
             },
+          },
+        },
+
+        '.three-column-icon-section .small': {
+          paddingTop: '10px',
+          fontSize: '15px',
+          lineHeight: '20px',
+        },
+        '.three-column-icon-section p': {
+          marginBottom: '5px',
+        },
+        '@media (min-width: 960px)': {
+          '.three-column-icon-section p': {
+            marginBottom: '5px',
           },
         },
 
